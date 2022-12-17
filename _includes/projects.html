@@ -1,38 +1,27 @@
-{% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse  %}
-<div class="col s12 switch">
-  <label>
-    Show forked projects
-    <input class="fork-switch" type="checkbox" checked="1" onchange="toggleForked()">
-    <span class="lever"></span>
-  </label>
-</div>
-{% for repo in sorted_repos %}
-<div class="col s12 m6 l4" {% if repo.fork %}id="forked"{% endif %}>
-  <div class="card hoverable">
-    <div class="card-image waves-effect waves-block waves-light geopattern activator" data-pattern-id="{{repo.name}}">
-      <i class="material-icons waves-effect waves-block waves-light">more_vert</i>
-      <a class="card-title center-align valign-wrapper" href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>
-    </div>
-    <div class="card-content valign-wrapper center-align activator">
-      <span class="activator grey-text text-darken-1">{{repo.description}}</span>
-    </div>
-    <div class="card-reveal">
-      <div class="card-reveal-content">
-        <span class="card-title grey-text text-darken-4">Statistics<i class="material-icons right">close</i></span>
-        <span class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="{{repo.stargazers_count}} stars">
-          <i class="material-icons">star</i>
-          {{repo.stargazers_count}}
-        </span>
-        <span class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="{{repo.forks_count}} forks">
-          <i class="material-icons">call_split</i>
-          {{repo.forks_count}}
-        </span>
-        <span class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="Last updated：{{repo.updated_at}}">
-          <i class="material-icons">access_time</i>
-          <time datetime="{{repo.updated_at}}" title="{{repo.updated_at}}">{{repo.updated_at | date: '%Y-%m-%d'}}</time>
-        </span>
-      </div>
-    </div>
+<div class="col s12 cat-div">
+  <div class="cat-list">
+    {% for cat in site.categories %}
+    {% capture test %}{{cat[0] | slice: 0}}{% endcapture %}
+    {% capture testup %}{{cat[0] | slice: 0 | upcase}}{% endcapture %}
+    <a class="cat-chip" href="#{{cat[0] | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip z-depth-1">{{cat[0]}}</div></a>
+    {% endfor %}
+  </div>
+  <div class="divider"></div>
+  <div class="cat-index">
+    {% for cat in site.categories %}
+    {% capture test %}{{cat[0] | slice: 0}}{% endcapture %}
+    {% capture testup %}{{cat[0] | slice: 0 | upcase}}{% endcapture %}
+    <h4 id="{{cat[0] | slugify}}{% if test == testup %}_cap{% endif %}">{{cat[0]}}</h4>
+    <ul class="cat-post">
+      {% for post in cat[1] %}
+      <a class="post-title" href="{{site.baseurl}}{{post.url}}" target="_blank">
+        <li>
+          {{post.title}}
+          <small class="post-date">{{post.date | date_to_string}}</small>
+        </li>
+      </a>
+      {% endfor %}
+    </ul>
+    {% endfor %}
   </div>
 </div>
-{% endfor %}
