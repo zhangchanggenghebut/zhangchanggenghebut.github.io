@@ -1,27 +1,21 @@
 <div class="col s12 cat-div">
-  <div class="cat-list">
-    {% for cat in site.categories %}
-    {% capture test %}{{cat[0] | slice: 0}}{% endcapture %}
-    {% capture testup %}{{cat[0] | slice: 0 | upcase}}{% endcapture %}
-    <a class="cat-chip" href="#{{cat[0] | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip z-depth-1">{{cat[0]}}</div></a>
-    {% endfor %}
-  </div>
-  <div class="divider"></div>
-  <div class="cat-index">
-    {% for cat in site.categories %}
-    {% capture test %}{{cat[0] | slice: 0}}{% endcapture %}
-    {% capture testup %}{{cat[0] | slice: 0 | upcase}}{% endcapture %}
-    <h4 id="{{cat[0] | slugify}}{% if test == testup %}_cap{% endif %}">{{cat[0]}}</h4>
-    <ul class="cat-post">
-      {% for post in cat[1] %}
-      <a class="post-title" href="{{site.baseurl}}{{post.url}}" target="_blank">
-        <li>
-          {{post.title}}
-          <small class="post-date">{{post.date | date_to_string}}</small>
-        </li>
-      </a>
-      {% endfor %}
-    </ul>
-    {% endfor %}
+<div class="user-content">
+    <p>
+（1）国家自然科学基金委员会，面上项目，52277008，中高频用超薄硅钢热-力协同作用下介-宏观磁化机理和磁特性实验模拟研究，2023.1-2026.12，54万，在研，主持；
+（2）国家自然科学基金青年项目，51807048，基于神经网络和多条件耦合型磁滞算子深度融合的磁滞模型研究，2019.1-2021.12，25万，结题，主持；
+（3）河北省自然科学基金青年项目，E2018202301，高频变压器绕组电磁效应的建模与计算，2018.01-2020.12，4万，在研，主持；
+（4）国家自然科学基金委员会, 重大研究计划, 92066206, 极端条件下电磁能装备电磁综合性能与可靠性统一设计方法, 2021-01-01 至 2024-12-31, 300万元, 在研, 参与
+（4）河北省高等学校科研技术研究项目，QN2018157，永磁体在多种谐波激励下的涡流损耗测量与建模，2018年1月-2019年12月，在研，主持。
+（5）国家自然科学基金面上项目，51777055，模拟服役条件下电工磁材料磁特性测试
+及混合矢量磁滞模型研究，2018.1-2021.12，62万，在研，参加；
+（6）国家自然科学基金面上项目，51677052，电力变压器谐波磁特性模拟与谐波磁损
+耗有效算法研究，2017.1-2020.12，63万，在研，参加；
+（6）国家自然基金重点项目，51237005，电工磁性材料三维磁特性检测技术和张量磁
+滞模型，2013.01-2017.12, 290万元，结题，参加，第三完成人。
+
+    </p>
+    <p>
+           Hebei Universtiy of Technology, Associate Professor
+    </p>
   </div>
 </div>
