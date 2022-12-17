@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/matjek"
 url: "https://zhangchanggenghebut.github.io"
 permalink: /:year/:month/:day/:title
-repository: ShawnTeoh/matjek
+repository: zhangchanggenghebut/matjek
 paginate: 5
 
 # MatJek specific configurations
