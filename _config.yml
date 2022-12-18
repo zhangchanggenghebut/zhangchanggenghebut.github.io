@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Zhang Changgeng Academic Homepage  张长庚-河北工业大学
+title: Zhang Changgeng   张长庚
 description: > # this means to ignore newlines until "baseurl:"
   Hebei University of Technology   河北工业大学（天津）
 baseurl: "/"
