@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "岳帅超同学博士预答辩"
+title:  "恭喜孙长兴同学博士答辩"
 date:   2022-12-15 01:30:13 +0800
 categories: Default
 tags: defence Sun 博士答辩
