@@ -1,0 +1,701 @@
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation for NanoMoke</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background-color: #f7f7f7;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background-color: #0078d4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .content {
+            padding: 20px;
+        }
+        
+        .calendar {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        
+        .month-nav {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 1px;
+            background-color: #ddd;
+        }
+        
+        .day-header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .day {
+            background-color: white;
+            padding: 10px;
+            min-height: 60px;
+            position: relative;
+        }
+        
+        .day.empty {
+            background-color: #f9f9f9;
+        }
+        
+        .date {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .event {
+            background-color: #e6f2ff;
+            border-left: 3px solid #0078d4;
+            padding: 3px 5px;
+            margin-top: 20px;
+            font-size: 12px;
+            border-radius: 2px;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .delete-event {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ff4d4d;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            display: none;
+            width: 16px;
+            height: 16px;
+            text-align: center;
+            line-height: 16px;
+            border-radius: 50%;
+        }
+        
+        .event:hover .delete-event {
+            display: block;
+        }
+        
+        .delete-event:hover {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        
+        .instructions {
+            background-color: #f0f7ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: #0078d4;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        
+        .button:hover {
+            background-color: #005a9e;
+        }
+        
+        .success-message {
+            background-color: #e6ffe6;
+            border-left: 3px solid #4CAF50;
+            padding: 10px;
+            margin-top: 15px;
+            display: none;
+        }
+        
+        .add-event-container {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .event-list-container {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        
+        .event-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .event-list-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .event-list-item:last-child {
+            border-bottom: none;
+        }
+        
+        .event-details {
+            flex-grow: 1;
+        }
+        
+        .event-date-time {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .delete-btn {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .delete-btn:hover {
+            background-color: #ff0000;
+        }
+        
+        .no-events {
+            color: #666;
+            font-style: italic;
+            padding: 10px;
+        }
+        
+        .admin-note {
+            background-color: #fffbe6;
+            border-left: 3px solid #ffc107;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 600px) {
+            .calendar-grid {
+                grid-template-columns: repeat(7, 1fr);
+            }
+            
+            .day {
+                min-height: 40px;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <!-- <header>
+            <h1>Reservation for MOKE(Evico)</h1>
+        </header>
+        -->
+        <div class="content">
+            <div class="calendar">
+                <div class="calendar-header">
+                    <span class="month-nav" id="prev-month">&lt;</span>
+                    <span id="current-month">March 2025</span>
+                    <span class="month-nav" id="next-month">&gt;</span>
+                </div>
+                
+                <div class="calendar-grid" id="calendar-grid">
+                    <!-- Calendar grid will be generated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="add-event-container">
+                <h2>Reserve the device</h2>
+                <div class="form-group">
+                    <label for="event-title">Reservation Title</label>
+                    <input type="text" id="event-title" placeholder="Enter reservation title">
+                </div>
+                <div class="form-group">
+                    <label for="event-date">Date</label>
+                    <input type="date" id="event-date">
+                </div>
+                <div class="form-group">
+                    <label for="event-time">Time</label>
+                    <input type="time" id="event-time">
+                </div>
+                <div class="form-group">
+                    <label for="event-description">Description</label>
+                    <textarea id="event-description" rows="3" placeholder="Enter reservation details"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="event-location">Location</label>
+                    <input type="text" id="event-location" placeholder="Enter location">
+                </div>
+                <div class="form-group">
+                    <label for="event-owner">Your Name</label>
+                    <input type="text" id="event-owner" placeholder="Enter your name">
+                </div>
+                <button class="button" id="add-event-btn">Make Reservation</button>
+            </div>
+            
+            <div class="event-list-container">
+                <h2>Manage Events only by administrators and event owner</h2>
+                <div class="admin-note">
+                    <strong>Note:</strong> Only administrators and the person who made the reservation can delete reservations.
+                    Please enter your name as it appears in your reservation or contact an administrator for assistance.
+                </div>
+                <div id="event-list-section">
+                    <!-- Events will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <h2>Export Calendar to Outlook</h2>
+                <p>Follow these steps to import this calendar into your Outlook:</p>
+                <ol>
+                    <li>Make reservations for the device using the form above</li>
+                    <li>Click the "Export Calendar" button below to download the calendar file (.ics format)</li>
+                    <li>Open Outlook</li>
+                    <li>Go to the Calendar view</li>
+                    <li>For Outlook desktop: Select File > Open & Export > Import/Export > Import an iCalendar (.ics)</li>
+                    <li>For Outlook web: Select Add calendar > Upload from file</li>
+                    <li>Browse to the downloaded calendar file and open it</li>
+                    <li>Follow the prompts to complete the import</li>
+                </ol>
+                
+                <p>Once imported, you can view all device reservations in your Outlook calendar.</p>
+                
+                <button class="button" id="export-calendar">Export Calendar (.ics)</button>
+                <div class="success-message" id="success-message">Calendar file has been downloaded! You can now import it into Outlook.</div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>MOKE(Evico) Reservation System &copy; 2025</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Calendar data
+        let events = [
+        
+        ];
+        
+        let nextEventId = 5; // For generating unique IDs
+        
+        // Current date tracking
+        let currentDate = new Date();
+        let currentMonth = currentDate.getMonth();
+        let currentYear = currentDate.getFullYear();
+        
+        // Initialize calendar
+        document.addEventListener("DOMContentLoaded", function() {
+            updateCalendar();
+            updateEventList();
+            
+            // Set current date in the date picker
+            const today = new Date();
+            const dateString = formatDateForInput(today);
+            document.getElementById("event-date").value = dateString;
+        });
+        
+        // Month navigation
+        document.getElementById("prev-month").addEventListener("click", function() {
+            currentMonth--;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            }
+            updateCalendar();
+        });
+        
+        document.getElementById("next-month").addEventListener("click", function() {
+            currentMonth++;
+            if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            }
+            updateCalendar();
+        });
+        
+        // Add event functionality
+        document.getElementById("add-event-btn").addEventListener("click", function() {
+            const title = document.getElementById("event-title").value;
+            const dateStr = document.getElementById("event-date").value;
+            const time = document.getElementById("event-time").value;
+            const description = document.getElementById("event-description").value;
+            const location = document.getElementById("event-location").value;
+            const owner = document.getElementById("event-owner").value;
+            
+            if (!title || !dateStr) {
+                alert("Please enter at least a title and date for the reservation.");
+                return;
+            }
+            
+            if (!owner) {
+                alert("Please enter your name for the reservation.");
+                return;
+            }
+            
+            const dateParts = dateStr.split("-");
+            const date = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+            
+            events.push({
+                id: nextEventId++,
+                title: title,
+                date: date,
+                time: time || "00:00",
+                description: description || "",
+                location: location || "",
+                owner: owner
+            });
+            
+            // Reset form
+            document.getElementById("event-title").value = "";
+            document.getElementById("event-time").value = "";
+            document.getElementById("event-description").value = "";
+            document.getElementById("event-location").value = "";
+            // Don't reset owner name for convenience
+            
+            // Update calendar and event list
+            updateCalendar();
+            updateEventList();
+            
+            alert("Reservation successful!");
+        });
+        
+        // Export calendar functionality
+        document.getElementById("export-calendar").addEventListener("click", function() {
+            const icsData = generateICS();
+            downloadICS(icsData);
+            
+            // Show success message
+            const successMsg = document.getElementById("success-message");
+            successMsg.style.display = "block";
+            setTimeout(() => {
+                successMsg.style.display = "none";
+            }, 5000);
+        });
+        
+        // Function to update the calendar display
+        function updateCalendar() {
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            document.getElementById("current-month").textContent = `${monthNames[currentMonth]} ${currentYear}`;
+            
+            const grid = document.getElementById("calendar-grid");
+            grid.innerHTML = ""; // Clear the grid
+            
+            // Add day headers
+            const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+            days.forEach(day => {
+                const dayHeader = document.createElement("div");
+                dayHeader.className = "day-header";
+                dayHeader.textContent = day;
+                grid.appendChild(dayHeader);
+            });
+            
+            // Get first day of month and number of days
+            const firstDay = new Date(currentYear, currentMonth, 1);
+            const lastDay = new Date(currentYear, currentMonth + 1, 0);
+            const daysInMonth = lastDay.getDate();
+            
+            // Add empty days from previous month
+            const firstDayOfWeek = firstDay.getDay(); // 0 for Sunday, 1 for Monday, etc.
+            for (let i = 0; i < firstDayOfWeek; i++) {
+                const emptyDay = document.createElement("div");
+                emptyDay.className = "day empty";
+                grid.appendChild(emptyDay);
+            }
+            
+            // Add days of current month
+            for (let i = 1; i <= daysInMonth; i++) {
+                const dayDiv = document.createElement("div");
+                dayDiv.className = "day";
+                
+                const dateDiv = document.createElement("div");
+                dateDiv.className = "date";
+                dateDiv.textContent = i;
+                dayDiv.appendChild(dateDiv);
+                
+                // Add events for this day
+                const currentDate = new Date(currentYear, currentMonth, i);
+                const dayEvents = events.filter(event => 
+                    event.date.getDate() === i && 
+                    event.date.getMonth() === currentMonth && 
+                    event.date.getFullYear() === currentYear
+                );
+                
+                dayEvents.forEach(event => {
+                    const eventDiv = document.createElement("div");
+                    eventDiv.className = "event";
+                    eventDiv.textContent = event.title;
+                    eventDiv.title = `${event.time} - Reserved by: ${event.owner}\n${event.description}`;
+                    
+                    // Add delete button
+                    const deleteBtn = document.createElement("span");
+                    deleteBtn.className = "delete-event";
+                    deleteBtn.textContent = "×";
+                    deleteBtn.title = "Delete reservation";
+                    deleteBtn.onclick = function(e) {
+                        e.stopPropagation();
+                        
+                        // Check if user is the owner
+                        const ownerName = prompt(`Enter your name to confirm you are the owner of this reservation or an administrator:`);
+                        
+                        if (ownerName) {
+                            if (ownerName.toLowerCase() === event.owner.toLowerCase() || isAdministrator(ownerName)) {
+                                if (confirm(`Delete reservation "${event.title}"?`)) {
+                                    deleteEvent(event.id);
+                                }
+                            } else {
+                                alert("Sorry, only the reservation owner or administrators can delete this reservation.");
+                            }
+                        }
+                    };
+                    
+                    eventDiv.appendChild(deleteBtn);
+                    dayDiv.appendChild(eventDiv);
+                });
+                
+                grid.appendChild(dayDiv);
+            }
+        }
+        
+        // Function to check if user is an administrator (simplified)
+        function isAdministrator(name) {
+            // In a real application, this would check against a database of administrators
+            const administrators = ["admin", "administrator", "system admin"];
+            return administrators.includes(name.toLowerCase());
+        }
+        
+        // Function to update the event list
+        function updateEventList() {
+            const eventListSection = document.getElementById("event-list-section");
+            eventListSection.innerHTML = "";
+            
+            if (events.length === 0) {
+                const noEventsMsg = document.createElement("p");
+                noEventsMsg.className = "no-events";
+                noEventsMsg.textContent = "No reservations to display.";
+                eventListSection.appendChild(noEventsMsg);
+                return;
+            }
+            
+            // Sort events by date
+            const sortedEvents = [...events].sort((a, b) => a.date - b.date);
+            
+            const list = document.createElement("ul");
+            list.className = "event-list";
+            
+            sortedEvents.forEach(event => {
+                const item = document.createElement("li");
+                item.className = "event-list-item";
+                
+                const eventDetails = document.createElement("div");
+                eventDetails.className = "event-details";
+                
+                const eventTitle = document.createElement("div");
+                eventTitle.textContent = event.title;
+                eventTitle.style.fontWeight = "bold";
+                
+                const eventDateTime = document.createElement("div");
+                eventDateTime.className = "event-date-time";
+                const formattedDate = event.date.toLocaleDateString(undefined, { 
+                    weekday: 'short', 
+                    year: 'numeric', 
+                    month: 'short', 
+                    day: 'numeric' 
+                });
+                eventDateTime.textContent = `${formattedDate}, ${event.time}`;
+                
+                const eventLocation = document.createElement("div");
+                eventLocation.textContent = event.location ? `Location: ${event.location}` : "";
+                
+                const eventOwner = document.createElement("div");
+                eventOwner.textContent = `Reserved by: ${event.owner}`;
+                eventOwner.style.fontStyle = "italic";
+                
+                eventDetails.appendChild(eventTitle);
+                eventDetails.appendChild(eventDateTime);
+                if (event.location) eventDetails.appendChild(eventLocation);
+                eventDetails.appendChild(eventOwner);
+                
+                const deleteBtn = document.createElement("button");
+                deleteBtn.className = "delete-btn";
+                deleteBtn.textContent = "Delete";
+                deleteBtn.onclick = function() {
+                    // Check if user is the owner
+                    const ownerName = prompt(`Enter your name to confirm you are the owner of this reservation or an administrator:`);
+                    
+                    if (ownerName) {
+                        if (ownerName.toLowerCase() === event.owner.toLowerCase() || isAdministrator(ownerName)) {
+                            if (confirm(`Delete reservation "${event.title}"?`)) {
+                                deleteEvent(event.id);
+                            }
+                        } else {
+                            alert("Sorry, only the reservation owner or administrators can delete this reservation.");
+                        }
+                    }
+                };
+                
+                item.appendChild(eventDetails);
+                item.appendChild(deleteBtn);
+                list.appendChild(item);
+            });
+            
+            eventListSection.appendChild(list);
+        }
+        
+        // Function to delete an event
+        function deleteEvent(eventId) {
+            events = events.filter(event => event.id !== eventId);
+            updateCalendar();
+            updateEventList();
+        }
+        
+        // Function to generate ICS file content
+        function generateICS() {
+            let icsContent = [
+                "BEGIN:VCALENDAR",
+                "VERSION:2.0",
+                "PRODID:-//MOKE Evico Reservation System//EN",
+                "CALSCALE:GREGORIAN",
+                "METHOD:PUBLISH"
+            ];
+            
+            events.forEach(event => {
+                const dateFormatted = formatDateForICS(event.date);
+                const timeFormatted = event.time.replace(":", "") + "00";
+                
+                // Calculate end time (1 hour later by default)
+                let endHour = parseInt(event.time.split(":")[0]) + 1;
+                let endMinute = event.time.split(":")[1];
+                if (endHour > 23) endHour = 23;
+                const endTimeFormatted = String(endHour).padStart(2, "0") + endMinute + "00";
+                
+                icsContent = icsContent.concat([
+                    "BEGIN:VEVENT",
+                    `SUMMARY:${event.title} (MOKE Reservation)`,
+                    `DTSTART:${dateFormatted}T${timeFormatted}Z`,
+                    `DTEND:${dateFormatted}T${endTimeFormatted}Z`,
+                    `LOCATION:${event.location}`,
+                    `DESCRIPTION:Reserved by: ${event.owner}\\n${event.description}`,
+                    "STATUS:CONFIRMED",
+                    "END:VEVENT"
+                ]);
+            });
+            
+            icsContent.push("END:VCALENDAR");
+            return icsContent.join("\r\n");
+        }
+        
+        // Function to download ICS file
+        function downloadICS(icsData) {
+            const blob = new Blob([icsData], { type: "text/calendar;charset=utf-8" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "MOKE_reservations.ics";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+        
+        // Helper function to format date for ICS file
+        function formatDateForICS(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, "0");
+            const day = String(date.getDate()).padStart(2, "0");
+            return `${year}${month}${day}`;
+        }
+        
+        // Helper function to format date for input fields
+        function formatDateForInput(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, "0");
+            const day = String(date.getDate()).padStart(2, "0");
+            return `${year}-${month}-${day}`;
+        }
+    </script>
+</body>
+</html>
