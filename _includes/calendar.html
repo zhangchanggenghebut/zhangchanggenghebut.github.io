@@ -1,6 +1,3 @@
-
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -179,7 +176,7 @@
             font-weight: bold;
         }
         
-        input, textarea {
+        input, textarea, select {
             width: 100%;
             padding: 8px;
             border: 1px solid #ddd;
@@ -257,6 +254,17 @@
             border-top: 1px solid #eee;
         }
         
+        .button-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .outlook-options {
+            margin-top: 10px;
+            display: none;
+        }
+        
         @media (max-width: 600px) {
             .calendar-grid {
                 grid-template-columns: repeat(7, 1fr);
@@ -266,15 +274,39 @@
                 min-height: 40px;
                 padding: 5px;
             }
+            
+            .button-group {
+                flex-direction: column;
+            }
+        }
+        
+        .copy-field {
+            display: flex;
+            margin-top: 10px;
+        }
+        
+        .copy-field input {
+            flex-grow: 1;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        
+        .copy-field button {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        
+        .link-copied {
+            background-color: #4CAF50;
         }
     </style>
 </head>
 <body>
     <div class="container">
-      <!-- <header>
+        <header>
             <h1>Reservation for MOKE(Evico)</h1>
         </header>
-        -->
+        
         <div class="content">
             <div class="calendar">
                 <div class="calendar-header">
@@ -299,8 +331,12 @@
                     <input type="date" id="event-date">
                 </div>
                 <div class="form-group">
-                    <label for="event-time">Time</label>
+                    <label for="event-time">Start Time</label>
                     <input type="time" id="event-time">
+                </div>
+                <div class="form-group">
+                    <label for="event-end-time">End Time</label>
+                    <input type="time" id="event-end-time">
                 </div>
                 <div class="form-group">
                     <label for="event-description">Description</label>
@@ -314,11 +350,15 @@
                     <label for="event-owner">Your Name</label>
                     <input type="text" id="event-owner" placeholder="Enter your name">
                 </div>
+                <div class="form-group">
+                    <label for="event-email">Your Email (for calendar invites)</label>
+                    <input type="email" id="event-email" placeholder="Enter your email">
+                </div>
                 <button class="button" id="add-event-btn">Make Reservation</button>
             </div>
             
             <div class="event-list-container">
-                <h2>Manage Events only by administrators and event owner</h2>
+                <h2>Manage Events</h2>
                 <div class="admin-note">
                     <strong>Note:</strong> Only administrators and the person who made the reservation can delete reservations.
                     Please enter your name as it appears in your reservation or contact an administrator for assistance.
@@ -329,23 +369,50 @@
             </div>
             
             <div class="instructions">
-                <h2>Export Calendar to Outlook</h2>
-                <p>Follow these steps to import this calendar into your Outlook:</p>
-                <ol>
-                    <li>Make reservations for the device using the form above</li>
-                    <li>Click the "Export Calendar" button below to download the calendar file (.ics format)</li>
-                    <li>Open Outlook</li>
-                    <li>Go to the Calendar view</li>
-                    <li>For Outlook desktop: Select File > Open & Export > Import/Export > Import an iCalendar (.ics)</li>
-                    <li>For Outlook web: Select Add calendar > Upload from file</li>
-                    <li>Browse to the downloaded calendar file and open it</li>
-                    <li>Follow the prompts to complete the import</li>
-                </ol>
+                <h2>Use with Outlook Calendar</h2>
+                <p>You have multiple options to add this calendar to your Outlook:</p>
                 
-                <p>Once imported, you can view all device reservations in your Outlook calendar.</p>
+                <div class="button-group">
+                    <button class="button" id="subscribe-outlook">Subscribe in Outlook</button>
+                    <button class="button" id="export-calendar">Download Calendar (.ics)</button>
+                    <button class="button" id="show-webcal">Get Webcal Link</button>
+                </div>
                 
-                <button class="button" id="export-calendar">Export Calendar (.ics)</button>
-                <div class="success-message" id="success-message">Calendar file has been downloaded! You can now import it into Outlook.</div>
+                <div id="webcal-link" class="outlook-options">
+                    <h3>Webcal Subscription Link</h3>
+                    <p>Copy this link and add it as a subscribed calendar in Outlook:</p>
+                    <div class="copy-field">
+                        <input type="text" id="webcal-url" readonly value="webcal://example.com/moke-calendar.ics">
+                        <button class="button" id="copy-webcal">Copy</button>
+                    </div>
+                    <p><small>This will create a live subscription that automatically updates.</small></p>
+                </div>
+                
+                <div id="outlook-instructions" class="outlook-options">
+                    <h3>How to Subscribe in Outlook</h3>
+                    <ol>
+                        <li>Open Outlook and go to Calendar view</li>
+                        <li>For <strong>Outlook desktop</strong>: Right-click "Other Calendars" > "Add Calendar" > "From Internet"</li>
+                        <li>For <strong>Outlook web</strong>: Click "Add calendar" > "Subscribe from web"</li>
+                        <li>Paste the webcal:// URL and click "OK" or "Import"</li>
+                        <li>The MOKE reservation calendar will now appear and automatically update</li>
+                    </ol>
+                </div>
+                
+                <div id="ics-instructions" class="outlook-options">
+                    <h3>How to Import ICS File</h3>
+                    <ol>
+                        <li>Click the "Download Calendar (.ics)" button above to download the calendar file</li>
+                        <li>Open Outlook and go to Calendar view</li>
+                        <li>For <strong>Outlook desktop</strong>: Select File > Open & Export > Import/Export > Import an iCalendar (.ics)</li>
+                        <li>For <strong>Outlook web</strong>: Select Add calendar > Upload from file</li>
+                        <li>Browse to the downloaded calendar file and open it</li>
+                        <li>Choose whether to import as a new calendar or add to existing</li>
+                    </ol>
+                    <p><small>Note: This creates a static copy. You'll need to re-download to get updates.</small></p>
+                </div>
+                
+                <div class="success-message" id="success-message"></div>
             </div>
         </div>
         
@@ -362,36 +429,44 @@
                 title: "Device Testing",
                 date: new Date(2025, 2, 5), // March 5, 2025
                 time: "10:00",
+                endTime: "11:00",
                 description: "Routine device testing",
                 location: "Lab Room A",
-                owner: "John Smith"
+                owner: "John Smith",
+                email: "john.smith@example.com"
             },
             {
                 id: 2,
                 title: "Research Project",
                 date: new Date(2025, 2, 10), // March 10, 2025
                 time: "15:00",
+                endTime: "17:00",
                 description: "Data collection for research",
                 location: "Main Laboratory",
-                owner: "Emily Chen"
+                owner: "Emily Chen",
+                email: "emily.chen@example.com"
             },
             {
                 id: 3,
                 title: "Maintenance",
                 date: new Date(2025, 2, 15), // March 15, 2025
                 time: "09:00",
+                endTime: "10:30",
                 description: "Regular maintenance check",
                 location: "Equipment Room",
-                owner: "Technical Support"
+                owner: "Technical Support",
+                email: "support@example.com"
             },
             {
                 id: 4,
                 title: "Demo Session",
                 date: new Date(2025, 2, 20), // March 20, 2025
                 time: "14:00",
+                endTime: "15:30",
                 description: "Demonstration for new team members",
                 location: "Conference Room B",
-                owner: "Michael Johnson"
+                owner: "Michael Johnson",
+                email: "michael.j@example.com"
             }
         ];
         
@@ -411,6 +486,66 @@
             const today = new Date();
             const dateString = formatDateForInput(today);
             document.getElementById("event-date").value = dateString;
+            
+            // Set default end time to 1 hour after start time
+            document.getElementById("event-time").addEventListener("change", function() {
+                const startTime = this.value;
+                if (startTime) {
+                    const [hours, minutes] = startTime.split(":");
+                    let endHour = parseInt(hours) + 1;
+                    if (endHour > 23) endHour = 23;
+                    const endTime = `${String(endHour).padStart(2, "0")}:${minutes}`;
+                    document.getElementById("event-end-time").value = endTime;
+                }
+            });
+            
+            // Initialize Outlook integration buttons
+            document.getElementById("subscribe-outlook").addEventListener("click", function() {
+                document.getElementById("outlook-instructions").style.display = "block";
+                document.getElementById("webcal-link").style.display = "block";
+                document.getElementById("ics-instructions").style.display = "none";
+                document.getElementById("success-message").style.display = "none";
+            });
+            
+            document.getElementById("show-webcal").addEventListener("click", function() {
+                document.getElementById("webcal-link").style.display = "block";
+                document.getElementById("outlook-instructions").style.display = "none";
+                document.getElementById("ics-instructions").style.display = "none";
+                document.getElementById("success-message").style.display = "none";
+            });
+            
+            document.getElementById("copy-webcal").addEventListener("click", function() {
+                const webcalUrl = document.getElementById("webcal-url");
+                webcalUrl.select();
+                document.execCommand("copy");
+                
+                const copyBtn = this;
+                copyBtn.textContent = "Copied!";
+                copyBtn.classList.add("link-copied");
+                
+                setTimeout(() => {
+                    copyBtn.textContent = "Copy";
+                    copyBtn.classList.remove("link-copied");
+                }, 2000);
+            });
+            
+            // Updated export calendar button
+            document.getElementById("export-calendar").addEventListener("click", function() {
+                document.getElementById("ics-instructions").style.display = "block";
+                document.getElementById("outlook-instructions").style.display = "none";
+                document.getElementById("webcal-link").style.display = "none";
+                
+                const icsData = generateICS();
+                downloadICS(icsData);
+                
+                // Show success message
+                const successMsg = document.getElementById("success-message");
+                successMsg.textContent = "Calendar file has been downloaded! You can now import it into Outlook.";
+                successMsg.style.display = "block";
+                setTimeout(() => {
+                    successMsg.style.display = "none";
+                }, 5000);
+            });
         });
         
         // Month navigation
@@ -437,12 +572,14 @@
             const title = document.getElementById("event-title").value;
             const dateStr = document.getElementById("event-date").value;
             const time = document.getElementById("event-time").value;
+            const endTime = document.getElementById("event-end-time").value;
             const description = document.getElementById("event-description").value;
             const location = document.getElementById("event-location").value;
             const owner = document.getElementById("event-owner").value;
+            const email = document.getElementById("event-email").value;
             
-            if (!title || !dateStr) {
-                alert("Please enter at least a title and date for the reservation.");
+            if (!title || !dateStr || !time) {
+                alert("Please enter at least a title, date, and start time for the reservation.");
                 return;
             }
             
@@ -451,44 +588,72 @@
                 return;
             }
             
+            // Validate end time is after start time
+            if (endTime && endTime <= time) {
+                alert("End time must be later than start time.");
+                return;
+            }
+            
             const dateParts = dateStr.split("-");
             const date = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
             
-            events.push({
+            // Calculate default end time if not provided
+            let finalEndTime = endTime;
+            if (!finalEndTime) {
+                const [hours, minutes] = time.split(":");
+                let endHour = parseInt(hours) + 1;
+                if (endHour > 23) endHour = 23;
+                finalEndTime = `${String(endHour).padStart(2, "0")}:${minutes}`;
+            }
+            
+            const newEvent = {
                 id: nextEventId++,
                 title: title,
                 date: date,
-                time: time || "00:00",
+                time: time,
+                endTime: finalEndTime,
                 description: description || "",
                 location: location || "",
-                owner: owner
-            });
+                owner: owner,
+                email: email || ""
+            };
+            
+            events.push(newEvent);
             
             // Reset form
             document.getElementById("event-title").value = "";
             document.getElementById("event-time").value = "";
+            document.getElementById("event-end-time").value = "";
             document.getElementById("event-description").value = "";
             document.getElementById("event-location").value = "";
-            // Don't reset owner name for convenience
+            // Don't reset owner name and email for convenience
             
             // Update calendar and event list
             updateCalendar();
             updateEventList();
             
-            alert("Reservation successful!");
-        });
-        
-        // Export calendar functionality
-        document.getElementById("export-calendar").addEventListener("click", function() {
-            const icsData = generateICS();
-            downloadICS(icsData);
-            
-            // Show success message
-            const successMsg = document.getElementById("success-message");
-            successMsg.style.display = "block";
-            setTimeout(() => {
-                successMsg.style.display = "none";
-            }, 5000);
+            // Create and offer to send Outlook invitation
+            if (email) {
+                const singleEventICS = generateSingleEventICS(newEvent);
+                
+                const successMsg = document.getElementById("success-message");
+                successMsg.innerHTML = `
+                    Reservation successful! 
+                    <a href="#" id="email-invite" class="button" style="margin-left: 10px;">Send to Outlook</a>
+                `;
+                successMsg.style.display = "block";
+                
+                document.getElementById("email-invite").addEventListener("click", function(e) {
+                    e.preventDefault();
+                    downloadICS(singleEventICS, `MOKE_reservation_${newEvent.id}.ics`);
+                    successMsg.textContent = "Calendar invitation downloaded. Open it to add to your Outlook calendar.";
+                    setTimeout(() => {
+                        successMsg.style.display = "none";
+                    }, 5000);
+                });
+            } else {
+                alert("Reservation successful!");
+            }
         });
         
         // Function to update the calendar display
@@ -543,7 +708,7 @@
                     const eventDiv = document.createElement("div");
                     eventDiv.className = "event";
                     eventDiv.textContent = event.title;
-                    eventDiv.title = `${event.time} - Reserved by: ${event.owner}\n${event.description}`;
+                    eventDiv.title = `${event.time}-${event.endTime} - Reserved by: ${event.owner}\n${event.description}`;
                     
                     // Add delete button
                     const deleteBtn = document.createElement("span");
@@ -575,9 +740,8 @@
             }
         }
         
-        // Function to check if user is an administrator (simplified)
+        // Function to check if user is an administrator
         function isAdministrator(name) {
-            // In a real application, this would check against a database of administrators
             const administrators = ["admin", "administrator", "system admin"];
             return administrators.includes(name.toLowerCase());
         }
@@ -620,7 +784,7 @@
                     month: 'short', 
                     day: 'numeric' 
                 });
-                eventDateTime.textContent = `${formattedDate}, ${event.time}`;
+                eventDateTime.textContent = `${formattedDate}, ${event.time} - ${event.endTime}`;
                 
                 const eventLocation = document.createElement("div");
                 eventLocation.textContent = event.location ? `Location: ${event.location}` : "";
@@ -633,6 +797,20 @@
                 eventDetails.appendChild(eventDateTime);
                 if (event.location) eventDetails.appendChild(eventLocation);
                 eventDetails.appendChild(eventOwner);
+                
+                const buttonsContainer = document.createElement("div");
+                buttonsContainer.style.display = "flex";
+                buttonsContainer.style.gap = "5px";
+                
+                // Add to Outlook button
+                const outlookBtn = document.createElement("button");
+                outlookBtn.className = "button";
+                outlookBtn.textContent = "Add to Outlook";
+                outlookBtn.style.backgroundColor = "#0078d4";
+                outlookBtn.onclick = function() {
+                    const singleEventICS = generateSingleEventICS(event);
+                    downloadICS(singleEventICS, `MOKE_reservation_${event.id}.ics`);
+                };
                 
                 const deleteBtn = document.createElement("button");
                 deleteBtn.className = "delete-btn";
@@ -652,8 +830,11 @@
                     }
                 };
                 
+                buttonsContainer.appendChild(outlookBtn);
+                buttonsContainer.appendChild(deleteBtn);
+                
                 item.appendChild(eventDetails);
-                item.appendChild(deleteBtn);
+                item.appendChild(buttonsContainer);
                 list.appendChild(item);
             });
             
@@ -667,34 +848,79 @@
             updateEventList();
         }
         
-        // Function to generate ICS file content
+        // Function to generate ICS file content for a single event
+        function generateSingleEventICS(event) {
+            const dateFormatted = formatDateForICS(event.date);
+            const timeFormatted = event.time.replace(":", "") + "00";
+            
+            // Calculate end time
+            const endTimeFormatted = event.endTime.replace(":", "") + "00";
+            
+            let uid = `${event.id}@moke-reservation.example.com`;
+            
+            let icsContent = [
+                "BEGIN:VCALENDAR",
+                "VERSION:2.0",
+                "PRODID:-//MOKE Evico Reservation System//EN",
+                "CALSCALE:GREGORIAN",
+                "METHOD:REQUEST", // Using REQUEST for individual invitations
+                "BEGIN:VEVENT",
+                `UID:${uid}`,
+                `SUMMARY:${event.title} (MOKE Reservation)`,
+                `DTSTART:${dateFormatted}T${timeFormatted}Z`,
+                `DTEND:${dateFormatted}T${endTimeFormatted}Z`,
+                `LOCATION:${event.location}`,
+                `DESCRIPTION:Reserved by: ${event.owner}\\n${event.description}`,
+                `ORGANIZER;CN=MOKE Reservation System:mailto:moke-system@example.com`,
+            ];
+            
+            // Add attendee if email is provided
+            if (event.email) {
+                icsContent.push(`ATTENDEE;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=${event.owner}:mailto:${event.email}`);
+            }
+            
+            icsContent = icsContent.concat([
+                "STATUS:CONFIRMED",
+                "SEQUENCE:0",
+                `DTSTAMP:${formatDateTimeForICS(new Date())}`,
+                "END:VEVENT",
+                "END:VCALENDAR"
+            ]);
+            
+            return icsContent.join("\r\n");
+        }
+        
+        // Function to generate ICS file content for all events
         function generateICS() {
             let icsContent = [
                 "BEGIN:VCALENDAR",
                 "VERSION:2.0",
                 "PRODID:-//MOKE Evico Reservation System//EN",
                 "CALSCALE:GREGORIAN",
-                "METHOD:PUBLISH"
+                "METHOD:PUBLISH",
+                "X-WR-CALNAME:MOKE Device Reservations",
+                "X-WR-CALDESC:Reservation calendar for MOKE(Evico) device",
+                "REFRESH-INTERVAL;VALUE=DURATION:PT1H", // Suggest refresh every hour
+                "X-PUBLISHED-TTL:PT1H"
             ];
             
             events.forEach(event => {
                 const dateFormatted = formatDateForICS(event.date);
                 const timeFormatted = event.time.replace(":", "") + "00";
+                const endTimeFormatted = event.endTime.replace(":", "") + "00";
                 
-                // Calculate end time (1 hour later by default)
-                let endHour = parseInt(event.time.split(":")[0]) + 1;
-                let endMinute = event.time.split(":")[1];
-                if (endHour > 23) endHour = 23;
-                const endTimeFormatted = String(endHour).padStart(2, "0") + endMinute + "00";
+                let uid = `${event.id}@moke-reservation.example.com`;
                 
                 icsContent = icsContent.concat([
                     "BEGIN:VEVENT",
+                    `UID:${uid}`,
                     `SUMMARY:${event.title} (MOKE Reservation)`,
                     `DTSTART:${dateFormatted}T${timeFormatted}Z`,
                     `DTEND:${dateFormatted}T${endTimeFormatted}Z`,
                     `LOCATION:${event.location}`,
                     `DESCRIPTION:Reserved by: ${event.owner}\\n${event.description}`,
                     "STATUS:CONFIRMED",
+                    `DTSTAMP:${formatDateTimeForICS(new Date())}`,
                     "END:VEVENT"
                 ]);
             });
@@ -704,12 +930,12 @@
         }
         
         // Function to download ICS file
-        function downloadICS(icsData) {
+        function downloadICS(icsData, filename = "MOKE_reservations.ics") {
             const blob = new Blob([icsData], { type: "text/calendar;charset=utf-8" });
             const url = URL.createObjectURL(blob);
             const a = document.createElement("a");
             a.href = url;
-            a.download = "MOKE_reservations.ics";
+            a.download = filename;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -722,6 +948,17 @@
             const month = String(date.getMonth() + 1).padStart(2, "0");
             const day = String(date.getDate()).padStart(2, "0");
             return `${year}${month}${day}`;
+        }
+        
+        // Helper function to format datetime for ICS file
+        function formatDateTimeForICS(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, "0");
+            const day = String(date.getDate()).padStart(2, "0");
+            const hours = String(date.getHours()).padStart(2, "0");
+            const minutes = String(date.getMinutes()).padStart(2, "0");
+            const seconds = String(date.getSeconds()).padStart(2, "0");
+            return `${year}${month}${day}T${hours}${minutes}${seconds}Z`;
         }
         
         // Helper function to format date for input fields
