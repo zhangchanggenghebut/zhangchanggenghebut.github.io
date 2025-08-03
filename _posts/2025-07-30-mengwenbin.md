@@ -8,7 +8,7 @@ comments: 1
 
 ---
 
-# Comparison of Micromagnetic Modeling and Experiment Considering Grain Size Distribution at 1–20 kHz
+### Comparison of Micromagnetic Modeling and Experiment Considering Grain Size Distribution at 1–20 kHz
 
 **Wenbin Meng<sup>a,b</sup> · Changgeng Zhang<sup>a,b</sup> · Yongjian Li<sup>a,b</sup> · Hao Zhang<sup>a,b</sup>**  
 *Journal of Magnetism and Magnetic Materials (2025)*  
@@ -16,19 +16,19 @@ comments: 1
 
 ---
 
-## Abstract
+### Abstract
 
 The miniaturization and lightweight design of electrical equipment result in the widespread application of nanocrystalline alloys in high-frequency power electronic transformers and high-frequency switching power supplies. To elucidate the intrinsic correlation between mesoscopic magnetization behavior and macroscopic magnetic properties of nanocrystalline alloy, magnetic property measurement and micromagnetic modeling are performed on the 1K107B nanocrystalline alloy. The actual grain morphology characteristics are obtained through transmission electron microscopy (TEM) observation, and the three-dimensional micromagnetic simulation model with the same grain size statistical distribution is constructed. The broadband magnetic property test data are combined with mesoscopic theory to determine the key parameters for micromagnetic simulations. Comparative analysis between the traditional model with uniform grain size and the improved model constructed in this paper shows that, for predicting loss density and coercivity, the average deviation between the improved model and experimental data is less than 10%, demonstrating higher prediction accuracy. These results indicate that micromagnetic models considering actual grain size distributions can more accurately reflect the magnetization mechanisms in nanocrystalline alloy.
 
 ---
 
-## Keywords
+### Keywords
 
 Nanocrystalline alloy · Magnetic properties test · Micromagnetic simulation · Grain size distribution · Magnetic moment rotation
 
 ---
 
-## 1. Introduction
+### 1. Introduction
 
 With the increasing demand for high power density and high-efficiency power converters, high-frequency magnetic components such as transformers and inductors often dominate the size of converters and lead to significant losses, making them a primary target for optimization. As a biphasic composite soft magnetic material, nanocrystalline alloy features a microstructure in which nanoscale α-Fe(Si) grains are uniformly distributed within an amorphous matrix, each grain randomly oriented [1]. Due to this unique microstructure, it exhibits low anisotropy constant and magnetostrictive coefficient while also possessing excellent comprehensive magnetic properties—high saturation induction, high initial permeability, low coercivity, and low core losses—making it widely used in electromagnetic shielding, wireless charging, and high-frequency transformers [2–4].
 
