@@ -5,7 +5,7 @@ date:   2025-03-05 01:30:13 +0800
 categories: Papers
 tags: Guochen
 comments: 1
-
+---
 
 # Testing of Magnetic Properties of Amorphous and Nanocrystalline Alloys under Out-of-Plane Stress over a Wide Frequency Range
 
