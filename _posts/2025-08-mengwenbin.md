@@ -8,21 +8,6 @@ comments: 1
 
 ---
 
----
-title: "Comparison of Micromagnetic Modeling and Experiment Considering Grain Size Distribution at 1–20 kHz"
-authors:
-  - Wenbin Meng<sup>a,b</sup>
-  - Changgeng Zhang<sup>a,b</sup>
-  - Yongjian Li<sup>a,b</sup>
-  - Hao Zhang<sup>a,b</sup>
-affiliations:
-  a: Department of Electrical Engineering, University X, City, Country  
-  b: Key Laboratory of Soft Magnetic Materials, Institute Y, City, Country  
-journal: "Journal of Magnetism and Magnetic Materials"
-year: 2025
-doi: "10.1016/j.jmmm.2025.173350"
----
-
 # Comparison of Micromagnetic Modeling and Experiment Considering Grain Size Distribution at 1–20 kHz
 
 **Wenbin Meng<sup>a,b</sup> · Changgeng Zhang<sup>a,b</sup> · Yongjian Li<sup>a,b</sup> · Hao Zhang<sup>a,b</sup>**  
