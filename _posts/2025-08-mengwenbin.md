@@ -1,4 +1,14 @@
 ---
+layout: post
+title:  "New Published Paper: Comparison of Micromagnetic Modeling and Experiment Considering Grain Size Distribution at 1–20 kHz"
+date:   2025-07-30 01:30:13 +0800
+categories: Papers
+tags: Wenbin
+comments: 1
+
+---
+
+---
 title: "Comparison of Micromagnetic Modeling and Experiment Considering Grain Size Distribution at 1–20 kHz"
 authors:
   - Wenbin Meng<sup>a,b</sup>
