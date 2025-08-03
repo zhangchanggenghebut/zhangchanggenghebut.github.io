@@ -1,4 +1,12 @@
 ---
+layout: post
+title:  "New Published Paper: Testing of Magnetic Properties of Amorphous and Nanocrystalline Alloys under Out-of-Plane Stress over a Wide Frequency Range"
+date:   2025-03-05 01:30:13 +0800
+categories: Papers
+tags: Guochen
+comments: 1
+
+---
 title: "Testing of Magnetic Properties of Amorphous and Nanocrystalline Alloys under Out-of-Plane Stress over a Wide Frequency Range"
 authors:
   - Changgeng Zhang
