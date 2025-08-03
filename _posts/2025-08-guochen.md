@@ -6,17 +6,6 @@ categories: Papers
 tags: Guochen
 comments: 1
 
----
-title: "Testing of Magnetic Properties of Amorphous and Nanocrystalline Alloys under Out-of-Plane Stress over a Wide Frequency Range"
-authors:
-  - Changgeng Zhang
-  - Guochen Niu
-  - Wenbin Meng
-  - Yongjian Li
-journal: "Journal of Magnetism and Magnetic Materials"
-year: 2025
-doi: "10.1016/j.jmmm.2025.173013"
----
 
 # Testing of Magnetic Properties of Amorphous and Nanocrystalline Alloys under Out-of-Plane Stress over a Wide Frequency Range
 
