@@ -39,13 +39,17 @@
     {% endif %}
     {% for paper in group.items %}
       {% assign story = site.data.group_students.news[paper.news] %}
+      {% assign title_lang = paper.original_language | default: 'en' %}
+      {% assign title = paper.title | default: story.title[title_lang] %}
       {% if language == 'zh' %}
-        {% assign title = story.title.zh | default: paper.title_zh | default: paper.title %}
         {% assign authors = paper.authors_zh | default: paper.authors %}
         {% assign venue = paper.venue_zh | default: paper.venue %}
         {% assign note = paper.note_zh | default: paper.note %}
       {% else %}
-        {% assign title = paper.title | default: story.title.en %}
+        {% if title_lang != 'en' and story.title.en %}
+          {% assign title = story.title.en %}
+          {% assign title_lang = 'en' %}
+        {% endif %}
         {% assign authors = paper.authors %}
         {% assign venue = paper.venue %}
         {% assign note = paper.note %}
@@ -61,7 +65,7 @@
       {%- endcapture %}
       <li class="paper-entry">
         <div class="paper-heading">
-          <{{ title_heading }} class="paper-title">{% if story %}<a href="{{ story.path[language] | relative_url }}">{{ title | escape }}</a>{% else %}{{ title | escape }}{% endif %}</{{ title_heading }}>
+          <{{ title_heading }} class="paper-title" lang="{{ title_lang }}">{% if story %}<a href="{{ story.path[language] | relative_url }}">{{ title | escape }}</a>{% else %}{{ title | escape }}{% endif %}</{{ title_heading }}>
           {% if paper.pdf %}<a class="paper-pdf" href="{{ paper.pdf | relative_url }}" download aria-label="{% if language == 'zh' %}下载论文 PDF{% else %}Download PDF{% endif %} · {{ title | escape }}">{% if language == 'zh' %}下载 PDF{% else %}PDF{% endif %}</a>{% endif %}
         </div>
         <p class="paper-authors">{{ authors | escape }}</p>
