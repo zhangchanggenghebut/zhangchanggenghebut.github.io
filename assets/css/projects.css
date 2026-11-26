@@ -1,44 +1,74 @@
 .projects-page {
+  --section-padding: clamp(14px, 2.5vw, 26px);
   display: grid;
-  gap: 1.35rem;
+  gap: .65rem;
   color: #263743;
 }
-.projects-page .projects-jumps {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .25rem 1.3rem;
-  align-items: center;
-  height: auto;
-  line-height: 1.35;
-  background: transparent;
-  box-shadow: none;
-}
-.projects-jumps a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 2.75rem;
-  color: #14566e;
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: .22em;
-}
-.projects-page section[id], .funding-list li[id] { scroll-margin-top: 1rem; }
-.funding-panel, .projects-records {
+.project-section {
   min-width: 0;
-  padding: clamp(14px, 2.5vw, 30px);
+  border: 1px solid #cfdddf;
+  border-radius: .55rem;
   background: #fff;
-  border: 1px solid #dde5e8;
-  border-radius: 10px;
+  scroll-margin-top: .8rem;
 }
-.projects-page > section > h2 {
-  margin: 0 0 .85rem;
-  color: #284c51;
-  font-size: clamp(1.35rem, 2.4vw, 1.65rem);
+.project-summary {
+  display: block;
+  list-style: none;
+  cursor: pointer;
+  border-radius: inherit;
+  background: #f4f8f8;
+}
+.project-summary::-webkit-details-marker { display: none; }
+.project-summary h2 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: .8rem;
+  min-height: 3.4rem;
+  margin: 0;
+  padding: .65rem var(--section-padding);
+  color: #234b50;
+  font-size: clamp(1.13rem, 2vw, 1.38rem);
   font-weight: 650;
-  line-height: 1.25;
+  line-height: 1.3;
 }
+.project-heading { overflow-wrap: anywhere; }
+.project-count {
+  color: #52696b;
+  font-size: .95rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.project-action {
+  padding: .25rem .65rem;
+  border: 1px solid #a9c7c8;
+  border-radius: .35rem;
+  color: #155963;
+  font-size: .95rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.project-summary .action-collapse,
+.project-section[open] > .project-summary .action-expand { display: none; }
+.project-section[open] > .project-summary .action-collapse { display: inline; }
+.project-section[open] > .project-summary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-radius: .55rem .55rem 0 0;
+  box-shadow: inset 0 -1px #cfdddf;
+}
+.project-summary:hover, .project-summary:focus-visible { background: #e5f1f0; }
+.project-summary:focus-visible { outline: 2px solid #175e75; outline-offset: -3px; }
+.project-section > .funding-list, .project-section > .papers-catalog {
+  margin: 0;
+  padding: .9rem var(--section-padding);
+}
+.project-section > .papers-catalog { border: 0; border-radius: inherit; }
+.project-section .paper-year-title, .project-section .funding-list li[id] { scroll-margin-top: 5rem; }
 .funding-list { margin: 0; padding: 0; list-style: none; }
 .funding-list li { padding: .8rem 0; border-top: 1px solid #dde6e8; }
+.funding-list li:first-child { padding-top: 0; border-top: 0; }
 .funding-list li:last-child { padding-bottom: 0; }
 .funding-heading {
   display: grid;
@@ -46,7 +76,7 @@
   align-items: baseline;
   gap: .2rem 1.2rem;
 }
-.funding-heading h3, .projects-records h3 {
+.funding-heading h3 {
   margin: 0;
   color: #233c48;
   font-size: 1.12rem;
@@ -63,11 +93,12 @@
 .funding-program { color: #39535d; }
 .funding-program span, .funding-details span { display: inline-block; }
 .funding-details { color: #4b6068; font-size: .93rem; }
-.projects-records h3 { margin: 1rem 0 .3rem; }
-.projects-records p, .projects-records ol, .projects-records ul { margin: .35rem 0; }
-.projects-records ol, .projects-records ul { padding-inline-start: 1.5rem; }
-.projects-records li { margin: .35rem 0; line-height: 1.5; }
-.projects-jumps a:focus-visible { outline: 2px solid #175e75; outline-offset: 2px; }
+.project-records-list {
+  margin: 0;
+  padding: .75rem var(--section-padding);
+  padding-inline-start: calc(var(--section-padding) + 1.2rem);
+}
+.project-records-list li { margin: .35rem 0; line-height: 1.5; }
 @media (max-width: 700px) {
   .funding-heading { grid-template-columns: 1fr; }
 }

@@ -1,0 +1,9 @@
+<summary class="project-summary">
+  <h2 id="{{ include.anchor | escape }}">
+    <span class="project-heading">{{ include.title | escape }} <span class="project-count">({{ include.count }})</span></span>
+    <span class="project-action" aria-hidden="true">
+      <span class="action-expand">{% if include.lang == 'zh' %}展开{% else %}Expand{% endif %}</span>
+      <span class="action-collapse">{% if include.lang == 'zh' %}收起{% else %}Collapse{% endif %}</span>
+    </span>
+  </h2>
+</summary>

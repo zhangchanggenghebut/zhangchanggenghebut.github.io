@@ -1,33 +1,28 @@
 {% assign project_lang = include.lang %}
 {% if project_lang == 'zh' %}
-  {% assign contents_label = '本页目录' %}
   {% assign funding_heading = '科研项目' %}
   {% assign papers_heading = '论文目录' %}
 {% else %}
-  {% assign contents_label = 'On this page' %}
   {% assign funding_heading = 'Research Projects' %}
   {% assign papers_heading = 'Publications' %}
 {% endif %}
 <div class="projects-page" lang="{{ page.lang | escape }}">
-  <nav class="projects-jumps" aria-label="{{ contents_label }}">
-    <a href="#funding">{{ funding_heading }}</a>
-    <a href="#papers">{{ papers_heading }}</a>
-    {% for section in site.data.project_records %}
-      <a href="#{{ section.id }}">{{ section.heading[project_lang] | escape }}</a>
-    {% endfor %}
-  </nav>
+  <details class="project-section" id="funding">
+    {% include project-summary.html lang=project_lang title=funding_heading anchor="funding-title" count=site.data.funding.projects.size %}
+    {% include funding.html lang=project_lang %}
+  </details>
 
-  {% include funding.html lang=project_lang heading=funding_heading %}
-
-  <section id="papers" class="projects-papers" aria-labelledby="catalog-title">
-    <h2 id="catalog-title">{{ papers_heading }}</h2>
+  <details class="project-section" id="papers">
+    {% include project-summary.html lang=project_lang title=papers_heading anchor="catalog-title" count=site.data.papers.size %}
     {% include papers.html lang=project_lang embedded="true" %}
-  </section>
+  </details>
 
   {% for section in site.data.project_records %}
-    <section id="{{ section.id }}" class="projects-records" aria-labelledby="{{ section.id }}-title">
-      <h2 id="{{ section.id }}-title">{{ section.heading[project_lang] | escape }}</h2>
-      <ul class="browser-default">
+    {% assign section_heading = section.heading[project_lang] %}
+    {% assign heading_id = section.id | append: '-title' %}
+    <details class="project-section" id="{{ section.id }}">
+      {% include project-summary.html lang=project_lang title=section_heading anchor=heading_id count=section.items.size %}
+      <ul class="project-records-list browser-default">
         {% for item in section.items %}
           <li>
             {{ item[project_lang] | escape }}
@@ -35,6 +30,6 @@
           </li>
         {% endfor %}
       </ul>
-    </section>
+    </details>
   {% endfor %}
 </div>

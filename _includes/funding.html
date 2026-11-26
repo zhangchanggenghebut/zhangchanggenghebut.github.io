@@ -1,7 +1,5 @@
 {% assign language = include.lang %}
 {% assign funding = site.data.funding %}
-<section id="funding" class="funding-panel" aria-labelledby="funding-title">
-  <h2 id="funding-title">{{ include.heading | escape }}</h2>
   <ol class="funding-list">
     {% for project in funding.projects %}
       <li{% if project.number %} id="grant-{{ project.number | escape }}"{% endif %}>
@@ -25,4 +23,3 @@
       </li>
     {% endfor %}
   </ol>
-</section>
