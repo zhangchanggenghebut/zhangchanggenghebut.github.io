@@ -14,3 +14,101 @@
 
 .hidden
   display: none
+
+.cn-students
+  margin: 2.5rem 0 1.5rem
+  color: #24393d
+  text-align: left
+
+  h4
+    margin: 0 0 1.25rem
+    font-size: 1.75rem
+    font-weight: 500
+
+  h5
+    margin: 0
+    font-size: 1.3rem
+    font-weight: 500
+
+  dl, dd, ul
+    margin: 0
+
+  &__groups
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr))
+    gap: 1.25rem
+    align-items: start
+
+  &__panel
+    padding: 1.2rem 1.15rem 0.3rem
+    border: 1px solid #d3e2e0
+    border-top: 3px solid #27766b
+    border-radius: 6px
+    background: #fff
+
+    h5
+      margin-bottom: 0.6rem
+      color: #175b53
+
+  &__cohort
+    display: grid
+    grid-template-columns: 7.2em minmax(0, 1fr)
+    gap: 0.65rem
+    align-items: baseline
+    padding: 0.8rem 0
+
+    + .cn-students__cohort
+      border-top: 1px solid #e3eceb
+
+  dt
+    color: #3b5759
+    font-size: 0.93rem
+    font-weight: 600
+    line-height: 1.6
+
+    small
+      display: block
+      color: #506565
+      font-size: 0.82rem
+      font-weight: 400
+
+  &__names
+    display: flex
+    flex-wrap: wrap
+    gap: 0.2em 1em
+    padding: 0
+    list-style: none
+
+    li
+      margin: 0
+      line-height: 1.65
+      overflow-wrap: anywhere
+
+  &__alumni
+    margin-top: 1.5rem
+    padding: 1.15rem
+    border-radius: 6px
+    background: #f2f6f5
+
+    dl
+      display: flex
+      flex-wrap: wrap
+      gap: 0.85rem 2.25rem
+      margin-top: 0.8rem
+
+@media (max-width: 600px)
+  .cn-students__groups
+    grid-template-columns: minmax(0, 1fr)
+
+  .cn-students__panel
+    padding-right: 0.9rem
+    padding-left: 0.9rem
+
+@media (max-width: 380px)
+  .cn-students__cohort
+    grid-template-columns: minmax(0, 1fr)
+    gap: 0.15rem
+
+  .cn-students dt small
+    display: inline
+    margin-left: 0.6em
