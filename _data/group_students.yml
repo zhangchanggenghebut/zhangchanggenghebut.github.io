@@ -121,9 +121,10 @@ levels:
       end: 2024
     - person: baichuan-yu
       end: 2024
-    - person: shuyue-guan
   - year: 2020
     members:
+    - person: shuyue-guan
+      end: 2023
     - person: haoran-li
       end: 2023
     - person: yaohu-ge
