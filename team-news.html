@@ -1,0 +1,21 @@
+---
+layout: page
+title: 团队新闻
+lang: zh-CN
+permalink: /team-news/
+---
+
+<div class="col s12">
+  {% assign news = site.posts | where: "lang", "zh-CN" | sort: "date" | reverse %}
+  <ul class="collection">
+    {% for post in news %}
+      <li class="collection-item">
+        <article>
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y年%m月%d日' }}</time>
+          <h5><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h5>
+          <p>{{ post.excerpt | strip_html | strip | escape }}</p>
+        </article>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
