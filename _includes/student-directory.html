@@ -1,0 +1,66 @@
+{% assign lang = include.lang %}
+{% assign directory = site.data.group_students %}
+{% assign labels = directory.labels[lang] %}
+{% assign static_paths = site.static_files | map: 'path' %}
+{% assign extensions = 'jpg,webp,png' | split: ',' %}
+{% if lang == 'zh' %}
+  {% assign anchor = 'cn-students-title' %}
+  {% assign lab_title = '研究方向' %}
+  {% assign interests = '工程电磁场应用|磁特性测量|磁性材料建模|软磁复合材料制备' | split: '|' %}
+{% else %}
+  {% assign anchor = 'en-students-title' %}
+  {% assign lab_title = 'Research Laboratory' %}
+  {% assign interests = 'Engineering Electromagnetic Field Application|Magnetic Property Measurement|Modeling of Magnetic Materials|SMC Materials Manufacturing' | split: '|' %}
+{% endif %}
+
+<section class="group-directory" id="{{ anchor }}" aria-label="{{ labels.title | escape }}">
+  <header class="group-directory__banner">
+    <h2>{{ lab_title }}</h2>
+    <ul>{% for interest in interests %}<li>{{ interest }}</li>{% endfor %}</ul>
+  </header>
+  {% for level in directory.levels %}
+    <section class="group-directory__section" aria-labelledby="{{ anchor }}-{{ level.id }}">
+      <h2 id="{{ anchor }}-{{ level.id }}">{{ labels[level.id] }}</h2>
+      <ul class="group-directory__grid">
+        {% for cohort in level.cohorts %}
+          {% for member in cohort.members %}
+            {% assign person = directory.people[member.person] %}
+            {% assign portrait = nil %}
+            {% for extension in extensions %}
+              {% capture candidate %}/assets/students/{{ member.person }}.{{ extension }}{% endcapture %}
+              {% if static_paths contains candidate %}
+                {% assign portrait = candidate %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            <li class="group-directory__card" data-person="{{ member.person }}" data-entry="{{ cohort.year }}">
+              <span class="group-directory__photo{% unless portrait %} group-directory__photo--empty{% endunless %}" aria-hidden="true">
+                {% if portrait %}<img src="{{ portrait | relative_url }}" alt="" width="64" height="80" loading="lazy">{% endif %}
+              </span>
+              <div class="group-directory__details">
+                <div class="group-directory__head">
+                  <h3>{{ person.name[lang] | escape }}</h3>
+                  <span class="group-directory__period">
+                    {%- if member.end -%}
+                      {{ cohort.year }}–{{ member.end }}{% if member.expected %} ({{ labels.expected }}){% endif %}
+                    {%- elsif lang == 'zh' -%}
+                      {{ cohort.year }} 年入学
+                    {%- else -%}
+                      Entered {{ cohort.year }}
+                    {%- endif -%}
+                  </span>
+                </div>
+                <p class="group-directory__topic">
+                  <span class="group-directory__label">{{ labels[person.kind] }}</span>
+                  {% if person.doi %}<a href="https://doi.org/{{ person.doi | escape }}">{{ person.topic[lang] | escape }}</a>
+                  {% elsif person.url %}<a href="{{ person.url | escape }}">{{ person.topic[lang] | escape }}</a>
+                  {% else %}<span>{{ person.topic[lang] | escape }}</span>{% endif %}
+                </p>
+              </div>
+            </li>
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+</section>
