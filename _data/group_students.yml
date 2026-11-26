@@ -476,18 +476,34 @@ people:
     name:
       zh: 邢议
       en: Yi Xing
+    kind: topic
+    topic:
+      zh: pT 级磁场传感器的设计
+      en: Design of picotesla-level magnetic field sensors
   xinyan-ye:
     name:
       zh: 叶欣艳
       en: Xinyan Ye
+    kind: topic
+    topic:
+      zh: 基于 ΔE 效应的磁场传感器研究
+      en: Magnetic field sensors based on the ΔE effect
   ruishan-li:
     name:
       zh: 李睿姗
       en: Ruishan Li
+    kind: topic
+    topic:
+      zh: 磁性材料的磁–力耦合特性研究
+      en: Magnetomechanical coupling in magnetic materials
   xinyu-gao:
     name:
       zh: 高鑫渝
       en: Xinyu Gao
+    kind: topic
+    topic:
+      zh: 磁电复合材料中磁性组分的模拟
+      en: Modeling magnetic materials in magnetoelectric composites
 news:
   10.1016/j.asoc.2026.116305:
     title:
