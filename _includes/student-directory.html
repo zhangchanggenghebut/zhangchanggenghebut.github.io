@@ -3,6 +3,7 @@
 {% assign labels = directory.labels[lang] %}
 {% assign static_paths = site.static_files | map: 'path' %}
 {% assign extensions = 'jpg,webp,png' | split: ',' %}
+{% assign this_year = site.time | date: '%Y' | plus: 0 %}
 {% if lang == 'zh' %}
   {% assign anchor = 'cn-students-title' %}
   {% assign lab_title = '研究方向' %}
@@ -13,54 +14,218 @@
   {% assign interests = 'Engineering Electromagnetic Field Application|Magnetic Property Measurement|Modeling of Magnetic Materials|SMC Materials Manufacturing' | split: '|' %}
 {% endif %}
 
-<section class="group-directory" id="{{ anchor }}" aria-label="{{ labels.title | escape }}">
-  <header class="group-directory__banner">
-    <h2>{{ lab_title }}</h2>
-    <ul>{% for interest in interests %}<li>{{ interest }}</li>{% endfor %}</ul>
-  </header>
-  {% for level in directory.levels %}
-    <section class="group-directory__section" aria-labelledby="{{ anchor }}-{{ level.id }}">
-      <h2 id="{{ anchor }}-{{ level.id }}">{{ labels[level.id] }}</h2>
-      <ul class="group-directory__grid">
-        {% for cohort in level.cohorts %}
-          {% for member in cohort.members %}
-            {% assign person = directory.people[member.person] %}
-            {% assign portrait = nil %}
-            {% for extension in extensions %}
-              {% capture candidate %}/assets/students/{{ member.person }}.{{ extension }}{% endcapture %}
-              {% if static_paths contains candidate %}
-                {% assign portrait = candidate %}
-                {% break %}
-              {% endif %}
-            {% endfor %}
-            <li class="group-directory__card" data-person="{{ member.person }}" data-entry="{{ cohort.year }}">
-              <span class="group-directory__photo{% unless portrait %} group-directory__photo--empty{% endunless %}" aria-hidden="true">
-                {% if portrait %}<img src="{{ portrait | relative_url }}" alt="" width="64" height="80" loading="lazy">{% endif %}
-              </span>
-              <div class="group-directory__details">
-                <div class="group-directory__head">
-                  <h3>{{ person.name[lang] | escape }}</h3>
-                  <span class="group-directory__period">
-                    {%- if member.end -%}
-                      {{ cohort.year }}–{{ member.end }}{% if member.expected %} ({{ labels.expected }}){% endif %}
-                    {%- elsif lang == 'zh' -%}
-                      {{ cohort.year }} 年入学
-                    {%- else -%}
-                      Entered {{ cohort.year }}
-                    {%- endif -%}
-                  </span>
-                </div>
-                <p class="group-directory__topic">
-                  <span class="group-directory__label">{{ labels[person.kind] }}</span>
-                  {% if person.doi %}<a href="https://doi.org/{{ person.doi | escape }}">{{ person.topic[lang] | escape }}</a>
-                  {% elsif person.url %}<a href="{{ person.url | escape }}">{{ person.topic[lang] | escape }}</a>
-                  {% else %}<span>{{ person.topic[lang] | escape }}</span>{% endif %}
-                </p>
-              </div>
-            </li>
-          {% endfor %}
+<style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 40px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f2f5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        
+        .interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .interest-tag {
+            background: rgba(255,255,255,0.15);
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1.1em;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .section {
+            margin-bottom: 50px;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #1a237e;
+            font-size: 2em;
+            border-bottom: 3px solid #3f51b5;
+            padding-bottom: 15px;
+            margin-top: 0;
+            font-weight: 400;
+        }
+        
+        .students-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .student {
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 12px;
+            border-left: 6px solid #3f51b5;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        
+        .student:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .student-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .student-name {
+            font-weight: 600;
+            color: #1a237e;
+            font-size: 1.3em;
+        }
+        
+        .year {
+            color: #555;
+            font-size: 1em;
+            background: #e8eaf6;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        
+        .dissertation {
+            color: #424242;
+            font-size: 1.05em;
+            line-height: 1.6;
+            padding-top: 12px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .status-active {
+            background-color: #f5f7ff;
+            border-left-color: #3f51b5;
+        }
+        
+        .status-completed {
+            background-color: #fafafa;
+            border-left-color: #9e9e9e;
+        }
+
+        @media (max-width: 1400px) {
+            .students-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            
+            .header {
+                padding: 30px;
+            }
+            
+            .interest-tag {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+<style>
+  .student-identity { display: flex; align-items: center; gap: 14px; min-width: 0; }
+  .student-identity .student-name { overflow-wrap: anywhere; }
+  .student-portrait { position: relative; display: block; width: 48px; height: 60px; flex: 0 0 48px; overflow: hidden; border: 1px solid #d9dfef; border-radius: 6px; background: #edf0f8; }
+  .student-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+  .student-portrait-empty::before, .student-portrait-empty::after { position: absolute; left: 50%; transform: translateX(-50%); background: #c0c9e0; content: ""; }
+  .student-portrait-empty::before { top: 20%; width: 18px; height: 18px; border-radius: 50%; }
+  .student-portrait-empty::after { bottom: 7%; width: 34px; height: 21px; border-radius: 55% 55% 15% 15%; }
+  .student .research-kind { display: block; margin-bottom: 3px; color: #5e6374; font-size: .82em; }
+  .student .dissertation a { color: inherit; text-decoration: underline; text-decoration-color: #c1c8e0; text-underline-offset: 2px; }
+  @media (max-width: 600px) {
+    .student .student-header { flex-wrap: wrap; gap: 8px; }
+    .student .dissertation { overflow-wrap: anywhere; }
+  }
+</style>
+
+<div class="header" id="{{ anchor }}">
+    <h1>{{ lab_title }}</h1>
+    <div class="interests">
+        {% for interest in interests %}
+          <span class="interest-tag">{{ interest }}</span>
         {% endfor %}
-      </ul>
-    </section>
-  {% endfor %}
-</section>
+    </div>
+</div>
+
+{% for level in directory.levels %}
+    <div class="section" aria-labelledby="{{ anchor }}-{{ level.id }}">
+        <h2 id="{{ anchor }}-{{ level.id }}">{% if lang == 'en' %}{% if level.id == 'doctoral' %}PhD/D.Phil Students{% else %}Master Students{% endif %}{% else %}{{ labels[level.id] }}{% endif %}</h2>
+        <div class="students-grid">
+            {% for cohort in level.cohorts %}
+                {% for member in cohort.members %}
+                    {% assign person = directory.people[member.person] %}
+                    {% assign portrait = person.photo %}
+                    {% for extension in extensions %}
+                        {% capture candidate %}/assets/students/{{ member.person }}.{{ extension }}{% endcapture %}
+                        {% if static_paths contains candidate %}
+                            {% assign portrait = candidate %}
+                            {% break %}
+                        {% endif %}
+                    {% endfor %}
+                    {% assign status = '' %}
+                    {% if member.end and member.end <= this_year %}
+                        {% assign status = 'status-completed' %}
+                    {% elsif member.expected or level.id == 'doctoral' %}
+                        {% assign status = 'status-active' %}
+                    {% endif %}
+                    <div class="student {{ status }}" data-person="{{ member.person }}" data-entry="{{ cohort.year }}">
+                        <div class="student-header">
+                            <span class="student-identity">
+                                <span class="student-portrait{% unless portrait %} student-portrait-empty{% endunless %}" aria-hidden="true">{% if portrait %}<img src="{% if portrait contains '://' %}{{ portrait | escape }}{% else %}{{ portrait | relative_url }}{% endif %}" alt="" width="48" height="60" loading="lazy">{% endif %}</span>
+                                <span class="student-name">{{ person.name[lang] | escape }}</span>
+                            </span>
+                            <span class="year">
+                                {%- if member.end -%}
+                                    {{ cohort.year }}-{{ member.end }}{% if member.expected %} ({{ labels.expected }}){% endif %}
+                                {%- elsif lang == 'zh' -%}
+                                    {{ cohort.year }} 年入学
+                                {%- else -%}
+                                    Entered {{ cohort.year }}
+                                {%- endif -%}
+                            </span>
+                        </div>
+                        <div class="dissertation">
+                            <span class="research-kind">{{ labels[person.kind] }}</span>
+                            {% if person.doi %}<a href="https://doi.org/{{ person.doi | escape }}">{{ person.topic[lang] | escape }}</a>
+                            {% elsif person.url %}<a href="{{ person.url | escape }}">{{ person.topic[lang] | escape }}</a>
+                            {% else %}<span>{{ person.topic[lang] | escape }}</span>{% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+{% endfor %}
