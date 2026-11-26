@@ -14,3 +14,9 @@
 .course-duration { font-size: .94rem; color: #285867; font-weight: 650; white-space: nowrap; }
 .teaching-courses p { margin: 3px 0 0; line-height: 1.45; }
 .course-kind, .course-units { color: #4d6268; }
+.course-detail { margin-top: .45em; }
+.course-detail summary { display: list-item; width: fit-content; color: #19596a; cursor: pointer; font-weight: 600; }
+.course-detail summary:focus-visible { outline: 2px solid #19596a; outline-offset: 2px; }
+.course-detail dl { max-width: 44rem; margin: .55em 0; }
+.course-detail dl div { display: flex; justify-content: space-between; gap: 1em; padding: .18em 0; border-bottom: 1px solid #d7e0dd; }
+.course-detail dd { margin: 0; white-space: nowrap; }

@@ -11,10 +11,21 @@
           <li id="course-{{ course.id }}">
             <div class="course-heading">
               <h3>{{ course.name[language] | escape }}</h3>
-              <span class="course-duration">{% if course.weeks %}{{ course.weeks }} {% if language == 'zh' %}周{% else %}weeks{% endif %}{% else %}{{ course.hours }} {{ terms.hours }}{% endif %}</span>
+              <span class="course-duration">{% if course.credits %}{{ course.credits }} {% if language == 'zh' %}学分{% else %}credits{% endif %} · {% endif %}{% if course.weeks %}{{ course.weeks }} {% if language == 'zh' %}周{% else %}weeks{% endif %}{% else %}{{ course.hours }} {{ terms.hours }}{% endif %}</span>
             </div>
             <p class="course-kind">{{ course.kind[language] | escape }}</p>
             <p>{{ course.audience[language] | escape }}{% if course.term %} · {{ course.term[language] | escape }}{% endif %}{% if course.classes %} · {{ course.classes }} {{ terms.classes }}{% endif %}</p>
+            {% if course.instructors %}
+              <p class="course-instructors">{% if language == 'zh' %}主讲教师{% else %}Instructors{% endif %} · {{ course.instructors[language] | escape }}</p>
+              <details class="course-detail">
+                <summary>{% if language == 'zh' %}教学内容与考核{% else %}Course content and assessment{% endif %}</summary>
+                <p>{{ course.description[language] | escape }}</p>
+                <dl>{% for module in course.modules %}
+                  <div><dt>{{ module[language] | escape }}</dt><dd>{{ module.hours }} {{ terms.hours }}</dd></div>
+                {% endfor %}</dl>
+                <p>{{ course.assessment[language] | escape }}</p>
+              </details>
+            {% endif %}
             {% if course.units %}
               <p class="course-units">{% for unit in course.units %}{% unless forloop.first %} · {% endunless %}{% if language == 'zh' %}{{ unit.zh }} {{ unit.hours }} 学时{% else %}{{ unit.hours }} hours of {{ unit.en }}{% endif %}{% endfor %}</p>
             {% endif %}

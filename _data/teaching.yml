@@ -51,3 +51,20 @@ groups:
         kind: {en: Joint master's and doctoral elective, zh: 硕博贯通选修课}
         audience: {en: First-year master's and doctoral students in electrical engineering, zh: 电气工程专业硕士一年级和博士一年级}
         hours: 16
+      - id: modern-circuit-and-electromagnetic-analysis
+        name: {en: Modern Circuit and Electromagnetic Analysis, zh: 现代电路与电磁场分析}
+        kind: {en: 'Academic doctoral course, taught in person by the School of Electrical Engineering', zh: 电气工程学院学术学位博士课程，面授}
+        audience: {en: International doctoral students in electrical engineering and related disciplines, zh: 电气工程及相关专业国际博士研究生}
+        term: {en: Autumn semester, zh: 秋季学期}
+        hours: 48
+        credits: 3
+        instructors: {en: Changgeng Zhang and Yuehua Geng, zh: 张长庚、耿跃华}
+        assessment: {en: 'Coursework (attendance, participation and written assignments) 50% · Final examination 50%', zh: 平时成绩（出勤、课堂参与及书面作业）50% · 期末考试 50%}
+        description:
+          en: The course connects circuit models with electromagnetic field theory. Students analyze transient and steady-state circuits, use Laplace transforms and two-port networks, and study electric and magnetic fields and uniform plane waves.
+          zh: 课程从电路模型延伸到电磁场理论，涵盖电路的暂态与稳态分析、拉普拉斯变换、二端口网络、电场与磁场以及均匀平面波。
+        modules:
+          - {en: Circuit fundamentals and resistive network analysis, zh: 电路基本概念与电阻电路分析, hours: 8}
+          - {en: Dynamic circuits and frequency-domain and network analysis, zh: 动态电路、频域与网络分析, hours: 16}
+          - {en: "Power systems, transformers and nonlinear circuit analysis", zh: 电力系统、变压器与非线性电路分析, hours: 10}
+          - {en: Electromagnetic field theory and wave fundamentals, zh: 电磁场理论与波动基础, hours: 14}
