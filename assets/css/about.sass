@@ -15,100 +15,179 @@
 .hidden
   display: none
 
-.cn-students
-  margin: 2.5rem 0 1.5rem
-  color: #24393d
+.group-directory
+  clear: both
+  margin: 2.25rem 0
   text-align: left
+  color: #303753
 
-  h4
-    margin: 0 0 1.25rem
-    font-size: 1.75rem
-    font-weight: 500
+  &__banner
+    position: static
+    height: auto
+    padding: 1.6rem 2rem
+    margin-bottom: 1.5rem
+    border-radius: 14px
+    background: linear-gradient(135deg, #1a237e, #283593)
+    color: white
+    box-shadow: 0 4px 18px rgba(26, 35, 126, .12)
 
-  h5
-    margin: 0
-    font-size: 1.3rem
-    font-weight: 500
-
-  dl, dd, ul
-    margin: 0
-
-  &__groups
-    display: grid
-    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr))
-    gap: 1.25rem
-    align-items: start
-
-  &__panel
-    padding: 1.2rem 1.15rem 0.3rem
-    border: 1px solid #d3e2e0
-    border-top: 3px solid #27766b
-    border-radius: 6px
-    background: #fff
-
-    h5
-      margin-bottom: 0.6rem
-      color: #175b53
-
-  &__cohort
-    display: grid
-    grid-template-columns: 7.2em minmax(0, 1fr)
-    gap: 0.65rem
-    align-items: baseline
-    padding: 0.8rem 0
-
-    + .cn-students__cohort
-      border-top: 1px solid #e3eceb
-
-  dt
-    color: #3b5759
-    font-size: 0.93rem
-    font-weight: 600
-    line-height: 1.6
-
-    small
-      display: block
-      color: #506565
-      font-size: 0.82rem
+    h2
+      margin: 0 0 1rem
+      color: white
+      font-size: 2rem
       font-weight: 400
 
-  &__names
-    display: flex
-    flex-wrap: wrap
-    gap: 0.2em 1em
-    padding: 0
-    list-style: none
-
-    li
-      margin: 0
-      line-height: 1.65
-      overflow-wrap: anywhere
-
-  &__alumni
-    margin-top: 1.5rem
-    padding: 1.15rem
-    border-radius: 6px
-    background: #f2f6f5
-
-    dl
+    ul
       display: flex
       flex-wrap: wrap
-      gap: 0.85rem 2.25rem
-      margin-top: 0.8rem
+      gap: 0.5rem
+      margin: 0
+      padding: 0
+
+    li
+      padding: 0.3rem 0.85rem
+      border: 1px solid rgba(255, 255, 255, .35)
+      border-radius: 2rem
+      background: rgba(255, 255, 255, .12)
+      color: white
+      list-style: none
+
+  &__section
+    padding: 1.4rem 1.5rem 1.6rem
+    margin-bottom: 1.4rem
+    border: 1px solid #e1e5f0
+    border-radius: 14px
+    background: #fff
+    box-shadow: 0 2px 14px rgba(25, 39, 84, .055)
+
+    > h2
+      margin: 0 0 1.1rem
+      padding-bottom: .7rem
+      border-bottom: 3px solid #3f51b5
+      color: #1a237e
+      font-size: 1.65rem
+      font-weight: 500
+      line-height: 1.35
+
+  &__grid
+    display: grid
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+    gap: 0.9rem
+    padding: 0
+    margin: 0
+
+  &__card
+    display: grid
+    grid-template-columns: 3.8rem minmax(0, 1fr)
+    align-items: start
+    gap: .9rem
+    min-width: 0
+    margin: 0
+    padding: 1rem
+    border: 1px solid #e1e5f0
+    border-left: 4px solid #3f51b5
+    border-radius: 10px
+    background: #fff
+    box-shadow: 0 2px 9px rgba(24, 38, 80, .055)
+    list-style: none
+
+  &__photo
+    position: relative
+    display: block
+    width: 100%
+    aspect-ratio: 4 / 5
+    overflow: hidden
+    border: 1px solid #dce1ee
+    border-radius: 6px
+    background: #f0f2f8
+
+    img
+      display: block
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center 35%
+
+    &--empty::before, &--empty::after
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      background: #c4ccde
+      content: ''
+
+    &--empty::before
+      top: 21%
+      width: 35%
+      aspect-ratio: 1
+      border-radius: 50%
+
+    &--empty::after
+      bottom: 7%
+      width: 72%
+      height: 34%
+      border-radius: 55% 55% 12% 12%
+
+  &__head
+    display: flex
+    flex-wrap: wrap
+    align-items: baseline
+    justify-content: space-between
+    gap: .25rem .55rem
+
+    h3
+      margin: 0
+      color: #1a237e
+      font-size: 1.12rem
+      font-weight: 600
+      line-height: 1.4
+      overflow-wrap: anywhere
+
+  &__period
+    display: inline-block
+    padding: .05rem .55rem
+    border-radius: 1rem
+    color: #414d75
+    background: #edf0fa
+    font-size: .78rem
+    line-height: 1.7
+
+  p.group-directory__topic
+    margin: .45rem 0 0
+    padding-top: .4rem
+    border-top: 1px solid #e6e8f0
+    color: #343c4c
+    font-size: .98rem
+    line-height: 1.5
+    overflow-wrap: anywhere
+
+    a
+      color: #374882
+      text-decoration: underline
+      text-decoration-color: #c0c9e0
+      text-underline-offset: 2px
+
+  &__label
+    display: block
+    color: #5e6880
+    font-size: .78rem
+    line-height: 1.6
+
+@media (max-width: 1180px)
+  .group-directory__grid
+    grid-template-columns: minmax(0, 1fr)
 
 @media (max-width: 600px)
-  .cn-students__groups
-    grid-template-columns: minmax(0, 1fr)
+  .group-directory__banner, .group-directory__section
+    padding: 1rem
+    border-radius: 10px
 
-  .cn-students__panel
-    padding-right: 0.9rem
-    padding-left: 0.9rem
+  .group-directory__card
+    grid-template-columns: 3.25rem minmax(0, 1fr)
+    gap: .65rem
+    padding: .75rem
 
-@media (max-width: 380px)
-  .cn-students__cohort
-    grid-template-columns: minmax(0, 1fr)
-    gap: 0.15rem
+  .group-directory__head
+    display: block
 
-  .cn-students dt small
-    display: inline
-    margin-left: 0.6em
+  .group-directory__period
+    margin-top: .2rem
