@@ -45,6 +45,7 @@ css: ["index.css"]
     </style>
 </head>
 <body>
+    {% if paginator.page == 1 or paginator == nil %}
     <div class="user-profile">
         <div class="user-pic">
             <a href="{{site.github_profile}}" target="_blank">
@@ -61,6 +62,7 @@ css: ["index.css"]
             <p>Email: changgeng.zhang@hebut.edu.cn</p>
         </div>
     </div>
+    {% endif %}
 </body>
 
 
@@ -137,6 +139,7 @@ css: ["index.css"]
 </head>
 <body>
 
+    {% if paginator.page == 1 or paginator == nil %}
     <h4>Research Interests</h4>
     <ul>  <!-- Use a list for better semantics -->
         <li>Engineering electromagnetic field application</li>
@@ -166,6 +169,7 @@ css: ["index.css"]
         <dt>December 2018 - December 2019</dt>
         <dd>Postdoctoral Researcher in Electrical Engineering, The Ohio State University, United States</dd>
     </dl>
+    {% endif %}
 </body>
 
 
@@ -179,25 +183,18 @@ css: ["index.css"]
 
 
 <div class="row">
-  {% for post in paginator.posts %}
   <div class="col s12">
-    <div class="card hoverable">
-      <div class="card-content">
-        <span id="post-title" class="card-title">{{post.title}}</span>
-        <p id="post-date">
-          <i class="material-icons">date_range</i>
-          {% include news-date.html entry=post format='%d/%m/%Y %H:%M' %}
-        </p>
-        <p id="post-content">{{post.excerpt | remove: '<p>' | remove: '</p>'}}</p>
-      </div>
-      <div class="card-action">
-        <a href="{{post.url | prepend: site.baseurl}}">
-          Read More
+    <div class="home-news-list">
+      {% for post in paginator.posts %}
+        {% assign summary = post.excerpt | strip_html | strip %}
+        <a class="home-news-card" href="{{ post.url | relative_url }}" aria-labelledby="news-title-{{ forloop.index }}">
+          <h2 class="home-news-title" id="news-title-{{ forloop.index }}">{{ post.title | escape }}</h2>
+          <time class="home-news-date" datetime="{% include news-date.html entry=post format='%Y-%m-%d' %}">{% include news-date.html entry=post format='%d %b %Y' %}</time>
+          {% if summary != empty %}<p class="home-news-summary">{{ summary | escape }}</p>{% endif %}
         </a>
-      </div>
+      {% endfor %}
     </div>
   </div>
-  {% endfor %}
   <div class="col s12 center-align">
     <ul class="pagination">
       <li class="{% unless paginator.previous_page %}disabled{% else %}waves-effect{% endunless %}">

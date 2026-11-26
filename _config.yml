@@ -20,7 +20,7 @@ baseurl: "/"
 url: "https://zhangchanggenghebut.github.io"
 permalink: /:year/:month/:day/:title
 repository: zhangchanggenghebut/
-paginate: 5
+paginate: 10
 
 # MatJek specific configurations
 github_profile: "https://github.com/ZhangChanggeng"
