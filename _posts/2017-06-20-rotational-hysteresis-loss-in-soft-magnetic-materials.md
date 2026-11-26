@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Measurement and Modeling of Rotational Hysteresis Loss of Electric Soft Magnetic Material
-date: 2017-06-01
+date: 2017-06-20
 lang: en
 permalink: /2017/06/rotational-hysteresis-loss-in-soft-magnetic-materials
-date_precision: month
 categories:
 - Papers
 excerpt: Rotating flux in a motor or transformer can follow an ellipse whose axes change during a cycle. The researchers separated tangential and radial contributions to hysteresis loss and compared the resulting predictions with measurements under four excitation patterns.
@@ -12,7 +11,8 @@ excerpt: Rotating flux in a motor or transformer can follow an ellipse whose axe
 
 **Authors**　Changgeng Zhang, Qingxin Yang, Yongjian Li<br>
 **Journal**　Transactions of China Electrotechnical Society 32(11), 208–216 (2017)<br>
-**Issue date**　June 2017
+**Article publication date**　20 June 2017<br>
+**Journal issue date**　10 June 2017
 
 <a href="/assets/papers/2017/rotational-hysteresis-loss-in-soft-magnetic-materials.pdf" download="rotational-hysteresis-loss-in-soft-magnetic-materials.pdf">Download full paper (PDF)</a> · 9 pages · 2.3 MB
 

@@ -1,17 +1,17 @@
 ---
 layout: page
 title: 电工软磁材料旋转磁滞损耗测量及建模
-date: 2017-06-01
+date: 2017-06-20
 lang: zh-CN
 permalink: /zh/news/rotational-hysteresis-loss-in-soft-magnetic-materials/
-date_precision: month
 hidden: true
 excerpt: 电机或变压器铁心中的旋转磁通可以沿不同轴比的椭圆轨迹变化。团队把磁滞损耗分为切向和法向分量，通过四种励磁模式的实测结果检验模型对复杂轨迹的预测能力。
 ---
 
 **作者**　张长庚、杨庆新、李永建<br>
 **期刊**　《电工技术学报》，第 32 卷第 11 期，第 208–216 页<br>
-**刊期**　2017 年 6 月
+**文章发表日期**　2017 年 6 月 20 日<br>
+**所在期次出版日期**　2017 年 6 月 10 日
 
 <a href="/assets/papers/2017/rotational-hysteresis-loss-in-soft-magnetic-materials.pdf" download="rotational-hysteresis-loss-in-soft-magnetic-materials.pdf">下载论文全文（PDF）</a> · 9 页 · 2.3 MB
 
