@@ -6,12 +6,9 @@
 {% assign this_year = site.time | date: '%Y' | plus: 0 %}
 {% if lang == 'zh' %}
   {% assign anchor = 'cn-students-title' %}
-  {% assign lab_title = '研究方向' %}
   {% assign interests = '工程电磁场应用|磁特性测量|磁性材料建模|软磁复合材料制备' | split: '|' %}
 {% else %}
   {% assign anchor = 'en-students-title' %}
-  {% assign lab_title = 'Research Laboratory' %}
-  {% assign interests = 'Engineering Electromagnetic Field Application|Magnetic Property Measurement|Modeling of Magnetic Materials|SMC Materials Manufacturing' | split: '|' %}
 {% endif %}
 
 <style>
@@ -25,7 +22,7 @@
             background-color: #f0f2f5;
         }
         
-        .header {
+        .team-interests-banner {
             background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
             color: white;
             padding: 40px;
@@ -34,7 +31,7 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
 
-        .header h1 {
+        .team-interests-banner h1 {
             margin: 0;
             font-size: 2.8em;
             margin-bottom: 30px;
@@ -145,7 +142,7 @@
                 padding: 20px;
             }
             
-            .header {
+            .team-interests-banner {
                 padding: 30px;
             }
             
@@ -181,14 +178,16 @@
   }
 </style>
 
-<div class="header" id="{{ anchor }}">
-    <h1>{{ lab_title }}</h1>
+{% if lang == 'zh' %}
+<div class="team-interests-banner" id="{{ anchor }}">
+    <h1>研究方向</h1>
     <div class="interests">
         {% for interest in interests %}
           <span class="interest-tag">{{ interest }}</span>
         {% endfor %}
     </div>
 </div>
+{% endif %}
 
 {% for level in directory.levels %}
     <div class="section" aria-labelledby="{{ anchor }}-{{ level.id }}">

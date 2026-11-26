@@ -44,8 +44,12 @@
                <h4 class="hidden">I am a <span id="js-rotating">So Simple, Much Wow, Such Cool</span> Professor</h4>
             </div>
             <p>Professor, Hebei University of Technology</p>
-            <p>State Key Laboratory of Reliability and Intelligence of Electrical Equipment</p>
+            <p>{{ site.laboratory.en | escape }}</p>
             <p>Email: changgeng.zhang@hebut.edu.cn</p>
+            <p id="en-students-title"><strong>Research interests</strong><br>
+              Engineering applications of electromagnetic fields · Magnetic property measurement ·
+              Modeling of magnetic materials · Manufacturing of soft magnetic composites
+            </p>
         </div>
     </div>
   {% include student-directory.html lang="en" %}
