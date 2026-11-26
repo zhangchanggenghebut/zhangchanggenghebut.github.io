@@ -3,13 +3,15 @@
     <a href="#funding">科研项目</a>
     <a href="#papers">论文目录</a>
     <a href="#awards">奖励与专利</a>
+    <a href="{{ site.data.page_editions.papers.en | relative_url }}" lang="en" hreflang="en">English papers</a>
+    <a href="{{ '/projects-en' | relative_url }}#funding" lang="en" hreflang="en">English funding</a>
   </nav>
 
   {% include funding.html lang="zh" %}
 
   <section id="papers" class="projects-papers" aria-labelledby="catalog-title">
     <h2 id="catalog-title">论文目录</h2>
-    {% include papers.html lang="zh" %}
+    {% include papers.html lang="zh" embedded="true" %}
   </section>
 
   <section id="awards" class="projects-records" aria-labelledby="awards-title">

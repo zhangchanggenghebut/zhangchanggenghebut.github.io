@@ -1,0 +1,45 @@
+labels:
+  en:
+    name: ZHANG Changgeng
+    position: Professor, Electrical Engineering, Hebei University of Technology
+    portrait_link: GitHub profile of Changgeng Zhang
+    interests: Research Interests
+    experience: Working Experience
+    news: News of My Group
+  zh:
+    name: 张长庚
+    position: 河北工业大学电气工程学院教授
+    portrait_link: 张长庚的 GitHub 个人主页
+    interests: 研究方向
+    experience: 工作经历
+    news: 团队新闻
+interests:
+  - {en: Engineering electromagnetic field application, zh: 工程电磁场应用}
+  - {en: Magnetic property measurement, zh: 磁特性测量}
+  - {en: Modeling of magnetic materials, zh: 磁性材料建模}
+  - {en: SMC materials manufacturing, zh: 软磁复合材料制备}
+positions:
+  - period: {en: February 2022 – Present, zh: 2022 年 2 月至今}
+    role:
+      en: Vice Director of Electromagnetic Technology Institute, Hebei University of Technology
+      zh: 河北工业大学工程电磁场与磁技术研究所副所长
+  - period: {en: March 2017 – Present, zh: 2017 年 3 月至今}
+    role:
+      en: Professor, Lecturer, Associate Professor, Ph.D. Advisor, Hebei University of Technology
+      zh: 河北工业大学电气工程学院，历任讲师、副教授、教授，博士生导师
+  - period: {en: December 2024 – July 2025, zh: 2024 年 12 月至 2025 年 7 月}
+    role:
+      en: Rotating Rector, Hebei University of Technology (Finland)
+      zh: 河北工业大学芬兰校区轮值校长
+  - period: {en: April 2024 – July 2025, zh: 2024 年 4 月至 2025 年 7 月}
+    role:
+      en: Deputy Director, International Exchange and Cooperation Office
+      zh: 国际交流与合作处副处长
+  - period: {en: January 2023 – June 2023, zh: 2023 年 1 月至 2023 年 6 月}
+    role:
+      en: Instructor, LUT University, Finland
+      zh: 芬兰拉彭兰塔大学授课教师
+  - period: {en: December 2018 – December 2019, zh: 2018 年 12 月至 2019 年 12 月}
+    role:
+      en: Postdoctoral Researcher in Electrical Engineering, The Ohio State University, United States
+      zh: 美国俄亥俄州立大学电气工程博士后

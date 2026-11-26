@@ -1,0 +1,89 @@
+{% assign language = include.lang %}
+{% assign labels = site.data.home.labels[language] %}
+{% if language == 'zh' %}
+  {% assign stories = site.posts | where: 'lang', 'zh-CN' | sort: 'date' | reverse %}
+  {% assign story_date = '%Y年%m月%d日' %}
+{% else %}
+  {% assign stories = paginator.posts %}
+  {% assign story_date = '%d %b %Y' %}
+{% endif %}
+
+<div class="home-page">
+  {% assign news_heading = 'h1' %}
+  {% assign story_heading = 'h2' %}
+  {% if language == 'zh' or paginator.page == 1 or paginator == nil %}
+    {% assign news_heading = 'h2' %}
+    {% assign story_heading = 'h3' %}
+    <section class="home-section home-profile user-profile" aria-labelledby="home-name">
+      <a class="home-portrait" href="{{ site.github_profile }}" target="_blank" rel="noopener" aria-label="{{ labels.portrait_link | escape }}">
+        <img src="{{ '/assets/res/user.png' | relative_url }}" alt="{{ site.data.group_profile[language].name | escape }}" width="132" height="132">
+      </a>
+      <div class="home-profile-text">
+        <h1 id="home-name">{{ labels.name | escape }}</h1>
+        <p class="home-position">{{ labels.position | escape }}</p>
+        <p>{{ site.laboratory[language] | escape }}</p>
+        <a class="home-email" href="mailto:{{ site.user_email | strip | escape }}">{{ site.user_email | strip | escape }}</a>
+      </div>
+    </section>
+
+    <div class="home-details">
+      <section class="home-section home-research" aria-labelledby="home-research-heading">
+        <h2 class="home-section-title" id="home-research-heading">{{ labels.interests | escape }}</h2>
+        <ul class="home-focus-list browser-default">
+          {% for interest in site.data.home.interests %}
+          <li>{{ interest[language] | escape }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class="home-section home-experience" aria-labelledby="home-experience-heading">
+        <h2 class="home-section-title" id="home-experience-heading">{{ labels.experience | escape }}</h2>
+        <dl class="home-roles">
+          {% for position in site.data.home.positions %}
+          <div>
+            <dt>{{ position.period[language] | escape }}</dt>
+            <dd>{{ position.role[language] | escape }}</dd>
+          </div>
+          {% endfor %}
+        </dl>
+      </section>
+    </div>
+  {% endif %}
+
+  <section class="home-section home-news" aria-labelledby="home-news-heading">
+    <{{ news_heading }} class="home-section-title" id="home-news-heading">{{ labels.news | escape }}</{{ news_heading }}>
+    <div class="home-news-list">
+      {% for post in stories limit: site.paginate %}
+        {% assign summary = post.excerpt | strip_html | strip %}
+        <a class="home-news-card" href="{{ post.url | relative_url }}" aria-labelledby="news-title-{{ forloop.index }}">
+          <{{ story_heading }} class="home-news-title" id="news-title-{{ forloop.index }}">{{ post.title | escape }}</{{ story_heading }}>
+          <time class="home-news-date" datetime="{% include news-date.html entry=post format='%Y-%m-%d' %}">{% include news-date.html entry=post format=story_date %}</time>
+          {% if summary != empty %}<p class="home-news-summary">{{ summary | escape }}</p>{% endif %}
+        </a>
+      {% endfor %}
+    </div>
+
+    {% if language == 'zh' %}
+      <a class="home-archive" href="{{ site.data.page_editions.news.zh | relative_url }}">全部团队新闻</a>
+    {% elsif paginator.total_pages > 1 %}
+      <div class="home-pagination" role="navigation" aria-label="News pages">
+        <ul class="pagination browser-default">
+          {% if paginator.previous_page %}
+            <li><a href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous page">&#8249;</a></li>
+          {% endif %}
+          {% for number in (1..paginator.total_pages) %}
+            {% if number == 1 %}
+              {% assign page_path = '/' %}
+            {% else %}
+              {% assign page_path = site.paginate_path | default: '/page:num/' | replace: ':num', number %}
+            {% endif %}
+            <li><a href="{{ page_path | relative_url }}"{% if number == paginator.page %} aria-current="page"{% endif %}>{{ number }}</a></li>
+          {% endfor %}
+          {% if paginator.next_page %}
+            <li><a href="{{ paginator.next_page_path | relative_url }}" aria-label="Next page">&#8250;</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    {% endif %}
+  </section>
+</div>

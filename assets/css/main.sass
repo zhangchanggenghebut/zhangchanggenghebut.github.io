@@ -61,6 +61,41 @@ nav
   &.top-nav
     height: 80px
 
+.top-nav .edition-bar
+  display: flex
+  align-items: center
+  justify-content: space-between
+  gap: .75rem
+  height: 100%
+
+  .page-title
+    min-width: 0
+    text-align: left
+    line-height: 1.18
+
+.top-nav .edition-link
+  display: inline-flex
+  flex: none
+  align-items: center
+  justify-content: center
+  min-width: 48px
+  min-height: 44px
+  padding: 0 .8rem
+  border-radius: 5px
+  background: #f3fcfa
+  color: #124e4c
+  font-size: 1rem
+  font-weight: 600
+  line-height: 1.2
+
+  &:hover, &:focus-visible
+    background: #fff
+    text-decoration: underline
+
+  &:focus-visible
+    outline: 2px solid #152f32
+    outline-offset: 2px
+
 // Footer
 footer.page-footer
   margin-top: 10px
@@ -92,6 +127,9 @@ main
   nav 
     .nav-wrapper
       text-align: center
+
+  .top-nav .edition-bar
+    padding-inline-start: 48px
 
 @media only screen and (max-width: 600px)
   nav

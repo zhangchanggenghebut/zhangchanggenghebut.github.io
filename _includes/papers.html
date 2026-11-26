@@ -21,10 +21,8 @@
         {% assign previous_year = year %}
       {% endfor %}
     </nav>
-    {% if language == 'zh' %}
-      <a class="catalog-language" href="{{ '/papers' | relative_url }}" hreflang="en">英文目录</a>
-    {% else %}
-      <a class="catalog-language" href="{{ '/projects' | relative_url }}#papers" hreflang="zh-CN">Chinese edition</a>
+    {% if include.embedded %}
+      <a class="catalog-language" href="{{ site.data.page_editions.papers.en | relative_url }}" hreflang="en">英文目录</a>
     {% endif %}
   </div>
   <p class="catalog-note">{% if language == 'zh' %}按期刊刊期或会议日期倒序排列。作者姓名后的 * 表示通讯作者。{% else %}By journal issue or conference date, newest first. An asterisk marks a corresponding author.{% endif %}</p>

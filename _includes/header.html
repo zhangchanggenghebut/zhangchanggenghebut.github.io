@@ -1,24 +1,35 @@
+{%- assign current_path = page.url | replace: '/index.html', '/' | remove: '.html' -%}
+{%- assign editions = nil -%}
+{%- for item in site.data.page_editions -%}
+  {%- assign paths = item[1] -%}
+  {%- if current_path == paths.en or current_path == paths.zh -%}
+    {%- assign editions = paths -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- unless editions -%}
+  {%- for item in site.data.group_students.news -%}
+    {%- assign paths = item[1].path -%}
+    {%- if current_path == paths.en or current_path == paths.zh -%}
+      {%- assign editions = paths -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endunless -%}
 <!DOCTYPE html>
-<html>
-
-  
-
-
-  
+<html{% if page.lang %} lang="{{ page.lang | escape }}"{% endif %}>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      {% if page.title %}
-      {{ page.title | escape }}
-      {% else %}
-      {{ site.title | escape }}
-      {% endif %}
-    </title>
+    <title>{% if paginator and paginator.page > 1 %}Research Group News – Page {{ paginator.page }} | Changgeng Zhang{% else %}{{ page.title | default: site.title | escape }}{% endif %}</title>
+    {% if editions %}
+    <link rel="alternate" hreflang="en" href="{{ editions.en | absolute_url | escape }}">
+    <link rel="alternate" hreflang="zh-CN" href="{{ editions.zh | absolute_url | escape }}">
+    {% endif %}
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/assets/res/favicon.ico">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v=editions">
     {% for css in layout.css %}
     {% if css contains "//" %}
     <link rel="stylesheet" href="{{css}}">
@@ -42,8 +53,19 @@
     <header>
       <nav class="top-nav teal">
         <div class="nav-wrapper">
-          <div class="container">
-            <a class="page-title" href="{{site.baseurl}}/">{{site.title}}</a>
+          <div class="container{% if editions %} edition-bar{% endif %}">
+            {% if page.lang == 'zh-CN' %}
+            <a class="page-title" href="{{ site.data.page_editions.home.zh | relative_url }}">张长庚教授</a>
+            {% else %}
+            <a class="page-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+            {% endif %}
+            {% if editions %}
+              {% if current_path == editions.zh %}
+              <a class="edition-link" href="{{ editions.en | relative_url }}" hreflang="en" lang="en">English</a>
+              {% else %}
+              <a class="edition-link" href="{{ editions.zh | relative_url }}" hreflang="zh-CN" lang="zh-CN">中文</a>
+              {% endif %}
+            {% endif %}
           </div>
         </div>
       </nav>
@@ -83,6 +105,7 @@
 
 
           <li><div class="divider"></div></li>
+          <li><a class="waves-effect" href="{{ site.data.page_editions.home.zh | relative_url }}"><i class="material-icons">home</i>首页</a></li>
           <li><a class="waves-effect" href="{{ '/about' | relative_url }}"><i class="material-icons">person</i>研究团队</a></li>
         <li><a class="waves-effect" href="{{site.baseurl}}/projects"><i class="material-icons">description</i>项目和论文</a></li>
           <li><a class="waves-effect" href="{{site.baseurl}}/teaching"><i class="material-icons">people</i>教学</a></li>
