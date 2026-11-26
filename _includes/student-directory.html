@@ -6,7 +6,6 @@
 {% assign this_year = site.time | date: '%Y' | plus: 0 %}
 {% if lang == 'zh' %}
   {% assign anchor = 'cn-students-title' %}
-  {% assign interests = '工程电磁场应用|磁特性测量|磁性材料建模|软磁复合材料制备' | split: '|' %}
 {% else %}
   {% assign anchor = 'en-students-title' %}
 {% endif %}
@@ -20,37 +19,6 @@
             line-height: 1.6;
             color: #333;
             background-color: #f0f2f5;
-        }
-        
-        .team-interests-banner {
-            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
-            color: white;
-            padding: 40px;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
-
-        .team-interests-banner h1 {
-            margin: 0;
-            font-size: 2.8em;
-            margin-bottom: 30px;
-            font-weight: 300;
-        }
-        
-        .interests {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        
-        .interest-tag {
-            background: rgba(255,255,255,0.15);
-            padding: 12px 25px;
-            border-radius: 30px;
-            font-size: 1.1em;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255,255,255,0.2);
         }
         
         .section {
@@ -142,14 +110,6 @@
                 padding: 20px;
             }
             
-            .team-interests-banner {
-                padding: 30px;
-            }
-            
-            .interest-tag {
-                font-size: 1em;
-                padding: 10px 20px;
-            }
         }
     </style>
 <style>
@@ -177,17 +137,6 @@
     .student .dissertation { overflow-wrap: anywhere; }
   }
 </style>
-
-{% if lang == 'zh' %}
-<div class="team-interests-banner" id="{{ anchor }}">
-    <h1>研究方向</h1>
-    <div class="interests">
-        {% for interest in interests %}
-          <span class="interest-tag">{{ interest }}</span>
-        {% endfor %}
-    </div>
-</div>
-{% endif %}
 
 {% for level in directory.levels %}
     <div class="section" aria-labelledby="{{ anchor }}-{{ level.id }}">

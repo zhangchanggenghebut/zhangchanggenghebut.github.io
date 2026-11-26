@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Research Group"
-css: ["about.css", "animate.css", "morphext.css"]
-js: ["morphext.min.js", "about.js"]
+css: ["group-profile.css"]
 ---
 {% include about-en.html %}
