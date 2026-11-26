@@ -251,6 +251,8 @@ people:
     - 10.1109/TASC.2024.3420184
     - 10.1063/9.0000824
     - 10.1109/TMAG.2023.3316753
+    - 10.1109/TMAG.2021.3104090
+    - 10.1109/TMAG.2021.3083649
   jiaji-chi:
     name:
       zh: 池佳稷
@@ -461,14 +463,17 @@ people:
       en: Simulation and validation of stray losses in converter transformer shielding components under harmonics and DC bias
     publications:
     - 10.3390/ma16124385
+    - 10.19595/j.cnki.1000-6753.tces.210804
   jianjun-wang:
     name:
       zh: 王家俊
-      en: Jianjun Wang
+      en: Jiajun Wang
     kind: thesis
     topic:
       zh: 特高压换流阀阳极饱和电抗器铁心损耗研究
       en: Core losses in anode saturable reactors for ultra-high-voltage converter valves
+    publications:
+    - 10.1109/TMAG.2021.3083649
   xinghan-li:
     name:
       zh: 李星汉
@@ -477,6 +482,8 @@ people:
     topic:
       zh: 干式直流电抗器电磁场与温度场耦合建模及实验研究
       en: Coupled electromagnetic and thermal modeling and experimental study of dry-type DC reactors
+    publications:
+    - 10.1109/TMAG.2021.3104090
   xinxiao-yan:
     name:
       zh: 闫鑫笑
@@ -707,3 +714,24 @@ news:
     path:
       en: /2022/09/05/local-magnetic-properties-near-punched-edges
       zh: /zh/news/local-magnetic-properties-near-punched-edges/
+  10.1109/TMAG.2021.3083649:
+    title:
+      en: Magnetic-Thermal Coupling Analysis of Saturable Reactor
+      zh: 阳极饱和电抗器的磁热耦合分析
+    path:
+      en: /2021/05/25/magnetic-thermal-coupling-in-a-saturable-reactor
+      zh: /zh/news/magnetic-thermal-coupling-in-a-saturable-reactor/
+  10.1109/TMAG.2021.3104090:
+    title:
+      en: Thermal Network Model of High-Power Dry-Type Transformer Coupled With Electromagnetic Loss
+      zh: 耦合电磁损耗的大功率干式变压器热网络模型
+    path:
+      en: /2021/08/11/thermal-network-model-for-a-high-power-dry-type-transformer
+      zh: /zh/news/thermal-network-model-for-a-high-power-dry-type-transformer/
+  10.19595/j.cnki.1000-6753.tces.210804:
+    title:
+      en: Modeling and Validation of Stray-Field Loss in Laminated Magnetic Shield of Transformer under Harmonics and DC Bias
+      zh: 谐波及直流偏磁下变压器叠片式磁屏蔽杂散损耗模拟与验证
+    path:
+      en: /2022/08/10/stray-loss-in-laminated-transformer-shields-under-harmonics-and-dc-bias
+      zh: /zh/news/stray-loss-in-laminated-transformer-shields-under-harmonics-and-dc-bias/
