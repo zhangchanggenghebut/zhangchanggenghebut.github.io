@@ -11,7 +11,9 @@ excerpt: 磁致伸缩是高频变压器铁芯的振动源之一，双磁轭配�
 **作者**　Xiaotong Wang, Changgeng Zhang, Yongjian Li, Hao Zhang, Qingxin Yang  
 **期刊**　IEICE Electronics Express 23(13), 20260119 (2026)  
 **首次在线发表**　2026 年 6 月 11 日  
-[论文原文（DOI 10.1587/elex.23.20260119）](https://doi.org/10.1587/elex.23.20260119)
+**DOI**　`10.1587/elex.23.20260119`
+
+<a href="/assets/papers/2026/dynamic-magnetostriction-of-nanocrystalline-laminations.pdf" download="dynamic-magnetostriction-of-nanocrystalline-laminations.pdf">下载论文全文（PDF）</a> · 6 页 · 1.8 MB
 
 ## 研究简介
 
@@ -26,8 +28,8 @@ excerpt: 磁致伸缩是高频变压器铁芯的振动源之一，双磁轭配�
 **关键词**　动态磁致伸缩特性、Energetic-PSO-LSTM 耦合模型、纳米晶合金
 
 <figure style="margin:1.5rem 0">
-  <img src="https://github.com/user-attachments/assets/e82f2d24-1e0c-4479-8009-5ea9b41da704" alt="在 5 kHz、0.5 T 下，纳米晶叠片磁致伸缩实测曲线与两种模型预测曲线的对比。" style="display:block;max-width:100%;height:auto">
-  <figcaption>图 8　在 5 kHz、0.5 T 下，纳米晶叠片磁致伸缩实测曲线与两种模型预测曲线的对比。 <a href="https://doi.org/10.1587/elex.23.20260119">图片来源</a></figcaption>
+  <img src="/assets/papers/2026/figures/dynamic-magnetostriction-of-nanocrystalline-laminations.webp" alt="在 5 kHz、0.5 T 下，纳米晶叠片磁致伸缩实测曲线与两种模型预测曲线的对比。" style="display:block;max-width:100%;height:auto">
+  <figcaption>图 8　在 5 kHz、0.5 T 下，纳米晶叠片磁致伸缩实测曲线与两种模型预测曲线的对比。 <a href="/assets/papers/2026/dynamic-magnetostriction-of-nanocrystalline-laminations.pdf#page=4">图片所在页</a></figcaption>
 </figure>
 
 [英文版](/2026/06/11/dynamic-magnetostriction-of-nanocrystalline-laminations) · [返回团队新闻](/team-news/)

@@ -13,7 +13,9 @@ excerpt: Laminates made from the same batch of nanocrystalline ribbon can show d
 **Authors**　Wenbin Meng, Changgeng Zhang, Yongjian Li, He Sun, Qingxin Yang, Pia Lindh  
 **Journal**　COMPEL (2026)  
 **First published online**　29 May 2026  
-[DOI 10.1108/COMPEL-01-2026-0043](https://doi.org/10.1108/COMPEL-01-2026-0043)
+**DOI**　`10.1108/COMPEL-01-2026-0043`
+
+<a href="/assets/papers/2026/dimensions-and-magnetic-properties-of-nanocrystalline-laminates.pdf" download="dimensions-and-magnetic-properties-of-nanocrystalline-laminates.pdf">Download full paper (PDF)</a> · 14 pages · 5.3 MB
 
 ## Research brief
 
@@ -34,8 +36,8 @@ We tested seven geometries of 1K107B nanocrystalline laminates under sinusoidal 
 **Keywords**　Nanocrystalline alloy, Magnetic properties, Laminated sample
 
 <figure style="margin:1.5rem 0">
-  <img src="https://github.com/user-attachments/assets/cb9ba8f6-13cf-46d9-ade6-ea476b9d4c35" alt="Hysteresis loops of nanocrystalline laminates with different length-to-width ratios at 1 kHz and 15 kHz." style="display:block;max-width:100%;height:auto">
-  <figcaption>Figure 5. Hysteresis loops of nanocrystalline laminates with different length-to-width ratios at 1 kHz and 15 kHz. <a href="https://doi.org/10.1108/COMPEL-01-2026-0043">Source article</a></figcaption>
+  <img src="/assets/papers/2026/figures/dimensions-and-magnetic-properties-of-nanocrystalline-laminates.webp" alt="Hysteresis loops of nanocrystalline laminates with different length-to-width ratios at 1 kHz and 15 kHz." style="display:block;max-width:100%;height:auto">
+  <figcaption>Figure 5. Hysteresis loops of nanocrystalline laminates with different length-to-width ratios at 1 kHz and 15 kHz. <a href="/assets/papers/2026/dimensions-and-magnetic-properties-of-nanocrystalline-laminates.pdf#page=7">Figure in the full paper</a></figcaption>
 </figure>
 
 [Chinese edition](/zh/news/dimensions-and-magnetic-properties-of-nanocrystalline-laminates/)

@@ -11,7 +11,9 @@ excerpt: 克尔显微镜拍下的连续图像，能用来预测外加磁场变�
 **作者**　Hao Zhang, Qingxin Yang, Yifan Chen, Yongjian Li, Changgeng Zhang  
 **期刊**　Applied Soft Computing 203, 116305 (2026)  
 **首次在线发表**　2026 年 8 月 25 日  
-[论文原文（DOI 10.1016/j.asoc.2026.116305）](https://doi.org/10.1016/j.asoc.2026.116305)
+**DOI**　`10.1016/j.asoc.2026.116305`
+
+<a href="/assets/papers/2026/predicting-domain-wall-motion.pdf" download="predicting-domain-wall-motion.pdf">下载论文全文（PDF）</a> · 12 页 · 16.0 MB
 
 ## 研究简介
 
@@ -26,8 +28,8 @@ excerpt: 克尔显微镜拍下的连续图像，能用来预测外加磁场变�
 **关键词**　磁畴、机器学习、磁化过程、微观组织
 
 <figure style="margin:1.5rem 0">
-  <img src="https://github.com/user-attachments/assets/cf921633-e5d6-41a7-acf3-f0e560888f4d" alt="完整模型与去除畴壁边界特征的模型对比，图中给出了实测与预测磁畴图像、局部放大图及训练和验证损失曲线。" style="display:block;max-width:100%;height:auto">
-  <figcaption>图 7　完整模型与去除畴壁边界特征的模型对比，图中给出了实测与预测磁畴图像、局部放大图及训练和验证损失曲线。 <a href="https://doi.org/10.1016/j.asoc.2026.116305">图片来源</a></figcaption>
+  <img src="/assets/papers/2026/figures/predicting-domain-wall-motion.webp" alt="完整模型与去除畴壁边界特征的模型对比，图中给出了实测与预测磁畴图像、局部放大图及训练和验证损失曲线。" style="display:block;max-width:100%;height:auto">
+  <figcaption>图 7　完整模型与去除畴壁边界特征的模型对比，图中给出了实测与预测磁畴图像、局部放大图及训练和验证损失曲线。 <a href="/assets/papers/2026/predicting-domain-wall-motion.pdf#page=7">图片所在页</a></figcaption>
 </figure>
 
 [英文版](/2026/08/25/predicting-domain-wall-motion) · [返回团队新闻](/team-news/)

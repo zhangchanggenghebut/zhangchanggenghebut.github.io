@@ -9,7 +9,7 @@ labels:
     cohort: 级
     thesis: 学位论文
     topic: 研究方向
-    publication: 已发表研究
+    publication: 已发表论文
     collaboration: 参与研究
     expected: 预计
     photo: 照片
@@ -21,7 +21,7 @@ labels:
     cohort: entry
     thesis: Thesis
     topic: Research focus
-    publication: Published research
+    publication: Publications
     collaboration: Collaborative research
     expected: expected
     photo: Portrait
@@ -59,6 +59,12 @@ levels:
       end: 2025
 - id: masters
   cohorts:
+  - year: 2026
+    members:
+    - person: yi-xing
+    - person: xinyan-ye
+    - person: ruishan-li
+    - person: xinyu-gao
   - year: 2025
     members:
     - person: jiaji-chi
@@ -142,11 +148,12 @@ people:
     name:
       zh: 王紫洋
       en: Ziyang Wang
-    kind: publication
+    kind: topic
     topic:
       zh: 利用磁电复合材料采集变压器工频杂散磁场能量
       en: Energy harvesting from power-frequency transformer stray fields using magnetoelectric composites
-    doi: 10.1063/9.0000992
+    publications:
+    - 10.1063/9.0000992
   muhammad-adeel:
     name:
       zh: Muhammad Adeel
@@ -159,11 +166,12 @@ people:
     name:
       zh: 王晓彤
       en: Xiaotong Wang
-    kind: publication
+    kind: topic
     topic:
       zh: 高频变压器用纳米晶合金叠片的磁致伸缩测量与仿真
       en: Measurement and simulation of magnetostriction in nanocrystalline laminations for high-frequency transformers
-    doi: 10.1587/elex.23.20260119
+    publications:
+    - 10.1587/elex.23.20260119
   raja-saqib-arshad:
     name:
       zh: Raja Saqib Arshad
@@ -172,43 +180,51 @@ people:
     topic:
       zh: 激光切割对电工钢磁畴形貌和磁特性的影响
       en: Effects of laser cutting on magnetic domain patterns and magnetic properties in electrical steel
-    doi: 10.1109/TMAG.2026.3711353
+    publications:
+    - 10.1109/TMAG.2026.3711353
   tao-chen:
     name:
       zh: 陈涛
       en: Tao Chen
-    kind: publication
+    kind: topic
     topic:
       zh: 取向与无取向电工钢片磁致伸缩的测量与分析
       en: Measurement and analysis of magnetostriction in grain-oriented and non-oriented electrical steel sheets
-    news_id: cem2025-chen
+    publications:
+    - cem2025-chen
   rawal-shahbaz:
     name:
       zh: Rawal Shahbaz
       en: Rawal Shahbaz
-    kind: publication
+    kind: topic
     topic:
       zh: 激光切割电工钢的局部磁畴演化、磁滞特性和切边劣化范围
       en: Local domain evolution, hysteresis and the extent of magnetic degradation near laser-cut electrical steel edges
-    doi: 10.1109/TMAG.2026.3711353
+    publications:
+    - 10.1109/TMAG.2026.3711353
+    - 10.1063/9.0000978
   wenbin-meng:
     name:
       zh: 孟文斌
       en: Wenbin Meng
-    kind: publication
+    kind: topic
     topic:
       zh: 纳米晶叠片尺寸对磁特性的影响与高频损耗建模
       en: Effects of laminate dimensions on nanocrystalline magnetic properties and modeling of high-frequency losses
-    doi: 10.1108/COMPEL-01-2026-0043
+    publications:
+    - 10.1108/COMPEL-01-2026-0043
   hao-zhang:
     name:
       zh: 张豪
       en: Hao Zhang
-    kind: publication
+    kind: topic
     topic:
       zh: 电工钢磁畴演化与软磁材料磁特性的神经网络建模
       en: Neural-network modeling of magnetic domain evolution in electrical steel and of soft magnetic material properties
-    doi: 10.1016/j.asoc.2026.116305
+    publications:
+    - 10.1016/j.asoc.2026.116305
+    - 10.1587/elex.23.20260119
+    - 10.1063/9.0000978
   yifan-chen:
     name:
       zh: 陈怡帆
@@ -217,6 +233,8 @@ people:
     topic:
       zh: 基于神经网络的变压器电磁场估算与仿真
       en: Neural-network estimation and simulation of electromagnetic fields in transformers
+    publications:
+    - 10.1016/j.asoc.2026.116305
   jiaji-chi:
     name:
       zh: 池佳稷
@@ -249,25 +267,28 @@ people:
     topic:
       zh: 基于环形隧道磁阻传感器阵列的多芯电缆非侵入式电流测量
       en: Non-invasive current measurement in multi-conductor cables using a ring of tunneling magnetoresistance sensors
-    doi: 10.1063/9.0000987
+    publications:
+    - 10.1063/9.0000987
   shuai-zhao:
     name:
       zh: 赵帅
       en: Shuai Zhao
-    kind: publication
+    kind: topic
     topic:
       zh: 多芯电缆的角度补偿非侵入式电流测量
       en: Angle-compensated non-invasive current measurement in multi-conductor cables
-    doi: 10.1063/9.0000987
+    publications:
+    - 10.1063/9.0000987
   yupeng-chen:
     name:
       zh: 陈煜朋
       en: Yupeng Chen
-    kind: publication
+    kind: topic
     topic:
       zh: 氧化铝包覆铁硅软磁粉芯的放电等离子烧结与高频磁特性
       en: Spark plasma sintering and high-frequency magnetic properties of alumina-coated iron–silicon powder cores
-    doi: 10.1007/s11664-026-13088-2
+    publications:
+    - 10.1007/s11664-026-13088-2
   sujun-babu:
     name:
       zh: SUJUN BABU
@@ -276,7 +297,8 @@ people:
     topic:
       zh: 激光切割电工钢的磁畴形貌表征及局部磁性能劣化
       en: Characterization of domain patterns and local magnetic degradation in laser-cut electrical steel
-    doi: 10.1109/TMAG.2026.3711353
+    publications:
+    - 10.1109/TMAG.2026.3711353
   guotao-sun:
     name:
       zh: 孙国韬
@@ -349,6 +371,8 @@ people:
     topic:
       zh: 激光切割影响的无取向钢介观-宏观磁特性研究
       en: Mesoscopic and macroscopic magnetic properties of non-oriented electrical steel affected by laser cutting
+    publications:
+    - 10.1063/9.0000978
   baichuan-yu:
     name:
       zh: 余百川
@@ -361,51 +385,52 @@ people:
     name:
       zh: 栗浩然
       en: Haoran Li
-    kind: topic
+    kind: thesis
     topic:
-      zh: 变温条件下超薄硅钢磁滞特性的测量与仿真
-      en: Measurement and simulation of hysteresis in ultra-thin electrical steel under varying temperatures
+      zh: 变温条件下超薄硅钢磁滞特性测量与模拟
+      en: Measurement and simulation of hysteresis in ultrathin silicon steel at varying temperatures
   yaohu-ge:
     name:
       zh: 盖耀虎
       en: Yaohu Ge
     kind: thesis
     topic:
-      zh: 直线电磁推进器膛内速度测量优化及电磁仿真分析
-      en: Optimization of in-bore velocity measurement and electromagnetic simulation of a linear electromagnetic launcher
+      zh: 电磁高速运动速度测量优化及电磁仿真分析
+      en: Optimization of velocity measurements for high-speed electromagnetic motion and analysis by electromagnetic simulation
   min-zhang:
     name:
       zh: 张民
       en: Min Zhang
-    kind: topic
+    kind: thesis
     topic:
-      zh: 脉冲激励下纳米晶软磁材料磁特性的测量与仿真
-      en: Measurement and simulation of magnetic properties of nanocrystalline soft magnetic materials under pulsed excitation
-    doi: 10.3390/ma16072850
+      zh: 脉冲激励下纳米晶软磁材料磁特性的测量与模拟
+      en: Measurement and simulation of the magnetic properties of nanocrystalline soft magnetic materials under pulsed excitation
+    publications:
+    - 10.3390/ma16072850
   lan-yang:
     name:
       zh: 杨兰
       en: Lan Yang
-    kind: topic
+    kind: thesis
     topic:
       zh: 考虑冲压影响的无取向电工钢磁特性测量与建模
-      en: Measurement and modeling of magnetic properties in punched non-oriented electrical steel
+      en: Measurement and modeling of the magnetic properties of non-oriented electrical steel accounting for the effects of punching
   yakun-tian:
     name:
       zh: 田亚坤
       en: Yakun Tian
-    kind: topic
+    kind: thesis
     topic:
-      zh: 谐波及直流偏磁下换流变压器磁屏蔽杂散损耗的建模与验证
-      en: Modeling and validation of stray losses in converter transformer magnetic shields under harmonics and DC bias
+      zh: 谐波及直流偏磁下换流变压器屏蔽构件杂散损耗模拟与验证
+      en: Simulation and validation of stray losses in converter transformer shielding components under harmonics and DC bias
   jianjun-wang:
     name:
       zh: 王家俊
       en: Jianjun Wang
-    kind: topic
+    kind: thesis
     topic:
-      zh: 特高压直流换流阀阳极饱和电抗器铁芯损耗分析
-      en: Core loss analysis of anode saturable reactors in ultra-high-voltage DC converter valves
+      zh: 特高压换流阀阳极饱和电抗器铁心损耗研究
+      en: Core losses in anode saturable reactors for ultra-high-voltage converter valves
   xinghan-li:
     name:
       zh: 李星汉
@@ -422,32 +447,90 @@ people:
     topic:
       zh: 干式变压器电磁场与温度场耦合建模及实验研究
       en: Coupled electromagnetic and thermal modeling and experimental study of dry-type transformers
-
+  yi-xing:
+    name:
+      zh: 邢议
+      en: Yi Xing
+  xinyan-ye:
+    name:
+      zh: 叶欣艳
+      en: Xinyan Ye
+  ruishan-li:
+    name:
+      zh: 李睿姗
+      en: Ruishan Li
+  xinyu-gao:
+    name:
+      zh: 高鑫渝
+      en: Xinyu Gao
 news:
   10.1016/j.asoc.2026.116305:
-    en: /2026/08/25/predicting-domain-wall-motion
-    zh: /zh/news/predicting-domain-wall-motion/
+    title:
+      en: ConvLSTM-based modeling of magnetic domain evolution in electric motor core materials
+      zh: 基于卷积长短期记忆网络的电机铁芯材料磁畴演化建模
+    path:
+      en: /2026/08/25/predicting-domain-wall-motion
+      zh: /zh/news/predicting-domain-wall-motion/
   10.1007/s11664-026-13088-2:
-    en: /2026/08/05/alumina-insulation-in-fe-si-powder-cores
-    zh: /zh/news/alumina-insulation-in-fe-si-powder-cores/
+    title:
+      en: Effect of Al₂O₃ Content on the High-Frequency Magnetic Properties of Fe-Si Soft Magnetic Composites Prepared by SPS
+      zh: 氧化铝含量对放电等离子烧结铁硅软磁复合材料高频磁特性的影响
+    path:
+      en: /2026/08/05/alumina-insulation-in-fe-si-powder-cores
+      zh: /zh/news/alumina-insulation-in-fe-si-powder-cores/
   10.1109/TMAG.2026.3711353:
-    en: /2026/07/08/extent-of-laser-cutting-damage-in-electrical-steel
-    zh: /zh/news/extent-of-laser-cutting-damage-in-electrical-steel/
+    title:
+      en: Magnetic Domain Pattern and Characteristic Deterioration of Electrical Steel Due to Laser Cutting
+      zh: 激光切割引起的电工钢磁畴形貌变化与磁性能劣化
+    path:
+      en: /2026/07/08/extent-of-laser-cutting-damage-in-electrical-steel
+      zh: /zh/news/extent-of-laser-cutting-damage-in-electrical-steel/
   10.1587/elex.23.20260119:
-    en: /2026/06/11/dynamic-magnetostriction-of-nanocrystalline-laminations
-    zh: /zh/news/dynamic-magnetostriction-of-nanocrystalline-laminations/
+    title:
+      en: An integrated approach for magnetostriction measurement and simulation of nanocrystalline alloys in high-frequency transformers
+      zh: 高频变压器用纳米晶合金磁致伸缩的测量与仿真综合方法
+    path:
+      en: /2026/06/11/dynamic-magnetostriction-of-nanocrystalline-laminations
+      zh: /zh/news/dynamic-magnetostriction-of-nanocrystalline-laminations/
   10.1108/COMPEL-01-2026-0043:
-    en: /2026/05/29/dimensions-and-magnetic-properties-of-nanocrystalline-laminates
-    zh: /zh/news/dimensions-and-magnetic-properties-of-nanocrystalline-laminates/
+    title:
+      en: Magnetic measurement and analysis of nanocrystalline laminates with different dimensions
+      zh: 不同几何尺寸纳米晶叠片的磁特性测量与分析
+    path:
+      en: /2026/05/29/dimensions-and-magnetic-properties-of-nanocrystalline-laminates
+      zh: /zh/news/dimensions-and-magnetic-properties-of-nanocrystalline-laminates/
   10.1063/9.0000987:
-    en: /2026/02/18/measuring-cable-currents-with-a-tmr-array
-    zh: /zh/news/measuring-cable-currents-with-a-tmr-array/
+    title:
+      en: Angle-compensated non-invasive current measurement of multi-conductor cables via a TMR sensor-array
+      zh: 基于隧道磁阻传感器阵列与角度补偿的多芯电缆非侵入式电流测量
+    path:
+      en: /2026/02/18/measuring-cable-currents-with-a-tmr-array
+      zh: /zh/news/measuring-cable-currents-with-a-tmr-array/
   10.1063/9.0000992:
-    en: /2026/02/17/magnetoelectric-energy-harvesting-at-power-frequency
-    zh: /zh/news/magnetoelectric-energy-harvesting-at-power-frequency/
-  10.3390/ma16072850:
-    en: /2023/04/03/nanocrystalline-cores-under-pulsed-excitation
-    zh: /zh/news/nanocrystalline-cores-under-pulsed-excitation/
+    title:
+      en: Power-frequency magnetoelectric energy harvester using FeCoV–PZT laminates based on ericsson cycle
+      zh: 基于埃里克森循环选材的 FeCoV–PZT 层合工频磁电能量采集器
+    path:
+      en: /2026/02/17/magnetoelectric-energy-harvesting-at-power-frequency
+      zh: /zh/news/magnetoelectric-energy-harvesting-at-power-frequency/
+  10.1063/9.0000978:
+    title:
+      en: 'Quantifying magnetic degradation in laser-cut electrical steel: A domain-level study with angle-dependent magnetization'
+      zh: 激光切割电工钢的磁性能劣化量化及不同磁化角度下的磁畴研究
+    path:
+      en: /2026/02/11/magnetization-direction-at-a-laser-cut-edge
+      zh: /zh/news/magnetization-direction-at-a-laser-cut-edge/
   cem2025-chen:
-    en: /2025/04/10/measuring-magnetostriction-in-electrical-steel-sheets
-    zh: /zh/news/measuring-magnetostriction-in-electrical-steel-sheets/
+    title:
+      en: Measurement and Analysis of the Magnetostriction of Oriented and Non-Oriented Electrical Steel Sheets
+      zh: 取向与无取向电工钢片磁致伸缩的测量与分析
+    path:
+      en: /2025/04/10/measuring-magnetostriction-in-electrical-steel-sheets
+      zh: /zh/news/measuring-magnetostriction-in-electrical-steel-sheets/
+  10.3390/ma16072850:
+    title:
+      en: Measurement and Simulation of Magnetic Properties of Nanocrystalline Alloys under High-Frequency Pulse Excitation
+      zh: 高频脉冲激励下纳米晶合金磁特性的测量与模拟
+    path:
+      en: /2023/04/03/nanocrystalline-cores-under-pulsed-excitation
+      zh: /zh/news/nanocrystalline-cores-under-pulsed-excitation/

@@ -13,7 +13,9 @@ excerpt: Alumina insulates Fe–Si particles against eddy currents, while the am
 **Authors**　Fugui Liu, Yupeng Chen, Changgeng Zhang, Zhiwei Lin, Yongjian Li, Kai Liu  
 **Journal**　Journal of Electronic Materials 55, 8866–8879 (2026)  
 **First published online**　5 August 2026  
-[DOI 10.1007/s11664-026-13088-2](https://doi.org/10.1007/s11664-026-13088-2)
+**DOI**　`10.1007/s11664-026-13088-2`
+
+<a href="/assets/papers/2026/alumina-insulation-in-fe-si-powder-cores.pdf" download="alumina-insulation-in-fe-si-powder-cores.pdf">Download full paper (PDF)</a> · 14 pages · 7.9 MB
 
 ## Research brief
 
@@ -28,8 +30,8 @@ Fe-Si soft magnetic composites (SMCs) typically suffer from deteriorated permeab
 **Keywords**　Soft magnetic composites, spark plasma sintering, eddy current loss suppression, magnetic loss analysis
 
 <figure style="margin:1.5rem 0">
-  <img src="https://github.com/user-attachments/assets/181292cc-25c1-4f6f-871d-768c473b62f0" alt="Powder processing, spark plasma sintering and magnetic testing, together with particle morphologies at different alumina contents." style="display:block;max-width:100%;height:auto">
-  <figcaption>Graphical abstract. Powder processing, spark plasma sintering and magnetic testing, together with particle morphologies at different alumina contents. <a href="https://doi.org/10.1007/s11664-026-13088-2">Source article</a></figcaption>
+  <img src="/assets/papers/2026/figures/alumina-insulation-in-fe-si-powder-cores.webp" alt="Powder processing, spark plasma sintering and magnetic testing, together with particle morphologies at different alumina contents." style="display:block;max-width:100%;height:auto">
+  <figcaption>Graphical abstract. Powder processing, spark plasma sintering and magnetic testing, together with particle morphologies at different alumina contents. <a href="/assets/papers/2026/alumina-insulation-in-fe-si-powder-cores.pdf#page=1">Figure in the full paper</a></figcaption>
 </figure>
 
 [Chinese edition](/zh/news/alumina-insulation-in-fe-si-powder-cores/)

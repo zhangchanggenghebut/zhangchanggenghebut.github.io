@@ -11,7 +11,9 @@ excerpt: 从切边向硅钢片内部逐点测量，可以看出磁性能在多�
 **作者**　Rawal Shahbaz, Changgeng Zhang, Hina Fatima, Raja Saqib Arshad, Sujun Babu  
 **期刊**　IEEE Transactions on Magnetics 62(9), 6000209 (2026)  
 **首次在线发表**　2026 年 7 月 8 日  
-[论文原文（DOI 10.1109/TMAG.2026.3711353）](https://doi.org/10.1109/TMAG.2026.3711353)
+**DOI**　`10.1109/TMAG.2026.3711353`
+
+<a href="/assets/papers/2026/extent-of-laser-cutting-damage-in-electrical-steel.pdf" download="extent-of-laser-cutting-damage-in-electrical-steel.pdf">下载论文全文（PDF）</a> · 9 页 · 2.4 MB
 
 ## 研究简介
 
@@ -26,8 +28,8 @@ excerpt: 从切边向硅钢片内部逐点测量，可以看出磁性能在多�
 **关键词**　铁损、Hu 不变矩、激光切割、磁性能劣化、磁畴动力学、磁化曲线、磁光克尔效应、无取向电工钢
 
 <figure style="margin:1.5rem 0">
-  <img src="https://github.com/user-attachments/assets/9c30e4c3-2d1c-4761-bf63-9295e8c7aa2c" alt="距切边 2–12 mm 各位置的矫顽力、初始磁导率、剩磁和估算铁损。竖虚线标示本研究得到的劣化区边界。" style="display:block;max-width:100%;height:auto">
-  <figcaption>图 5　距切边 2–12 mm 各位置的矫顽力、初始磁导率、剩磁和估算铁损。竖虚线标示本研究得到的劣化区边界。 <a href="https://doi.org/10.1109/TMAG.2026.3711353">图片来源</a></figcaption>
+  <img src="/assets/papers/2026/figures/extent-of-laser-cutting-damage-in-electrical-steel.webp" alt="距切边 2–12 mm 各位置的矫顽力、初始磁导率、剩磁和估算铁损。竖虚线标示本研究得到的劣化区边界。" style="display:block;max-width:100%;height:auto">
+  <figcaption>图 5　距切边 2–12 mm 各位置的矫顽力、初始磁导率、剩磁和估算铁损。竖虚线标示本研究得到的劣化区边界。 <a href="/assets/papers/2026/extent-of-laser-cutting-damage-in-electrical-steel.pdf#page=5">图片所在页</a></figcaption>
 </figure>
 
 [英文版](/2026/07/08/extent-of-laser-cutting-damage-in-electrical-steel) · [返回团队新闻](/team-news/)

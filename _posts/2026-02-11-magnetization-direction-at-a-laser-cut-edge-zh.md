@@ -11,7 +11,9 @@ excerpt: 同一块无取向硅钢，横向磁化时，激光切边带来的局�
 **作者**　Rawal Shahbaz, Changgeng Zhang, Hina Fatima, Hao Zhang, Yan Zhang  
 **期刊**　AIP Advances 16(2), 025124 (2026)  
 **首次在线发表**　2026 年 2 月 11 日  
-[论文原文（DOI 10.1063/9.0000978）](https://doi.org/10.1063/9.0000978)
+**DOI**　`10.1063/9.0000978`
+
+<a href="/assets/papers/2026/magnetization-direction-at-a-laser-cut-edge.pdf" download="magnetization-direction-at-a-laser-cut-edge.pdf">下载论文全文（PDF）</a> · 7 页 · 11.5 MB
 
 ## 研究简介
 
@@ -24,8 +26,8 @@ excerpt: 同一块无取向硅钢，横向磁化时，激光切边带来的局�
 激光切割精度高，广泛用于工业材料的切割与成形，电工钢零部件也是其应用对象。在电机铁芯制造中，激光切割对材料的影响值得关注，因为切割产生的局部热效应会引入机械应力，进而影响电工钢的磁性能。本研究观察了无取向硅钢表面的磁畴及其演化，分析这些变化与材料磁性能的关系。采用磁光克尔效应方法，分别在 0°、30°、45°、60° 和 90° 磁化角度下测量局部磁滞特性。结果表明，切边沿线的磁畴取向发生变化，铁损增加，磁化率降低。在纵向磁化条件下，切边处的磁滞损耗比板材中心试样高约 10%。在横向磁化条件下，切边附近的损耗约为中心处的 1.5 倍，表明该方向的附加能量耗散较大。上述结果反映出，切边区域相对于板材中心，其微观组织或微观应力状态发生了变化。
 
 <figure style="margin:1.5rem 0">
-  <img src="https://github.com/user-attachments/assets/7c002b1f-cab6-4250-851e-3dd811e52a26" alt="切边附近纵向和横向磁光克尔测量得到的磁畴图像，对应原文磁滞曲线上的绿色标记点。" style="display:block;max-width:100%;height:auto">
-  <figcaption>图 5　切边附近纵向和横向磁光克尔测量得到的磁畴图像，对应原文磁滞曲线上的绿色标记点。 <a href="https://doi.org/10.1063/9.0000978">图片来源</a></figcaption>
+  <img src="/assets/papers/2026/figures/magnetization-direction-at-a-laser-cut-edge.webp" alt="切边附近纵向和横向磁光克尔测量得到的磁畴图像，对应原文磁滞曲线上的绿色标记点。" style="display:block;max-width:100%;height:auto">
+  <figcaption>图 5　切边附近纵向和横向磁光克尔测量得到的磁畴图像，对应原文磁滞曲线上的绿色标记点。 <a href="/assets/papers/2026/magnetization-direction-at-a-laser-cut-edge.pdf#page=5">图片所在页</a></figcaption>
 </figure>
 
 [英文版](/2026/02/11/magnetization-direction-at-a-laser-cut-edge) · [返回团队新闻](/team-news/)

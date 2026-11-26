@@ -13,7 +13,9 @@ excerpt: A sequence of Kerr images helps predict which magnetic domains will gro
 **Authors**　Hao Zhang, Qingxin Yang, Yifan Chen, Yongjian Li, Changgeng Zhang  
 **Journal**　Applied Soft Computing 203, 116305 (2026)  
 **First published online**　25 August 2026  
-[DOI 10.1016/j.asoc.2026.116305](https://doi.org/10.1016/j.asoc.2026.116305)
+**DOI**　`10.1016/j.asoc.2026.116305`
+
+<a href="/assets/papers/2026/predicting-domain-wall-motion.pdf" download="predicting-domain-wall-motion.pdf">Download full paper (PDF)</a> · 12 pages · 16.0 MB
 
 ## Research brief
 
@@ -28,8 +30,8 @@ Traditional modeling of energy loss in magnetic materials for electric machines 
 **Keywords**　Magnetic Domain, Machine Learning, Magnetization process, Microstructure
 
 <figure style="margin:1.5rem 0">
-  <img src="https://github.com/user-attachments/assets/cf921633-e5d6-41a7-acf3-f0e560888f4d" alt="Measured and predicted domain images, regional enlargements and learning curves for the full ConvLSTM and the model without the domain wall boundary channel." style="display:block;max-width:100%;height:auto">
-  <figcaption>Figure 7. Measured and predicted domain images, regional enlargements and learning curves for the full ConvLSTM and the model without the domain wall boundary channel. <a href="https://doi.org/10.1016/j.asoc.2026.116305">Source article</a></figcaption>
+  <img src="/assets/papers/2026/figures/predicting-domain-wall-motion.webp" alt="Measured and predicted domain images, regional enlargements and learning curves for the full ConvLSTM and the model without the domain wall boundary channel." style="display:block;max-width:100%;height:auto">
+  <figcaption>Figure 7. Measured and predicted domain images, regional enlargements and learning curves for the full ConvLSTM and the model without the domain wall boundary channel. <a href="/assets/papers/2026/predicting-domain-wall-motion.pdf#page=7">Figure in the full paper</a></figcaption>
 </figure>
 
 [Chinese edition](/zh/news/predicting-domain-wall-motion/)

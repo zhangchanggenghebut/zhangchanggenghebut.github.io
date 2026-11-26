@@ -160,11 +160,17 @@
   .student-identity .student-name { overflow-wrap: anywhere; }
   .student-portrait { position: relative; display: block; width: 90px; height: 120px; flex: 0 0 90px; overflow: hidden; border: 1px solid #d9dfef; border-radius: 6px; background: #edf0f8; }
   .student-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+  .student[data-person="sujun-babu"] .student-portrait img { object-position: center 22%; transform: scale(1.65); transform-origin: 50% 19%; }
+  .student[data-person="yi-xing"] .student-portrait img { object-position: 60% center; transform: scale(1.35); transform-origin: 55% 37%; }
   .student-portrait-empty::before, .student-portrait-empty::after { position: absolute; left: 50%; transform: translateX(-50%); background: #c0c9e0; content: ""; }
   .student-portrait-empty::before { top: 20%; width: 36%; aspect-ratio: 1; border-radius: 50%; }
   .student-portrait-empty::after { bottom: 7%; width: 72%; height: 35%; border-radius: 55% 55% 15% 15%; }
   .student .research-kind { display: block; margin-bottom: 3px; color: #5e6374; font-size: .82em; }
   .student .dissertation a { color: inherit; text-decoration: underline; text-decoration-color: #c1c8e0; text-underline-offset: 2px; }
+  .student .dissertation + .dissertation { margin-top: 12px; }
+  .student .publication-list { list-style: disc outside; margin: 4px 0 0; padding-inline-start: 1.2em; }
+  .student .publication-list li { list-style-type: disc; }
+  .student .publication-list li + li { margin-top: 6px; }
   @media (max-width: 600px) {
     .student-portrait { width: 72px; height: 96px; flex-basis: 72px; }
     .student .student-header { flex-wrap: wrap; gap: 8px; }
@@ -218,12 +224,23 @@
                                 {%- endif -%}
                             </span>
                         </div>
-                        <div class="dissertation">
+                        {% if person.topic %}
+                        <div class="dissertation" data-section="{{ person.kind }}">
                             <span class="research-kind">{{ labels[person.kind] }}</span>
-                            {% if person.doi %}<a href="https://doi.org/{{ person.doi | escape }}">{{ person.topic[lang] | escape }}</a>
-                            {% elsif person.url %}<a href="{{ person.url | escape }}">{{ person.topic[lang] | escape }}</a>
-                            {% else %}<span>{{ person.topic[lang] | escape }}</span>{% endif %}
+                            <span>{{ person.topic[lang] | escape }}</span>
                         </div>
+                        {% endif %}
+                        {% if person.publications %}
+                        <div class="dissertation" data-section="publications">
+                            <span class="research-kind">{{ labels.publication }}</span>
+                            <ul class="publication-list">
+                                {% for paper_id in person.publications %}
+                                    {% assign paper = directory.news[paper_id] %}
+                                    <li><a href="{{ paper.path[lang] | relative_url }}">{{ paper.title[lang] | escape }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% endif %}
                     </div>
                 {% endfor %}
             {% endfor %}

@@ -13,6 +13,10 @@
 | 孟文斌 | `wenbin-meng.jpg` |
 | 张豪 | `hao-zhang.jpg` |
 | 陈怡帆 | `yifan-chen.jpg` |
+| 邢议 | `yi-xing.png` |
+| 叶欣艳 | `xinyan-ye.jpg` |
+| 李睿姗 | `ruishan-li.jpg` |
+| 高鑫渝 | `xinyu-gao.jpg` |
 | 池佳稷 | `jiaji-chi.jpg` |
 | 卢甜甜 | `tiantian-lu.jpg` |
 | 康世哲 | `shizhe-kang.jpg` |

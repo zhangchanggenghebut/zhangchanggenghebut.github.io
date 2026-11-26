@@ -11,7 +11,9 @@ excerpt: 同一批纳米晶带材制成不同尺寸的叠片，即使激励频�
 **作者**　Wenbin Meng, Changgeng Zhang, Yongjian Li, He Sun, Qingxin Yang, Pia Lindh  
 **期刊**　COMPEL (2026)  
 **首次在线发表**　2026 年 5 月 29 日  
-[论文原文（DOI 10.1108/COMPEL-01-2026-0043）](https://doi.org/10.1108/COMPEL-01-2026-0043)
+**DOI**　`10.1108/COMPEL-01-2026-0043`
+
+<a href="/assets/papers/2026/dimensions-and-magnetic-properties-of-nanocrystalline-laminates.pdf" download="dimensions-and-magnetic-properties-of-nanocrystalline-laminates.pdf">下载论文全文（PDF）</a> · 14 页 · 5.3 MB
 
 ## 研究简介
 
@@ -32,8 +34,8 @@ excerpt: 同一批纳米晶带材制成不同尺寸的叠片，即使激励频�
 **关键词**　纳米晶合金、磁特性、叠片试样
 
 <figure style="margin:1.5rem 0">
-  <img src="https://github.com/user-attachments/assets/cb9ba8f6-13cf-46d9-ade6-ea476b9d4c35" alt="不同长宽比纳米晶叠片在 1 kHz 和 15 kHz 激励下的磁滞回线。" style="display:block;max-width:100%;height:auto">
-  <figcaption>图 5　不同长宽比纳米晶叠片在 1 kHz 和 15 kHz 激励下的磁滞回线。 <a href="https://doi.org/10.1108/COMPEL-01-2026-0043">图片来源</a></figcaption>
+  <img src="/assets/papers/2026/figures/dimensions-and-magnetic-properties-of-nanocrystalline-laminates.webp" alt="不同长宽比纳米晶叠片在 1 kHz 和 15 kHz 激励下的磁滞回线。" style="display:block;max-width:100%;height:auto">
+  <figcaption>图 5　不同长宽比纳米晶叠片在 1 kHz 和 15 kHz 激励下的磁滞回线。 <a href="/assets/papers/2026/dimensions-and-magnetic-properties-of-nanocrystalline-laminates.pdf#page=7">图片所在页</a></figcaption>
 </figure>
 
 [英文版](/2026/05/29/dimensions-and-magnetic-properties-of-nanocrystalline-laminates) · [返回团队新闻](/team-news/)

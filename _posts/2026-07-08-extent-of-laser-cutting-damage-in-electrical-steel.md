@@ -13,7 +13,9 @@ excerpt: Local hysteresis measurements trace how magnetic properties recover wit
 **Authors**　Rawal Shahbaz, Changgeng Zhang, Hina Fatima, Raja Saqib Arshad, Sujun Babu  
 **Journal**　IEEE Transactions on Magnetics 62(9), 6000209 (2026)  
 **First published online**　8 July 2026  
-[DOI 10.1109/TMAG.2026.3711353](https://doi.org/10.1109/TMAG.2026.3711353)
+**DOI**　`10.1109/TMAG.2026.3711353`
+
+<a href="/assets/papers/2026/extent-of-laser-cutting-damage-in-electrical-steel.pdf" download="extent-of-laser-cutting-damage-in-electrical-steel.pdf">Download full paper (PDF)</a> · 9 pages · 2.4 MB
 
 ## Research brief
 
@@ -28,8 +30,8 @@ Nonoriented electrical steel (NOES) is the cornerstone soft magnetic material fo
 **Keywords**　Core loss, Hu moment invariants, laser cutting, magnetic degradation, magnetic domain dynamics, magnetization curves, magneto-optical Kerr effect (MOKE), nonoriented electrical steel (NOES)
 
 <figure style="margin:1.5rem 0">
-  <img src="https://github.com/user-attachments/assets/9c30e4c3-2d1c-4761-bf63-9295e8c7aa2c" alt="Coercivity, initial permeability, remanence and estimated loss at distances of 2–12 mm from the cut edge. The vertical dashed lines mark the damage boundary identified in the study." style="display:block;max-width:100%;height:auto">
-  <figcaption>Figure 5. Coercivity, initial permeability, remanence and estimated loss at distances of 2–12 mm from the cut edge. The vertical dashed lines mark the damage boundary identified in the study. <a href="https://doi.org/10.1109/TMAG.2026.3711353">Source article</a></figcaption>
+  <img src="/assets/papers/2026/figures/extent-of-laser-cutting-damage-in-electrical-steel.webp" alt="Coercivity, initial permeability, remanence and estimated loss at distances of 2–12 mm from the cut edge. The vertical dashed lines mark the damage boundary identified in the study." style="display:block;max-width:100%;height:auto">
+  <figcaption>Figure 5. Coercivity, initial permeability, remanence and estimated loss at distances of 2–12 mm from the cut edge. The vertical dashed lines mark the damage boundary identified in the study. <a href="/assets/papers/2026/extent-of-laser-cutting-damage-in-electrical-steel.pdf#page=5">Figure in the full paper</a></figcaption>
 </figure>
 
 [Chinese edition](/zh/news/extent-of-laser-cutting-damage-in-electrical-steel/)

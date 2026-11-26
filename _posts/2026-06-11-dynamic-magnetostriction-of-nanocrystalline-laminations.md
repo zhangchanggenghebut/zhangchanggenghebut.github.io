@@ -13,7 +13,9 @@ excerpt: A double-yoke fixture and laser vibrometer resolve the small cyclic str
 **Authors**　Xiaotong Wang, Changgeng Zhang, Yongjian Li, Hao Zhang, Qingxin Yang  
 **Journal**　IEICE Electronics Express 23(13), 20260119 (2026)  
 **First published online**　11 June 2026  
-[DOI 10.1587/elex.23.20260119](https://doi.org/10.1587/elex.23.20260119)
+**DOI**　`10.1587/elex.23.20260119`
+
+<a href="/assets/papers/2026/dynamic-magnetostriction-of-nanocrystalline-laminations.pdf" download="dynamic-magnetostriction-of-nanocrystalline-laminations.pdf">Download full paper (PDF)</a> · 6 pages · 1.8 MB
 
 ## Research brief
 
@@ -28,8 +30,8 @@ Accurately predicting the magnetostriction of nanocrystalline alloy laminations 
 **Keywords**　Dynamic magnetostriction properties, Energetic-PSO-LSTM coupled model, nanocrystalline alloy
 
 <figure style="margin:1.5rem 0">
-  <img src="https://github.com/user-attachments/assets/e82f2d24-1e0c-4479-8009-5ea9b41da704" alt="Measured and predicted magnetostriction of the nanocrystalline laminations under 5 kHz excitation at 0.5 T." style="display:block;max-width:100%;height:auto">
-  <figcaption>Figure 8. Measured and predicted magnetostriction of the nanocrystalline laminations under 5 kHz excitation at 0.5 T. <a href="https://doi.org/10.1587/elex.23.20260119">Source article</a></figcaption>
+  <img src="/assets/papers/2026/figures/dynamic-magnetostriction-of-nanocrystalline-laminations.webp" alt="Measured and predicted magnetostriction of the nanocrystalline laminations under 5 kHz excitation at 0.5 T." style="display:block;max-width:100%;height:auto">
+  <figcaption>Figure 8. Measured and predicted magnetostriction of the nanocrystalline laminations under 5 kHz excitation at 0.5 T. <a href="/assets/papers/2026/dynamic-magnetostriction-of-nanocrystalline-laminations.pdf#page=4">Figure in the full paper</a></figcaption>
 </figure>
 
 [Chinese edition](/zh/news/dynamic-magnetostriction-of-nanocrystalline-laminations/)
