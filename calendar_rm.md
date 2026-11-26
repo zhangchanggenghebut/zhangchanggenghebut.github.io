@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Reservation for Rotational magnetic tester"
+title: "Reservation for rotating magnetization tester"
 css: ["projects.css"]
 js: ["morphext.min.js", "about.js"]
 ---

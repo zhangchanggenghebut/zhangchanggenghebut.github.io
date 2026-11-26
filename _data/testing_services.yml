@@ -1,0 +1,72 @@
+labels:
+  zh:
+    title: 测试服务
+    contact: 预约磁性测试或确认可用时段，请联系
+    sample: 样品形状与尺寸
+    materials: 适用材料
+    deliverables: 测试结果
+    per_sample: 元 / 样品
+    calendar: 查看设备日历
+  en:
+    title: Testing Service
+    contact: For magnetic testing and availability, email
+    sample: Sample geometry
+    materials: Materials
+    deliverables: Test results
+    per_sample: CNY / sample
+    calendar: View instrument calendar
+instruments:
+  - id: rotating
+    name:
+      zh: 旋转磁化测量仪
+      en: Rotating magnetization tester
+    origin:
+      zh: 河北工业大学自制，中国
+      en: Built at Hebei University of Technology, China
+    sample:
+      zh: 单片方形试样，22 × 22 mm
+      en: Single square sheet, 22 × 22 mm
+    materials:
+      zh: 硅钢片、纳米晶及非晶软磁材料、软磁复合材料（SMC）
+      en: Silicon steel, nanocrystalline and amorphous soft magnetic materials, and soft magnetic composites (SMCs)
+    deliverables:
+      zh: B–H 磁滞回线报告、磁损耗报告
+      en: B–H hysteresis loop and magnetic loss reports
+    fee: 200
+    calendar: /calendar_rm.html
+  - id: evico
+    name:
+      zh: 磁光克尔显微镜
+      en: Magneto-optical Kerr microscope
+    origin:
+      zh: Evico，德国
+      en: Evico, Germany
+    sample:
+      zh: 圆形片材或块材，半径 10–15 mm
+      en: Circular sheet or bulk specimen, radius 10–15 mm
+    materials:
+      zh: 硅钢片、纳米晶软磁材料
+      en: Silicon steel and nanocrystalline soft magnetic materials
+    deliverables:
+      zh: 磁畴观测报告
+      en: Magnetic domain observation report
+    fee: 300
+    calendar: /calendar.html
+  - id: nanomoke
+    name:
+      zh: 激光磁光克尔显微镜
+      en: Laser magneto-optical Kerr microscope
+    origin:
+      zh: NanoMOKE3，英国
+      en: NanoMOKE3, UK
+    sample:
+      zh: 圆形片材或块材，半径 10–15 mm
+      en: Circular sheet or bulk specimen, radius 10–15 mm
+    materials:
+      zh: 硅钢片、纳米晶软磁材料
+      en: Silicon steel and nanocrystalline soft magnetic materials
+    deliverables:
+      zh: 磁畴观测报告、表面磁滞回线
+      en: Magnetic domain observation report and surface hysteresis loop
+    fee: 300
+    calendar: /calendar_nanomoke.html

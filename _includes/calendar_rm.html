@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservation for Rotational magnetic tester</title>
+    <title>Reservation for rotating magnetization tester</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -272,7 +272,7 @@
 <body>
     <div class="container">
       <!-- <header>
-            <h1>Reservation for MOKE(Evico)</h1>
+            <h1>Reservation for rotating magnetization tester</h1>
         </header>
         -->
         <div class="content">
@@ -350,7 +350,7 @@
         </div>
         
         <footer>
-            <p>MOKE(Evico) Reservation System &copy; 2025</p>
+            <p>Rotating magnetization Reservation System &copy; 2025</p>
         </footer>
     </div>
     
@@ -637,7 +637,7 @@
             let icsContent = [
                 "BEGIN:VCALENDAR",
                 "VERSION:2.0",
-                "PRODID:-//MOKE Evico Reservation System//EN",
+                "PRODID:-//Rotating magnetization Reservation System//EN",
                 "CALSCALE:GREGORIAN",
                 "METHOD:PUBLISH"
             ];
@@ -654,7 +654,7 @@
                 
                 icsContent = icsContent.concat([
                     "BEGIN:VEVENT",
-                    `SUMMARY:${event.title} (MOKE Reservation)`,
+                    `SUMMARY:${event.title} (Rotating magnetization Reservation)`,
                     `DTSTART:${dateFormatted}T${timeFormatted}Z`,
                     `DTEND:${dateFormatted}T${endTimeFormatted}Z`,
                     `LOCATION:${event.location}`,
@@ -674,7 +674,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement("a");
             a.href = url;
-            a.download = "MOKE_reservations.ics";
+            a.download = "rotating_magnetization_reservations.ics";
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);

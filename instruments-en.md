@@ -1,7 +1,6 @@
 ---
-layout: page
-title: ""
-css: ["teaching.css", "animate.css", "morphext.css"]
-js: ["morphext.min.js", "about.js"]
+layout: default
+title: "Testing Service"
+css: ["testing-services.css"]
 ---
-{% include instruments-en.html %}
+{% include instruments.html lang="en" %}

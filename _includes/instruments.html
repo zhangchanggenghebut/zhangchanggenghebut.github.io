@@ -1,113 +1,26 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>磁性测量服务</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2 {
-            color: #0056b3; /* A nice blue color */
-        }
-
-        h1 {
-            font-size: 1.8em;
-        }
-
-        h2 {
-            font-size: 1.5em;
-            margin-top: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-
-        th, td {
-            padding: 8px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f0f0f0;
-        }
-
-        /* Responsive design for smaller screens */
-        @media (max-width: 600px) {
-            .container {
-                padding: 10px;
-            }
-            h1 { font-size: 1.5em; }
-            h2 { font-size: 1.2em; }
-            table { font-size: 0.9em; }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>磁性测量设备共享和测试服务</h1>
-        <p>联系邮箱：<a href="mailto:changgeng.zhang@hebut.edu.cn">changgeng.zhang@hebut.edu.cn</a></p>
-
-        <h2>先进仪器列表</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>仪器名称</th>
-                    <th>产地</th>
-                    <th>样品形状</th>
-                    <th>样品尺寸</th>
-                    <th>样品类型</th>
-                    <th>服务交付物</th>
-                    <th>收费</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>旋转磁化测量仪 (河北工业大学自制)</td>
-                    <td>中国</td>
-                    <td>单片</td>
-                    <td>正方形 22mm * 22mm</td>
-                    <td>硅钢片，纳米晶非晶软磁材料，SMC</td>
-                    <td>BH磁滞曲线报告，损耗报告</td>
-                    <td>200元/样品</td>
-                </tr>
-                <tr>
-                    <td>磁光观察磁畴 (Evico)</td>
-                    <td>德国</td>
-                    <td>片状或块状材料</td>
-                    <td>半径 10-15mm 的圆形样品</td>
-                    <td>硅钢片，纳米晶软磁材料</td>
-                    <td>磁畴报告</td>
-                    <td>300元/样品</td>
-                </tr>
-                <tr>
-                    <td>激光磁光观察磁畴 (NanoMOKE3)</td>
-                    <td>英国</td>
-                    <td>片状或块状材料，圆形样品</td>
-                    <td>半径 10-15mm 的圆形样品</td>
-                    <td>硅钢片，纳米晶软磁材料</td>
-                    <td>磁畴报告，表面磁滞曲线</td>
-                    <td>300元/样品</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</body>
+{% assign language = include.lang %}
+{% assign service = site.data.testing_services %}
+{% assign labels = service.labels[language] %}
+<div class="testing-services" lang="{% if language == 'zh' %}zh-CN{% else %}en{% endif %}">
+  <h1>{{ labels.title | escape }}</h1>
+  <p class="testing-contact">{{ labels.contact | escape }} <a href="mailto:{{ site.user_email | strip | escape }}">{{ site.user_email | strip | escape }}</a></p>
+  <div class="testing-cards">
+    {% for instrument in service.instruments %}
+      <article class="testing-instrument" id="instrument-{{ instrument.id }}" aria-labelledby="name-{{ instrument.id }}">
+        <div class="testing-heading">
+          <h2 id="name-{{ instrument.id }}">{{ instrument.name[language] | escape }}</h2>
+          <p>{{ instrument.origin[language] | escape }}</p>
+        </div>
+        <dl>
+          <dt>{{ labels.sample | escape }}</dt><dd>{{ instrument.sample[language] | escape }}</dd>
+          <dt>{{ labels.materials | escape }}</dt><dd>{{ instrument.materials[language] | escape }}</dd>
+          <dt>{{ labels.deliverables | escape }}</dt><dd>{{ instrument.deliverables[language] | escape }}</dd>
+        </dl>
+        <div class="testing-actions">
+          <p class="testing-price"><strong>{{ instrument.fee }}</strong> {{ labels.per_sample | escape }}</p>
+          <a href="{{ instrument.calendar | relative_url }}" aria-label="{{ instrument.name[language] | escape }} · {{ labels.calendar | escape }}">{{ labels.calendar | escape }}</a>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</div>

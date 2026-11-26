@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservation for NanoMoke</title>
+    <title>Reservation for NanoMOKE3</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -272,7 +272,7 @@
 <body>
     <div class="container">
       <!-- <header>
-            <h1>Reservation for MOKE(Evico)</h1>
+            <h1>Reservation for NanoMOKE3</h1>
         </header>
         -->
         <div class="content">
@@ -350,7 +350,7 @@
         </div>
         
         <footer>
-            <p>MOKE(Evico) Reservation System &copy; 2025</p>
+            <p>NanoMOKE3 Reservation System &copy; 2025</p>
         </footer>
     </div>
     
@@ -637,7 +637,7 @@
             let icsContent = [
                 "BEGIN:VCALENDAR",
                 "VERSION:2.0",
-                "PRODID:-//MOKE Evico Reservation System//EN",
+                "PRODID:-//NanoMOKE3 Reservation System//EN",
                 "CALSCALE:GREGORIAN",
                 "METHOD:PUBLISH"
             ];
@@ -654,7 +654,7 @@
                 
                 icsContent = icsContent.concat([
                     "BEGIN:VEVENT",
-                    `SUMMARY:${event.title} (MOKE Reservation)`,
+                    `SUMMARY:${event.title} (NanoMOKE3 Reservation)`,
                     `DTSTART:${dateFormatted}T${timeFormatted}Z`,
                     `DTEND:${dateFormatted}T${endTimeFormatted}Z`,
                     `LOCATION:${event.location}`,
@@ -674,7 +674,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement("a");
             a.href = url;
-            a.download = "MOKE_reservations.ics";
+            a.download = "NanoMOKE3_reservations.ics";
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);

@@ -1,0 +1,37 @@
+.testing-services {
+  margin: 1.6rem 0 2rem;
+  color: #20343b;
+}
+.testing-services h1 { margin: 0 0 .4em; font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 650; }
+.testing-contact { margin: 0 0 1.2rem; line-height: 1.55; overflow-wrap: anywhere; }
+.testing-services a { color: #12566a; text-decoration: underline; text-underline-offset: 3px; }
+.testing-services a:focus-visible { outline: 2px solid #16667b; outline-offset: 3px; }
+.testing-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: 1rem; }
+.testing-instrument {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: clamp(15px, 2vw, 24px);
+  border: 1px solid #d7e2e3;
+  border-radius: 10px;
+  background: #fff;
+}
+.testing-heading { padding-bottom: .7rem; border-bottom: 1px solid #dde6e6; }
+.testing-heading h2 { margin: 0; font-size: 1.28rem; line-height: 1.35; font-weight: 650; color: #153f48; }
+.testing-heading p, .testing-price { margin: .3em 0 0; }
+.testing-heading p, .testing-instrument dt { color: #4a5e63; }
+.testing-instrument dl { margin: .8em 0; line-height: 1.5; }
+.testing-instrument dt { font-weight: 650; }
+.testing-instrument dd { margin: 0 0 .6em; overflow-wrap: anywhere; }
+.testing-actions {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .4em 1em;
+  margin-top: auto;
+  padding-top: .65rem;
+  border-top: 1px solid #dde6e6;
+}
+.testing-price strong { font-size: 1.2em; font-weight: 650; }
+.testing-actions a { font-weight: 600; }

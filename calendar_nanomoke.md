@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Reservation for NanoMoke"
+title: "Reservation for NanoMOKE3"
 css: ["projects.css"]
 js: ["morphext.min.js", "about.js"]
 ---
