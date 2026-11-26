@@ -5,7 +5,7 @@
 | 姓名 | 照片文件名 |
 | --- | --- |
 | 王紫洋 | `ziyang-wang.jpg` |
-| Muhammad Adeel | `muhammad-adeel.jpg` |
+| Muhammad Adeel Khan | `muhammad-adeel.jpg` |
 | 王晓彤 | `xiaotong-wang.jpg` |
 | Raja Saqib Arshad | `raja-saqib-arshad.jpg` |
 | 陈涛 | `tao-chen.jpg` |
