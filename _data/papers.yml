@@ -151,14 +151,16 @@
   published: '2021-06-30'
   authors: Changgeng Zhang*, Jiajun Wang, Yongjian Li, Qingxin Yang
   venue: High Voltage Engineering 47(6), 2158–2168 · In Chinese
-- title: Numerical Prediction of Losses and Local Overheating in Transformer Windings Based on Magnetic-Thermal-Fluid Model
-  published: 2020-11
+- news: 10.19595/j.cnki.1000-6753.tces.191227
+  published: '2020-11-10'
   authors: Yongjian Li, Xinxiao Yan, Changgeng Zhang*, Yifan Chen, Wenliang Ying
-  venue: Transactions of China Electrotechnical Society 35(21), 4483–4491 · In Chinese
-- title: Prediction of temperature rise for ventilated dry-type transformer by 3-D coupled magneto-fluid-thermal model
+  venue: Transactions of China Electrotechnical Society 35(21), 4483–4491 (2020) · In Chinese
+  pdf: /assets/papers/2020/losses-and-local-overheating-in-transformer-windings.pdf
+- news: 10.3233/JAE-190054
   published: 2020-04
   authors: Xinxiao Yan, Yongjian Li, Zhiguang Cheng, Changgeng Zhang*
-  venue: International Journal of Applied Electromagnetics and Mechanics 62(4), 725–735
+  venue: International Journal of Applied Electromagnetics and Mechanics 62(4), 725–735 (2020)
+  pdf: /assets/papers/2020/temperature-rise-in-a-ventilated-dry-type-transformer.pdf
 - title: Eddy Current Loss Effect in Foil Winding of Transformer Based on Magneto-Fluid-Thermal Simulation
   published: 2019-07
   authors: Yongjian Li, Xinxiao Yan, Chunguang Wang, Qingxin Yang, Changgeng Zhang*

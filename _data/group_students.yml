@@ -253,6 +253,7 @@ people:
     - 10.1109/TMAG.2023.3316753
     - 10.1109/TMAG.2021.3104090
     - 10.1109/TMAG.2021.3083649
+    - 10.19595/j.cnki.1000-6753.tces.191227
   jiaji-chi:
     name:
       zh: 池佳稷
@@ -490,6 +491,9 @@ people:
     topic:
       zh: 干式变压器电磁场与温度场耦合建模及实验研究
       en: Coupled electromagnetic and thermal modeling and experimental study of dry-type transformers
+    publications:
+    - 10.19595/j.cnki.1000-6753.tces.191227
+    - 10.3233/JAE-190054
   yi-xing:
     name:
       zh: 邢议
@@ -726,3 +730,17 @@ news:
     path:
       en: /2022/08/10/stray-loss-in-laminated-transformer-shields-under-harmonics-and-dc-bias
       zh: /zh/news/stray-loss-in-laminated-transformer-shields-under-harmonics-and-dc-bias/
+  10.19595/j.cnki.1000-6753.tces.191227:
+    title:
+      en: Numerical Prediction of Losses and Local Overheating in Transformer Windings Based on Magnetic-Thermal-Fluid Model
+      zh: 基于磁-热-流耦合模型的变压器损耗计算和热点预测
+    path:
+      en: /2020/11/10/losses-and-local-overheating-in-transformer-windings
+      zh: /zh/news/losses-and-local-overheating-in-transformer-windings/
+  10.3233/JAE-190054:
+    title:
+      en: Prediction of temperature rise for ventilated dry-type transformer by 3-D coupled magneto-fluid-thermal model
+      zh: 基于三维磁–流–热耦合模型的通风式干式变压器温升预测
+    path:
+      en: /2020/04/01/temperature-rise-in-a-ventilated-dry-type-transformer
+      zh: /zh/news/temperature-rise-in-a-ventilated-dry-type-transformer/
