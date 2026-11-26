@@ -398,6 +398,7 @@ people:
       en: Mesoscopic and macroscopic magnetic properties of non-oriented electrical steel affected by laser cutting
     publications:
     - 10.1063/9.0000978
+    - 10.1063/9.0000586
   baichuan-yu:
     name:
       zh: 余百川
@@ -406,6 +407,8 @@ people:
     topic:
       zh: 基于分形理论的表面形貌特征建模与法向接触特性研究
       en: Fractal modeling of surface topography and analysis of normal contact characteristics
+    publications:
+    - 10.3390/app13063648
   haoran-li:
     name:
       zh: 栗浩然
@@ -414,6 +417,8 @@ people:
     topic:
       zh: 变温条件下超薄硅钢磁滞特性测量与模拟
       en: Measurement and simulation of hysteresis in ultrathin silicon steel at varying temperatures
+    publications:
+    - 10.3390/ma16124385
   yaohu-ge:
     name:
       zh: 盖耀虎
@@ -440,6 +445,8 @@ people:
     topic:
       zh: 考虑冲压影响的无取向电工钢磁特性测量与建模
       en: Measurement and modeling of the magnetic properties of non-oriented electrical steel accounting for the effects of punching
+    publications:
+    - 10.1108/COMPEL-01-2022-0064
   yakun-tian:
     name:
       zh: 田亚坤
@@ -448,6 +455,8 @@ people:
     topic:
       zh: 谐波及直流偏磁下换流变压器屏蔽构件杂散损耗模拟与验证
       en: Simulation and validation of stray losses in converter transformer shielding components under harmonics and DC bias
+    publications:
+    - 10.3390/ma16124385
   jianjun-wang:
     name:
       zh: 王家俊
@@ -666,3 +675,31 @@ news:
     path:
       en: /2024/10/optimal-design-of-hybrid-laminated-transformer-cores
       zh: /zh/news/optimal-design-of-hybrid-laminated-transformer-cores/
+  10.1063/9.0000586:
+    title:
+      en: Magnetic properties deterioration of non-oriented steel due to laser cutting
+      zh: 激光切割引起的无取向电工钢磁性能劣化
+    path:
+      en: /2023/02/24/laser-cutting-and-magnetic-degradation-of-non-oriented-steel
+      zh: /zh/news/laser-cutting-and-magnetic-degradation-of-non-oriented-steel/
+  10.3390/app13063648:
+    title:
+      en: Simplified Calculation Model for Contact Resistance Based on Fractal Rough Surfaces Method
+      zh: 基于分形粗糙表面的接触电阻简化计算模型
+    path:
+      en: /2023/03/13/contact-resistance-of-fractal-rough-surfaces
+      zh: /zh/news/contact-resistance-of-fractal-rough-surfaces/
+  10.3390/ma16124385:
+    title:
+      en: Harmonic and DC Bias Hysteresis Characteristics Simulation Based on an Improved Preisach Model
+      zh: 基于改进 Preisach 模型的谐波与直流偏磁下磁滞特性模拟
+    path:
+      en: /2023/06/14/harmonic-and-dc-bias-hysteresis-with-an-improved-preisach-model
+      zh: /zh/news/harmonic-and-dc-bias-hysteresis-with-an-improved-preisach-model/
+  10.1108/COMPEL-01-2022-0064:
+    title:
+      en: Punching effects on local magnetic properties near the edge of nonoriented electrical steels
+      zh: 冲压对无取向电工钢边缘局部磁特性的影响
+    path:
+      en: /2022/09/05/local-magnetic-properties-near-punched-edges
+      zh: /zh/news/local-magnetic-properties-near-punched-edges/
