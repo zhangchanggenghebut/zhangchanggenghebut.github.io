@@ -51,13 +51,11 @@ levels:
     members:
     - person: wenbin-meng
       end: 2026
+    - person: yifan-chen
+      end: 2026
   - year: 2019
     members:
     - person: hao-zhang
-      end: 2025
-  - year: 2018
-    members:
-    - person: yifan-chen
       end: 2025
 - id: masters
   cohorts:
@@ -143,6 +141,8 @@ levels:
       end: 2021
     - person: xinghan-li
       end: 2021
+    - person: yifan-chen
+      end: 2020
   - year: 2017
     members:
     - person: xinxiao-yan
