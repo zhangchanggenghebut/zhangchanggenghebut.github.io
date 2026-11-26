@@ -30,6 +30,161 @@ main
 #post-content
   margin-top: 5px
 
+.home-page
+  display: grid
+  gap: 18px
+  margin: 24px auto 32px
+  color: #233c46
+  line-height: 1.5
+
+.home-section
+  min-width: 0
+  padding: 20px 24px
+  border: 1px solid var(--panel-border)
+  border-top: 3px solid var(--panel-accent)
+  border-radius: 8px
+  background: var(--panel-background)
+
+.home-profile
+  --panel-border: #c9dce5
+  --panel-accent: #236487
+  --panel-background: #e8f2f7
+  display: flex
+  align-items: center
+  gap: 24px
+  background: linear-gradient(110deg, #e4f0f6, #f2f7f9)
+
+.home-portrait
+  display: block
+  flex: none
+  border: 3px solid #fff
+  border-radius: 50%
+  overflow: hidden
+
+  img
+    display: block
+    width: 126px
+    height: 126px
+    object-fit: cover
+
+.home-profile-text
+  min-width: 0
+
+  h1
+    margin: 0 0 8px
+    color: #123d53
+    font-size: clamp(1.8rem, 3vw, 2.6rem)
+    line-height: 1.12
+    font-weight: 650
+
+  p
+    margin: 2px 0
+
+  .home-position
+    font-weight: 600
+
+.home-email
+  display: inline-block
+  margin-top: 7px
+  color: #09557b
+  overflow-wrap: anywhere
+  text-decoration: underline
+  text-underline-offset: 2px
+
+.home-details
+  display: grid
+  gap: 18px
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.8fr)
+
+.home-research
+  --panel-border: #ccdfd4
+  --panel-accent: #44806a
+  --panel-background: #eef6f0
+
+.home-experience
+  --panel-border: #e6dac6
+  --panel-accent: #967440
+  --panel-background: #faf5ea
+
+.home-news
+  --panel-border: #d3dce7
+  --panel-accent: #4b6985
+  --panel-background: #eef2f7
+  scroll-margin-top: 12px
+
+.home-section-title
+  margin: 0 0 14px
+  color: #193b48
+  font-size: 1.55rem
+  font-weight: 650
+  line-height: 1.25
+
+.home-focus-list
+  margin: 0
+  padding: 0
+  list-style: none
+
+  li
+    position: relative
+    padding: 9px 0 9px 16px
+    border-top: 1px solid var(--panel-border)
+
+    &::before
+      position: absolute
+      top: 1.12em
+      left: 0
+      width: 5px
+      height: 5px
+      border-radius: 50%
+      background: var(--panel-accent)
+      content: ""
+
+.home-roles
+  margin: 0
+
+  div
+    display: grid
+    grid-template-columns: minmax(112px, 29%) minmax(0, 1fr)
+    gap: 12px
+    padding: 7px 0
+    border-top: 1px solid var(--panel-border)
+    line-height: 1.4
+
+  dt
+    color: #654f32
+    font-weight: 600
+
+  dd
+    margin: 0
+
+.home-pagination .pagination
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  gap: 5px
+  margin: 4px 0 0
+  padding: 0
+  list-style: none
+
+  li, a
+    height: auto
+
+  a
+    display: block
+    min-width: 36px
+    padding: 2px 8px
+    border-radius: 4px
+    color: #214d61
+    line-height: 32px
+
+    &:hover, &:focus-visible
+      background: #dce7ef
+      text-decoration: underline
+
+    &[aria-current="page"]
+      color: #fff
+      background: #235b73
+
 .home-news-list
   display: grid
   gap: 8px
@@ -75,7 +230,33 @@ main
   margin: 0
   line-height: 1.4
 
+@media (max-width: 1199px)
+  .home-details
+    grid-template-columns: minmax(0, 1fr)
+
 @media (max-width: 600px)
+  .home-page, .home-details
+    gap: 12px
+
+  .home-page
+    margin: 14px auto 20px
+
+  .home-section
+    padding: 15px
+
+  .home-profile
+    flex-direction: column
+    align-items: flex-start
+    gap: 12px
+
+  .home-portrait img
+    width: 88px
+    height: 88px
+
+  .home-roles div
+    grid-template-columns: minmax(0, 1fr)
+    gap: 2px
+
   .home-news-card
     grid-template-columns: minmax(0, 1fr)
     gap: 3px

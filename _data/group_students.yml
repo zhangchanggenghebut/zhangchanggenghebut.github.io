@@ -5,7 +5,8 @@ labels:
     title: 团队学生
     nav: 按学位浏览
     doctoral: 博士研究生
-    masters: 硕士研究生
+    masters: 在读硕士团队
+    masters-alumni: 毕业硕士团队
     cohort: 级
     thesis: 学位论文
     topic: 研究方向
@@ -17,7 +18,8 @@ labels:
     title: Research students
     nav: Browse by degree
     doctoral: Doctoral students
-    masters: Master’s students
+    masters: Current Master’s Students
+    masters-alumni: Master’s Alumni
     cohort: entry
     thesis: Thesis
     topic: Research focus
@@ -81,9 +83,6 @@ levels:
       expected: true
   - year: 2024
     members:
-    - person: ziyang-wang
-      end: 2027
-      expected: true
     - person: shuai-zhao
       end: 2027
       expected: true
@@ -93,6 +92,11 @@ levels:
     - person: sujun-babu
       end: 2027
       expected: true
+- id: masters-alumni
+  cohorts:
+  - year: 2024
+    members:
+    - person: ziyang-wang
   - year: 2023
     members:
     - person: xiaoxiao-liu

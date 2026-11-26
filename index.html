@@ -1,239 +1,101 @@
 ---
-layout: page
-css: ["index.css?v=compact-news"]
+layout: default
+css: ["index.css?v=home-sections"]
 ---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
-    <style>
-        .user-profile {
-            display: flex;
-            align-items: flex-start; /* Align items to the top */
-            gap: 20px; /* Space between image and content */
-            padding: 20px;
-        }
+<div class="home-page">
+  {% assign news_heading = 'h1' %}
+  {% assign story_heading = 'h2' %}
+  {% if paginator.page == 1 or paginator == nil %}
+    {% assign news_heading = 'h2' %}
+    {% assign story_heading = 'h3' %}
+    <section class="home-section home-profile user-profile" aria-labelledby="home-name">
+      <a class="home-portrait" href="{{ site.github_profile }}" target="_blank" rel="noopener" aria-label="GitHub profile of Changgeng Zhang">
+        <img src="{{ '/assets/res/user.png' | relative_url }}" alt="Changgeng Zhang" width="132" height="132">
+      </a>
+      <div class="home-profile-text">
+        <h1 id="home-name">ZHANG Changgeng</h1>
+        <p class="home-position">Professor, Electrical Engineering, Hebei University of Technology</p>
+        <p>State Key Laboratory of Reliability and Intelligence of Electrical Equipment</p>
+        <a class="home-email" href="mailto:changgeng.zhang@hebut.edu.cn">changgeng.zhang@hebut.edu.cn</a>
+      </div>
+    </section>
 
-        .user-pic {
-            width: 200px; /* Adjust as needed */
-            height: 200px; /* Adjust as needed */
-        }
-        .user-pic img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%; /* Optional: Make the image circular */
-            object-fit: cover; /* Ensure image fills the space without distortion */
-        }
+    <div class="home-details">
+      <section class="home-section home-research" aria-labelledby="home-research-heading">
+        <h2 class="home-section-title" id="home-research-heading">Research Interests</h2>
+        <ul class="home-focus-list browser-default">
+          <li>Engineering electromagnetic field application</li>
+          <li>Magnetic property measurement</li>
+          <li>Modeling of magnetic materials</li>
+          <li>SMC materials manufacturing</li>
+        </ul>
+      </section>
 
-        .user-content {
-            flex-grow: 1; /* Allow content to take up remaining space */
-        }
-
-        /* Responsive adjustments for smaller screens */
-        @media (max-width: 600px) {
-            .user-profile {
-                flex-direction: column; /* Stack image and content vertically */
-                align-items: center; /* Center content horizontally */
-            }
-            .user-pic {
-                margin-bottom: 10px; /* Add spacing below image */
-            }
-        }
-
-
-    </style>
-</head>
-<body>
-    {% if paginator.page == 1 or paginator == nil %}
-    <div class="user-profile">
-        <div class="user-pic">
-            <a href="{{site.github_profile}}" target="_blank">
-                <img src="{{site.baseurl}}/assets/res/user.png" alt="User Profile Picture">
-            </a>
-        </div>
-        <div class="user-content">
-            <div class="user-intro">
-               <h4 class="hidden">I am a <span id="js-rotating">So Simple, Much Wow, Such Cool</span> Professor</h4>
-            </div>
-            <p>ZHANG Changgeng</p>
-            <p>Professor, Electrical Engineering, Hebei University of Technology</p>
-            <p>State Key Laboratory of Reliability and Intelligence of Electrical Equipment</p>
-            <p>Email: changgeng.zhang@hebut.edu.cn</p>
-        </div>
+      <section class="home-section home-experience" aria-labelledby="home-experience-heading">
+        <h2 class="home-section-title" id="home-experience-heading">Working Experience</h2>
+        <dl class="home-roles">
+          <div>
+            <dt>Dec 2024 – Present</dt>
+            <dd>Rotating Rector, Hebei University of Technology (Finland)</dd>
+          </div>
+          <div>
+            <dt>April 2024 – Present</dt>
+            <dd>Deputy Director, International Exchange and Cooperation Office</dd>
+          </div>
+          <div>
+            <dt>February 2022 – Present</dt>
+            <dd>Vice Director of Electromagnetic Technology Institute, Hebei University of Technology</dd>
+          </div>
+          <div>
+            <dt>March 2017 – Present</dt>
+            <dd>Professor, Lecturer, Associate Professor, Ph.D. Advisor, Hebei University of Technology</dd>
+          </div>
+          <div>
+            <dt>January 2023 – June 2023</dt>
+            <dd>Instructor, LUT University, Finland</dd>
+          </div>
+          <div>
+            <dt>December 2018 – December 2019</dt>
+            <dd>Postdoctoral Researcher in Electrical Engineering, The Ohio State University, United States</dd>
+          </div>
+        </dl>
+      </section>
     </div>
-    {% endif %}
-</body>
+  {% endif %}
 
-
-<!--
-    
- <body>    
-<h4>Research Interests</h4>
-<br>engineering electromagnetic field application <br/>
-<br>magnetic property measurement<br/>
-<br>modeling of magnetic materials<br/>
- <br>SMC materials manufacturing<br/>
-</body>
-    
-
-
-    
-
-<body>
-    <h4>Working Experience</h4>
-
-    <dl>
-        <dt>April 2025 - Present</dt>
-        <dd>Rotating Rector, Hebei University of Technology (Finland)</dd>
-
-        <dt>April 2024 - Present</dt>
-        <dd>Deputy Director, International Exchange and Cooperation Office</dd>
-
-        <dt>February 2022 - Present</dt>
-        <dd>Vice Director of Electromagnetic Technology Institute, Hebei University of Technology</dd>
-
-        <dt>March 2017 - Present</dt>
-        <dd>Professor, Lecturer, Associate Professor, Ph.D. Advisor, Hebei University of Technology</dd>
-
-        <dt>January 2023 - June 2023</dt>
-        <dd>Instructor, LUT University, Finland</dd>
-
-        <dt>December 2018 - December 2019</dt>
-        <dd>Postdoctoral Researcher in Electrical Engineering, The Ohio State University, United States</dd>
-    </dl>
-
-</body>
-
--->
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience and Research</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        dl {
-            margin-top: 15px; /* Add some space above the list */
-        }
-        dt {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        dd {
-            margin-left: 20px; /* Indent the descriptions */
-            margin-bottom: 15px; /* Space between list items */
-        }
-
-        /* Responsive adjustments for smaller screens */
-        @media (max-width: 600px) {
-            body {
-                margin: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    {% if paginator.page == 1 or paginator == nil %}
-    <h4>Research Interests</h4>
-    <ul>  <!-- Use a list for better semantics -->
-        <li>Engineering electromagnetic field application</li>
-        <li>Magnetic property measurement</li>
-        <li>Modeling of magnetic materials</li>
-        <li>SMC materials manufacturing</li>
-    </ul>
-
-
-    <h4>Working Experience</h4>
-    <dl>
-        <dt>Dec 2024 - Present</dt>
-        <dd>Rotating Rector, Hebei University of Technology (Finland)</dd>
-
-        <dt>April 2024 - Present</dt>
-        <dd>Deputy Director, International Exchange and Cooperation Office</dd>
-
-        <dt>February 2022 - Present</dt>
-        <dd>Vice Director of Electromagnetic Technology Institute, Hebei University of Technology</dd>
-
-        <dt>March 2017 - Present</dt>
-        <dd>Professor, Lecturer, Associate Professor, Ph.D. Advisor, Hebei University of Technology</dd>
-
-        <dt>January 2023 - June 2023</dt>
-        <dd>Instructor, LUT University, Finland</dd>
-
-        <dt>December 2018 - December 2019</dt>
-        <dd>Postdoctoral Researcher in Electrical Engineering, The Ohio State University, United States</dd>
-    </dl>
-    {% endif %}
-</body>
-
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col s12">
+  <section class="home-section home-news" aria-labelledby="home-news-heading">
+    <{{ news_heading }} class="home-section-title" id="home-news-heading">News of My Group</{{ news_heading }}>
     <div class="home-news-list">
       {% for post in paginator.posts %}
         {% assign summary = post.excerpt | strip_html | strip %}
         <a class="home-news-card" href="{{ post.url | relative_url }}" aria-labelledby="news-title-{{ forloop.index }}">
-          <h2 class="home-news-title" id="news-title-{{ forloop.index }}">{{ post.title | escape }}</h2>
+          <{{ story_heading }} class="home-news-title" id="news-title-{{ forloop.index }}">{{ post.title | escape }}</{{ story_heading }}>
           <time class="home-news-date" datetime="{% include news-date.html entry=post format='%Y-%m-%d' %}">{% include news-date.html entry=post format='%d %b %Y' %}</time>
           {% if summary != empty %}<p class="home-news-summary">{{ summary | escape }}</p>{% endif %}
         </a>
       {% endfor %}
     </div>
-  </div>
-  <div class="col s12 center-align">
-    <ul class="pagination">
-      <li class="{% unless paginator.previous_page %}disabled{% else %}waves-effect{% endunless %}">
-        {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <a href="{{site.baseurl}}/">
-        {% else %}
-        <a href="{{site.baseurl}}/page{{paginator.previous_page}}">
-        {% endif %}
-        {% else %}
-        <a href="#!">
-        {% endif %}
-          <i class="material-icons">chevron_left</i>
-        </a>
-      </li>
-      {% if paginator.page == 1 %}
-      <li class="active teal">
-        <a href="#!">1</a>
-      {% else %}
-      <li class="waves-effect">
-        <a href="{{site.baseurl}}/">1</a>
-      {% endif %}
-      </li>
-      {% for count in (2..paginator.total_pages) %}
-      {% if count == paginator.page %}
-      <li class="active teal"><a href="#!">{{count}}</a></li>
-      {% else %}
-      <li class="waves-effect"><a href="{{site.baseurl}}/page{{count}}">{{count}}</a></li>
-      {% endif %}
-      {% endfor %}
-      <li class="{% unless paginator.next_page %}disabled{% else %}waves-effect{% endunless %}">
-        {% if paginator.next_page %}
-        <a href="{{site.baseurl}}/page{{paginator.next_page}}">
-        {% else %}
-        <a href="#!">
-        {% endif %}
-          <i class="material-icons">chevron_right</i>
-        </a>
-      </li>
-    </ul>
-  </div>
+
+    {% if paginator.total_pages > 1 %}
+      <div class="home-pagination" role="navigation" aria-label="News pages">
+        <ul class="pagination browser-default">
+          {% if paginator.previous_page %}
+            <li><a href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous page">&#8249;</a></li>
+          {% endif %}
+          {% for number in (1..paginator.total_pages) %}
+            {% if number == 1 %}
+              {% assign page_path = '/' %}
+            {% else %}
+              {% assign page_path = site.paginate_path | default: '/page:num/' | replace: ':num', number %}
+            {% endif %}
+            <li><a href="{{ page_path | relative_url }}"{% if number == paginator.page %} aria-current="page"{% endif %}>{{ number }}</a></li>
+          {% endfor %}
+          {% if paginator.next_page %}
+            <li><a href="{{ paginator.next_page_path | relative_url }}" aria-label="Next page">&#8250;</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    {% endif %}
+  </section>
 </div>

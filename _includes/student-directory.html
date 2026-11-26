@@ -192,7 +192,7 @@
 
 {% for level in directory.levels %}
     <div class="section" aria-labelledby="{{ anchor }}-{{ level.id }}">
-        <h2 id="{{ anchor }}-{{ level.id }}">{% if lang == 'en' %}{% if level.id == 'doctoral' %}PhD/D.Phil Students{% else %}Master Students{% endif %}{% else %}{{ labels[level.id] }}{% endif %}</h2>
+        <h2 id="{{ anchor }}-{{ level.id }}">{% if lang == 'en' and level.id == 'doctoral' %}PhD/D.Phil Students{% else %}{{ labels[level.id] }}{% endif %}</h2>
         <div class="students-grid">
             {% for cohort in level.cohorts %}
                 {% for member in cohort.members %}
@@ -205,11 +205,11 @@
                             {% break %}
                         {% endif %}
                     {% endfor %}
-                    {% assign status = '' %}
-                    {% if member.end and member.end <= this_year %}
+                    {% assign status = 'status-active' %}
+                    {% if level.id == 'masters-alumni' %}
                         {% assign status = 'status-completed' %}
-                    {% elsif member.expected or level.id == 'doctoral' %}
-                        {% assign status = 'status-active' %}
+                    {% elsif level.id == 'doctoral' and member.end and member.end <= this_year %}
+                        {% assign status = 'status-completed' %}
                     {% endif %}
                     <div class="student {{ status }}" data-person="{{ member.person }}" data-entry="{{ cohort.year }}">
                         <div class="student-header">
