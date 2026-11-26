@@ -1,0 +1,16 @@
+.teaching-page { margin: 1.6rem 0 2rem; color: #23353d; }
+.teaching-page h1 { margin: 0 0 .75em; font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 650; }
+.teaching-group { margin: 0 0 1.15rem; padding: clamp(14px,2vw,24px); background: #f1f6f8; border: 1px solid #dbe4e6; border-radius: 10px; }
+.teaching-group:nth-of-type(2) { background: #eff6f3; }
+.teaching-group:nth-of-type(3) { background: #f7f5f0; }
+.teaching-group h2 { color: #26494e; font-size: 1.45rem; font-weight: 650; margin: 0 0 .7em; }
+.teaching-page .teaching-courses { margin: 0; padding: 0; list-style: none; }
+.teaching-courses li { margin: 0; padding: .75em 0; }
+.teaching-courses li:first-child { padding-top: 0; }
+.teaching-courses li:last-child { padding-bottom: 0; }
+.teaching-courses li + li { border-top: 1px solid #cedbdd; }
+.course-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .25em 1em; }
+.course-heading h3 { margin: 0; font-size: 1.13rem; line-height: 1.4; font-weight: 650; color: #21353f; }
+.course-duration { font-size: .94rem; color: #285867; font-weight: 650; white-space: nowrap; }
+.teaching-courses p { margin: 3px 0 0; line-height: 1.45; }
+.course-kind, .course-units { color: #4d6268; }

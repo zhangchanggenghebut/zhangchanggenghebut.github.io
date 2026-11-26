@@ -1,0 +1,53 @@
+labels:
+  en: {title: Teaching, hours: contact hours, classes: class groups}
+  zh: {title: 教学, hours: 学时, classes: 个教学班}
+groups:
+  - id: undergraduate
+    title: {en: Undergraduate courses, zh: 本科教学}
+    courses:
+      - id: electromagnetics
+        name: {en: Engineering Electromagnetism, zh: 工程电磁场}
+        kind: {en: Electrical engineering foundation course, zh: 电气工程专业基础课}
+        audience: {en: Second-year electrical engineering undergraduates, zh: 电气工程专业本科二年级}
+        term: {en: Spring semester, zh: 下学期}
+        hours: 40
+        classes: 12
+      - id: materials
+        name: {en: Electrical Engineering Materials and Their Applications, zh: 电工材料及其应用}
+        kind: {en: Major elective, zh: 专业选修课}
+        audience: {en: Third-year electrical engineering undergraduates, zh: 电气工程专业本科三年级}
+        term: {en: Autumn semester, zh: 上学期}
+        hours: 32
+        classes: 13
+      - id: signals
+        name: {en: Signals and Systems, zh: 信号与系统}
+        kind: {en: Electrical engineering foundation course, zh: 电气工程专业基础课}
+        audience: {en: Second-year electrical engineering undergraduates, zh: 电气工程专业本科二年级}
+        term: {en: Spring semester, zh: 下学期}
+        hours: 32
+        classes: 12
+  - id: finland
+    title: {en: Joint teaching in Finland, zh: 芬兰联合教学}
+    courses:
+      - id: lut-electromagnetism
+        name: {en: Electromagnetism, zh: 电磁场}
+        kind: {en: 'Taught in English at LUT University, Finland', zh: 芬兰拉彭兰塔大学，英语授课}
+        audience: {en: Electrical engineering undergraduates at LUT University and exchange students from Hebei University of Technology, zh: 芬兰拉彭兰塔大学电气工程专业本科生及河北工业大学国际交换生}
+        weeks: 12
+        units:
+          - {en: lectures, zh: 理论, hours: 24}
+          - {en: laboratory work, zh: 实验, hours: 24}
+          - {en: exercises, zh: 习题, hours: 24}
+  - id: postgraduate
+    title: {en: Graduate courses, zh: 研究生教学}
+    courses:
+      - id: numerical
+        name: {en: Numerical Analysis of Electromagnetic Fields, zh: 电磁场数值分析}
+        kind: {en: Core course for master's students, zh: 硕士研究生核心课}
+        audience: {en: First-year master's students in electrical engineering, zh: 电气工程专业硕士一年级}
+        hours: 32
+      - id: magnetic-materials
+        name: {en: Magnetic Materials in Electrical Engineering, zh: 电工磁性材料}
+        kind: {en: Joint master's and doctoral elective, zh: 硕博贯通选修课}
+        audience: {en: First-year master's and doctoral students in electrical engineering, zh: 电气工程专业硕士一年级和博士一年级}
+        hours: 16
