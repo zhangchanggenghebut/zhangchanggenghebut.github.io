@@ -181,7 +181,7 @@ people:
     topic:
       zh: 取向与无取向电工钢片磁致伸缩的测量与分析
       en: Measurement and analysis of magnetostriction in grain-oriented and non-oriented electrical steel sheets
-    url: https://infologic.design/CEM2025/Paper%2017%20-%20Tao%20Chen%2C.pdf
+    news_id: cem2025-chen
   rawal-shahbaz:
     name:
       zh: Rawal Shahbaz
@@ -422,3 +422,32 @@ people:
     topic:
       zh: 干式变压器电磁场与温度场耦合建模及实验研究
       en: Coupled electromagnetic and thermal modeling and experimental study of dry-type transformers
+
+news:
+  10.1016/j.asoc.2026.116305:
+    en: /2026/08/25/predicting-domain-wall-motion
+    zh: /zh/news/predicting-domain-wall-motion/
+  10.1007/s11664-026-13088-2:
+    en: /2026/08/05/alumina-insulation-in-fe-si-powder-cores
+    zh: /zh/news/alumina-insulation-in-fe-si-powder-cores/
+  10.1109/TMAG.2026.3711353:
+    en: /2026/07/08/extent-of-laser-cutting-damage-in-electrical-steel
+    zh: /zh/news/extent-of-laser-cutting-damage-in-electrical-steel/
+  10.1587/elex.23.20260119:
+    en: /2026/06/11/dynamic-magnetostriction-of-nanocrystalline-laminations
+    zh: /zh/news/dynamic-magnetostriction-of-nanocrystalline-laminations/
+  10.1108/COMPEL-01-2026-0043:
+    en: /2026/05/29/dimensions-and-magnetic-properties-of-nanocrystalline-laminates
+    zh: /zh/news/dimensions-and-magnetic-properties-of-nanocrystalline-laminates/
+  10.1063/9.0000987:
+    en: /2026/02/18/measuring-cable-currents-with-a-tmr-array
+    zh: /zh/news/measuring-cable-currents-with-a-tmr-array/
+  10.1063/9.0000992:
+    en: /2026/02/17/magnetoelectric-energy-harvesting-at-power-frequency
+    zh: /zh/news/magnetoelectric-energy-harvesting-at-power-frequency/
+  10.3390/ma16072850:
+    en: /2023/04/03/nanocrystalline-cores-under-pulsed-excitation
+    zh: /zh/news/nanocrystalline-cores-under-pulsed-excitation/
+  cem2025-chen:
+    en: /2025/04/10/measuring-magnetostriction-in-electrical-steel-sheets
+    zh: /zh/news/measuring-magnetostriction-in-electrical-steel-sheets/
