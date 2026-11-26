@@ -2,6 +2,7 @@
 layout: page
 title: "研究团队"
 lang: zh-CN
-css: ["group-profile.css?v=2"]
+css: ["projects.css?v=4", "group-profile.css?v=3"]
+js: ["project-editions.js?v=3"]
 ---
 {% include about.html %}

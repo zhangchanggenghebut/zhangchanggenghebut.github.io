@@ -1,4 +1,4 @@
-.projects-page {
+.projects-page, .student-panels {
   --section-padding: clamp(14px, 2.5vw, 26px);
   display: grid;
   gap: .65rem;

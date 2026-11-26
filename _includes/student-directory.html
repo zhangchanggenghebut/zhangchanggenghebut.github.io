@@ -21,28 +21,11 @@
             background-color: #f0f2f5;
         }
         
-        .section {
-            margin-bottom: 50px;
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
-        }
-        
-        h2 {
-            color: #1a237e;
-            font-size: 2em;
-            border-bottom: 3px solid #3f51b5;
-            padding-bottom: 15px;
-            margin-top: 0;
-            font-weight: 400;
-        }
-        
         .students-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
-            margin-top: 30px;
+            padding: var(--section-padding);
         }
         
         .student {
@@ -139,6 +122,7 @@
   }
 </style>
 
+<div class="student-panels">
 <nav class="student-jumps" aria-label="{{ labels.nav | escape }}">
   {% for level in directory.levels %}
     <a href="#{{ anchor }}-{{ level.id }}">{{ labels[level.id] | escape }}</a>
@@ -146,8 +130,17 @@
 </nav>
 
 {% for level in directory.levels %}
-    <div class="section" aria-labelledby="{{ anchor }}-{{ level.id }}">
-        <h2 id="{{ anchor }}-{{ level.id }}" tabindex="-1">{% if lang == 'en' and level.id == 'doctoral' %}PhD/D.Phil Students{% else %}{{ labels[level.id] }}{% endif %}</h2>
+    {% assign heading_id = anchor | append: '-' | append: level.id %}
+    {% assign heading = labels[level.id] %}
+    {% if lang == 'en' and level.id == 'doctoral' %}
+        {% assign heading = 'PhD/D.Phil Students' %}
+    {% endif %}
+    {% assign member_count = 0 %}
+    {% for cohort in level.cohorts %}
+        {% assign member_count = member_count | plus: cohort.members.size %}
+    {% endfor %}
+    <details class="section project-section" id="{{ level.id }}" aria-labelledby="{{ heading_id }}" data-edition-anchor>
+        {% include project-summary.html lang=lang title=heading anchor=heading_id count=member_count %}
         <div class="students-grid">
             {% for cohort in level.cohorts %}
                 {% for member in cohort.members %}
@@ -203,5 +196,6 @@
                 {% endfor %}
             {% endfor %}
         </div>
-    </div>
+    </details>
 {% endfor %}
+</div>
