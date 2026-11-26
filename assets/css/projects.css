@@ -1,0 +1,73 @@
+.projects-page {
+  display: grid;
+  gap: 1.35rem;
+  color: #263743;
+}
+.projects-page .projects-jumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem 1.3rem;
+  align-items: center;
+  height: auto;
+  line-height: 1.35;
+  background: transparent;
+  box-shadow: none;
+}
+.projects-jumps a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: #14566e;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: .22em;
+}
+.projects-page section[id], .funding-list li[id] { scroll-margin-top: 1rem; }
+.funding-panel, .projects-records {
+  min-width: 0;
+  padding: clamp(14px, 2.5vw, 30px);
+  background: #fff;
+  border: 1px solid #dde5e8;
+  border-radius: 10px;
+}
+.projects-page > section > h2 {
+  margin: 0 0 .85rem;
+  color: #284c51;
+  font-size: clamp(1.35rem, 2.4vw, 1.65rem);
+  font-weight: 650;
+  line-height: 1.25;
+}
+.funding-list { margin: 0; padding: 0; list-style: none; }
+.funding-list li { padding: .8rem 0; border-top: 1px solid #dde6e8; }
+.funding-list li:last-child { padding-bottom: 0; }
+.funding-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: .2rem 1.2rem;
+}
+.funding-heading h3, .projects-records h3 {
+  margin: 0;
+  color: #233c48;
+  font-size: 1.12rem;
+  font-weight: 650;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.funding-period {
+  color: #485c63;
+  font-size: .93rem;
+  font-variant-numeric: tabular-nums;
+}
+.funding-list p { margin: .18rem 0 0; line-height: 1.45; }
+.funding-program { color: #39535d; }
+.funding-program span, .funding-details span { display: inline-block; }
+.funding-details { color: #4b6068; font-size: .93rem; }
+.projects-records h3 { margin: 1rem 0 .3rem; }
+.projects-records p, .projects-records ol, .projects-records ul { margin: .35rem 0; }
+.projects-records ol, .projects-records ul { padding-inline-start: 1.5rem; }
+.projects-records li { margin: .35rem 0; line-height: 1.5; }
+.projects-jumps a:focus-visible { outline: 2px solid #175e75; outline-offset: 2px; }
+@media (max-width: 700px) {
+  .funding-heading { grid-template-columns: 1fr; }
+}

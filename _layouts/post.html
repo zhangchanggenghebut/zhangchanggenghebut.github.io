@@ -20,7 +20,7 @@ js: ["post.js"]
           {% for cat in page.categories %}
           {% capture test %}{{cat | slice: 0}}{% endcapture %}
           {% capture testup %}{{cat | slice: 0 | upcase}}{% endcapture %}
-          <a href="{{site.baseurl}}/categories#{{cat | slugify}}{% if test == testup %}_cap{% endif %}" target="_blank"><div class="chip">{{cat}}</div></a>
+          <a href="{{ '/categories' | relative_url }}#{{cat | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip">{{cat}}</div></a>
           {% endfor %}
         </span>
         <span>
@@ -28,7 +28,7 @@ js: ["post.js"]
           {% for tag in page.tags %}
           {% capture test %}{{tag | slice: 0}}{% endcapture %}
           {% capture testup %}{{tag | slice: 0 | upcase}}{% endcapture %}
-          <a href="{{site.baseurl}}/tags#{{tag | slugify}}{% if test == testup %}_cap{% endif %}" target="_blank"><div class="chip">{{tag}}</div></a>
+          <a href="{{ '/tags' | relative_url }}#{{tag | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip">{{tag}}</div></a>
           {% endfor %}
         </span>
       </div>

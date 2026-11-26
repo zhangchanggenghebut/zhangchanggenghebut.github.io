@@ -138,9 +138,15 @@
   }
 </style>
 
+<nav class="student-jumps" aria-label="{{ labels.nav | escape }}">
+  {% for level in directory.levels %}
+    <a href="#{{ anchor }}-{{ level.id }}">{{ labels[level.id] | escape }}</a>
+  {% endfor %}
+</nav>
+
 {% for level in directory.levels %}
     <div class="section" aria-labelledby="{{ anchor }}-{{ level.id }}">
-        <h2 id="{{ anchor }}-{{ level.id }}">{% if lang == 'en' and level.id == 'doctoral' %}PhD/D.Phil Students{% else %}{{ labels[level.id] }}{% endif %}</h2>
+        <h2 id="{{ anchor }}-{{ level.id }}" tabindex="-1">{% if lang == 'en' and level.id == 'doctoral' %}PhD/D.Phil Students{% else %}{{ labels[level.id] }}{% endif %}</h2>
         <div class="students-grid">
             {% for cohort in level.cohorts %}
                 {% for member in cohort.members %}

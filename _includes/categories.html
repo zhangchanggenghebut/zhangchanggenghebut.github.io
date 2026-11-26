@@ -14,12 +14,12 @@
     <h4 id="{{cat[0] | slugify}}{% if test == testup %}_cap{% endif %}">{{cat[0]}}</h4>
     <ul class="cat-post">
       {% for post in cat[1] %}
-      <a class="post-title" href="{{site.baseurl}}{{post.url}}" target="_blank">
-        <li>
-          {{post.title}}
+      <li>
+        <a class="post-title" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
           <small class="post-date">{% include news-date.html entry=post format='short' %}</small>
-        </li>
-      </a>
+        </a>
+      </li>
       {% endfor %}
     </ul>
     {% endfor %}

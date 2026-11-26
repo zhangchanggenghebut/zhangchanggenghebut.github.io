@@ -1,34 +1,71 @@
+{% assign language = include.lang | default: 'en' %}
 {% assign dated_papers = site.data.papers | group_by: 'published' | sort: 'name' | reverse %}
-<div class="papers-catalog" lang="en">
-  <nav class="paper-years" aria-label="Publications by year">
-    {% assign previous_year = '' %}
-    {% for group in dated_papers %}
-      {% assign year = group.name | slice: 0, 4 %}
-      {% if year != previous_year %}<a href="#papers-{{ year }}">{{ year }}</a>{% endif %}
-      {% assign previous_year = year %}
-    {% endfor %}
-  </nav>
-  <p class="catalog-note">By journal issue or conference date, newest first. An asterisk marks a corresponding author.</p>
+{% if language == 'zh' %}
+  {% assign year_heading = 'h3' %}
+  {% assign title_heading = 'h4' %}
+  {% assign day_format = '%Y年%-m月%-d日' %}
+  {% assign month_format = '%Y年%-m月' %}
+{% else %}
+  {% assign year_heading = 'h2' %}
+  {% assign title_heading = 'h3' %}
+  {% assign day_format = '%-d %b %Y' %}
+  {% assign month_format = '%b %Y' %}
+{% endif %}
+<div class="papers-catalog" lang="{% if language == 'zh' %}zh-CN{% else %}en{% endif %}">
+  <div class="catalog-tools">
+    <nav class="paper-years" aria-label="{% if language == 'zh' %}按年份浏览论文{% else %}Publications by year{% endif %}">
+      {% assign previous_year = '' %}
+      {% for group in dated_papers %}
+        {% assign year = group.name | slice: 0, 4 %}
+        {% if year != previous_year %}<a href="#papers-{{ year }}">{{ year }}</a>{% endif %}
+        {% assign previous_year = year %}
+      {% endfor %}
+    </nav>
+    {% if language == 'zh' %}
+      <a class="catalog-language" href="{{ '/papers' | relative_url }}" hreflang="en">英文目录</a>
+    {% else %}
+      <a class="catalog-language" href="{{ '/projects' | relative_url }}#papers" hreflang="zh-CN">Chinese edition</a>
+    {% endif %}
+  </div>
+  <p class="catalog-note">{% if language == 'zh' %}按期刊刊期或会议日期倒序排列。作者姓名后的 * 表示通讯作者。{% else %}By journal issue or conference date, newest first. An asterisk marks a corresponding author.{% endif %}</p>
   {% assign previous_year = '' %}
   {% for group in dated_papers %}
     {% assign year = group.name | slice: 0, 4 %}
     {% if year != previous_year %}
       {% unless forloop.first %}</ol></section>{% endunless %}
       <section class="paper-year" aria-labelledby="papers-{{ year }}">
-        <h2 id="papers-{{ year }}">{{ year }}</h2>
+        <{{ year_heading }} class="paper-year-title" id="papers-{{ year }}" tabindex="-1">{{ year }}</{{ year_heading }}>
         <ol class="paper-list">
     {% endif %}
     {% for paper in group.items %}
       {% assign story = site.data.group_students.news[paper.news] %}
-      {% assign title = paper.title | default: story.title.en %}
+      {% if language == 'zh' %}
+        {% assign title = story.title.zh | default: paper.title_zh | default: paper.title %}
+        {% assign authors = paper.authors_zh | default: paper.authors %}
+        {% assign venue = paper.venue_zh | default: paper.venue %}
+        {% assign note = paper.note_zh | default: paper.note %}
+      {% else %}
+        {% assign title = paper.title | default: story.title.en %}
+        {% assign authors = paper.authors %}
+        {% assign venue = paper.venue %}
+        {% assign note = paper.note %}
+      {% endif %}
       {% assign precision = paper.published | size %}
+      {% capture display_date -%}
+        {%- if precision == 10 -%}
+          {{ paper.published | date: day_format }}
+        {%- elsif precision == 7 -%}
+          {{ paper.published | append: '-01' | date: month_format }}
+        {%- else -%}{{ year }}{% if language == 'zh' %}年{% endif %}
+        {%- endif -%}
+      {%- endcapture %}
       <li class="paper-entry">
         <div class="paper-heading">
-          <h3>{% if story %}<a href="{{ story.path.en | relative_url }}">{{ title | escape }}</a>{% else %}{{ title | escape }}{% endif %}</h3>
-          {% if paper.pdf %}<a class="paper-pdf" href="{{ paper.pdf | relative_url }}" download aria-label="Download PDF: {{ title | escape }}">PDF</a>{% endif %}
+          <{{ title_heading }} class="paper-title">{% if story %}<a href="{{ story.path[language] | relative_url }}">{{ title | escape }}</a>{% else %}{{ title | escape }}{% endif %}</{{ title_heading }}>
+          {% if paper.pdf %}<a class="paper-pdf" href="{{ paper.pdf | relative_url }}" download aria-label="{% if language == 'zh' %}下载论文 PDF{% else %}Download PDF{% endif %} · {{ title | escape }}">{% if language == 'zh' %}下载 PDF{% else %}PDF{% endif %}</a>{% endif %}
         </div>
-        <p class="paper-authors">{{ paper.authors | escape }}</p>
-        <p class="paper-citation"><time datetime="{{ paper.published }}">{% if precision == 10 %}{{ paper.published | date: '%-d %b %Y' }}{% elsif precision == 7 %}{{ paper.published | append: '-01' | date: '%b %Y' }}{% else %}{{ year }}{% endif %}</time> <span aria-hidden="true">·</span> {{ paper.venue | escape }}{% if paper.note %} <span aria-hidden="true">·</span> {{ paper.note | escape }}{% endif %}</p>
+        <p class="paper-authors">{{ authors | escape }}</p>
+        <p class="paper-citation"><time datetime="{{ paper.published }}">{{ display_date }}</time> <span aria-hidden="true">·</span> {{ venue | escape }}{% if note %} <span aria-hidden="true">·</span> {{ note | escape }}{% endif %}</p>
       </li>
     {% endfor %}
     {% if forloop.last %}</ol></section>{% endif %}

@@ -1,9 +1,17 @@
 .papers-catalog {
+  min-width: 0;
   color: #263743;
   background: #fff;
   padding: clamp(14px, 2.5vw, 30px);
   border: 1px solid #dde5e8;
   border-radius: 10px;
+}
+.catalog-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: .3rem 1rem;
 }
 .papers-catalog .paper-years {
   display: flex;
@@ -11,16 +19,17 @@
   gap: 2px 13px;
   align-items: baseline;
   height: auto;
+  width: auto;
   padding: 0;
   background: transparent;
   box-shadow: none;
   line-height: 1.7;
 }
-.paper-years a, .paper-heading a { color: #14566e; }
-.paper-years a { font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.paper-years a, .paper-heading a, .catalog-language { color: #14566e; }
+.paper-years a, .catalog-language { font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 .papers-catalog .catalog-note { margin: 6px 0 18px; color: #505f67; font-size: .92rem; }
 .paper-year + .paper-year { margin-top: 20px; }
-.paper-year h2 {
+.paper-year-title {
   margin: 0;
   padding: 5px 0;
   border-bottom: 2px solid #c1d7d6;
@@ -33,10 +42,10 @@
 .paper-entry { padding: 10px 0; }
 .paper-entry + .paper-entry { border-top: 1px solid #e5eaeb; }
 .paper-heading { display: flex; gap: 1em; align-items: baseline; justify-content: space-between; }
-.paper-heading h3 { margin: 0; font-size: 1.12rem; line-height: 1.3; font-weight: 650; overflow-wrap: anywhere; }
+.paper-heading .paper-title { margin: 0; min-width: 0; font-size: 1.12rem; line-height: 1.35; font-weight: 650; overflow-wrap: anywhere; }
 .paper-heading a:hover, .paper-heading a:focus-visible { text-decoration: underline; }
 .paper-heading .paper-pdf { flex: none; font-weight: 650; font-size: .9rem; text-decoration: underline; }
-.paper-entry p { margin: 2px 0 0; line-height: 1.4; }
+.paper-entry p { margin: 2px 0 0; line-height: 1.4; overflow-wrap: anywhere; }
 .paper-citation { color: #50616a; font-size: .93rem; }
 .paper-citation time { white-space: nowrap; }
 .papers-catalog a:focus-visible { outline: 2px solid #175e75; outline-offset: 2px; }

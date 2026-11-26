@@ -1,7 +1,7 @@
 ---
 layout: page
-title: " "
-css: ["projects.css"]
-js: ["https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js", "projects.js"]
+title: Awards and Funding
+lang: en
+css: ["projects.css?v=2"]
 ---
 {% include projects-en.html %}

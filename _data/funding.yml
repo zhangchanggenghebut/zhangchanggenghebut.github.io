@@ -1,0 +1,126 @@
+programs:
+  nsfc-general:
+    zh: 国家自然科学基金委员会 · 面上项目
+    en: National Natural Science Foundation of China · General Program
+  hebei-general:
+    zh: 河北省自然科学基金 · 面上项目
+    en: Natural Science Foundation of Hebei Province · General Program
+  nsfc-young:
+    zh: 国家自然科学基金委员会 · 青年科学基金项目
+    en: National Natural Science Foundation of China · Young Scientists Fund
+  hebei-young:
+    zh: 河北省自然科学基金 · 青年项目
+    en: Natural Science Foundation of Hebei Province · Young Scientists Fund
+  nsfc-major-plan:
+    zh: 国家自然科学基金委员会 · 重大研究计划
+    en: National Natural Science Foundation of China · Major Research Plan
+  hebei-universities:
+    zh: 河北省高等学校科研技术研究项目
+    en: Science and Technology Research Program for Higher Education Institutions in Hebei Province
+  nsfc-key:
+    zh: 国家自然科学基金委员会 · 重点项目
+    en: National Natural Science Foundation of China · Key Program
+  tbea:
+    zh: 特变电工
+    en: TBEA
+roles:
+  principal: {zh: 张长庚主持, en: Principal investigator · Changgeng Zhang}
+  participant: {zh: 张长庚参与, en: Project participant · Changgeng Zhang}
+  third: {zh: 张长庚参与，排名第三, en: Project participant · Changgeng Zhang (third-ranked contributor)}
+statuses:
+  ongoing: {zh: 在研, en: Ongoing}
+  completed: {zh: 结题, en: Completed}
+projects:
+  - number: '52677007'
+    program: nsfc-general
+    title:
+      zh: 面向pT级弱磁探测的磁电复合材料巴克豪森磁噪声机理与协同抑制研究
+      en: Mechanisms and synergistic suppression of Barkhausen magnetic noise in magnetoelectric composites for picotesla-level magnetic field detection
+    period: 2027.01 – 2030.12
+    budget_cny: '500,000'
+    status: ongoing
+    role: principal
+  - number: E2023202050
+    program: hebei-general
+    title:
+      zh: 温度应力作用下超薄电工钢磁特性测试和模拟研究
+      en: Measurement and simulation of the magnetic properties of ultra-thin electrical steel under thermal stress
+    period: 2023.01 – 2025.12
+    budget_cny: '60,000'
+    status: ongoing
+    role: principal
+  - number: '52277008'
+    program: nsfc-general
+    title:
+      zh: 中高频用超薄硅钢热-力协同作用下介-宏观磁化机理和磁特性实验模拟研究
+      en: Experimental and numerical study of mesoscopic and macroscopic magnetization mechanisms and magnetic properties of ultra-thin silicon steel under coupled thermal and mechanical loading for medium- and high-frequency applications
+    period: 2023.01 – 2026.12
+    budget_cny: '540,000'
+    status: ongoing
+    role: principal
+  - number: '51807048'
+    program: nsfc-young
+    title:
+      zh: 基于神经网络和多条件耦合型磁滞算子深度融合的磁滞模型研究
+      en: Hysteresis modeling by integrating neural networks with hysteresis operators coupled across operating conditions
+    period: 2019.01 – 2021.12
+    budget_cny: '250,000'
+    status: completed
+    role: principal
+  - number: E2018202301
+    program: hebei-young
+    title:
+      zh: 高频变压器绕组电磁效应的建模与计算
+      en: Modeling and calculation of electromagnetic effects in high-frequency transformer windings
+    period: 2018.01 – 2020.12
+    budget_cny: '40,000'
+    status: ongoing
+    role: principal
+  - number: '92066206'
+    program: nsfc-major-plan
+    title:
+      zh: 极端条件下电磁能装备电磁综合性能与可靠性统一设计方法
+      en: Unified design methods for the electromagnetic performance and reliability of electromagnetic energy equipment under extreme conditions
+    period: 2021.01.01 – 2024.12.31
+    budget_cny: '3,000,000'
+    status: ongoing
+    role: participant
+  - number: QN2018157
+    program: hebei-universities
+    title:
+      zh: 永磁体在多种谐波激励下的涡流损耗测量与建模
+      en: Measurement and modeling of eddy-current losses in permanent magnets under multiple harmonic excitations
+    period: 2018.01 – 2019.12
+    status: ongoing
+    role: principal
+  - number: '51777055'
+    program: nsfc-general
+    title:
+      zh: 模拟服役条件下电工磁材料磁特性测试及混合矢量磁滞模型研究
+      en: Magnetic characterization of electrical magnetic materials under simulated service conditions and development of a hybrid vector hysteresis model
+    period: 2018.01 – 2021.12
+    budget_cny: '620,000'
+    status: ongoing
+    role: participant
+  - number: '51677052'
+    program: nsfc-general
+    title:
+      zh: 电力变压器谐波磁特性模拟与谐波磁损耗有效算法研究
+      en: Simulation of harmonic magnetic behavior in power transformers and efficient algorithms for calculating harmonic core losses
+    period: 2017.01 – 2020.12
+    budget_cny: '630,000'
+    status: ongoing
+    role: participant
+  - number: '51237005'
+    program: nsfc-key
+    title:
+      zh: 电工磁性材料三维磁特性检测技术和张量磁滞模型
+      en: Three-dimensional magnetic characterization and tensor hysteresis modeling of magnetic materials for electrical engineering
+    period: 2013.01 – 2017.12
+    budget_cny: '2,900,000'
+    status: completed
+    role: third
+  - program: tbea
+    title: {zh: 特变电工合作项目, en: TBEA research project}
+    period: 2018.01 – 2020.05
+    role: principal

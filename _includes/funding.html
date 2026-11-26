@@ -1,0 +1,28 @@
+{% assign language = include.lang %}
+{% assign funding = site.data.funding %}
+<section id="funding" class="funding-panel" aria-labelledby="funding-title">
+  <h2 id="funding-title">{% if language == 'zh' %}科研项目{% else %}Research funding{% endif %}</h2>
+  <ol class="funding-list">
+    {% for project in funding.projects %}
+      <li{% if project.number %} id="grant-{{ project.number | escape }}"{% endif %}>
+        <div class="funding-heading">
+          <h3>{{ project.title[language] | escape }}</h3>
+          <span class="funding-period">{{ project.period | escape }}</span>
+        </div>
+        <p class="funding-program">{{ funding.programs[project.program][language] | escape }}{% if project.number %} · <span>{% if language == 'zh' %}项目编号{% else %}Grant{% endif %} {{ project.number | escape }}</span>{% endif %}</p>
+        <p class="funding-details">
+          <span>{{ funding.roles[project.role][language] | escape }}</span>
+          {% if project.status %} · <span>{{ funding.statuses[project.status][language] | escape }}</span>{% endif %}
+          {% if project.budget_cny %} · <span>
+            {%- if language == 'zh' -%}
+              {%- assign yuan = project.budget_cny | remove: ',' | plus: 0 -%}
+              {%- assign remainder = yuan | modulo: 10000 -%}
+              经费 {% if remainder == 0 %}{{ yuan | divided_by: 10000 }} 万元{% else %}{{ project.budget_cny }} 元{% endif %}
+            {%- else -%}CNY {{ project.budget_cny }}
+            {%- endif -%}
+          </span>{% endif %}
+        </p>
+      </li>
+    {% endfor %}
+  </ol>
+</section>

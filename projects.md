@@ -1,7 +1,7 @@
 ---
 layout: page
-title: " 项目和论文"
-css: ["projects.css"]
-js: ["https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js", "projects.js"]
+title: 项目和论文
+lang: zh-CN
+css: ["projects.css?v=2", "papers.css?v=2"]
 ---
 {% include projects.html %}

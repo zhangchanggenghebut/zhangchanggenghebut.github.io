@@ -1,126 +1,21 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funding</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        h1, h2 {
-            text-align: center;
-            color: #2c3e50;
-        }
-        .section {
-            background-color: #fff;
-            padding: 20px 30px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 40px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-        th, td {
-            border: 1px solid #dddddd;
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #2c3e50;
-            color: #fff;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        .additional-info {
-            color: #e74c3c;
-            font-weight: bold;
-        }
-        @media (max-width: 600px) {
-            body {
-                margin: 20px;
-            }
-            .section {
-                padding: 15px 20px;
-            }
-            th, td {
-                padding: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <h1>Awards</h1>
+<div class="projects-page" lang="en">
+  <nav class="projects-jumps" aria-label="On this page">
+    <a href="#funding">Research funding</a>
+    <a href="#awards">Awards</a>
+  </nav>
 
-    <div class="section">
-        <ol>
-            <li>Chinese Hebei Science and Technology Progress Award, 1st Prize, "Rotating Magnetic Property Test Technology and Application Research of Electrical Magnetic Materials".</li>
-            <li>Invited Plenary Speaker at the International Conference ASEMD2023.</li>
-            <li>30-Minute Invited Speaker at the International Conference ICEF2021.</li>
-            <li>Best Paper Award at the Annual Conference on Electrical Theory and New Technology, Harbin, 2021.</li>
-            <li>Best Paper Award at the 10th Frontier Academic Forum of Electrical Engineering, 2022.</li>
-            <li>Serving as a Session Chair at the International Meeting of MMM2023, Dallas, US.</li>
-            <li>Serving as a Guest Editor of ICEF2021 and Compel, overseeing more than 200 papers.</li>
-        </ol>
-    </div>
+  {% include funding.html lang="en" %}
 
-    <div class="section">
-        <h2>Funding</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Duration</th>
-                    <th>Program</th>
-                    <th>Role</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2019.01 - 2021.12</td>
-                    <td>Young Program of the National Natural Science Foundation of China</td>
-                    <td>Person in Charge</td>
-                </tr>
-                <tr>
-                    <td>2023.01 - 2025.12</td>
-                    <td>General Program of the National Natural Science Foundation of China</td>
-                    <td>Person in Charge</td>
-                </tr>
-                <tr>
-                    <td>2021.01 - 2024.12</td>
-                    <td>Key Program of the National Natural Science Foundation of China</td>
-                    <td>Team Member</td>
-                </tr>
-                <tr>
-                    <td>2018.01 - 2020.12</td>
-                    <td>Young Program of the Natural Science Foundation of Hebei Province, China</td>
-                    <td>Person in Charge</td>
-                </tr>
-                <tr>
-                    <td>2023.01 - 2025.12</td>
-                    <td>Young Program of the Natural Science Foundation of Hebei Province, China</td>
-                    <td>Person in Charge</td>
-                </tr>
-                <tr>
-                    <td>2018.01 - 2020.05</td>
-                    <td>Program from TBEA Company (the largest power transformer company in China)</td>
-                    <td>Person in Charge</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</body>
-</html>
+  <section id="awards" class="projects-records" aria-labelledby="awards-title">
+    <h2 id="awards-title">Awards</h2>
+    <ol>
+      <li>Chinese Hebei Science and Technology Progress Award, 1st Prize, "Rotating Magnetic Property Test Technology and Application Research of Electrical Magnetic Materials".</li>
+      <li>Invited Plenary Speaker at the International Conference ASEMD2023.</li>
+      <li>30-Minute Invited Speaker at the International Conference ICEF2021.</li>
+      <li>Best Paper Award at the Annual Conference on Electrical Theory and New Technology, Harbin, 2021.</li>
+      <li>Best Paper Award at the 10th Frontier Academic Forum of Electrical Engineering, 2022.</li>
+      <li>Serving as a Session Chair at the International Meeting of MMM2023, Dallas, US.</li>
+      <li>Serving as a Guest Editor of ICEF2021 and Compel, overseeing more than 200 papers.</li>
+    </ol>
+  </section>
+</div>

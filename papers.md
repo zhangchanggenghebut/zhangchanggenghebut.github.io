@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Papers"
-css: ["papers.css"]
+lang: en
+css: ["papers.css?v=2"]
 ---
-{% include papers.html %}
+{% include papers.html lang="en" %}

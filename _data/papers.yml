@@ -67,7 +67,9 @@
 - news: cem2025-chen
   published: '2025-04-10'
   authors: Tao Chen, Qingxin Yang, Changgeng Zhang, Yongjian Li
+  authors_zh: 陈涛、杨庆新、张长庚、李永建
   venue: 12th International Conference on Computation in Electromagnetics (CEM 2025), Bruges, Belgium, session P7, paper 17
+  venue_zh: 第十二届国际计算电磁学会议，比利时布鲁日，第七分会场第 17 号论文，2025 年 4 月 10 日
   pdf: /assets/papers/2025/measuring-magnetostriction-in-electrical-steel-sheets.pdf
 - news: 10.1063/9.0000878
   published: '2025-03-05'
@@ -84,11 +86,14 @@
   authors: Yifan Chen, Qingxin Yang, Yongjian Li, Hao Zhang, Changgeng Zhang*
   venue: IEEE Transactions on Applied Superconductivity 34(8), 5500805 (2024)
   note: SCI-indexed
+  note_zh: SCI 收录
   pdf: /assets/papers/2024/estimating-transformer-fields-with-deep-convolutional-networks.pdf
 - news: 10.19487/j.cnki.1001-8425.2024.10.010
   published: 2024-10
   authors: Changgeng Zhang, Kai Wang, Chunguang Wang, Zhenyu Wan
+  authors_zh: 张长庚、王锴、王春光、万振宇
   venue: Transformer 61(10), 1–5 (2024) · In Chinese
+  venue_zh: 《变压器》第 61 卷第 10 期，第 1–5 页（2024）
   pdf: /assets/papers/2024/optimal-design-of-hybrid-laminated-transformer-cores.pdf
 - news: 10.1109/TMAG.2023.3316753
   published: 2024-03
@@ -100,12 +105,14 @@
   authors: Hao Zhang, Qingxin Yang, Changgeng Zhang*, Yongjian Li, Yifan Chen
   venue: AIP Advances 14(2), 025321 (2024)
   note: SCI-indexed
+  note_zh: SCI 收录
   pdf: /assets/papers/2024/temperature-dependent-hysteresis-with-temporal-convolutions.pdf
 - news: 10.1063/9.0000650
   published: '2024-02-07'
   authors: Wenbin Meng, Changgeng Zhang*, Yongjian Li, He Sun, Zhenyu Wan
   venue: AIP Advances 14(2), 025314 (2024)
   note: SCI-indexed
+  note_zh: SCI 收录
   pdf: /assets/papers/2024/high-frequency-loss-in-wound-nanocrystalline-cores.pdf
 - news: 10.3390/ma16124385
   published: '2023-06-14'
@@ -137,11 +144,14 @@
   authors: Yifan Chen, Qingxin Yang, Changgeng Zhang*, Yongjian Li, Xinghan Li
   venue: IEEE Transactions on Magnetics 58(11), 8402105 (2022)
   note: ESI Highly Cited Paper
+  note_zh: ESI 高被引论文
   pdf: /assets/papers/2022/thermal-network-model-for-a-high-power-dry-type-transformer.pdf
 - news: 10.19595/j.cnki.1000-6753.tces.210804
   published: '2022-08-10'
   authors: Changgeng Zhang*, Yakun Tian, Yongjian Li, Yating Li, Zhenbin Du, Zhiguang Cheng, Qingxin Yang
+  authors_zh: 张长庚*、田亚坤、李永建、利雅婷、杜振斌、程志光、杨庆新
   venue: Transactions of China Electrotechnical Society 37(15), 3733–3742 (2022) · In Chinese
+  venue_zh: 《电工技术学报》，第 37 卷第 15 期，第 3733–3742 页
   pdf: /assets/papers/2022/stray-loss-in-laminated-transformer-shields-under-harmonics-and-dc-bias.pdf
 - news: 10.1109/TMAG.2021.3083649
   published: 2022-02
@@ -151,12 +161,16 @@
 - news: 10.13336/j.1003-6520.hve.20201067
   published: '2021-06-30'
   authors: Changgeng Zhang*, Jiajun Wang, Yongjian Li, Qingxin Yang
+  authors_zh: 张长庚*、王家俊、李永建、杨庆新
   venue: High Voltage Engineering 47(6), 2158–2168 (2021) · In Chinese
+  venue_zh: 《高电压技术》，第 47 卷第 6 期，第 2158–2168 页
   pdf: /assets/papers/2021/dynamic-core-loss-in-converter-valve-saturable-reactors.pdf
 - news: 10.19595/j.cnki.1000-6753.tces.191227
   published: '2020-11-10'
   authors: Yongjian Li, Xinxiao Yan, Changgeng Zhang*, Yifan Chen, Wenliang Ying
+  authors_zh: 李永建、闫鑫笑、张长庚*、陈怡帆、盈文亮
   venue: Transactions of China Electrotechnical Society 35(21), 4483–4491 (2020) · In Chinese
+  venue_zh: 《电工技术学报》，第 35 卷第 21 期，第 4483–4491 页
   pdf: /assets/papers/2020/losses-and-local-overheating-in-transformer-windings.pdf
 - news: 10.3233/JAE-190054
   published: 2020-04
@@ -174,6 +188,7 @@
   venue: IEEE Transactions on Magnetics 55(2), 8000204 (2019)
   pdf: /assets/papers/2019/vector-magnetic-properties-of-steel-under-stacking-direction-bias.pdf
 - title: Research of Harmonic Effects on Core Loss in Soft Magnetic Composite Materials
+  title_zh: 谐波对软磁复合材料铁芯损耗的影响
   published: 2019-02
   authors: Xinran Yu, Yongjian Li, Qingxin Yang, Changgeng Zhang
   venue: IEEE Transactions on Magnetics 55(2), 1–5
@@ -183,50 +198,68 @@
   venue: IEEE Transactions on Magnetics 55(2), 6100404 (2019)
   pdf: /assets/papers/2019/double-sheet-testing-of-silicon-steel-at-high-frequency.pdf
 - title: Optimization of output power and transmission efficiency of magnetically coupled resonance wireless power transfer system
+  title_zh: 磁耦合谐振式无线电能传输系统输出功率与传输效率优化
   published: 2018-05
   authors: Rongge Yan, Xiaoting Guo, Shaoqing Cao, Changgeng Zhang
   venue: AIP Advances 8(5), 056625
 - title: Magnetic measurement of soft magnetic composites material under 3D SVPWM excitation
+  title_zh: 三维空间矢量脉宽调制激励下软磁复合材料的磁特性测量
   published: 2018-05
   authors: Changgeng Zhang*, Baolin Jiang, Yongjian Li, Qingxin Yang
   venue: AIP Advances 8(5), 056630
 - title: Improved High-Frequency Rotating Magnetic Properties Tester for Nanocrystalline Soft Magnetic Material
+  title_zh: 适用于纳米晶软磁材料的改进型高频旋转磁特性测试装置
   published: 2017-11
   authors: Yongjian Li, Qing Zhao, Lixiang Wang, Changgeng Zhang, Rongge Yan
   venue: IEEE Transactions on Magnetics 53(11), 6101504
 - news: tces-2017-32-11-208
   published: '2017-06-10'
   authors: Changgeng Zhang, Qingxin Yang*, Yongjian Li
+  authors_zh: 张长庚、杨庆新*、李永建
   venue: Transactions of China Electrotechnical Society 32(11), 208–216 (2017) · In Chinese
+  venue_zh: 《电工技术学报》，第 32 卷第 11 期，第 208–216 页
   pdf: /assets/papers/2017/rotational-hysteresis-loss-in-soft-magnetic-materials.pdf
 - news: 10.13334/j.0258-8013.pcsee.160222
   published: '2017-04-05'
   authors: Changgeng Zhang, Qingxin Yang, Yongjian Li*
+  authors_zh: 张长庚、杨庆新、李永建*
   venue: Proceedings of the CSEE 37(7), 2167–2175 (2017) · In Chinese
+  venue_zh: 《中国电机工程学报》，第 37 卷第 7 期，第 2167–2175 页
   pdf: /assets/papers/2017/broadband-three-axis-modeling-of-laminated-silicon-steel.pdf
 - news: 10.1109/TIE.2016.2597118
   published: 2017-03
   authors: Changgeng Zhang, Yongjian Li*, Jingsong Li, Qingxin Yang, Jianguo Zhu
   venue: IEEE Transactions on Industrial Electronics 64(3), 2476–2485 (2017)
+  note_zh: SCI 一区
   pdf: /assets/papers/2017/three-dimensional-magnetic-measurement-with-harmonic-compensation.pdf
 - news: 10.13334/j.0258-8013.pcsee.160221
   published: '2016-11-05'
   authors: Changgeng Zhang, Yongjian Li, Qingxin Yang*
+  authors_zh: 张长庚、李永建、杨庆新*
   venue: Proceedings of the CSEE 36(21), 5966–5974, 6041 (2016) · In Chinese
+  venue_zh: 《中国电机工程学报》，第 36 卷第 21 期，第 5966–5974、6041 页
   pdf: /assets/papers/2016/electromagnetic-simulation-with-hysteresis-and-micro-eddy-currents.pdf
 - title: Rotational Core Loss of Silicon Steel Laminations Based on Three-Dimensional Magnetic Properties Measurement
+  title_zh: 基于三维磁特性测量的硅钢叠片旋转铁损研究
   published: 2016-06
   authors: Yongjian Li, Lei Cao, Changgeng Zhang, Qingxin Yang, Erping Li
   venue: IEEE Transactions on Applied Superconductivity 26(4), 1–5
 - title: An Arbitrary 3D Magnetic Flux Density Generator Based on 3D Space Vector PWM Control Method
+  title_zh: 基于三维空间矢量脉宽调制的任意三维磁通密度轨迹发生装置
   published: '2015'
   authors: Changgeng Zhang, Qingxin Yang, Yongjian Li
   venue: Journal of International Conference on Electrical Machines and Systems 4(3), 58–65
 - title: A Novel Three Dimensional Space Vector PWM Control for Three Dimensional Magnetic Property Measurement Apparatus
+  title_zh: 用于三维磁特性测量装置的新型三维空间矢量脉宽调制控制方法
   published: 2014-10
   authors: Changgeng Zhang, Qingxin Yang, Yongjian Li, Ziyi Zhang
   venue: 17th International Conference on Electrical Machines and Systems (ICEMS), 22–25 October 2014
+  note: EI 20150800537085
+  note_zh: EI 收录号 20150800537085
 - title: Three-Dimensional Vector Preisach Hysteresis Model of the Soft Magnetic Composite Material
+  title_zh: 软磁复合材料的三维矢量 Preisach 磁滞模型
   published: 2013-10
   authors: Changgeng Zhang, Yongjian Li, Dandan Li, Qingxin Yang
   venue: IEEE International Conference on Applied Superconductivity and Electromagnetic Devices (ASEMD), 25–27 October 2013, 454–457
+  note: EI 20141817658457
+  note_zh: EI 收录号 20141817658457
