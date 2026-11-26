@@ -25,7 +25,7 @@
       <li class="paper-entry">
         <div class="paper-heading">
           <h3>{% if story %}<a href="{{ story.path.en | relative_url }}">{{ title | escape }}</a>{% else %}{{ title | escape }}{% endif %}</h3>
-          {% if paper.pdf %}<a class="paper-pdf" href="{{ paper.pdf | relative_url }}" download aria-label="Download PDF: {{ title | escape }}">PDF</a>{% elsif paper.brief_pdf %}<a class="paper-pdf" href="{{ paper.brief_pdf | relative_url }}" download aria-label="Download research brief: {{ title | escape }}">Brief (PDF)</a>{% endif %}
+          {% if paper.pdf %}<a class="paper-pdf" href="{{ paper.pdf | relative_url }}" download aria-label="Download PDF: {{ title | escape }}">PDF</a>{% endif %}
         </div>
         <p class="paper-authors">{{ paper.authors | escape }}</p>
         <p class="paper-citation"><time datetime="{{ paper.published }}">{% if precision == 10 %}{{ paper.published | date: '%-d %b %Y' }}{% elsif precision == 7 %}{{ paper.published | append: '-01' | date: '%b %Y' }}{% else %}{{ year }}{% endif %}</time> <span aria-hidden="true">·</span> {{ paper.venue | escape }}{% if paper.note %} <span aria-hidden="true">·</span> {{ paper.note | escape }}{% endif %}</p>

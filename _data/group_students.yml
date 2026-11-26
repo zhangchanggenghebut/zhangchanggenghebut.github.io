@@ -335,8 +335,6 @@ people:
     topic:
       zh: 枢轨接触与导轨振动特性研究
       en: Armature–rail contact and rail vibration characteristics
-    publications:
-    - 10.3390/ma18133060
   ziran-guo:
     name:
       zh: 郭子冉
@@ -644,13 +642,6 @@ news:
     path:
       en: /2025/08/25/electromagnetic-vibration-of-anode-saturable-reactor-cores
       zh: /zh/news/electromagnetic-vibration-of-anode-saturable-reactor-cores/
-  10.3390/ma18133060:
-    title:
-      en: Contact Resistance Modeling Under Complex Wear Conditions Based on Fractal Theory
-      zh: 基于分形理论的复杂磨损条件下接触电阻建模
-    path:
-      en: /2025/03/04/xiaoxiao
-      zh: /zh/news/contact-resistance-and-worn-surface-topography/
   10.1109/TMAG.2023.3316753:
     title:
       en: Magnetic Properties Simulation of Electrical Steel Sheet Based on Recurrent Neural Network
