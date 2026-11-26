@@ -298,10 +298,10 @@ people:
     name:
       zh: SUJUN BABU
       en: SUJUN BABU
-    kind: collaboration
+    kind: topic
     topic:
-      zh: 激光切割电工钢的磁畴形貌表征及局部磁性能劣化
-      en: Characterization of domain patterns and local magnetic degradation in laser-cut electrical steel
+      zh: 磁性材料的测量和建模
+      en: Measurement and modeling of magnetic materials
     publications:
     - 10.1109/TMAG.2026.3711353
   guotao-sun:
