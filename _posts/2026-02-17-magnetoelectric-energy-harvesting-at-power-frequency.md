@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Harvesting energy from power-frequency magnetic fields
+title: Power-frequency magnetoelectric energy harvester using FeCoV–PZT laminates based on ericsson cycle
 date: 2026-02-17
+lang: en
 categories:
 - Papers
 tags:
@@ -9,17 +10,24 @@ tags:
 excerpt: A tip magnet tunes a magnetoelectric cantilever to the 50 Hz range for harvesting energy from stray transformer fields.
 ---
 
+**Authors**　Changgeng Zhang, Ziyang Wang, Haiming Jiao, Mingming Li, Yongjian Li, Zhiwei Lin  
+**Journal**　AIP Advances 16(2), 025132 (2026)  
+**First published online**　17 February 2026  
+[DOI 10.1063/9.0000992](https://doi.org/10.1063/9.0000992)
+
+## Research brief
+
 A tip magnet tunes a magnetoelectric cantilever to the 50 Hz range for harvesting energy from stray transformer fields.
 
 An Ericsson-cycle analysis guided the choice of FeCoV for the magnetostrictive layer. We bonded it to PZT piezoceramic and tuned the cantilever resonance with a neodymium tip magnet. The prototype reached a magnetoelectric voltage coefficient of 3.8 V/(cm·Oe) at 51 Hz. Under a 10 Oe alternating field, its maximum output power density was 7.6 μW/cm³.
 
-### 用磁电悬臂梁采集工频杂散磁场能量
+## Abstract
 
-通过调整梁端永磁体的质量，磁电悬臂梁可在接近 50 Hz 的交流磁场中共振发电。
+With the increasing demand for power supply in power Internet-of-Things (IoT) sensor nodes, providing stable, self-powered operation near power-frequency transformers remains a critical challenge. This paper presents the design of an energy harvester based on FeCoV–PZT laminated magnetoelectric composites for efficiently harvesting 50 Hz stray magnetic field energy around power transformers. This study leverages the Ericsson cycle theory as a guiding principle for the critical selection of the magnetostrictive phase, ultimately identifying FeCoV for its optimal energy conversion potential. By employing a cantilever structure integrated with an NdFeB permanent magnet at the free end, the resonant frequency of the device is significantly reduced and matched to the power frequency, thereby enhancing the magnetoelectric conversion efficiency without requiring a bias magnetic field. Experimental results demonstrate that, through structural optimization, the resonant frequency can be reduced to ≈50 Hz, substantially improving conversion efficiency; a peak magnetoelectric coefficient of 3.8 V/(cm Oe) and a maximum output volume power density of 7.6 μW/cm³ were achieved, showing its potential for practical applications.
 
-我们根据 Ericsson 循环的能量转换分析选用 FeCoV 磁致伸缩层，与 PZT 压电陶瓷复合成悬臂梁，并用梁端钕铁硼磁体调节共振频率。样机在 51 Hz 时的磁电电压系数达到 3.8 V/(cm·Oe)。在 10 Oe 交流磁场下，测得的最大输出功率密度为 7.6 μW/cm³。
+<figure style="margin:1.5rem 0">
+  <img src="https://github.com/user-attachments/assets/4b698ae2-594d-4d24-af26-bd21279b9c18" alt="Schematic and photograph of the FeCoV–PZT magnetoelectric cantilever." style="display:block;max-width:100%;height:auto">
+  <figcaption>Figure 1. Schematic and photograph of the FeCoV–PZT magnetoelectric cantilever. <a href="https://doi.org/10.1063/9.0000992">Source article</a></figcaption>
+</figure>
 
-### Publication
-
-Changgeng Zhang, Ziyang Wang, Haiming Jiao, Mingming Li, Yongjian Li, Zhiwei Lin. Power-frequency magnetoelectric energy harvester using FeCoV–PZT laminates based on ericsson cycle. *AIP Advances, 16(2), 025132 (2026)*.
-[DOI 10.1063/9.0000992](https://doi.org/10.1063/9.0000992)
+[Chinese edition](/zh/news/magnetoelectric-energy-harvesting-at-power-frequency/)
