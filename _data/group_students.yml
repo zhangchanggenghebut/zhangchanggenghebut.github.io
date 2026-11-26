@@ -191,7 +191,9 @@ people:
       zh: 取向与无取向电工钢片磁致伸缩的测量与分析
       en: Measurement and analysis of magnetostriction in grain-oriented and non-oriented electrical steel sheets
     publications:
+    - 10.1109/TIM.2025.3602530
     - cem2025-chen
+    - 10.1063/9.0000878
   rawal-shahbaz:
     name:
       zh: Rawal Shahbaz
@@ -213,6 +215,8 @@ people:
       en: Effects of laminate dimensions on nanocrystalline magnetic properties and modeling of high-frequency losses
     publications:
     - 10.1108/COMPEL-01-2026-0043
+    - 10.1016/j.jmmm.2025.173350
+    - 10.1016/j.jmmm.2025.173013
   hao-zhang:
     name:
       zh: 张豪
@@ -225,6 +229,7 @@ people:
     - 10.1016/j.asoc.2026.116305
     - 10.1587/elex.23.20260119
     - 10.1063/9.0000978
+    - 10.1016/j.jmmm.2025.173350
   yifan-chen:
     name:
       zh: 陈怡帆
@@ -307,6 +312,8 @@ people:
     topic:
       zh: 介-宏观尺度下的电工取向钢二维磁特性测试与分析
       en: Measurement and analysis of the two-dimensional magnetic properties of grain-oriented electrical steel at mesoscopic and macroscopic scales
+    publications:
+    - 10.1016/j.jmmm.2025.173415
   xiaoxiao-liu:
     name:
       zh: 刘潇潇
@@ -315,6 +322,8 @@ people:
     topic:
       zh: 电磁发射枢轨接触与导轨振动特性研究
       en: Armature–rail contact and rail vibration characteristics in electromagnetic launch systems
+    publications:
+    - 10.3390/ma18133060
   ziran-guo:
     name:
       zh: 郭子冉
@@ -323,6 +332,9 @@ people:
     topic:
       zh: 基于放电等离子烧结的铁基Ni-Zn铁氧体磁粉芯制备及磁特性模拟
       en: Fabrication of iron-based Ni–Zn ferrite powder cores by spark plasma sintering and simulation of their magnetic properties
+    publications:
+    - 10.1016/j.jmmm.2025.173439
+    - 10.1016/j.jallcom.2024.178436
   kai-wang:
     name:
       zh: 王锴
@@ -339,6 +351,8 @@ people:
     topic:
       zh: 纳米晶合金磁致伸缩特性测试与模拟研究
       en: Measurement and simulation of magnetostriction in nanocrystalline alloys
+    publications:
+    - 10.1063/9.0000878
   guochen-niu:
     name:
       zh: 牛国辰
@@ -347,6 +361,8 @@ people:
     topic:
       zh: 考虑法向应力的纳米晶、非晶磁特性测试与模拟研究
       en: Measurement and simulation of the magnetic properties of nanocrystalline and amorphous materials under normal stress
+    publications:
+    - 10.1016/j.jmmm.2025.173013
   xizheng-li:
     name:
       zh: 李锡正
@@ -534,3 +550,59 @@ news:
     path:
       en: /2023/04/03/nanocrystalline-cores-under-pulsed-excitation
       zh: /zh/news/nanocrystalline-cores-under-pulsed-excitation/
+  10.1016/j.jallcom.2024.178436:
+    title:
+      en: High performance soft magnetic composites based on Fe/Ni-Zn ferrite powder prepared by low-pressure spark plasma sintering
+      zh: 低压放电等离子烧结制备铁基镍锌铁氧体高性能软磁复合材料
+    path:
+      en: /2025/01/04/paper-guoziran
+      zh: /zh/news/low-pressure-sintering-of-iron-ferrite-powder-cores/
+  10.1063/9.0000878:
+    title:
+      en: Measurement and analysis of magnetostriction of nanocrystalline alloy laminations under medium-frequency excitation
+      zh: 中频激励下纳米晶合金叠片磁致伸缩的测量与分析
+    path:
+      en: /2025/01/09/AIP-haitao
+      zh: /zh/news/medium-frequency-magnetostriction-of-nanocrystalline-laminations/
+  10.1016/j.jmmm.2025.173013:
+    title:
+      en: Testing of magnetic properties of amorphous and nanocrystalline alloys applied out-of-plane stress at wide frequency range
+      zh: 宽频范围内法向应力作用下非晶与纳米晶合金磁特性测试
+    path:
+      en: /2025/03/04/guochen
+      zh: /zh/news/out-of-plane-stress-in-amorphous-and-nanocrystalline-alloys/
+  10.1016/j.jmmm.2025.173350:
+    title:
+      en: Comparison of micromagnetic modeling and experiment considering grain size distribution at 1–20 kHz
+      zh: 计及晶粒尺寸分布的纳米晶合金微磁建模与 1–20 kHz 实验对比
+    path:
+      en: /2025/07/29/mengwenbin
+      zh: /zh/news/grain-size-distribution-in-nanocrystalline-alloy-micromagnetics/
+  10.1016/j.jmmm.2025.173415:
+    title:
+      en: Analysis of magnetic domain evolution in rotational magnetization of GOES based on morphological characteristics and artificial neural network
+      zh: 基于形态特征与人工神经网络的取向电工钢旋转磁化磁畴演化分析
+    path:
+      en: /2025/08/05/rotational-magnetization-and-domain-shapes-in-grain-oriented-steel
+      zh: /zh/news/rotational-magnetization-and-domain-shapes-in-grain-oriented-steel/
+  10.1016/j.jmmm.2025.173439:
+    title:
+      en: An improved J-A model for iron-based soft magnetic composites considering local demagnetization effect
+      zh: 考虑局部退磁效应的铁基软磁复合材料改进 Jiles–Atherton 模型
+    path:
+      en: /2025/08/14/local-demagnetization-in-jiles-atherton-modeling-of-powder-cores
+      zh: /zh/news/local-demagnetization-in-jiles-atherton-modeling-of-powder-cores/
+  10.1109/TIM.2025.3602530:
+    title:
+      en: Study on Electromagnetic Vibration Characteristics of Anode Saturable Reactor Considering Anisotropic Properties
+      zh: 考虑材料各向异性的阳极饱和电抗器电磁振动特性研究
+    path:
+      en: /2025/08/25/electromagnetic-vibration-of-anode-saturable-reactor-cores
+      zh: /zh/news/electromagnetic-vibration-of-anode-saturable-reactor-cores/
+  10.3390/ma18133060:
+    title:
+      en: Contact Resistance Modeling Under Complex Wear Conditions Based on Fractal Theory
+      zh: 基于分形理论的复杂磨损条件下接触电阻建模
+    path:
+      en: /2025/03/04/xiaoxiao
+      zh: /zh/news/contact-resistance-and-worn-surface-topography/
