@@ -150,8 +150,8 @@ people:
       en: Ziyang Wang
     kind: topic
     topic:
-      zh: 利用磁电复合材料采集变压器工频杂散磁场能量
-      en: Energy harvesting from power-frequency transformer stray fields using magnetoelectric composites
+      zh: 基于磁电的能量采集
+      en: Magnetoelectric energy harvesting
     publications:
     - 10.1063/9.0000992
   muhammad-adeel:
@@ -268,10 +268,10 @@ people:
     name:
       zh: 穆烁考
       en: Shuokao Mu
-    kind: collaboration
+    kind: topic
     topic:
-      zh: 基于环形隧道磁阻传感器阵列的多芯电缆非侵入式电流测量
-      en: Non-invasive current measurement in multi-conductor cables using a ring of tunneling magnetoresistance sensors
+      zh: 磁性器件在电力电子中应用
+      en: Applications of magnetic components in power electronics
     publications:
     - 10.1063/9.0000987
   shuai-zhao:
