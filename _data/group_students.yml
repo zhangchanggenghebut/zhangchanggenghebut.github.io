@@ -138,7 +138,7 @@ levels:
       end: 2020
 people:
   ziyang-wang:
-    photo: https://github.com/user-attachments/assets/584946bb-7440-48fd-982f-c6af6ca5fc3a
+    photo: /assets/students/ziyang-wang.svg
     name:
       zh: 王紫洋
       en: Ziyang Wang
