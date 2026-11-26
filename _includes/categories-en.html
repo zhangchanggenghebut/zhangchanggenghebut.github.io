@@ -17,7 +17,7 @@
       <a class="post-title" href="{{site.baseurl}}{{post.url}}" target="_blank">
         <li>
           {{post.title}}
-          <small class="post-date">{{post.date | date_to_string}}</small>
+          <small class="post-date">{% include news-date.html entry=post format='short' %}</small>
         </li>
       </a>
       {% endfor %}

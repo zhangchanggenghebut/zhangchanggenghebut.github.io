@@ -217,6 +217,7 @@ people:
     - 10.1108/COMPEL-01-2026-0043
     - 10.1016/j.jmmm.2025.173350
     - 10.1016/j.jmmm.2025.173013
+    - 10.1063/9.0000650
   hao-zhang:
     name:
       zh: 张豪
@@ -230,6 +231,9 @@ people:
     - 10.1587/elex.23.20260119
     - 10.1063/9.0000978
     - 10.1016/j.jmmm.2025.173350
+    - 10.1109/TASC.2024.3420184
+    - 10.1063/9.0000824
+    - 10.1109/TMAG.2023.3316753
   yifan-chen:
     name:
       zh: 陈怡帆
@@ -240,6 +244,9 @@ people:
       en: Neural-network estimation and simulation of electromagnetic fields in transformers
     publications:
     - 10.1016/j.asoc.2026.116305
+    - 10.1109/TASC.2024.3420184
+    - 10.1063/9.0000824
+    - 10.1109/TMAG.2023.3316753
   jiaji-chi:
     name:
       zh: 池佳稷
@@ -343,6 +350,8 @@ people:
     topic:
       zh: 基于振动特性的变压器机械故障诊断研究
       en: Diagnosis of mechanical faults in transformers using vibration characteristics
+    publications:
+    - 10.19487/j.cnki.1001-8425.2024.10.010
   haitao-zhang:
     name:
       zh: 张海涛
@@ -606,3 +615,38 @@ news:
     path:
       en: /2025/03/04/xiaoxiao
       zh: /zh/news/contact-resistance-and-worn-surface-topography/
+  10.1109/TMAG.2023.3316753:
+    title:
+      en: Magnetic Properties Simulation of Electrical Steel Sheet Based on Recurrent Neural Network
+      zh: 基于循环神经网络的电工钢片磁特性仿真
+    path:
+      en: /2023/09/18/recurrent-neural-networks-for-electrical-steel-hysteresis
+      zh: /zh/news/recurrent-neural-networks-for-electrical-steel-hysteresis/
+  10.1063/9.0000650:
+    title:
+      en: High-frequency loss modeling of nanocrystalline core considering nonuniform distribution of flux density
+      zh: 考虑磁通密度非均匀分布的纳米晶磁芯高频损耗建模
+    path:
+      en: /2024/02/07/high-frequency-loss-in-wound-nanocrystalline-cores
+      zh: /zh/news/high-frequency-loss-in-wound-nanocrystalline-cores/
+  10.1063/9.0000824:
+    title:
+      en: Temperature-dependent hysteresis model based on temporal convolutional network
+      zh: 基于时间卷积网络的温度相关磁滞模型
+    path:
+      en: /2024/02/09/temperature-dependent-hysteresis-with-temporal-convolutions
+      zh: /zh/news/temperature-dependent-hysteresis-with-temporal-convolutions/
+  10.1109/TASC.2024.3420184:
+    title:
+      en: Data-Driven Deep Convolutional Neural Networks for Electromagnetic Field Estimation of Transformers
+      zh: 数据驱动的变压器电磁场估算深度卷积神经网络
+    path:
+      en: /2024/06/27/estimating-transformer-fields-with-deep-convolutional-networks
+      zh: /zh/news/estimating-transformer-fields-with-deep-convolutional-networks/
+  10.19487/j.cnki.1001-8425.2024.10.010:
+    title:
+      en: Optimal Design of Hybrid Laminated Core for Power Transformer
+      zh: 电力变压器混片铁心的优化设计
+    path:
+      en: /2024/10/optimal-design-of-hybrid-laminated-transformer-cores
+      zh: /zh/news/optimal-design-of-hybrid-laminated-transformer-cores/

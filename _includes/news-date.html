@@ -1,0 +1,13 @@
+{%- if include.entry.date_precision == 'month' -%}
+  {%- if include.format == '%Y-%m-%d' -%}
+    {{- include.entry.date | date: '%Y-%m' -}}
+  {%- elsif include.entry.lang == 'zh-CN' -%}
+    {{- include.entry.date | date: '%Y年%-m月' -}}
+  {%- else -%}
+    {{- include.entry.date | date: '%B %Y' -}}
+  {%- endif -%}
+{%- elsif include.format == 'short' -%}
+  {{- include.entry.date | date_to_string -}}
+{%- else -%}
+  {{- include.entry.date | date: include.format -}}
+{%- endif -%}

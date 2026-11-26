@@ -11,7 +11,7 @@ permalink: /team-news/
     {% for post in news %}
       <li class="collection-item">
         <article>
-          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y年%m月%d日' }}</time>
+          <time datetime="{% include news-date.html entry=post format='%Y-%m-%d' %}">{% include news-date.html entry=post format='%Y年%m月%d日' %}</time>
           <h5><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h5>
           <p>{{ post.excerpt | strip_html | strip | escape }}</p>
         </article>
