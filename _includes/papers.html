@@ -1,13 +1,16 @@
 {% assign language = include.lang | default: 'en' %}
 {% assign dated_papers = site.data.papers | group_by: 'published' | sort: 'name' | reverse %}
-{% if language == 'zh' %}
+{% if include.embedded %}
   {% assign year_heading = 'h3' %}
   {% assign title_heading = 'h4' %}
-  {% assign day_format = '%Y年%-m月%-d日' %}
-  {% assign month_format = '%Y年%-m月' %}
 {% else %}
   {% assign year_heading = 'h2' %}
   {% assign title_heading = 'h3' %}
+{% endif %}
+{% if language == 'zh' %}
+  {% assign day_format = '%Y年%-m月%-d日' %}
+  {% assign month_format = '%Y年%-m月' %}
+{% else %}
   {% assign day_format = '%-d %b %Y' %}
   {% assign month_format = '%b %Y' %}
 {% endif %}
@@ -22,7 +25,7 @@
       {% endfor %}
     </nav>
     {% if include.embedded %}
-      <a class="catalog-language" href="{{ site.data.page_editions.papers.en | relative_url }}" hreflang="en">英文目录</a>
+      <a class="catalog-language" href="{{ site.data.page_editions.papers[language] | relative_url }}">{% if language == 'zh' %}独立论文目录{% else %}Standalone publications list{% endif %}</a>
     {% endif %}
   </div>
   <p class="catalog-note">{% if language == 'zh' %}按期刊刊期或会议日期倒序排列。作者姓名后的 * 表示通讯作者。{% else %}By journal issue or conference date, newest first. An asterisk marks a corresponding author.{% endif %}</p>

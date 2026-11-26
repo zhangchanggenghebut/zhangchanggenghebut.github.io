@@ -1,5 +1,6 @@
 home:     {en: /, zh: /zh/}
 papers:   {en: /papers, zh: /zh/papers/}
+projects: {en: /projects-en, zh: /projects}
 group:    {en: /about-en, zh: /about}
 teaching: {en: /teaching-en, zh: /teaching}
 testing:  {en: /instruments-en, zh: /instruments}

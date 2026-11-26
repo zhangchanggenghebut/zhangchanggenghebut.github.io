@@ -1,0 +1,37 @@
+- id: awards
+  heading: {zh: 科研奖励, en: Research Awards}
+  items:
+    - zh: 河北省科技进步奖一等奖（2017 年），获奖项目为“电工磁材料的旋转磁特性测试技术与应用研究”。张长庚在 10 位完成人中排名第 4。
+      en: First Prize, Hebei Provincial Science and Technology Progress Award (2017), for developing and applying techniques to measure the rotational magnetic properties of materials used in electrical engineering. Changgeng Zhang was the fourth of ten contributors.
+    - zh: 电工理论与新技术学术年会优秀论文奖，哈尔滨，2021 年。
+      en: Best Paper Award at the Annual Conference on Electrical Theory and New Technology, Harbin, 2021.
+    - zh: 第十届电气工程前沿学术论坛优秀论文奖，2022 年。
+      en: Best Paper Award at the 10th Frontier Academic Forum of Electrical Engineering, 2022.
+
+- id: patents
+  heading: {zh: 专利, en: Patents}
+  items:
+    - zh: 发明专利《基于空间正交三轴应力加载条件下的单片磁特性测量装置》。张长庚、陈涛、李永建、杨庆新，天津。
+      en: 'Invention patent. Apparatus for measuring the magnetic properties of a single sheet under orthogonal triaxial stress. Changgeng Zhang, Tao Chen, Yongjian Li and Qingxin Yang, Tianjin.'
+      number: CN112986874B
+      date: '2022-11-01'
+    - zh: 实用新型《复杂工况下阳极饱和电抗器铁芯磁特性测量装置及系统》。张长庚、王家俊、李永建、陈怡帆。
+      en: 'Utility model. Device and system for measuring the magnetic properties of anode saturable reactor cores under complex operating conditions. Changgeng Zhang, Jiajun Wang, Yongjian Li and Yifan Chen.'
+      number: CN210720703U
+      date: '2020-06-09'
+    - zh: 实用新型《一种在叠置方向施加应力的改进爱泼斯坦方圈》。张长庚、王家俊、李永建、李星汉，天津。
+      en: 'Utility model. An improved Epstein frame for applying stress in the stacking direction. Changgeng Zhang, Jiajun Wang, Yongjian Li and Xinghan Li, Tianjin.'
+      number: CN210626642U
+      date: '2020-05-26'
+
+- id: academic-activities
+  heading: {zh: 特邀报告与学术服务, en: Invited Talks and Academic Service}
+  items:
+    - zh: 在 ASEMD 2023 国际会议上作大会特邀报告。
+      en: Invited plenary speaker at ASEMD 2023.
+    - zh: 在 ICEF 2021 国际会议上作 30 分钟特邀报告。
+      en: Gave a 30-minute invited talk at ICEF 2021.
+    - zh: 担任 2023 年美国达拉斯 MMM 会议分会主席。
+      en: Chaired a session at the 2023 MMM Conference in Dallas, United States.
+    - zh: 担任 ICEF 2021 和《COMPEL》客座编辑，处理稿件 200 余篇。
+      en: Served as a guest editor for ICEF 2021 and COMPEL, handling more than 200 manuscripts.

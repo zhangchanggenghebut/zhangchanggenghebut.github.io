@@ -1,29 +1,40 @@
-<div class="projects-page" lang="zh-CN">
-  <nav class="projects-jumps" aria-label="本页目录">
-    <a href="#funding">科研项目</a>
-    <a href="#papers">论文目录</a>
-    <a href="#awards">奖励与专利</a>
-    <a href="{{ site.data.page_editions.papers.en | relative_url }}" lang="en" hreflang="en">English papers</a>
-    <a href="{{ '/projects-en' | relative_url }}#funding" lang="en" hreflang="en">English funding</a>
+{% assign project_lang = include.lang %}
+{% if project_lang == 'zh' %}
+  {% assign contents_label = '本页目录' %}
+  {% assign funding_heading = '科研项目' %}
+  {% assign papers_heading = '论文目录' %}
+{% else %}
+  {% assign contents_label = 'On this page' %}
+  {% assign funding_heading = 'Research Projects' %}
+  {% assign papers_heading = 'Publications' %}
+{% endif %}
+<div class="projects-page" lang="{{ page.lang | escape }}">
+  <nav class="projects-jumps" aria-label="{{ contents_label }}">
+    <a href="#funding">{{ funding_heading }}</a>
+    <a href="#papers">{{ papers_heading }}</a>
+    {% for section in site.data.project_records %}
+      <a href="#{{ section.id }}">{{ section.heading[project_lang] | escape }}</a>
+    {% endfor %}
   </nav>
 
-  {% include funding.html lang="zh" %}
+  {% include funding.html lang=project_lang heading=funding_heading %}
 
   <section id="papers" class="projects-papers" aria-labelledby="catalog-title">
-    <h2 id="catalog-title">论文目录</h2>
-    {% include papers.html lang="zh" embedded="true" %}
+    <h2 id="catalog-title">{{ papers_heading }}</h2>
+    {% include papers.html lang=project_lang embedded="true" %}
   </section>
 
-  <section id="awards" class="projects-records" aria-labelledby="awards-title">
-    <h2 id="awards-title">奖励与专利</h2>
-    <h3>科研奖励</h3>
-    <p>河北省科技进步奖一等奖，电工磁材料的旋转磁特性测试技术与应用研究，2017 年，排名 4/10。</p>
-    <h3>发明专利</h3>
-    <p>张长庚、陈涛、李永建、杨庆新，基于空间正交三轴应力加载条件下的单片磁特性测量装置，天津，CN112986874B，2022-11-01。</p>
-    <h3>实用新型</h3>
-    <ul class="browser-default">
-      <li>张长庚、王家俊、李永建、陈怡帆，复杂工况下阳极饱和电抗器铁芯磁特性测量装置及系统，CN720720703U，2020-06-09。</li>
-      <li>张长庚、王家俊、李永建、李星汉，一种在叠置方向施加应力的改进爱泼斯坦方圈，天津，CN210626642U，2020-05-26。</li>
-    </ul>
-  </section>
+  {% for section in site.data.project_records %}
+    <section id="{{ section.id }}" class="projects-records" aria-labelledby="{{ section.id }}-title">
+      <h2 id="{{ section.id }}-title">{{ section.heading[project_lang] | escape }}</h2>
+      <ul class="browser-default">
+        {% for item in section.items %}
+          <li>
+            {{ item[project_lang] | escape }}
+            {% if item.number %}<span>{{ item.number | escape }} · <time datetime="{{ item.date }}">{{ item.date }}</time></span>{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
 </div>
