@@ -158,14 +158,15 @@
 <style>
   .student-identity { display: flex; align-items: center; gap: 14px; min-width: 0; }
   .student-identity .student-name { overflow-wrap: anywhere; }
-  .student-portrait { position: relative; display: block; width: 48px; height: 60px; flex: 0 0 48px; overflow: hidden; border: 1px solid #d9dfef; border-radius: 6px; background: #edf0f8; }
+  .student-portrait { position: relative; display: block; width: 90px; height: 120px; flex: 0 0 90px; overflow: hidden; border: 1px solid #d9dfef; border-radius: 6px; background: #edf0f8; }
   .student-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
   .student-portrait-empty::before, .student-portrait-empty::after { position: absolute; left: 50%; transform: translateX(-50%); background: #c0c9e0; content: ""; }
-  .student-portrait-empty::before { top: 20%; width: 18px; height: 18px; border-radius: 50%; }
-  .student-portrait-empty::after { bottom: 7%; width: 34px; height: 21px; border-radius: 55% 55% 15% 15%; }
+  .student-portrait-empty::before { top: 20%; width: 36%; aspect-ratio: 1; border-radius: 50%; }
+  .student-portrait-empty::after { bottom: 7%; width: 72%; height: 35%; border-radius: 55% 55% 15% 15%; }
   .student .research-kind { display: block; margin-bottom: 3px; color: #5e6374; font-size: .82em; }
   .student .dissertation a { color: inherit; text-decoration: underline; text-decoration-color: #c1c8e0; text-underline-offset: 2px; }
   @media (max-width: 600px) {
+    .student-portrait { width: 72px; height: 96px; flex-basis: 72px; }
     .student .student-header { flex-wrap: wrap; gap: 8px; }
     .student .dissertation { overflow-wrap: anywhere; }
   }
@@ -204,7 +205,7 @@
                     <div class="student {{ status }}" data-person="{{ member.person }}" data-entry="{{ cohort.year }}">
                         <div class="student-header">
                             <span class="student-identity">
-                                <span class="student-portrait{% unless portrait %} student-portrait-empty{% endunless %}" aria-hidden="true">{% if portrait %}<img src="{% if portrait contains '://' %}{{ portrait | escape }}{% else %}{{ portrait | relative_url }}{% endif %}" alt="" width="48" height="60" loading="lazy">{% endif %}</span>
+                                <span class="student-portrait{% unless portrait %} student-portrait-empty{% endunless %}" aria-hidden="true">{% if portrait %}<img src="{% if portrait contains '://' %}{{ portrait | escape }}{% else %}{{ portrait | relative_url }}{% endif %}" alt="" width="90" height="120">{% endif %}</span>
                                 <span class="student-name">{{ person.name[lang] | escape }}</span>
                             </span>
                             <span class="year">
