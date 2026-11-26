@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Directional hysteresis loss near a laser-cut steel edge
+title: 'Quantifying magnetic degradation in laser-cut electrical steel: A domain-level study with angle-dependent magnetization'
 date: 2026-02-11
+lang: en
 categories:
 - Papers
 tags:
@@ -9,17 +10,24 @@ tags:
 excerpt: In laser-cut electrical steel, the increase in local hysteresis loss near the edge depends on the direction of magnetization.
 ---
 
+**Authors**　Rawal Shahbaz, Changgeng Zhang, Hina Fatima, Hao Zhang, Yan Zhang  
+**Journal**　AIP Advances 16(2), 025124 (2026)  
+**First published online**　11 February 2026  
+[DOI 10.1063/9.0000978](https://doi.org/10.1063/9.0000978)
+
+## Research brief
+
 In laser-cut electrical steel, the increase in local hysteresis loss near the edge depends on the direction of magnetization.
 
 We imaged magnetic domains in 35WW250 non-oriented electrical steel using the magneto-optical Kerr effect and compared local hysteresis loops at five in-plane magnetization angles. In the longitudinal measurement, hysteresis loss estimated from the loop area was about 10% higher near the edge. In the transverse measurement, it was about 1.5 times the center value.
 
-### 磁化方向如何影响硅钢切边附近的磁滞损耗
+## Abstract
 
-同一块无取向硅钢，横向磁化时，激光切边带来的局部损耗增幅比纵向磁化时更大。
+Laser cutting is an accurate and popular manufacturing process as it is largely employed in most industries in cutting and shaping materials, including electrical steel parts. Nevertheless, laser cutting in the production of motor cores attracts concern regarding its effects to the materials. The resulting localized thermal effects in the cutting can cause mechanical stresses which can also influence the magnetic properties of the electrical steel. In this study, magnetic domains, and their evolution on the magnetic properties of magnets on the surface of non-oriented silicon steel are explored. The magnetization has been carried out at different angles (0°, 30°, 45°, 60°, 90°) to examine local hysteresis properties by magneto-optic Kerr effect methods. Findings indicate that laser cutting causes variations in domain orientations along the cutting edge, more core losses and reduced magnetic susceptibility. Hysteresis loss was observed at the cutting edge 10% higher in the longitudinal direction than loss in the center sample. The loss experienced around the cutting edge in the transverse directions is also 1.5 times the loss experienced at the center, in which case, this means that the energy loss is significantly large. These results indicate that the cutting edge can undergo various changes in microstructural or stress microstructure, as compared to the sheet of the center.
 
-我们用磁光克尔显微镜观察 35WW250 无取向硅钢的磁畴，并在五个面内磁化角度下比较切边附近与板材中心的局部磁滞回线。按回线面积估算，纵向磁化时切边附近的磁滞损耗比中心高约 10%，横向磁化时则约为中心的 1.5 倍。
+<figure style="margin:1.5rem 0">
+  <img src="https://github.com/user-attachments/assets/7c002b1f-cab6-4250-851e-3dd811e52a26" alt="Domain patterns near the cut edge in longitudinal and transverse Kerr measurements at the points marked in green on the hysteresis curve." style="display:block;max-width:100%;height:auto">
+  <figcaption>Figure 5. Domain patterns near the cut edge in longitudinal and transverse Kerr measurements at the points marked in green on the hysteresis curve. <a href="https://doi.org/10.1063/9.0000978">Source article</a></figcaption>
+</figure>
 
-### Publication
-
-Rawal Shahbaz, Changgeng Zhang, Hina Fatima, Hao Zhang, Yan Zhang. Quantifying magnetic degradation in laser-cut electrical steel: A domain-level study with angle-dependent magnetization. *AIP Advances, 16(2), 025124 (2026)*.
-[DOI 10.1063/9.0000978](https://doi.org/10.1063/9.0000978)
+[Chinese edition](/zh/news/magnetization-direction-at-a-laser-cut-edge/)
