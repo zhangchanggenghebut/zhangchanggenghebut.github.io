@@ -472,6 +472,7 @@ people:
       zh: 特高压换流阀阳极饱和电抗器铁心损耗研究
       en: Core losses in anode saturable reactors for ultra-high-voltage converter valves
     publications:
+    - 10.13336/j.1003-6520.hve.20201067
     - 10.1109/TMAG.2021.3083649
   xinghan-li:
     name:
@@ -494,6 +495,8 @@ people:
     publications:
     - 10.19595/j.cnki.1000-6753.tces.191227
     - 10.3233/JAE-190054
+    - 10.1109/TMAG.2019.2897503
+    - 10.1109/TMAG.2018.2868883
   yi-xing:
     name:
       zh: 邢议
@@ -744,3 +747,59 @@ news:
     path:
       en: /2020/04/01/temperature-rise-in-a-ventilated-dry-type-transformer
       zh: /zh/news/temperature-rise-in-a-ventilated-dry-type-transformer/
+  10.13336/j.1003-6520.hve.20201067:
+    title:
+      en: Dynamic Core Loss Simulation of the Anode Saturable Reactor of UHVDC Converter Valves
+      zh: 特高压换流阀阳极饱和电抗器动态铁芯损耗模拟
+    path:
+      en: /2021/06/30/dynamic-core-loss-in-converter-valve-saturable-reactors
+      zh: /zh/news/dynamic-core-loss-in-converter-valve-saturable-reactors/
+  10.1109/TMAG.2018.2868811:
+    title:
+      en: An Improved Method for Measuring the Magnetic Properties of Silicon Steel With Double Sheets at High Frequency
+      zh: 高频下双试片测量硅钢磁特性的改进方法
+    path:
+      en: /2018/10/25/double-sheet-testing-of-silicon-steel-at-high-frequency
+      zh: /zh/news/double-sheet-testing-of-silicon-steel-at-high-frequency/
+  10.1109/TMAG.2018.2868883:
+    title:
+      en: Vector Magnetic Properties Measurement of Silicon Steel Under Biased Magnetic Excitation Along Laminated Direction
+      zh: 叠压方向偏置磁场下硅钢片的矢量磁特性测量
+    path:
+      en: /2018/09/26/vector-magnetic-properties-of-steel-under-stacking-direction-bias
+      zh: /zh/news/vector-magnetic-properties-of-steel-under-stacking-direction-bias/
+  10.1109/TMAG.2019.2897503:
+    title:
+      en: Eddy Current Loss Effect in Foil Winding of Transformer Based on Magneto-Fluid-Thermal Simulation
+      zh: 基于磁–流–热耦合仿真的变压器箔式绕组涡流损耗研究
+    path:
+      en: /2019/03/04/eddy-current-loss-in-transformer-foil-windings
+      zh: /zh/news/eddy-current-loss-in-transformer-foil-windings/
+  10.1109/TIE.2016.2597118:
+    title:
+      en: Measurement of Three-Dimensional Magnetic Properties With Feedback Control and Harmonic Compensation
+      zh: 采用反馈控制与谐波补偿的三维磁特性测量
+    path:
+      en: /2016/08/02/three-dimensional-magnetic-measurement-with-harmonic-compensation
+      zh: /zh/news/three-dimensional-magnetic-measurement-with-harmonic-compensation/
+  10.13334/j.0258-8013.pcsee.160222:
+    title:
+      en: An Electromagnetism Simulation Methodology of Laminated Silicon Steel by Three Axes Orthogonal and Wide Frequency Excitation
+      zh: 硅钢叠片在宽频三轴正交激磁条件下的磁特性模拟方法研究
+    path:
+      en: /2017/04/05/broadband-three-axis-modeling-of-laminated-silicon-steel
+      zh: /zh/news/broadband-three-axis-modeling-of-laminated-silicon-steel/
+  tces-2017-32-11-208:
+    title:
+      en: Measurement and Modeling of Rotational Hysteresis Loss of Electric Soft Magnetic Material
+      zh: 电工软磁材料旋转磁滞损耗测量及建模
+    path:
+      en: /2017/06/rotational-hysteresis-loss-in-soft-magnetic-materials
+      zh: /zh/news/rotational-hysteresis-loss-in-soft-magnetic-materials/
+  10.13334/j.0258-8013.pcsee.160221:
+    title:
+      en: An Electromagnetic Simulation Method Considering Hysteresis and Micro-Eddy Current Effect
+      zh: 一种考虑磁滞和微观涡流效应的电磁模拟方法
+    path:
+      en: /2016/11/05/electromagnetic-simulation-with-hysteresis-and-micro-eddy-currents
+      zh: /zh/news/electromagnetic-simulation-with-hysteresis-and-micro-eddy-currents/

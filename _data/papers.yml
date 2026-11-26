@@ -147,10 +147,11 @@
   authors: Yifan Chen, Qingxin Yang, Changgeng Zhang*, Yongjian Li, Jiajun Wang
   venue: IEEE Transactions on Magnetics 58(2), 6300705 (2022)
   pdf: /assets/papers/2022/magnetic-thermal-coupling-in-a-saturable-reactor.pdf
-- title: Dynamic Core Loss Simulation of the Anode Saturable Reactor of UHVDC Converter Valves
+- news: 10.13336/j.1003-6520.hve.20201067
   published: '2021-06-30'
   authors: Changgeng Zhang*, Jiajun Wang, Yongjian Li, Qingxin Yang
-  venue: High Voltage Engineering 47(6), 2158–2168 · In Chinese
+  venue: High Voltage Engineering 47(6), 2158–2168 (2021) · In Chinese
+  pdf: /assets/papers/2021/dynamic-core-loss-in-converter-valve-saturable-reactors.pdf
 - news: 10.19595/j.cnki.1000-6753.tces.191227
   published: '2020-11-10'
   authors: Yongjian Li, Xinxiao Yan, Changgeng Zhang*, Yifan Chen, Wenliang Ying
@@ -161,22 +162,25 @@
   authors: Xinxiao Yan, Yongjian Li, Zhiguang Cheng, Changgeng Zhang*
   venue: International Journal of Applied Electromagnetics and Mechanics 62(4), 725–735 (2020)
   pdf: /assets/papers/2020/temperature-rise-in-a-ventilated-dry-type-transformer.pdf
-- title: Eddy Current Loss Effect in Foil Winding of Transformer Based on Magneto-Fluid-Thermal Simulation
+- news: 10.1109/TMAG.2019.2897503
   published: 2019-07
   authors: Yongjian Li, Xinxiao Yan, Chunguang Wang, Qingxin Yang, Changgeng Zhang*
-  venue: IEEE Transactions on Magnetics 55(7), 1–5
-- title: Vector Magnetic Properties Measurement of Silicon Steel Under Biased Magnetic Excitation Along Laminated Direction
+  venue: IEEE Transactions on Magnetics 55(7), 8401705 (2019)
+  pdf: /assets/papers/2019/eddy-current-loss-in-transformer-foil-windings.pdf
+- news: 10.1109/TMAG.2018.2868883
   published: 2019-02
   authors: Changgeng Zhang*, Xinxiao Yan, Yongjian Li, Qingxin Yang
-  venue: IEEE Transactions on Magnetics 55(2), 8000204
+  venue: IEEE Transactions on Magnetics 55(2), 8000204 (2019)
+  pdf: /assets/papers/2019/vector-magnetic-properties-of-steel-under-stacking-direction-bias.pdf
 - title: Research of Harmonic Effects on Core Loss in Soft Magnetic Composite Materials
   published: 2019-02
   authors: Xinran Yu, Yongjian Li, Qingxin Yang, Changgeng Zhang
   venue: IEEE Transactions on Magnetics 55(2), 1–5
-- title: An Improved Method for Measuring the Magnetic Properties of Silicon Steel With Double Sheets at High Frequency
+- news: 10.1109/TMAG.2018.2868811
   published: 2019-02
   authors: Ruiying Chen, Changgeng Zhang*, Yongjian Li, Qingxin Yang, Lixiang Wang
-  venue: IEEE Transactions on Magnetics 55(2), 6100404
+  venue: IEEE Transactions on Magnetics 55(2), 6100404 (2019)
+  pdf: /assets/papers/2019/double-sheet-testing-of-silicon-steel-at-high-frequency.pdf
 - title: Optimization of output power and transmission efficiency of magnetically coupled resonance wireless power transfer system
   published: 2018-05
   authors: Rongge Yan, Xiaoting Guo, Shaoqing Cao, Changgeng Zhang
@@ -189,22 +193,26 @@
   published: 2017-11
   authors: Yongjian Li, Qing Zhao, Lixiang Wang, Changgeng Zhang, Rongge Yan
   venue: IEEE Transactions on Magnetics 53(11), 6101504
-- title: Measurement and Modeling of Rotational Hysteresis Loss of Electric Soft Magnetic Material
+- news: tces-2017-32-11-208
   published: 2017-06
   authors: Changgeng Zhang, Qingxin Yang*, Yongjian Li
-  venue: Transactions of China Electrotechnical Society 32(11), 208–216 · In Chinese
-- title: An Electromagnetism Simulation Methodology of Laminated Silicon Steel by Three Axes Orthogonal and Wide Frequency Excitation
-  published: 2017-04
+  venue: Transactions of China Electrotechnical Society 32(11), 208–216 (2017) · In Chinese
+  pdf: /assets/papers/2017/rotational-hysteresis-loss-in-soft-magnetic-materials.pdf
+- news: 10.13334/j.0258-8013.pcsee.160222
+  published: '2017-04-05'
   authors: Changgeng Zhang, Qingxin Yang, Yongjian Li*
-  venue: Proceedings of the CSEE 37(7), 2167–2175 · In Chinese
-- title: Measurement of Three-Dimensional Magnetic Properties With Feedback Control and Harmonic Compensation
+  venue: Proceedings of the CSEE 37(7), 2167–2175 (2017) · In Chinese
+  pdf: /assets/papers/2017/broadband-three-axis-modeling-of-laminated-silicon-steel.pdf
+- news: 10.1109/TIE.2016.2597118
   published: 2017-03
   authors: Changgeng Zhang, Yongjian Li*, Jingsong Li, Qingxin Yang, Jianguo Zhu
-  venue: IEEE Transactions on Industrial Electronics 64(3), 2476–2485
-- title: An Electromagnetic Simulation Method Considering Hysteresis and Micro-Eddy Current Effect
-  published: 2016-11
+  venue: IEEE Transactions on Industrial Electronics 64(3), 2476–2485 (2017)
+  pdf: /assets/papers/2017/three-dimensional-magnetic-measurement-with-harmonic-compensation.pdf
+- news: 10.13334/j.0258-8013.pcsee.160221
+  published: '2016-11-05'
   authors: Changgeng Zhang, Yongjian Li, Qingxin Yang*
-  venue: Proceedings of the CSEE 36(21), 5966–5974, 6041 · In Chinese
+  venue: Proceedings of the CSEE 36(21), 5966–5974, 6041 (2016) · In Chinese
+  pdf: /assets/papers/2016/electromagnetic-simulation-with-hysteresis-and-micro-eddy-currents.pdf
 - title: Rotational Core Loss of Silicon Steel Laminations Based on Three-Dimensional Magnetic Properties Measurement
   published: 2016-06
   authors: Yongjian Li, Lei Cao, Changgeng Zhang, Qingxin Yang, Erping Li
