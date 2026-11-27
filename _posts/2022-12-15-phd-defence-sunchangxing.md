@@ -1,31 +1,25 @@
 ---
 layout: post
-title:  "Sun Changxing PHD Defence"
-date:   2022-12-15 01:30:13 +0800
+title: Doctoral thesis defence of Changxing Sun
+date: 2022-12-15
+date_precision: day
+lang: en
 categories: Activity
-tags: defence Sun 
+tags: [defence, Sun]
+permalink: /2022/12/14/phd-defence-sunchangxing
 comments: 1
+excerpt: Changxing Sun’s thesis on devices based on layered magnetoelectric composites was scheduled for defence on December 15, 2022.
 ---
-#### Hebei university of Technology PHD Defence
 
-* 答 辩 人： 孙长兴
-* 题    目： 基于层状磁电复合材料的磁电器件及其应用研究
-* 指导教师：  杨文荣  教授
-          
-#### 答辩委员会名单
- 主    席：  杨庆新   教  授、博导  (天津理工大学)
- 
- 委    员：  
-* 刘国强   研究员、博导  (中国科学院电工研究所)
-* 李  奎   教  授、博导  (河北工业大学)
-* 李永建   教  授、博导  (河北工业大学)
-* 张  献   教  授、博导  (河北工业大学)
-  
+Hebei University of Technology scheduled Changxing Sun’s doctoral thesis defence for 9 a.m. on Thursday, December 15, 2022.
 
-**秘    书：  张长庚   博士        (河北工业大学)**
- 
- **时间地点： 2022年12月15日 (星期四) 上午9：00**
+**Thesis** — Magnetoelectric Devices Based on Layered Magnetoelectric Composites and Their Applications
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+**Supervisor** — Professor Wenrong Yang
+
+#### Defence committee
+
+- **Chair** — Professor Qingxin Yang, doctoral supervisor at Tianjin University of Technology
+- **Member** — Guoqiang Liu, research professor and doctoral supervisor at the Institute of Electrical Engineering, Chinese Academy of Sciences
+- **Members** — Professors Kui Li, Yongjian Li and Xian Zhang, all doctoral supervisors at Hebei University of Technology
+- **Secretary** — Dr. Changgeng Zhang, Hebei University of Technology

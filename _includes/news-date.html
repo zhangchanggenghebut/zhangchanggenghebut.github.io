@@ -6,6 +6,8 @@
   {%- else -%}
     {{- include.entry.date | date: '%B %Y' -}}
   {%- endif -%}
+{%- elsif include.entry.date_precision == 'day' and include.format == '%d/%m/%Y %H:%M' -%}
+  {{- include.entry.date | date: '%d/%m/%Y' -}}
 {%- elsif include.format == 'short' -%}
   {{- include.entry.date | date_to_string -}}
 {%- else -%}

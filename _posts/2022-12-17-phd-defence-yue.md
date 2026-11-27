@@ -1,34 +1,24 @@
 ---
 layout: post
-title:  "Yue Shuaichao PHD Defence"
-date:   2022-12-17 01:30:13 +0800
+title: Doctoral thesis defence of Shuaichao Yue
+date: 2022-12-17
+date_precision: day
+lang: en
 categories: Activity
-tags: defence Yue 
+tags: [defence, Yue]
+permalink: /2022/12/16/phd-defence-yue
 comments: 1
+excerpt: Shuaichao Yue’s thesis on two-dimensional magnetic measurements and nonlinear material models was scheduled for defence on December 17, 2022.
 ---
-#### Hebei university of Technology PHD Defence
 
-  **答 辩 人：  岳帅超**
-  
-  **题    目：  电工钢片二维磁特性测试及考虑非线性材料模型的工程模拟研究**
-    
-  **指导教师：  杨庆新 教授**
-          
-#### 答辩委员会名单
- 主    席：  张  献    教授、博导  (河北工业大学)
-#### 委    员：  
-*  李  奎    教授、博导  (河北工业大学)
-* 杨文荣    教授、博导  (河北工业大学)
-* 赵志刚    教授、博导  (河北工业大学)
-*  闫荣格    教授、博导  (河北工业大学)
- * 刘素贞    教授、博导  (河北工业大学)
-            
+Hebei University of Technology scheduled Shuaichao Yue’s doctoral thesis defence for 9 a.m. on Saturday, December 17, 2022.
 
-**秘书：  张长庚   博士        (河北工业大学)**
+**Thesis** — Measuring the Two-Dimensional Magnetic Properties of Electrical Steel Sheets and Engineering Simulation Using Nonlinear Material Models
 
-**时间地点： 2022年12月17日，上午9:00**
+**Supervisor** — Professor Qingxin Yang
 
+#### Defence committee
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+- **Chair** — Professor Xian Zhang, doctoral supervisor at Hebei University of Technology
+- **Members** — Professors Kui Li, Wenrong Yang, Zhigang Zhao, Rongge Yan and Suzhen Liu, all doctoral supervisors at Hebei University of Technology
+- **Secretary** — Dr. Changgeng Zhang, Hebei University of Technology
