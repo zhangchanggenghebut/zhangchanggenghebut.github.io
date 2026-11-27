@@ -1,14 +1,16 @@
 .group-intro {
+  --pi-portrait-size: 96px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) var(--pi-portrait-size);
   grid-template-areas: "title photo" "lead photo";
   align-items: center;
-  column-gap: .65rem;
+  gap: .2rem 12px;
   margin-bottom: 1rem;
   text-align: start;
 }
 .group-intro h1 {
   grid-area: title;
+  align-self: end;
   margin: 0;
   color: #263c46;
   font-size: 1.5rem;
@@ -17,39 +19,35 @@
 }
 .group-intro p {
   grid-area: lead;
-  margin: .3rem 0 0;
+  align-self: start;
+  margin: 0;
   color: #46565e;
   font-size: 1rem;
   line-height: 1.45;
 }
 .group-intro a {
+  display: inline-block;
   color: #16596c;
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: .15em;
 }
 .group-intro a:focus-visible { outline: 2px solid #13657b; outline-offset: 3px; }
-.group-intro-photo {
-  grid-area: photo;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  overflow: hidden;
+.group-intro-photo { grid-area: photo; }
+@media (max-width: 359px) {
+  .group-intro { --pi-portrait-size: 84px; }
 }
-.group-intro-photo img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.6);
-  transform-origin: 50% 18%;
-}
-@media (max-width: 399px) {
-  .group-intro:lang(en) { grid-template-areas: "title photo" "lead lead"; }
+@media (max-width: 600px) {
+  .group-intro:lang(en) .group-lead-divider { display: none; }
+  .group-intro:lang(en) p a { display: block; width: fit-content; }
 }
 @media (min-width: 769px) {
+  .group-intro {
+    --pi-portrait-size: 112px;
+    grid-template-columns: minmax(0, max-content) var(--pi-portrait-size);
+    column-gap: 22px;
+  }
   .group-intro h1 { font-size: 1.7rem; }
-  .group-intro-photo { width: 44px; height: 44px; }
 }
 .student-jumps {
   display: flex;

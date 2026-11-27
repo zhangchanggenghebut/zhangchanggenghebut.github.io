@@ -1,3 +1,22 @@
+.pi-portrait {
+  display: block;
+  width: var(--pi-portrait-size);
+  height: var(--pi-portrait-size);
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid #b7c3c6;
+  border-radius: 0;
+}
+.pi-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 28%;
+  transform: scale(1.25);
+  transform-origin: 50% 25%;
+}
+
 .student-portrait { position: relative; display: block; width: 90px; height: 120px; flex: 0 0 90px; overflow: hidden; border: 1px solid #d9dfef; border-radius: 6px; background: #edf0f8; }
 .student-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
 [data-person="muhammad-adeel"] .student-portrait img { transform: scale(1.55); transform-origin: 50% 80%; }

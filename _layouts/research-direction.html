@@ -1,6 +1,6 @@
 ---
 layout: default
-css: ["student-portraits.css", "research-directions.css"]
+css: ["student-portraits.css?v=2", "research-directions.css?v=2"]
 ---
 {% if page.lang == 'zh-CN' %}
   {% assign lang = 'zh' %}
@@ -15,7 +15,7 @@ css: ["student-portraits.css", "research-directions.css"]
   <a class="area-back" href="{{ site.data.page_editions.home[lang] | relative_url }}#home-research-heading"><span aria-hidden="true">←</span> {% if lang == 'zh' %}全部研究方向{% else %}All research areas{% endif %}</a>
   <h1 id="area-title">{{ page.title | escape }}</h1>
   <section class="area-lead" aria-labelledby="area-pi-name">
-    <span class="area-lead-portrait" aria-hidden="true"><img src="{{ '/assets/res/user.png' | relative_url }}" alt="" width="76" height="76"></span>
+    {% include pi-portrait.html variant="area-lead-portrait" %}
     <div>
       <p class="area-lead-label">{% if lang == 'zh' %}团队负责人{% else %}Principal Investigator{% endif %}</p>
       <h2 id="area-pi-name">{{ site.data.group_profile[lang].name | escape }}</h2>
