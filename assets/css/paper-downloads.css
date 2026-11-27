@@ -1,0 +1,26 @@
+.paper-download-stat {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: .55em;
+}
+.paper-download-number {
+  color: #405868;
+  font-size: .86rem;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.paper-heading .paper-download-stat {
+  flex: 0 0 auto;
+  justify-content: flex-end;
+}
+@media (max-width: 600px) {
+  .paper-heading:has(.paper-download-stat) {
+    flex-wrap: wrap;
+    row-gap: .2rem;
+  }
+  .paper-heading .paper-download-stat {
+    justify-content: flex-start;
+  }
+}

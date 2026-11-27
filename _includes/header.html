@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v=editions">
+    {% if content contains '/assets/papers/' and content contains 'download' %}
+    <link rel="stylesheet" href="{{ '/assets/css/paper-downloads.css' | relative_url }}">
+    <script defer src="{{ '/assets/js/paper-downloads.js' | relative_url }}" data-endpoint="https://hebut-zhang-paper-downloads.abloom-elm-2874.chatgpt.site/v1/downloads"></script>
+    {% endif %}
     {% if news_article %}
     <link rel="stylesheet" href="{{ '/assets/css/news-article.css' | relative_url }}">
     {% endif %}
