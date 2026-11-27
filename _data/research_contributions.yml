@@ -1,12 +1,9 @@
+# The classifier honours confirmed memberships for each person before matching topics.
 magnetic-materials:
   - person: xiaotong-wang
     zh: 将磁致伸缩测量与仿真结合，研究高频变压器纳米晶合金叠片的形变。
     en: Combines measurements and simulations to study magnetostrictive strain in nanocrystalline laminations for high-frequency transformers.
     paper: 10.1587/elex.23.20260119
-  - person: raja-saqib-arshad
-    zh: 参与研究激光切割如何改变电工钢切边附近的磁畴形貌和磁特性。
-    en: Helped study how laser cutting changes domain patterns and magnetic properties near the edges of electrical steel.
-    paper: 10.1109/TMAG.2026.3711353
   - person: tao-chen
     zh: 测量并比较取向与无取向电工钢片在磁化过程中的磁致伸缩。
     en: Measures and compares how grain-oriented and non-oriented electrical steel sheets change length during magnetisation.
@@ -19,15 +16,12 @@ magnetic-materials:
     zh: 比较不同尺寸纳米晶叠片的磁特性，研究试样尺寸对测量结果的影响。
     en: Compared nanocrystalline laminations of different dimensions to determine how specimen size affects measured magnetic properties.
     paper: 10.1108/COMPEL-01-2026-0043
-  - person: yifan-chen
-    zh: 参与利用循环神经网络模拟电工钢片磁滞特性的研究。
-    en: Contributed to a recurrent neural network model of hysteresis in electrical steel sheets.
-    paper: 10.1109/TMAG.2023.3316753
   - person: hao-zhang
     zh: 利用连续的克尔显微图像训练模型，预测电机铁芯材料中磁畴的演化。
     en: Used sequences of Kerr microscopy images to train a model that predicts domain evolution in motor core materials.
     paper: 10.1016/j.asoc.2026.116305
   - person: sujun-babu
+    confirmed: true
     zh: 研究磁性材料的测量与建模，并参与了激光切割对电工钢磁性能影响的研究。
     en: Studies the measurement and modelling of magnetic materials and contributed to work on the effects of laser cutting on electrical steel.
     paper: 10.1109/TMAG.2026.3711353
@@ -85,10 +79,6 @@ magnetic-materials:
     zh: 参与改进 Preisach 模型，模拟谐波和直流偏磁下的磁滞特性。
     en: Contributed to a modified Preisach model that describes hysteresis under harmonics and DC bias.
     paper: 10.3390/ma16124385
-  - person: xinxiao-yan
-    zh: 参与硅钢矢量磁特性测量，研究沿叠片方向施加偏置磁场时材料的面内磁响应。
-    en: Contributed to vector measurements of the in-plane magnetic response of electrical steel under a bias field applied along the stacking direction.
-    paper: 10.1109/TMAG.2018.2868883
 
 weak-field-sensing:
   - person: muhammad-adeel
@@ -113,6 +103,14 @@ soft-magnetic-composites:
     zh: 采用低压放电等离子烧结制备铁和镍锌铁氧体复合磁粉芯，并测试其磁特性。
     en: Prepared iron and nickel–zinc ferrite composite powder cores by low-pressure spark plasma sintering and tested their magnetic properties.
     paper: 10.1016/j.jallcom.2024.178436
+  - person: raja-saqib-arshad
+    confirmed: true
+    zh: 参与团队的软磁复合材料制备研究。
+    en: Works on the fabrication of soft magnetic composites.
+  - person: sujun-babu
+    confirmed: true
+    zh: 关注如何通过测量与建模表征软磁复合材料的磁特性。
+    en: Studies how measurements and models can describe the magnetic properties of soft magnetic composites.
 
 electromagnetic-applications:
   - person: ziyang-wang
@@ -128,6 +126,7 @@ electromagnetic-applications:
     en: Accounts for core anisotropy when analysing electromagnetically induced vibration in anode saturable reactors.
     paper: 10.1109/TIM.2025.3602530
   - person: yifan-chen
+    confirmed: true
     zh: 用卷积神经网络估算变压器内部的电磁场分布。
     en: Used convolutional neural networks to estimate electromagnetic field distributions inside transformers.
     paper: 10.1109/TASC.2024.3420184
@@ -170,6 +169,7 @@ electromagnetic-applications:
     zh: 将电磁场与温度场耦合建模，并通过实验研究干式直流电抗器的温升。
     en: Combined electromagnetic and thermal modelling with experiments to study temperature rise in dry-type DC reactors.
   - person: xinxiao-yan
+    confirmed: true
     zh: 结合电磁、温度和流体仿真，预测变压器绕组中的损耗和局部过热。
     en: Combined electromagnetic, thermal and fluid simulations to predict losses and local overheating in transformer windings.
     paper: 10.19595/j.cnki.1000-6753.tces.191227

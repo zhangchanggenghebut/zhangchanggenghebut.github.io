@@ -1,4 +1,4 @@
-"""Suggest up to two research directions from students' topics and credited papers."""
+"""Group students using confirmed memberships, research topics and credited papers."""
 
 import json
 from pathlib import Path
@@ -20,7 +20,16 @@ SUBJECTS = {
 }
 
 
-def classify(directory, publications):
+def classify(directory, publications, contributions=None):
+    if contributions is None:
+        source = DATA / "research_contributions.yml"
+        contributions = yaml.safe_load(source.read_text(encoding="utf-8"))
+    confirmed = {}
+    for area, entries in contributions.items():
+        for entry in entries:
+            if entry.get("confirmed"):
+                confirmed.setdefault(entry["person"], []).append(area)
+
     author_names = {
         paper["news"]: {
             name.strip().casefold()
@@ -44,10 +53,12 @@ def classify(directory, publications):
             if names & author_names.get(ref, set())
         }
         candidates = []
-        for direction, terms in SUBJECTS.items():
+        directions = confirmed.get(key, SUBJECTS)
+        for direction in directions:
+            terms = SUBJECTS[direction]
             topic = bool(terms.search(person.get("topic", {}).get("zh", "")))
             matches = [ref for ref, title in papers.items() if terms.search(title)]
-            if topic or matches:
+            if key in confirmed or topic or matches:
                 candidates.append({"area": direction, "topic": topic, "papers": matches})
         # A documented topic takes precedence over a link through co-authorship.
         candidates.sort(key=lambda item: (item["topic"], len(item["papers"])), reverse=True)
