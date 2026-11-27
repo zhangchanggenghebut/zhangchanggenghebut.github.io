@@ -16,9 +16,6 @@
     <link rel="stylesheet" href="{{ '/assets/css/paper-downloads.css' | relative_url }}">
     <script defer src="{{ '/assets/js/paper-downloads.js' | relative_url }}" data-endpoint="https://hebut-zhang-paper-downloads.abloom-elm-2874.chatgpt.site/v1/downloads"></script>
     {% endif %}
-    {% if editions.zh contains '/zh/news/' %}
-    <link rel="stylesheet" href="{{ '/assets/css/news-article.css' | relative_url }}">
-    {% endif %}
     {% for css in layout.css %}
     {% if css contains "//" %}
     <link rel="stylesheet" href="{{css}}">
@@ -33,6 +30,9 @@
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/{{css}}">
     {% endif %}
     {% endfor %}
+    {% if page.collection == 'posts' or editions.zh contains '/zh/news/' %}
+    <link rel="stylesheet" href="{{ '/assets/css/news-article.css' | relative_url }}?v=2">
+    {% endif %}
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/syntax.css">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{{site.baseurl}}/feed.xml">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{site.baseurl}}/sitemap.xml">

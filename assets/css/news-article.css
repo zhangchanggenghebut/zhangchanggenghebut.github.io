@@ -1,3 +1,32 @@
+#page-info > h3,
+#post-info > h3 {
+  margin: 1rem 0 .5rem;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  text-align: start;
+}
+
+main .row :is(h1, h2, h3, h4, h5, h6) {
+  margin: 1.2em 0 .4em;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 768px) {
+  #page-info > h3,
+  #post-info > h3 {
+    font-size: 1.8rem;
+  }
+
+  main .row :is(h1, h2, h3, h4, h5, h6) {
+    font-size: 1.35rem;
+  }
+}
+
 .report-photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
