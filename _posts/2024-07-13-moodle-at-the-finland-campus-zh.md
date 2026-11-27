@@ -11,6 +11,12 @@ excerpt: 张长庚结合芬兰校区的教学实践，比较了 Moodle、雨课�
 
 2024 年 7 月 9 日至 11 日，河北工业大学举办暑期处级干部履职能力提升培训。在面向全校中层干部的国际化专场报告会上，时任国际交流与合作处副处长张长庚作专题报告，介绍芬兰校区使用 Moodle 教学平台的经验。
 
+{% include news-photos.html group="summer_training_talk" %}
+
 张长庚将 Moodle 与雨课堂、学习通和 D2L 进行比较，讨论了四种平台如何帮助教师管理课程、维护学术诚信，以及如何在教学管理中运用智能工具。他建议在建设学校的教学平台时，将课程管理的各个环节衔接起来，提高教学质量和管理效率。
 
-原文《2024年暑期处级干部培训国际化专场报告会圆满成功》由“河北工业大学国际处”微信公众号于 2024 年 7 月 13 日发布。[阅读学校网站报道](https://io.hebut.edu.cn/xwdt/be77812de5864e0fb76e8992082c1289.htm)
+{% include news-photos.html group="summer_training_group" %}
+
+{% include news-photos.html group="summer_training_gallery" collapsed="true" %}
+
+原文《2024年暑期处级干部培训国际化专场报告会圆满成功》由“河北工业大学国际处”微信公众号于 2024 年 7 月 13 日发布。现场照片由河北工业大学国际交流与合作处刊发。[阅读学校图文报道](https://io.hebut.edu.cn/xwdt/be77812de5864e0fb76e8992082c1289.htm)

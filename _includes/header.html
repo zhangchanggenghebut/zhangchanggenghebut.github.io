@@ -1,21 +1,3 @@
-{%- assign current_path = page.url | replace: '/index.html', '/' | remove: '.html' -%}
-{%- assign editions = nil -%}
-{%- for item in site.data.page_editions -%}
-  {%- assign paths = item[1] -%}
-  {%- if current_path == paths.en or current_path == paths.zh -%}
-    {%- assign editions = paths -%}
-    {%- break -%}
-  {%- endif -%}
-{%- endfor -%}
-{%- unless editions -%}
-  {%- for item in site.data.group_students.news -%}
-    {%- assign paths = item[1].path -%}
-    {%- if current_path == paths.en or current_path == paths.zh -%}
-      {%- assign editions = paths -%}
-      {%- break -%}
-    {%- endif -%}
-  {%- endfor -%}
-{%- endunless -%}
 <!DOCTYPE html>
 <html{% if page.lang %} lang="{{ page.lang | escape }}"{% endif %}>
   <head>
@@ -30,6 +12,9 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v=editions">
+    {% if news_article %}
+    <link rel="stylesheet" href="{{ '/assets/css/news-article.css' | relative_url }}">
+    {% endif %}
     {% for css in layout.css %}
     {% if css contains "//" %}
     <link rel="stylesheet" href="{{css}}">
@@ -59,12 +44,8 @@
             {% else %}
             <a class="page-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
             {% endif %}
-            {% if editions %}
-              {% if current_path == editions.zh %}
-              <a class="edition-link" href="{{ editions.en | relative_url }}" hreflang="en" lang="en">English</a>
-              {% else %}
-              <a class="edition-link" href="{{ editions.zh | relative_url }}" hreflang="zh-CN" lang="zh-CN">中文</a>
-              {% endif %}
+            {% if editions and news_article == false %}
+              {{ edition_link }}
             {% endif %}
           </div>
         </div>

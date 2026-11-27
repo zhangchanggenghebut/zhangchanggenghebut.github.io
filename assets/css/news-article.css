@@ -1,0 +1,118 @@
+.news-editions {
+  display: flex;
+  float: right;
+  align-items: stretch;
+  width: fit-content;
+  margin: .25rem 0 .65rem 1rem;
+  border: 1px solid #07516d;
+  border-radius: .4rem;
+  background: #fff;
+}
+
+.news-editions > * {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.5rem;
+  min-height: 44px;
+  padding: .3rem .8rem;
+  color: #07516d;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.news-editions > :first-child {
+  border-radius: .3rem 0 0 .3rem;
+}
+
+.news-editions > :last-child {
+  border-radius: 0 .3rem .3rem 0;
+}
+
+.news-editions [aria-current] {
+  background: #07516d;
+  color: #fff;
+}
+
+.news-editions a:hover {
+  background: #e7f3f5;
+  text-decoration: underline;
+}
+
+.news-editions a:focus-visible {
+  outline: 3px solid #076c90;
+  outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  .news-editions {
+    float: none;
+    margin: .8rem 0 .4rem auto;
+  }
+
+  .news-editions + div > h3 {
+    margin-top: .4rem;
+  }
+}
+
+.report-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  align-items: start;
+  gap: 1.25rem;
+  max-width: 62rem;
+  margin: 1.25rem auto;
+}
+
+.report-photo-single {
+  max-width: 50rem;
+}
+
+.report-photo-grid figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.report-photo-grid a {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  cursor: zoom-in;
+}
+
+.report-photo-grid img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.report-photo-grid figcaption {
+  margin: .45rem auto 0;
+  color: #46565d;
+  font-size: .95rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.report-photo-album {
+  max-width: 62rem;
+  margin: 1.25rem auto;
+  border-top: 1px solid #c9d5da;
+  border-bottom: 1px solid #c9d5da;
+}
+
+.report-photo-album summary {
+  display: list-item;
+  padding: .8rem .4rem;
+  color: #00537e;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.report-photo-grid a:focus-visible,
+.report-photo-album summary:focus-visible {
+  outline: 2px solid #00537e;
+  outline-offset: 3px;
+}
