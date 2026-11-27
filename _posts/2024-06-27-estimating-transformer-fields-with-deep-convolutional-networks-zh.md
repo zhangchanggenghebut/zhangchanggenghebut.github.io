@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 数据驱动的变压器电磁场估算深度卷积神经网络
+title: 陈怡帆｜数据驱动的变压器电磁场估算深度卷积神经网络
 date: 2024-06-27
 lang: zh-CN
 permalink: /zh/news/estimating-transformer-fields-with-deep-convolutional-networks/

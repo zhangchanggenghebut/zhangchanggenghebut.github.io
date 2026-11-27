@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Magnetic-Thermal Coupling Analysis of Saturable Reactor
+title: Yifan Chen | Magnetic-Thermal Coupling Analysis of Saturable Reactor
 date: 2021-05-25
 lang: en
 permalink: /2021/05/25/magnetic-thermal-coupling-in-a-saturable-reactor

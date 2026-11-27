@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 基于循环神经网络的电工钢片磁特性仿真
+title: 张豪｜基于循环神经网络的电工钢片磁特性仿真
 date: 2023-09-18
 lang: zh-CN
 permalink: /zh/news/recurrent-neural-networks-for-electrical-steel-hysteresis/

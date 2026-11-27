@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 宽频范围内法向应力作用下非晶与纳米晶合金磁特性测试
+title: 牛国辰｜宽频范围内法向应力作用下非晶与纳米晶合金磁特性测试
 date: 2025-03-31
 lang: zh-CN
 permalink: /zh/news/out-of-plane-stress-in-amorphous-and-nanocrystalline-alloys/

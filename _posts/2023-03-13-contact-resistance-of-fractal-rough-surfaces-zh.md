@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 基于分形粗糙表面的接触电阻简化计算模型
+title: 余百川｜基于分形粗糙表面的接触电阻简化计算模型
 date: 2023-03-13
 lang: zh-CN
 permalink: /zh/news/contact-resistance-of-fractal-rough-surfaces/

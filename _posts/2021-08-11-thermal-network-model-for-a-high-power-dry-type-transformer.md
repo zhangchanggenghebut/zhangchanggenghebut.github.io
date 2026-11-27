@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Thermal Network Model of High-Power Dry-Type Transformer Coupled With Electromagnetic Loss
+title: Yifan Chen | Thermal Network Model of High-Power Dry-Type Transformer Coupled With Electromagnetic Loss
 date: 2021-08-11
 lang: en
 permalink: /2021/08/11/thermal-network-model-for-a-high-power-dry-type-transformer

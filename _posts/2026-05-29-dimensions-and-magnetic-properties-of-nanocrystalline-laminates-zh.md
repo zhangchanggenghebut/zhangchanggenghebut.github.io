@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 不同几何尺寸纳米晶叠片的磁特性测量与分析
+title: 孟文斌｜不同几何尺寸纳米晶叠片的磁特性测量与分析
 date: 2026-05-29
 lang: zh-CN
 hidden: true

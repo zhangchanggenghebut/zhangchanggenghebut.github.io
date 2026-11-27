@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 基于隧道磁阻传感器阵列与角度补偿的多芯电缆非侵入式电流测量
+title: 赵帅｜基于隧道磁阻传感器阵列与角度补偿的多芯电缆非侵入式电流测量
 date: 2026-02-18
 lang: zh-CN
 hidden: true

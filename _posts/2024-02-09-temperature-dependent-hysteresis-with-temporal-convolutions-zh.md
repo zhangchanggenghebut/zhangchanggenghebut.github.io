@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 基于时间卷积网络的温度相关磁滞模型
+title: 张豪｜基于时间卷积网络的温度相关磁滞模型
 date: 2024-02-09
 lang: zh-CN
 permalink: /zh/news/temperature-dependent-hysteresis-with-temporal-convolutions/

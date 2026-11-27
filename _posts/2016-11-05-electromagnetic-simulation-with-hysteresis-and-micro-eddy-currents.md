@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An Electromagnetic Simulation Method Considering Hysteresis and Micro-Eddy Current Effect
+title: Yongjian Li | An Electromagnetic Simulation Method Considering Hysteresis and Micro-Eddy Current Effect
 date: 2016-11-05
 lang: en
 permalink: /2016/11/05/electromagnetic-simulation-with-hysteresis-and-micro-eddy-currents

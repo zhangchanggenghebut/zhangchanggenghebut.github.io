@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 采用反馈控制与谐波补偿的三维磁特性测量
+title: 李永建｜采用反馈控制与谐波补偿的三维磁特性测量
 date: 2016-08-02
 lang: zh-CN
 permalink: /zh/news/three-dimensional-magnetic-measurement-with-harmonic-compensation/

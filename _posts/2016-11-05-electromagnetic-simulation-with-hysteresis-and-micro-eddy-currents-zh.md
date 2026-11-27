@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 一种考虑磁滞和微观涡流效应的电磁模拟方法
+title: 李永建｜一种考虑磁滞和微观涡流效应的电磁模拟方法
 date: 2016-11-05
 lang: zh-CN
 permalink: /zh/news/electromagnetic-simulation-with-hysteresis-and-micro-eddy-currents/

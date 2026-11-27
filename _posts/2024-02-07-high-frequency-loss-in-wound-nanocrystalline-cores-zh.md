@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 考虑磁通密度非均匀分布的纳米晶磁芯高频损耗建模
+title: 孟文斌｜考虑磁通密度非均匀分布的纳米晶磁芯高频损耗建模
 date: 2024-02-07
 lang: zh-CN
 permalink: /zh/news/high-frequency-loss-in-wound-nanocrystalline-cores/

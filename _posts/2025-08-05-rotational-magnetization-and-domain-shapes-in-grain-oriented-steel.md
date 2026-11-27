@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Analysis of magnetic domain evolution in rotational magnetization of GOES based on morphological characteristics and artificial neural network
+title: Guotao Sun | Analysis of magnetic domain evolution in rotational magnetization of GOES based on morphological characteristics and artificial neural network
 date: 2025-08-05
 lang: en
 permalink: /2025/08/05/rotational-magnetization-and-domain-shapes-in-grain-oriented-steel

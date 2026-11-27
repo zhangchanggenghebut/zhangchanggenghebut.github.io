@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Measurement and Modeling of Rotational Hysteresis Loss of Electric Soft Magnetic Material
+title: Qingxin Yang | Measurement and Modeling of Rotational Hysteresis Loss of Electric Soft Magnetic Material
 date: 2017-06-20
 lang: en
 permalink: /2017/06/rotational-hysteresis-loss-in-soft-magnetic-materials

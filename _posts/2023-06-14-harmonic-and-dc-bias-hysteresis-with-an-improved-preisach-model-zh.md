@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 基于改进 Preisach 模型的谐波与直流偏磁下磁滞特性模拟
+title: 栗浩然｜基于改进 Preisach 模型的谐波与直流偏磁下磁滞特性模拟
 date: 2023-06-14
 lang: zh-CN
 permalink: /zh/news/harmonic-and-dc-bias-hysteresis-with-an-improved-preisach-model/

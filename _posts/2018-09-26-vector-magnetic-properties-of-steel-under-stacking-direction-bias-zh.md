@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 叠压方向偏置磁场下硅钢片的矢量磁特性测量
+title: 闫鑫笑｜叠压方向偏置磁场下硅钢片的矢量磁特性测量
 date: 2018-09-26
 lang: zh-CN
 permalink: /zh/news/vector-magnetic-properties-of-steel-under-stacking-direction-bias/

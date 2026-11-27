@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 激光切割电工钢的磁性能劣化量化及不同磁化角度下的磁畴研究
+title: Rawal Shahbaz｜激光切割电工钢的磁性能劣化量化及不同磁化角度下的磁畴研究
 date: 2026-02-11
 lang: zh-CN
 hidden: true

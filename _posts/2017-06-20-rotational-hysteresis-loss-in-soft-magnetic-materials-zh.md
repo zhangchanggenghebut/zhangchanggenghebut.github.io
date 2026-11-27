@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 电工软磁材料旋转磁滞损耗测量及建模
+title: 杨庆新｜电工软磁材料旋转磁滞损耗测量及建模
 date: 2017-06-20
 lang: zh-CN
 permalink: /zh/news/rotational-hysteresis-loss-in-soft-magnetic-materials/

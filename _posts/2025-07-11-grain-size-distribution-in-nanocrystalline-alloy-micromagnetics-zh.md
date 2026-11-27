@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 计及晶粒尺寸分布的纳米晶合金微磁建模与 1–20 kHz 实验对比
+title: 孟文斌｜计及晶粒尺寸分布的纳米晶合金微磁建模与 1–20 kHz 实验对比
 date: 2025-07-11
 lang: zh-CN
 permalink: /zh/news/grain-size-distribution-in-nanocrystalline-alloy-micromagnetics/

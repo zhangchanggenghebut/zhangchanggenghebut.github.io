@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 硅钢叠片在宽频三轴正交激磁条件下的磁特性模拟方法研究
+title: 杨庆新｜硅钢叠片在宽频三轴正交激磁条件下的磁特性模拟方法研究
 date: 2017-04-05
 lang: zh-CN
 permalink: /zh/news/broadband-three-axis-modeling-of-laminated-silicon-steel/

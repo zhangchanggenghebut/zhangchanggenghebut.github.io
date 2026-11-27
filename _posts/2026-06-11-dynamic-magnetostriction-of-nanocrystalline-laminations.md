@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An integrated approach for magnetostriction measurement and simulation of nanocrystalline alloys in high-frequency transformers
+title: Xiaotong Wang | An integrated approach for magnetostriction measurement and simulation of nanocrystalline alloys in high-frequency transformers
 date: 2026-06-11
 lang: en
 categories:

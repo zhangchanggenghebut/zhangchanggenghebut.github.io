@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 基于形态特征与人工神经网络的取向电工钢旋转磁化磁畴演化分析
+title: 孙国韬｜基于形态特征与人工神经网络的取向电工钢旋转磁化磁畴演化分析
 date: 2025-08-05
 lang: zh-CN
 permalink: /zh/news/rotational-magnetization-and-domain-shapes-in-grain-oriented-steel/

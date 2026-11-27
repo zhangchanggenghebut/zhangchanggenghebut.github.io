@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 中频激励下纳米晶合金叠片磁致伸缩的测量与分析
+title: 张海涛｜中频激励下纳米晶合金叠片磁致伸缩的测量与分析
 date: 2025-03-05
 lang: zh-CN
 permalink: /zh/news/medium-frequency-magnetostriction-of-nanocrystalline-laminations/

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Magnetic Properties Simulation of Electrical Steel Sheet Based on Recurrent Neural Network
+title: Hao Zhang | Magnetic Properties Simulation of Electrical Steel Sheet Based on Recurrent Neural Network
 date: 2023-09-18
 lang: en
 permalink: /2023/09/18/recurrent-neural-networks-for-electrical-steel-hysteresis

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 特高压换流阀阳极饱和电抗器动态铁芯损耗模拟
+title: 王家俊｜特高压换流阀阳极饱和电抗器动态铁芯损耗模拟
 date: 2021-06-30
 lang: zh-CN
 permalink: /zh/news/dynamic-core-loss-in-converter-valve-saturable-reactors/

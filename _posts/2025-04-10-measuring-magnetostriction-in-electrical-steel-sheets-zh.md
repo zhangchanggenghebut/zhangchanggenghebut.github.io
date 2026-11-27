@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 陈涛在计算电磁学会议交流取向与无取向电工钢的磁致伸缩测量
+title: 陈涛｜取向与无取向电工钢片磁致伸缩的测量与分析
 date: 2025-04-10
 lang: zh-CN
 hidden: true

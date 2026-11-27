@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 考虑材料各向异性的阳极饱和电抗器电磁振动特性研究
+title: 陈涛｜考虑材料各向异性的阳极饱和电抗器电磁振动特性研究
 date: 2025-08-25
 lang: zh-CN
 permalink: /zh/news/electromagnetic-vibration-of-anode-saturable-reactor-cores/

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Harmonic and DC Bias Hysteresis Characteristics Simulation Based on an Improved Preisach Model
+title: Haoran Li | Harmonic and DC Bias Hysteresis Characteristics Simulation Based on an Improved Preisach Model
 date: 2023-06-14
 lang: en
 permalink: /2023/06/14/harmonic-and-dc-bias-hysteresis-with-an-improved-preisach-model

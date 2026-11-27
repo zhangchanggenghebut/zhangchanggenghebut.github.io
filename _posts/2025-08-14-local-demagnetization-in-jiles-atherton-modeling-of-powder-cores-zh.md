@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 考虑局部退磁效应的铁基软磁复合材料改进 Jiles–Atherton 模型
+title: 郭子冉｜考虑局部退磁效应的铁基软磁复合材料改进 Jiles–Atherton 模型
 date: 2025-08-14
 lang: zh-CN
 permalink: /zh/news/local-demagnetization-in-jiles-atherton-modeling-of-powder-cores/

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 氧化铝含量对放电等离子烧结铁硅软磁复合材料高频磁特性的影响
+title: 陈煜朋｜氧化铝含量对放电等离子烧结铁硅软磁复合材料高频磁特性的影响
 date: 2026-08-05
 lang: zh-CN
 hidden: true

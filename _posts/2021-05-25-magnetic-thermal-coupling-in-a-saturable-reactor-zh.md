@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 阳极饱和电抗器的磁热耦合分析
+title: 陈怡帆｜阳极饱和电抗器的磁热耦合分析
 date: 2021-05-25
 lang: zh-CN
 permalink: /zh/news/magnetic-thermal-coupling-in-a-saturable-reactor/

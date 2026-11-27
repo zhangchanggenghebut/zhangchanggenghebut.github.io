@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 基于埃里克森循环选材的 FeCoV–PZT 层合工频磁电能量采集器
+title: 王紫洋｜基于埃里克森循环选材的 FeCoV–PZT 层合工频磁电能量采集器
 date: 2026-02-17
 lang: zh-CN
 hidden: true

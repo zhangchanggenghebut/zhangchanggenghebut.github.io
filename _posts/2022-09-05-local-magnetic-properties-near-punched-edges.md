@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Punching effects on local magnetic properties near the edge of nonoriented electrical steels
+title: Lan Yang | Punching effects on local magnetic properties near the edge of nonoriented electrical steels
 date: 2022-09-05
 lang: en
 permalink: /2022/09/05/local-magnetic-properties-near-punched-edges

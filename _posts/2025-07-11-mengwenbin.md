@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Comparison of micromagnetic modeling and experiment considering grain size distribution at 1–20 kHz
+title: Wenbin Meng | Comparison of micromagnetic modeling and experiment considering grain size distribution at 1–20 kHz
 date: 2025-07-11
 lang: en
 permalink: /2025/07/29/mengwenbin

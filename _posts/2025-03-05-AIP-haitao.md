@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Measurement and analysis of magnetostriction of nanocrystalline alloy laminations under medium-frequency excitation
+title: Haitao Zhang | Measurement and analysis of magnetostriction of nanocrystalline alloy laminations under medium-frequency excitation
 date: 2025-03-05
 lang: en
 permalink: /2025/01/09/AIP-haitao

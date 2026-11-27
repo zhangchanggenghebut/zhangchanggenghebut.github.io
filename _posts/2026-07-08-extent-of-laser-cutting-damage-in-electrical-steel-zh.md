@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 激光切割引起的电工钢磁畴形貌变化与磁性能劣化
+title: Rawal Shahbaz｜激光切割引起的电工钢磁畴形貌变化与磁性能劣化
 date: 2026-07-08
 lang: zh-CN
 hidden: true

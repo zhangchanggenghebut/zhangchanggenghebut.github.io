@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 耦合电磁损耗的大功率干式变压器热网络模型
+title: 陈怡帆｜耦合电磁损耗的大功率干式变压器热网络模型
 date: 2021-08-11
 lang: zh-CN
 permalink: /zh/news/thermal-network-model-for-a-high-power-dry-type-transformer/

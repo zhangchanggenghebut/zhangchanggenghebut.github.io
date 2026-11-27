@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 基于磁-热-流耦合模型的变压器损耗计算和热点预测
+title: 闫鑫笑｜基于磁-热-流耦合模型的变压器损耗计算和热点预测
 date: 2020-11-10
 lang: zh-CN
 permalink: /zh/news/losses-and-local-overheating-in-transformer-windings/

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 基于卷积长短期记忆网络的电机铁芯材料磁畴演化建模
+title: 张豪｜基于卷积长短期记忆网络的电机铁芯材料磁畴演化建模
 date: 2026-08-25
 lang: zh-CN
 hidden: true

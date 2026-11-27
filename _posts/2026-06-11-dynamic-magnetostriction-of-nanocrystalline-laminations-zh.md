@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 高频变压器用纳米晶合金磁致伸缩的测量与仿真综合方法
+title: 王晓彤｜高频变压器用纳米晶合金磁致伸缩的测量与仿真综合方法
 date: 2026-06-11
 lang: zh-CN
 hidden: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angle-compensated non-invasive current measurement of multi-conductor cables via a TMR sensor-array
+title: Shuai Zhao | Angle-compensated non-invasive current measurement of multi-conductor cables via a TMR sensor-array
 date: 2026-02-18
 lang: en
 categories:

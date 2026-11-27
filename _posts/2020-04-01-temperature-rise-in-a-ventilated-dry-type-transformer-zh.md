@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 基于三维磁–流–热耦合模型的通风式干式变压器温升预测
+title: 闫鑫笑｜基于三维磁–流–热耦合模型的通风式干式变压器温升预测
 date: 2020-04-01
 lang: zh-CN
 permalink: /zh/news/temperature-rise-in-a-ventilated-dry-type-transformer/

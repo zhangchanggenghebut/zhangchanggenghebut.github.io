@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 高频脉冲激励下纳米晶合金磁特性的测量与模拟
+title: 张民｜高频脉冲激励下纳米晶合金磁特性的测量与模拟
 date: 2023-04-03
 lang: zh-CN
 permalink: /zh/news/nanocrystalline-cores-under-pulsed-excitation/

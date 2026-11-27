@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 谐波及直流偏磁下变压器叠片式磁屏蔽杂散损耗模拟与验证
+title: 田亚坤｜谐波及直流偏磁下变压器叠片式磁屏蔽杂散损耗模拟与验证
 date: 2022-08-10
 lang: zh-CN
 permalink: /zh/news/stray-loss-in-laminated-transformer-shields-under-harmonics-and-dc-bias/

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 高频下双试片测量硅钢磁特性的改进方法
+title: 陈瑞颖｜高频下双试片测量硅钢磁特性的改进方法
 date: 2018-10-25
 lang: zh-CN
 permalink: /zh/news/double-sheet-testing-of-silicon-steel-at-high-frequency/

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 基于磁–流–热耦合仿真的变压器箔式绕组涡流损耗研究
+title: 闫鑫笑｜基于磁–流–热耦合仿真的变压器箔式绕组涡流损耗研究
 date: 2019-03-04
 lang: zh-CN
 permalink: /zh/news/eddy-current-loss-in-transformer-foil-windings/

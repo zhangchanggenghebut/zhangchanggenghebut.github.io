@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 电力变压器混片铁心的优化设计
+title: 王锴｜电力变压器混片铁心的优化设计
 date: 2024-10-01
 lang: zh-CN
 permalink: /zh/news/optimal-design-of-hybrid-laminated-transformer-cores/

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 低压放电等离子烧结制备铁基镍锌铁氧体高性能软磁复合材料
+title: 郭子冉｜低压放电等离子烧结制备铁基镍锌铁氧体高性能软磁复合材料
 date: 2025-01-01
 lang: zh-CN
 permalink: /zh/news/low-pressure-sintering-of-iron-ferrite-powder-cores/

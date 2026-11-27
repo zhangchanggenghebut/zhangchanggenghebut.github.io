@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Measuring magnetostriction in grain-oriented and non-oriented electrical steel at CEM 2025
+title: Tao Chen | Measurement and Analysis of the Magnetostriction of Oriented and Non-Oriented Electrical Steel Sheets
 date: 2025-04-10
 lang: en
 categories:

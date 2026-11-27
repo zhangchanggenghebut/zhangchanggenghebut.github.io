@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 激光切割引起的无取向电工钢磁性能劣化
+title: 张妍｜激光切割引起的无取向电工钢磁性能劣化
 date: 2023-02-24
 lang: zh-CN
 permalink: /zh/news/laser-cutting-and-magnetic-degradation-of-non-oriented-steel/

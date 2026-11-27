@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simplified Calculation Model for Contact Resistance Based on Fractal Rough Surfaces Method
+title: Baichuan Yu | Simplified Calculation Model for Contact Resistance Based on Fractal Rough Surfaces Method
 date: 2023-03-13
 lang: en
 permalink: /2023/03/13/contact-resistance-of-fractal-rough-surfaces

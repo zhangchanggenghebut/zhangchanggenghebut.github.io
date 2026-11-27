@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Temperature-dependent hysteresis model based on temporal convolutional network
+title: Hao Zhang | Temperature-dependent hysteresis model based on temporal convolutional network
 date: 2024-02-09
 lang: en
 permalink: /2024/02/09/temperature-dependent-hysteresis-with-temporal-convolutions

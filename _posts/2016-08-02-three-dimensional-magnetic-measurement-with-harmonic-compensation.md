@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Measurement of Three-Dimensional Magnetic Properties With Feedback Control and Harmonic Compensation
+title: Yongjian Li | Measurement of Three-Dimensional Magnetic Properties With Feedback Control and Harmonic Compensation
 date: 2016-08-02
 lang: en
 permalink: /2016/08/02/three-dimensional-magnetic-measurement-with-harmonic-compensation

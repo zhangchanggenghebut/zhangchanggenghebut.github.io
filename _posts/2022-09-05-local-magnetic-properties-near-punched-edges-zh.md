@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 冲压对无取向电工钢边缘局部磁特性的影响
+title: 杨兰｜冲压对无取向电工钢边缘局部磁特性的影响
 date: 2022-09-05
 lang: zh-CN
 permalink: /zh/news/local-magnetic-properties-near-punched-edges/
