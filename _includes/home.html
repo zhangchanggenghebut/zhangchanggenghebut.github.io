@@ -30,8 +30,9 @@
       <section class="home-section home-research" aria-labelledby="home-research-heading">
         <h2 class="home-section-title" id="home-research-heading">{{ labels.interests | escape }}</h2>
         <ul class="home-focus-list browser-default">
-          {% for interest in site.data.home.interests %}
-          <li>{{ interest[language] | escape }}</li>
+          {% assign directions = site.pages | where: 'layout', 'research-direction' | where: 'lang', page.lang | sort: 'order' %}
+          {% for direction in directions %}
+          <li><a href="{{ direction.url | relative_url }}">{{ direction.title | escape }}</a></li>
           {% endfor %}
         </ul>
       </section>

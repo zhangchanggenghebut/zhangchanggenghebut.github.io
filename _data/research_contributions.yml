@@ -1,0 +1,175 @@
+magnetic-materials:
+  - person: xiaotong-wang
+    zh: 将磁致伸缩测量与仿真结合，研究高频变压器纳米晶合金叠片的形变。
+    en: Combines measurements and simulations to study magnetostrictive strain in nanocrystalline laminations for high-frequency transformers.
+    paper: 10.1587/elex.23.20260119
+  - person: raja-saqib-arshad
+    zh: 参与研究激光切割如何改变电工钢切边附近的磁畴形貌和磁特性。
+    en: Helped study how laser cutting changes domain patterns and magnetic properties near the edges of electrical steel.
+    paper: 10.1109/TMAG.2026.3711353
+  - person: tao-chen
+    zh: 测量并比较取向与无取向电工钢片在磁化过程中的磁致伸缩。
+    en: Measures and compares how grain-oriented and non-oriented electrical steel sheets change length during magnetisation.
+    paper: cem2025-chen
+  - person: rawal-shahbaz
+    zh: 结合局部磁滞测量和磁畴观测，研究电工钢切边附近的磁性能如何随磁化方向和距切边的距离变化。
+    en: Used local hysteresis measurements and domain images to study how magnetic behaviour varies with field direction and distance from a laser-cut edge.
+    paper: 10.1063/9.0000978
+  - person: wenbin-meng
+    zh: 比较不同尺寸纳米晶叠片的磁特性，研究试样尺寸对测量结果的影响。
+    en: Compared nanocrystalline laminations of different dimensions to determine how specimen size affects measured magnetic properties.
+    paper: 10.1108/COMPEL-01-2026-0043
+  - person: yifan-chen
+    zh: 参与利用循环神经网络模拟电工钢片磁滞特性的研究。
+    en: Contributed to a recurrent neural network model of hysteresis in electrical steel sheets.
+    paper: 10.1109/TMAG.2023.3316753
+  - person: hao-zhang
+    zh: 利用连续的克尔显微图像训练模型，预测电机铁芯材料中磁畴的演化。
+    en: Used sequences of Kerr microscopy images to train a model that predicts domain evolution in motor core materials.
+    paper: 10.1016/j.asoc.2026.116305
+  - person: sujun-babu
+    zh: 研究磁性材料的测量与建模，并参与了激光切割对电工钢磁性能影响的研究。
+    en: Studies the measurement and modelling of magnetic materials and contributed to work on the effects of laser cutting on electrical steel.
+    paper: 10.1109/TMAG.2026.3711353
+  - person: ruishan-li
+    zh: 研究磁性材料的磁–力耦合特性，关注力学状态与磁响应之间的关系。
+    en: Studies magnetomechanical coupling in magnetic materials, focusing on the relationship between mechanical loading and magnetic response.
+  - person: xinyu-gao
+    zh: 对磁电复合材料中的磁性组分进行模拟，研究其在外加磁场下的响应。
+    en: Models the response of the magnetic constituents in magnetoelectric composites to an applied field.
+  - person: jiaji-chi
+    zh: 研究磁性材料在磁化过程中产生的巴克豪森磁音信号。
+    en: Studies Barkhausen signals that arise during magnetisation.
+  - person: tiantian-lu
+    zh: 开展磁畴测试，观察材料在磁化过程中磁畴形貌的变化。
+    en: Uses magnetic domain measurements to observe how domain patterns change during magnetisation.
+  - person: yupeng-chen
+    zh: 测量不同氧化铝含量的铁硅磁粉芯，比较其高频磁导率和损耗。
+    en: Measured how alumina content affects the high-frequency permeability and loss of iron–silicon powder cores.
+    paper: 10.1007/s11664-026-13088-2
+  - person: ziran-guo
+    zh: 将局部退磁效应纳入磁滞模型，用于描述铁基软磁粉芯的磁化行为。
+    en: Incorporated local demagnetising effects into a hysteresis model for iron-based soft magnetic powder cores.
+    paper: 10.1016/j.jmmm.2025.173439
+  - person: guotao-sun
+    zh: 将二维磁特性测试与磁畴观测结合，分析取向电工钢在旋转磁化下的响应。
+    en: Combined two-dimensional magnetic measurements with domain observations to analyse grain-oriented electrical steel under rotating magnetisation.
+    paper: 10.1016/j.jmmm.2025.173415
+  - person: guochen-niu
+    zh: 在多个频率下测量非晶和纳米晶合金的磁特性，研究叠片法向应力的影响。
+    en: Measured amorphous and nanocrystalline alloys across a range of frequencies to study how stress normal to the laminations changes their magnetic properties.
+    paper: 10.1016/j.jmmm.2025.173013
+  - person: haitao-zhang
+    zh: 测量纳米晶合金叠片在中频激励下的磁致伸缩，并分析应变响应。
+    en: Measured and analysed magnetostrictive strain in nanocrystalline alloy laminations under medium-frequency excitation.
+    paper: 10.1063/9.0000878
+  - person: yan-zhang
+    zh: 从磁畴形貌和宏观磁特性两个尺度研究激光切割对无取向电工钢的影响。
+    en: Studied how laser cutting affects non-oriented electrical steel at the scale of both domain patterns and bulk magnetic properties.
+    paper: 10.1063/9.0000586
+  - person: xizheng-li
+    zh: 通过沿叠片方向施加应力，测量电工钢片磁特性的变化。
+    en: Measured how the magnetic properties of electrical steel change under stress applied along the stacking direction.
+  - person: haoran-li
+    zh: 测量不同温度下超薄硅钢的磁滞回线，并模拟磁滞特性随温度的变化。
+    en: Measured hysteresis loops in ultrathin electrical steel at different temperatures and modelled their temperature dependence.
+  - person: min-zhang
+    zh: 测量并模拟纳米晶软磁合金在高频脉冲激励下的磁特性。
+    en: Measured and modelled the magnetic response of nanocrystalline soft magnetic alloys under high-frequency pulse excitation.
+    paper: 10.3390/ma16072850
+  - person: lan-yang
+    zh: 测量无取向电工钢冲压边缘附近的局部磁特性，分析冲压造成的变化。
+    en: Measured local magnetic properties near punched edges to characterise how punching affects non-oriented electrical steel.
+    paper: 10.1108/COMPEL-01-2022-0064
+  - person: yakun-tian
+    zh: 参与改进 Preisach 模型，模拟谐波和直流偏磁下的磁滞特性。
+    en: Contributed to a modified Preisach model that describes hysteresis under harmonics and DC bias.
+    paper: 10.3390/ma16124385
+  - person: xinxiao-yan
+    zh: 参与硅钢矢量磁特性测量，研究沿叠片方向施加偏置磁场时材料的面内磁响应。
+    en: Contributed to vector measurements of the in-plane magnetic response of electrical steel under a bias field applied along the stacking direction.
+    paper: 10.1109/TMAG.2018.2868883
+
+weak-field-sensing:
+  - person: muhammad-adeel
+    zh: 研究微弱磁场的测量方法，关注如何从测量信号中分辨微小的磁场变化。
+    en: Studies how to resolve small changes in magnetic field strength from the measured signal.
+  - person: yi-xing
+    zh: 面向皮特斯拉（pT）量级的磁场测量，开展磁场传感器设计。
+    en: Designs magnetic field sensors for measurements at the picotesla scale.
+  - person: xinyan-ye
+    zh: 研究基于 ΔE 效应的磁场传感器，利用磁场引起的弹性模量变化进行检测。
+    en: Investigates magnetic field sensors based on the ΔE effect, which use field-induced changes in elastic modulus to detect a magnetic field.
+
+soft-magnetic-composites:
+  - person: shizhe-kang
+    zh: 研究软磁复合材料的制备工艺，关注材料从磁性粉末到成形磁芯的过程。
+    en: Studies fabrication processes for soft magnetic composites, from magnetic powder to a consolidated core.
+  - person: yupeng-chen
+    zh: 将氧化铝包覆与放电等离子烧结结合，制备具有不同包覆含量的铁硅磁粉芯。
+    en: Combined alumina coating with spark plasma sintering to prepare iron–silicon powder cores with different coating contents.
+    paper: 10.1007/s11664-026-13088-2
+  - person: ziran-guo
+    zh: 采用低压放电等离子烧结制备铁和镍锌铁氧体复合磁粉芯，并测试其磁特性。
+    en: Prepared iron and nickel–zinc ferrite composite powder cores by low-pressure spark plasma sintering and tested their magnetic properties.
+    paper: 10.1016/j.jallcom.2024.178436
+
+electromagnetic-applications:
+  - person: ziyang-wang
+    zh: 利用 FeCoV–PZT 磁电复合梁将工频交变磁场的能量转换为电能。
+    en: Used a FeCoV–PZT magnetoelectric cantilever to harvest electrical energy from a power-frequency magnetic field.
+    paper: 10.1063/9.0000992
+  - person: xiaotong-wang
+    zh: 通过测量高频变压器纳米晶铁芯的磁致伸缩，研究与铁芯振动有关的应变。
+    en: Characterises magnetostrictive strain in high-frequency transformer cores to study a source of core vibration.
+    paper: 10.1587/elex.23.20260119
+  - person: tao-chen
+    zh: 在阳极饱和电抗器振动分析中考虑铁芯材料的各向异性，研究电磁激励下的振动。
+    en: Accounts for core anisotropy when analysing electromagnetically induced vibration in anode saturable reactors.
+    paper: 10.1109/TIM.2025.3602530
+  - person: yifan-chen
+    zh: 用卷积神经网络估算变压器内部的电磁场分布。
+    en: Used convolutional neural networks to estimate electromagnetic field distributions inside transformers.
+    paper: 10.1109/TASC.2024.3420184
+  - person: hao-zhang
+    zh: 参与将深度卷积网络用于变压器电磁场估算的研究。
+    en: Co-authored a study on estimating transformer fields with deep convolutional networks.
+    paper: 10.1109/TASC.2024.3420184
+  - person: shuokao-mu
+    zh: 研究磁性器件在电力电子中的应用，并参与了多芯电缆非侵入式电流测量研究。
+    en: Studies magnetic components in power electronics and contributed to research on non-invasive current measurement in multi-conductor cables.
+    paper: 10.1063/9.0000987
+  - person: shuai-zhao
+    zh: 利用隧道磁阻传感器阵列和角度补偿，从多芯电缆外部测量各相电流。
+    en: Used a tunnel magnetoresistance sensor array with angle compensation to measure phase currents from outside a multi-conductor cable.
+    paper: 10.1063/9.0000987
+  - person: xiaoxiao-liu
+    zh: 研究载流滑动接触与导轨振动之间的关系。
+    en: Studied the relationship between current-carrying sliding contact and rail vibration.
+  - person: kai-wang
+    zh: 分析变压器的振动特征，研究如何利用振动信号诊断机械故障。
+    en: Analysed transformer vibration signals to investigate how they can reveal mechanical faults.
+  - person: baichuan-yu
+    zh: 用分形模型描述粗糙表面的形貌，研究表面形貌与法向接触特性之间的关系。
+    en: Used fractal models to relate surface roughness to the behaviour of contacts under normal load.
+  - person: shuyue-guan
+    zh: 将多物理场仿真与磁场测量用于研究载流滑动接触。
+    en: Used multiphysics simulations and magnetic field measurements to study current-carrying sliding contacts.
+  - person: yaohu-ge
+    zh: 结合电磁仿真研究高速运动条件下的速度测量。
+    en: Used electromagnetic simulations to study velocity measurement under high-speed motion.
+  - person: yakun-tian
+    zh: 模拟并验证谐波和直流偏磁下换流变压器叠片磁屏蔽构件的杂散损耗。
+    en: Modelled and validated stray losses in laminated magnetic shields of converter transformers under harmonics and DC bias.
+    paper: 10.19595/j.cnki.1000-6753.tces.210804
+  - person: jianjun-wang
+    zh: 模拟特高压直流换流阀阳极饱和电抗器的动态铁芯损耗。
+    en: Modelled dynamic core losses in the anode saturable reactors of ultrahigh-voltage DC converter valves.
+    paper: 10.13336/j.1003-6520.hve.20201067
+  - person: xinghan-li
+    zh: 将电磁场与温度场耦合建模，并通过实验研究干式直流电抗器的温升。
+    en: Combined electromagnetic and thermal modelling with experiments to study temperature rise in dry-type DC reactors.
+  - person: xinxiao-yan
+    zh: 结合电磁、温度和流体仿真，预测变压器绕组中的损耗和局部过热。
+    en: Combined electromagnetic, thermal and fluid simulations to predict losses and local overheating in transformer windings.
+    paper: 10.19595/j.cnki.1000-6753.tces.191227

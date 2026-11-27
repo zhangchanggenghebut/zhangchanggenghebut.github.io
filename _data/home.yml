@@ -17,11 +17,6 @@ labels:
     interests: 研究方向
     experience: 工作经历
     news: 团队新闻
-interests:
-  - {en: Engineering electromagnetic field application, zh: 工程电磁场应用}
-  - {en: Magnetic property measurement, zh: 磁特性测量}
-  - {en: Modeling of magnetic materials, zh: 磁性材料建模}
-  - {en: SMC materials manufacturing, zh: 软磁复合材料制备}
 positions:
   - period: {en: February 2022 – Present, zh: 2022 年 2 月至今}
     role:

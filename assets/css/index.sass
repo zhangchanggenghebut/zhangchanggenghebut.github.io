@@ -128,13 +128,31 @@ main
 
   li
     position: relative
-    padding: 9px 0 9px 16px
-    font-weight: 500
     border-top: 1px solid var(--panel-border)
+
+    a
+      display: flex
+      align-items: center
+      min-height: 44px
+      padding: 9px 0 9px 16px
+      color: #205343
+      font-weight: 600
+      text-decoration: underline
+      text-decoration-color: #88ad9b
+      text-underline-offset: .18em
+
+      &:hover, &:focus-visible
+        color: #103b2c
+        text-decoration-color: currentColor
+
+      &:focus-visible
+        outline: 2px solid currentColor
+        outline-offset: 2px
 
     &::before
       position: absolute
-      top: 1.12em
+      top: calc(50% - 2.5px)
+      pointer-events: none
       left: 0
       width: 5px
       height: 5px

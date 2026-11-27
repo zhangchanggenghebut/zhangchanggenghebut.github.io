@@ -1,0 +1,14 @@
+{%- assign portrait = include.person.photo -%}
+{%- assign extensions = 'jpg,webp,png' | split: ',' -%}
+{%- for extension in extensions -%}
+  {%- capture candidate -%}/assets/students/{{ include.key }}.{{ extension }}{%- endcapture -%}
+  {%- if include.paths contains candidate -%}
+    {%- assign portrait = candidate -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+<span class="student-portrait{% unless portrait %} student-portrait-empty{% endunless %}" aria-hidden="true">
+  {%- if portrait -%}
+    <img src="{% if portrait contains '://' %}{{ portrait | escape }}{% else %}{{ portrait | relative_url }}{% endif %}" alt="" width="90" height="120" loading="lazy">
+  {%- endif -%}
+</span>

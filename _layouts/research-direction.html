@@ -1,0 +1,43 @@
+---
+layout: default
+css: ["student-portraits.css", "research-directions.css"]
+---
+{% if page.lang == 'zh-CN' %}
+  {% assign lang = 'zh' %}
+{% else %}
+  {% assign lang = 'en' %}
+{% endif %}
+{% assign directory = site.data.group_students %}
+{% assign members = site.data.research_contributions[page.area] %}
+{% assign static_paths = site.static_files | map: 'path' %}
+
+<article class="research-area" aria-labelledby="area-title">
+  <a class="area-back" href="{{ site.data.page_editions.home[lang] | relative_url }}#home-research-heading"><span aria-hidden="true">←</span> {% if lang == 'zh' %}全部研究方向{% else %}All research areas{% endif %}</a>
+  <h1 id="area-title">{{ page.title | escape }}</h1>
+  <section class="area-lead" aria-labelledby="area-pi-name">
+    <span class="area-lead-portrait" aria-hidden="true"><img src="{{ '/assets/res/user.png' | relative_url }}" alt="" width="76" height="76"></span>
+    <div>
+      <p class="area-lead-label">{% if lang == 'zh' %}团队负责人{% else %}Principal Investigator{% endif %}</p>
+      <h2 id="area-pi-name">{{ site.data.group_profile[lang].name | escape }}</h2>
+      {{ content }}
+    </div>
+  </section>
+
+  <h2 class="area-members-heading" id="area-members">{% if lang == 'zh' %}成员与研究工作{% else %}Team contributions{% endif %}</h2>
+  <ul class="area-members browser-default" aria-labelledby="area-members">
+    {% for entry in members %}
+      {% assign person = directory.people[entry.person] %}
+      <li data-person="{{ entry.person | escape }}">
+        {% include student-portrait.html person=person key=entry.person paths=static_paths %}
+        <div class="area-member-text">
+          <h3>{{ person.name[lang] | escape }}</h3>
+          <p>{{ entry[lang] | escape }}</p>
+          {% if entry.paper %}
+            {% assign paper = directory.news[entry.paper] %}
+            <a class="area-paper" href="{{ paper.path[lang] | relative_url }}" aria-label="{% if lang == 'zh' %}相关论文{% else %}Related paper{% endif %} · {{ paper.title[lang] | escape }}">{% if lang == 'zh' %}相关论文{% else %}Related paper{% endif %}</a>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</article>
