@@ -1,51 +1,30 @@
-.group-profile {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  column-gap: clamp(14px, 2.5vw, 28px);
-  row-gap: 9px;
-  align-items: center;
-  margin: 0 0 18px;
-  padding: clamp(14px, 2.3vw, 24px);
-  color: #232e36;
-  background: #fff;
-  border: 1px solid #d9e1e5;
-  border-radius: 12px;
+.group-intro {
+  margin-bottom: 1rem;
+  text-align: start;
 }
-.group-profile-photo {
-  grid-row: 1 / 3;
-  align-self: start;
-  border-radius: 50%;
-}
-.group-profile-photo img {
-  display: block;
-  width: clamp(74px, 8vw, 100px);
-  height: auto;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.group-profile #group-profile-name {
-  margin: 0 0 3px;
-  padding: 0;
-  color: #1d303e;
-  border: 0;
-  font-size: clamp(1.45rem, 2.1vw, 1.95rem);
-  font-weight: 650;
-  line-height: 1.15;
-}
-.group-profile p, .group-profile details {
+.group-intro h1 {
   margin: 0;
+  color: #263c46;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.group-intro p {
+  margin: .3rem 0 0;
+  color: #46565e;
+  font-size: 1rem;
   line-height: 1.45;
 }
-.group-profile .group-profile-role { font-weight: 600; }
-.group-profile .group-profile-lab { color: #48575f; }
-.group-profile-email, .group-profile summary { color: #16596c; }
-.group-profile-email { overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 2px; }
-.group-profile-focus strong { margin-inline-end: .7em; font-weight: 650; }
-.group-profile details { margin-top: 4px; }
-.group-profile summary { display: list-item; width: fit-content; cursor: pointer; font-weight: 600; }
-.group-profile details ul { margin: .45em 0 0; padding-inline-start: 1.25em; }
-.group-profile :is(a, summary):focus-visible { outline: 2px solid #13657b; outline-offset: 3px; }
+.group-intro a {
+  color: #16596c;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: .15em;
+}
+.group-intro a:focus-visible { outline: 2px solid #13657b; outline-offset: 3px; }
+@media (min-width: 769px) {
+  .group-intro h1 { font-size: 1.7rem; }
+}
 .student-jumps {
   display: flex;
   flex-wrap: wrap;
@@ -72,9 +51,3 @@
 .student-jumps a:hover { background: #eef3f6; }
 .student-jumps a:focus-visible { outline: 2px solid #175e75; outline-offset: 2px; }
 .student-panels > .section { padding: 0; }
-@media (max-width: 600px) {
-  .group-profile { align-items: start; column-gap: 12px; }
-  .group-profile-photo { grid-row: 1; }
-  .group-profile-photo img { width: 64px; }
-  .group-profile-more { grid-column: 1 / -1; }
-}

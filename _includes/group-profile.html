@@ -1,21 +1,9 @@
-{% assign profile = site.data.group_profile[include.lang] %}
-<section class="group-profile" id="{% if include.lang == 'zh' %}cn{% else %}en{% endif %}-students-title" aria-labelledby="group-profile-name">
-  <a class="group-profile-photo" href="{{ site.github_profile | escape }}" aria-label="{{ profile.name | escape }} · GitHub">
-    <img src="{{ '/assets/res/user.png' | relative_url }}" alt="{{ profile.name | escape }}" width="100" height="100">
-  </a>
-  <div class="group-profile-bio">
-    <h2 id="group-profile-name">{{ profile.name | escape }}</h2>
-    <p class="group-profile-role">{{ profile.role | escape }}</p>
-    <p class="group-profile-lab">{{ site.laboratory[include.lang] | escape }}</p>
-    <a class="group-profile-email" href="mailto:{{ site.user_email | strip | escape }}">{{ site.user_email | strip | escape }}</a>
-  </div>
-  <div class="group-profile-more">
-    <p class="group-profile-focus"><strong>{{ profile.focus_label | escape }}</strong><span>{{ profile.focus | escape }}</span></p>
-    <details>
-      <summary>{{ profile.details | escape }}</summary>
-      <ul class="browser-default">
-        {% for item in profile.highlights %}<li>{{ item | escape }}</li>{% endfor %}
-      </ul>
-    </details>
-  </div>
-</section>
+{% assign lang = include.lang %}
+<div class="group-intro" id="page-info">
+  <h1 id="{% if lang == 'zh' %}cn{% else %}en{% endif %}-students-title">{{ page.title | escape }}</h1>
+  <p>
+    {% if lang == 'zh' %}团队负责人{% else %}Principal Investigator{% endif %}
+    <span aria-hidden="true">·</span>
+    <a id="group-profile-name" href="{{ site.data.page_editions.home[lang] | relative_url }}">{{ site.data.group_profile[lang].name | escape }}{% if lang == 'zh' %}教授{% endif %}</a>
+  </p>
+</div>
