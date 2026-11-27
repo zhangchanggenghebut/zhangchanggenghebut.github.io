@@ -135,3 +135,68 @@ main
   nav
     .page-title
       font-size: 20px
+
+.home-masthead
+  .edition-bar
+    container-type: inline-size
+    justify-content: flex-start
+    column-gap: .6rem
+
+  .page-title
+    font-size: 1.25rem
+    font-size: clamp(1.15rem, 3cqi, 2.2rem)
+
+  .masthead-attribution
+    font-size: 1rem
+    font-size: clamp(1rem, 2cqi, 1.4rem)
+    font-weight: 400
+    line-height: 1.2
+    white-space: nowrap
+
+  .edition-link
+    margin-inline-start: auto
+
+@media (max-width: 767px), (max-width: 992px) and (pointer: coarse)
+  .home-masthead
+    position: relative
+    height: auto
+
+    nav.top-nav
+      height: auto
+
+    .edition-bar, > .container
+      width: calc(100% - 1rem)
+
+    .edition-bar
+      display: grid
+      grid-template-columns: 1fr auto 1fr
+      grid-template-rows: auto minmax(44px, auto)
+      justify-items: center
+      gap: 0
+      height: auto
+      min-height: 80px
+      padding: .65rem 0 .25rem
+
+    .edition-bar .page-title
+      grid-column: 1 / -1
+      max-width: 100%
+      text-align: center
+      text-wrap: balance
+      font-size: clamp(1rem, 4vw, 1.6rem)
+      font-size: clamp(1rem, 4.4cqi, 1.6rem)
+
+    .masthead-attribution
+      grid-area: 2 / 2
+      font-size: 1rem
+
+    .edition-link
+      grid-area: 2 / 3
+      justify-self: end
+
+    .button-collapse.top-nav
+      display: grid
+      place-items: center
+      top: auto
+      bottom: .25rem
+      height: 44px
+      line-height: 1

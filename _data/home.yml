@@ -1,5 +1,7 @@
 labels:
   en:
+    center_name: Center for Magnetic Measurements and Sensing
+    center_attribution: (Changgeng Zhang)
     name: ZHANG Changgeng
     position: Professor, Electrical Engineering, Hebei University of Technology
     portrait_link: GitHub profile of Changgeng Zhang
@@ -7,6 +9,8 @@ labels:
     experience: Working Experience
     news: News of My Group
   zh:
+    center_name: 磁测量与传感研究中心
+    center_attribution: （张长庚）
     name: 张长庚
     position: 河北工业大学电气工程学院教授
     portrait_link: 张长庚的 GitHub 个人主页
