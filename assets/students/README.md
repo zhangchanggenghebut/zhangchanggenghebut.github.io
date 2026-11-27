@@ -1,3 +1,9 @@
+---
+layout: default
+lang: zh-CN
+permalink: /assets/students/
+---
+
 # 学生照片
 
 每位同学共用一张照片，中文页和英文页都会显示。将照片放在本目录，按下表命名即可。也支持同名的 WebP 或 PNG 文件。

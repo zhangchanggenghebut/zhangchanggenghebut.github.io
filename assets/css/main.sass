@@ -26,75 +26,136 @@ footer
 .container
   width: 90%
 
-// Header
-header
-  height: 80px
-
+// Masthead
+.site-masthead
   a:hover
     text-decoration: none
 
   .background
-    background: -webkit-linear-gradient(90deg, #3AA17E 10%, #00537E 90%)
     background: linear-gradient(90deg, #3AA17E 10%, #00537E 90%)
 
-a
-  &.button-collapse
-    &.top-nav
-      position: absolute
-      text-align: center
-      height: 48px
-      width: 48px
-      top: 0
-      float: none
-      color: #fff
-      font-size: 36px
-      z-index: 999
-      line-height: 80px
+.masthead-bar
+  height: auto
+  background: #00796b
+  color: #fff
+  line-height: 1.2
 
-nav 
-  .page-title
-    font-size: 36px
-    font-weight: bold
-    line-height: 80px
-
-nav
-  &.top-nav
-    height: 80px
-
-.top-nav .edition-bar
+.masthead-inner
   display: flex
   align-items: center
-  justify-content: space-between
-  gap: .75rem
-  height: 100%
+  gap: .65rem
+  min-height: 76px
+  padding-block: .55rem
+  container-type: inline-size
 
-  .page-title
-    min-width: 0
-    text-align: left
-    line-height: 1.18
+.masthead-brand
+  display: flex
+  flex: 1 1 0%
+  flex-wrap: wrap
+  align-items: baseline
+  gap: .2rem .5rem
+  min-width: 0
+  color: inherit
 
-.top-nav .edition-link
-  display: inline-flex
+.masthead-title
+  font-size: 1.25rem
+  font-size: clamp(1.13rem, 2.54cqi, 2.2rem)
+  font-weight: 700
+  line-height: 1.16
+
+.masthead-owner
+  font-size: .96rem
+  font-size: clamp(.96rem, 1.65cqi, 1.3rem)
+  font-weight: 400
+  line-height: 1.2
+  white-space: nowrap
+
+  &::before
+    content: "("
+
+  &::after
+    content: ")"
+
+  &:lang(zh-CN)::before
+    content: "（"
+
+  &:lang(zh-CN)::after
+    content: "）"
+
+.masthead-bar .menu-toggle
+  display: none
+  position: static
+  float: none
   flex: none
   align-items: center
   justify-content: center
-  min-width: 48px
-  min-height: 44px
-  padding: 0 .8rem
-  border-radius: 5px
-  background: #f3fcfa
-  color: #124e4c
-  font-size: 1rem
-  font-weight: 600
-  line-height: 1.2
+  width: 40px
+  height: 44px
+  margin: 0
+  color: inherit
+  line-height: 1
 
-  &:hover, &:focus-visible
-    background: #fff
-    text-decoration: underline
+  .menu-glyph
+    display: flex
+    align-items: center
+    width: 19px
+    height: 14px
+    border-block: 2px solid currentColor
 
-  &:focus-visible
-    outline: 2px solid #152f32
-    outline-offset: 2px
+    &::before
+      content: ""
+      width: 100%
+      border-top: 2px solid currentColor
+
+.masthead-brand:focus-visible, .menu-toggle:focus-visible
+  outline: 2px solid currentColor
+  outline-offset: 2px
+  border-radius: 3px
+
+.language-switch
+  display: inline-flex
+  flex: none
+  width: 86px
+  box-sizing: border-box
+  padding: 2px
+  border: 1px solid #b9b9b9
+  border-radius: 7px
+  background: #ededed
+  font-size: 13px
+  font-weight: 500
+  line-height: 1
+
+  > *
+    display: flex
+    flex: 1 1 0
+    align-items: center
+    justify-content: center
+    min-width: 0
+    min-height: 28px
+    color: #414141
+    border-radius: 4px
+
+  [aria-current]
+    background: #414141
+    color: #fff
+    font-weight: 700
+
+  .edition-link
+    position: relative
+
+    &::after
+      content: ""
+      position: absolute
+      inset: -8px -2px
+
+    &:hover, &:focus-visible
+      background: #d6d6d6
+      color: #171717
+      text-decoration: underline
+
+    &:focus-visible
+      outline: 2px solid #292929
+      outline-offset: -2px
 
 // Footer
 footer.page-footer
@@ -119,84 +180,41 @@ main
         list-style-type: disc
 
 @media only screen and (max-width: 992px)
-  header,
-  main,
-  footer
+  header, main, footer
     padding-left: 0
 
-  nav 
-    .nav-wrapper
-      text-align: center
-
-  .top-nav .edition-bar
-    padding-inline-start: 48px
-
-@media only screen and (max-width: 600px)
-  nav
-    .page-title
-      font-size: 20px
-
-.home-masthead
-  .edition-bar
-    container-type: inline-size
-    justify-content: flex-start
-    column-gap: .6rem
-
-  .page-title
-    font-size: 1.25rem
-    font-size: clamp(1.15rem, 3cqi, 2.2rem)
-
-  .masthead-attribution
-    font-size: 1rem
-    font-size: clamp(1rem, 2cqi, 1.4rem)
-    font-weight: 400
-    line-height: 1.2
-    white-space: nowrap
-
-  .edition-link
-    margin-inline-start: auto
+  .masthead-bar .menu-toggle
+    display: inline-flex
 
 @media (max-width: 767px), (max-width: 992px) and (pointer: coarse)
-  .home-masthead
-    position: relative
-    height: auto
+  .masthead-bar
+    background: #f8fbfb
+    color: #173d49
+    border-bottom: 1px solid #c4d3d5
+    box-shadow: none
 
-    nav.top-nav
-      height: auto
+  .masthead-inner
+    width: calc(100% - 1rem)
+    min-height: 64px
+    gap: clamp(4px, 1.6vw, 9px)
+    padding-block: .5rem
 
-    .edition-bar, > .container
-      width: calc(100% - 1rem)
+  .masthead-brand
+    display: block
 
-    .edition-bar
-      display: grid
-      grid-template-columns: 1fr auto 1fr
-      grid-template-rows: auto minmax(44px, auto)
-      justify-items: center
-      gap: 0
-      height: auto
-      min-height: 80px
-      padding: .65rem 0 .25rem
+  .masthead-title
+    display: block
+    font-size: clamp(1.1rem, 4.35vw, 1.4rem)
+    text-wrap: balance
 
-    .edition-bar .page-title
-      grid-column: 1 / -1
-      max-width: 100%
-      text-align: center
-      text-wrap: balance
-      font-size: clamp(1rem, 4vw, 1.6rem)
-      font-size: clamp(1rem, 4.4cqi, 1.6rem)
+    &:lang(en)
+      font-size: clamp(1.05rem, 4vw, 1.32rem)
 
-    .masthead-attribution
-      grid-area: 2 / 2
-      font-size: 1rem
+  .masthead-owner
+    display: block
+    margin-top: 3px
+    color: #52616a
+    font-size: .92rem
 
-    .edition-link
-      grid-area: 2 / 3
-      justify-self: end
-
-    .button-collapse.top-nav
-      display: grid
-      place-items: center
-      top: auto
-      bottom: .25rem
-      height: 44px
-      line-height: 1
+    &::before, &::after
+      display: none

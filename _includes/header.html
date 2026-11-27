@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html{% if page.lang %} lang="{{ page.lang | escape }}"{% endif %}>
+<html lang="{{ page.lang | default: 'en' | escape }}">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,12 +11,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/assets/res/favicon.ico">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v=center-masthead">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v=site-masthead">
     {% if content contains '/assets/papers/' and content contains 'download' %}
     <link rel="stylesheet" href="{{ '/assets/css/paper-downloads.css' | relative_url }}">
     <script defer src="{{ '/assets/js/paper-downloads.js' | relative_url }}" data-endpoint="https://hebut-zhang-paper-downloads.abloom-elm-2874.chatgpt.site/v1/downloads"></script>
     {% endif %}
-    {% if news_article %}
+    {% if editions.zh contains '/zh/news/' %}
     <link rel="stylesheet" href="{{ '/assets/css/news-article.css' | relative_url }}">
     {% endif %}
     {% for css in layout.css %}
@@ -41,34 +41,33 @@
   <body>
     {% if page.lang == 'zh-CN' %}
       {% assign nav_language = 'zh' %}
-      {% assign nav_title = '张长庚教授' %}
     {% else %}
       {% assign nav_language = 'en' %}
-      {% assign nav_title = site.title %}
     {% endif %}
-    {% assign home_path = site.data.page_editions.home[nav_language] %}
-    <header{% if current_path == home_path %} class="home-masthead"{% endif %}>
-      <nav class="top-nav teal{% if current_path == home_path %} darken-2{% endif %}">
-        <div class="nav-wrapper">
-          <div class="container{% if editions %} edition-bar{% endif %}">
-            {% if current_path == home_path %}
-            {% assign home_labels = site.data.home.labels[nav_language] %}
-            <a class="page-title" href="{{ home_path | relative_url }}">{{ home_labels.center_name | escape }}</a>
-            <span class="masthead-attribution">{{ home_labels.center_attribution | escape }}</span>
+    {% assign labels = site.data.home.labels[nav_language] %}
+    {% assign home_editions = site.data.page_editions.home %}
+    {% assign switch_targets = editions | default: home_editions %}
+    <header class="site-masthead">
+      <nav class="masthead-bar" aria-label="{% if nav_language == 'zh' %}网站导航{% else %}Site navigation{% endif %}">
+        <div class="container masthead-inner">
+          <a class="menu-toggle button-collapse" href="#slide-out" data-activates="slide-out" aria-controls="slide-out" aria-label="{% if nav_language == 'zh' %}打开菜单{% else %}Open menu{% endif %}">
+            <span class="menu-glyph" aria-hidden="true"></span>
+          </a>
+          <a class="masthead-brand" href="{{ home_editions[nav_language] | relative_url }}">
+            <span class="masthead-title">{{ labels.center_name | escape }}</span>
+            <span class="masthead-owner">{{ labels.center_attribution | escape }}</span>
+          </a>
+          <div class="language-switch" role="group" aria-label="{% if nav_language == 'zh' %}页面语言{% else %}Page language{% endif %}">
+            {% if nav_language == 'zh' %}
+            <a class="edition-link" lang="en" hreflang="en" href="{{ switch_targets.en | relative_url }}" aria-label="{% if editions %}English{% else %}English homepage{% endif %}"{% unless editions %} title="前往英文首页"{% endunless %}>Eng</a>
+            <span lang="zh-CN" aria-current="page">中文</span>
             {% else %}
-            <a class="page-title" href="{{ home_path | relative_url }}">{{ nav_title | escape }}</a>
-            {% endif %}
-            {% if editions and news_article == false %}
-              {{ edition_link }}
+            <span lang="en" aria-current="page" title="English">Eng</span>
+            <a class="edition-link" lang="zh-CN" hreflang="zh-CN" href="{{ switch_targets.zh | relative_url }}"{% unless editions %} aria-label="中文首页" title="Chinese homepage"{% endunless %}>中文</a>
             {% endif %}
           </div>
         </div>
       </nav>
-      <div class="container">
-        <a href="#" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only">
-          <i class="material-icons">menu</i>
-        </a>
-      </div>
       <ul id="slide-out" class="side-nav fixed">
         <li>
           <div class="userView">

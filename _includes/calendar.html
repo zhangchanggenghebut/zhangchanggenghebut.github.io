@@ -1,10 +1,5 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservation for MOKE(Evico)</title>
-    <style>
-        body {
+<style>
+        .reservation-page {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
@@ -12,7 +7,7 @@
             background-color: #f7f7f7;
         }
         
-        .container {
+        .reservation-page > .container {
             max-width: 900px;
             margin: 0 auto;
             background-color: white;
@@ -21,14 +16,14 @@
             overflow: hidden;
         }
         
-        header {
+        .reservation-page header {
             background-color: #0078d4;
             color: white;
             padding: 20px;
             text-align: center;
         }
         
-        h1 {
+        .reservation-page h1 {
             margin: 0;
             font-size: 24px;
         }
@@ -246,7 +241,7 @@
             font-size: 0.9em;
         }
         
-        footer {
+        .reservation-page footer {
             text-align: center;
             padding: 20px;
             color: #666;
@@ -300,8 +295,7 @@
             background-color: #4CAF50;
         }
     </style>
-</head>
-<body>
+<div class="reservation-page">
     <div class="container">
         <header>
             <h1>Reservation for MOKE(Evico)</h1>
@@ -969,5 +963,4 @@
             return `${year}-${month}-${day}`;
         }
     </script>
-</body>
-</html>
+</div>

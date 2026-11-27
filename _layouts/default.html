@@ -16,33 +16,9 @@
     {%- endif -%}
   {%- endfor -%}
 {%- endunless -%}
-{%- assign news_article = false -%}
-{%- if editions -%}
-  {%- if editions.zh contains '/zh/news/' -%}
-    {%- assign news_article = true -%}
-  {%- endif -%}
-  {%- capture edition_link -%}
-    {%- if current_path == editions.zh -%}
-      <a class="edition-link" href="{{ editions.en | relative_url }}" hreflang="en" lang="en">English</a>
-    {%- else -%}
-      <a class="edition-link" href="{{ editions.zh | relative_url }}" hreflang="zh-CN" lang="zh-CN">中文</a>
-    {%- endif -%}
-  {%- endcapture -%}
-{%- endif -%}
 {% include header.html %}
 
 <div class="container">
-  {% if news_article %}
-  <div class="news-editions" role="group" aria-label="{% if current_path == editions.zh %}新闻语言{% else %}Article language{% endif %}">
-    {% if current_path == editions.zh %}
-    <span lang="zh-CN" aria-current="true">中文</span>
-    {{ edition_link }}
-    {% else %}
-    {{ edition_link }}
-    <span lang="en" aria-current="true">English</span>
-    {% endif %}
-  </div>
-  {% endif %}
   {{ content }}
 </div>
 

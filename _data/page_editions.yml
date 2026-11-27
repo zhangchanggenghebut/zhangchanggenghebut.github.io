@@ -4,6 +4,7 @@ projects: {en: /projects-en, zh: /projects}
 group:    {en: /about-en, zh: /about}
 teaching: {en: /teaching-en, zh: /teaching}
 testing:  {en: /instruments-en, zh: /instruments}
+activities: {en: /activities-en, zh: /activities}
 news:     {en: /categories, zh: /team-news/}
 finland_moodle: {en: /2024/07/13/moodle-at-the-finland-campus, zh: /zh/news/moodle-at-the-finland-campus/}
 shandong_exchange: {en: /2024/09/15/shandong-university-finland-campus-exchange, zh: /zh/news/shandong-university-finland-campus-exchange/}
