@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tao Chen | Measurement and Analysis of the Magnetostriction of Oriented and Non-Oriented Electrical Steel Sheets
+title: Tao Chen — Measurement and Analysis of the Magnetostriction of Oriented and Non-Oriented Electrical Steel Sheets
 date: 2025-04-10
 lang: en
 categories:

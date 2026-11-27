@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Min Zhang | Measurement and Simulation of Magnetic Properties of Nanocrystalline Alloys under High-Frequency Pulse Excitation
+title: Min Zhang — Measurement and Simulation of Magnetic Properties of Nanocrystalline Alloys under High-Frequency Pulse Excitation
 date: 2023-04-03
 lang: en
 permalink: /2023/04/03/nanocrystalline-cores-under-pulsed-excitation

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wenbin Meng | High-frequency loss modeling of nanocrystalline core considering nonuniform distribution of flux density
+title: Wenbin Meng — High-frequency loss modeling of nanocrystalline core considering nonuniform distribution of flux density
 date: 2024-02-07
 lang: en
 permalink: /2024/02/07/high-frequency-loss-in-wound-nanocrystalline-cores

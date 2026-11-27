@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rawal Shahbaz | Quantifying magnetic degradation in laser-cut electrical steel: A domain-level study with angle-dependent magnetization"
+title: "Rawal Shahbaz — Quantifying magnetic degradation in laser-cut electrical steel: A domain-level study with angle-dependent magnetization"
 date: 2026-02-11
 lang: en
 categories:

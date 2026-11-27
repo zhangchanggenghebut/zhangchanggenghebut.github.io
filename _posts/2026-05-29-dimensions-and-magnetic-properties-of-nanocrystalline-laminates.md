@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wenbin Meng | Magnetic measurement and analysis of nanocrystalline laminates with different dimensions
+title: Wenbin Meng — Magnetic measurement and analysis of nanocrystalline laminates with different dimensions
 date: 2026-05-29
 lang: en
 categories:

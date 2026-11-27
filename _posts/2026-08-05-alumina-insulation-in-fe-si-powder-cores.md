@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Yupeng Chen | Effect of Al₂O₃ Content on the High-Frequency Magnetic Properties of Fe-Si Soft Magnetic Composites Prepared by SPS
+title: Yupeng Chen — Effect of Al₂O₃ Content on the High-Frequency Magnetic Properties of Fe-Si Soft Magnetic Composites Prepared by SPS
 date: 2026-08-05
 lang: en
 categories:

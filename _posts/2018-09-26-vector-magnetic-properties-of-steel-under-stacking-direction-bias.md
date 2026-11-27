@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xinxiao Yan | Vector Magnetic Properties Measurement of Silicon Steel Under Biased Magnetic Excitation Along Laminated Direction
+title: Xinxiao Yan — Vector Magnetic Properties Measurement of Silicon Steel Under Biased Magnetic Excitation Along Laminated Direction
 date: 2018-09-26
 lang: en
 permalink: /2018/09/26/vector-magnetic-properties-of-steel-under-stacking-direction-bias

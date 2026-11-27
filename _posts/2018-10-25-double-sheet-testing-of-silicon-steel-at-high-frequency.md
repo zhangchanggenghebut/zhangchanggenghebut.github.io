@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ruiying Chen | An Improved Method for Measuring the Magnetic Properties of Silicon Steel With Double Sheets at High Frequency
+title: Ruiying Chen — An Improved Method for Measuring the Magnetic Properties of Silicon Steel With Double Sheets at High Frequency
 date: 2018-10-25
 lang: en
 permalink: /2018/10/25/double-sheet-testing-of-silicon-steel-at-high-frequency

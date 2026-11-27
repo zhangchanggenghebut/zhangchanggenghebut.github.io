@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Yifan Chen | Data-Driven Deep Convolutional Neural Networks for Electromagnetic Field Estimation of Transformers
+title: Yifan Chen — Data-Driven Deep Convolutional Neural Networks for Electromagnetic Field Estimation of Transformers
 date: 2024-06-27
 lang: en
 permalink: /2024/06/27/estimating-transformer-fields-with-deep-convolutional-networks

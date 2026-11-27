@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tao Chen | Study on Electromagnetic Vibration Characteristics of Anode Saturable Reactor Considering Anisotropic Properties
+title: Tao Chen — Study on Electromagnetic Vibration Characteristics of Anode Saturable Reactor Considering Anisotropic Properties
 date: 2025-08-25
 lang: en
 permalink: /2025/08/25/electromagnetic-vibration-of-anode-saturable-reactor-cores

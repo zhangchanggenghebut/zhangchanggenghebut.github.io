@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ziran Guo | An improved J-A model for iron-based soft magnetic composites considering local demagnetization effect
+title: Ziran Guo — An improved J-A model for iron-based soft magnetic composites considering local demagnetization effect
 date: 2025-08-14
 lang: en
 permalink: /2025/08/14/local-demagnetization-in-jiles-atherton-modeling-of-powder-cores

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jiajun Wang | Dynamic Core Loss Simulation of the Anode Saturable Reactor of UHVDC Converter Valves
+title: Jiajun Wang — Dynamic Core Loss Simulation of the Anode Saturable Reactor of UHVDC Converter Valves
 date: 2021-06-30
 lang: en
 permalink: /2021/06/30/dynamic-core-loss-in-converter-valve-saturable-reactors

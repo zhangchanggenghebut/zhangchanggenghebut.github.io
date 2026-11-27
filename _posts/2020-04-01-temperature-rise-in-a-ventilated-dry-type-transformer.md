@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xinxiao Yan | Prediction of temperature rise for ventilated dry-type transformer by 3-D coupled magneto-fluid-thermal model
+title: Xinxiao Yan — Prediction of temperature rise for ventilated dry-type transformer by 3-D coupled magneto-fluid-thermal model
 date: 2020-04-01
 lang: en
 permalink: /2020/04/01/temperature-rise-in-a-ventilated-dry-type-transformer

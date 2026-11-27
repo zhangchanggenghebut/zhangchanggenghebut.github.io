@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Yakun Tian | Modeling and Validation of Stray-Field Loss in Laminated Magnetic Shield of Transformer under Harmonics and DC Bias
+title: Yakun Tian — Modeling and Validation of Stray-Field Loss in Laminated Magnetic Shield of Transformer under Harmonics and DC Bias
 date: 2022-08-10
 lang: en
 permalink: /2022/08/10/stray-loss-in-laminated-transformer-shields-under-harmonics-and-dc-bias

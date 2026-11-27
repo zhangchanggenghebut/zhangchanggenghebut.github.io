@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kai Wang | Optimal Design of Hybrid Laminated Core for Power Transformer
+title: Kai Wang — Optimal Design of Hybrid Laminated Core for Power Transformer
 date: 2024-10-01
 lang: en
 permalink: /2024/10/optimal-design-of-hybrid-laminated-transformer-cores

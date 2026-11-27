@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ziran Guo | High performance soft magnetic composites based on Fe/Ni-Zn ferrite powder prepared by low-pressure spark plasma sintering
+title: Ziran Guo — High performance soft magnetic composites based on Fe/Ni-Zn ferrite powder prepared by low-pressure spark plasma sintering
 date: 2025-01-01
 lang: en
 permalink: /2025/01/04/paper-guoziran

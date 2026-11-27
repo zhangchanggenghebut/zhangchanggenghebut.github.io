@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xinxiao Yan | Numerical Prediction of Losses and Local Overheating in Transformer Windings Based on Magnetic-Thermal-Fluid Model
+title: Xinxiao Yan — Numerical Prediction of Losses and Local Overheating in Transformer Windings Based on Magnetic-Thermal-Fluid Model
 date: 2020-11-10
 lang: en
 permalink: /2020/11/10/losses-and-local-overheating-in-transformer-windings

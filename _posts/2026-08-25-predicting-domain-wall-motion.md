@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hao Zhang | ConvLSTM-based modeling of magnetic domain evolution in electric motor core materials
+title: Hao Zhang — ConvLSTM-based modeling of magnetic domain evolution in electric motor core materials
 date: 2026-08-25
 lang: en
 categories:

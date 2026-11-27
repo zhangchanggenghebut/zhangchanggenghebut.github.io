@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Yan Zhang | Magnetic properties deterioration of non-oriented steel due to laser cutting
+title: Yan Zhang — Magnetic properties deterioration of non-oriented steel due to laser cutting
 date: 2023-02-24
 lang: en
 permalink: /2023/02/24/laser-cutting-and-magnetic-degradation-of-non-oriented-steel

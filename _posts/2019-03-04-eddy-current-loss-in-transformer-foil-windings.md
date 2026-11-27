@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xinxiao Yan | Eddy Current Loss Effect in Foil Winding of Transformer Based on Magneto-Fluid-Thermal Simulation
+title: Xinxiao Yan — Eddy Current Loss Effect in Foil Winding of Transformer Based on Magneto-Fluid-Thermal Simulation
 date: 2019-03-04
 lang: en
 permalink: /2019/03/04/eddy-current-loss-in-transformer-foil-windings

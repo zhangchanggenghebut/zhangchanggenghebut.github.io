@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Qingxin Yang | An Electromagnetism Simulation Methodology of Laminated Silicon Steel by Three Axes Orthogonal and Wide Frequency Excitation
+title: Qingxin Yang — An Electromagnetism Simulation Methodology of Laminated Silicon Steel by Three Axes Orthogonal and Wide Frequency Excitation
 date: 2017-04-05
 lang: en
 permalink: /2017/04/05/broadband-three-axis-modeling-of-laminated-silicon-steel

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rawal Shahbaz | Magnetic Domain Pattern and Characteristic Deterioration of Electrical Steel Due to Laser Cutting
+title: Rawal Shahbaz — Magnetic Domain Pattern and Characteristic Deterioration of Electrical Steel Due to Laser Cutting
 date: 2026-07-08
 lang: en
 categories:

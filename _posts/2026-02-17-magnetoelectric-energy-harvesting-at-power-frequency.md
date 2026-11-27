@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ziyang Wang | Power-frequency magnetoelectric energy harvester using FeCoV–PZT laminates based on ericsson cycle
+title: Ziyang Wang — Power-frequency magnetoelectric energy harvester using FeCoV–PZT laminates based on ericsson cycle
 date: 2026-02-17
 lang: en
 categories:
