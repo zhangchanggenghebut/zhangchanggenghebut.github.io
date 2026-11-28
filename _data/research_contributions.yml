@@ -17,12 +17,9 @@ magnetic-materials:
     zh: 研究磁性材料的磁–力耦合特性，关注力学状态与磁响应之间的关系。
     en: Studies magnetomechanical coupling in magnetic materials, focusing on the relationship between mechanical loading and magnetic response.
   - person: xinyu-gao
+    confirmed: true
     zh: 对磁电复合材料中的磁性组分进行模拟，研究其在外加磁场下的响应。
     en: Models the response of the magnetic constituents in magnetoelectric composites to an applied field.
-  - person: yupeng-chen
-    zh: 测量不同氧化铝含量的铁硅磁粉芯，比较其高频磁导率和损耗。
-    en: Measured how alumina content affects the high-frequency permeability and loss of iron–silicon powder cores.
-    paper: 10.1007/s11664-026-13088-2
   - person: ziran-guo
     zh: 将局部退磁效应纳入磁滞模型，用于描述铁基软磁粉芯的磁化行为。
     en: Incorporated local demagnetising effects into a hysteresis model for iron-based soft magnetic powder cores.
@@ -64,6 +61,10 @@ weak-field-sensing:
   - person: xinyan-ye
     zh: 研究基于 ΔE 效应的磁场传感器，利用磁场引起的弹性模量变化进行检测。
     en: Investigates magnetic field sensors based on the ΔE effect, which use field-induced changes in elastic modulus to detect a magnetic field.
+  - person: xinyu-gao
+    confirmed: true
+    zh: 模拟磁电复合材料中的磁性组分如何响应微弱磁场。
+    en: Models how the magnetic constituents of magnetoelectric composites respond to weak magnetic fields.
 
 magnetic-domains:
   - person: rawal-shahbaz
@@ -98,6 +99,7 @@ soft-magnetic-composites:
     zh: 研究软磁复合材料的制备工艺，关注材料从磁性粉末到成形磁芯的过程。
     en: Studies fabrication processes for soft magnetic composites, from magnetic powder to a consolidated core.
   - person: yupeng-chen
+    confirmed: true
     zh: 将氧化铝包覆与放电等离子烧结结合，制备具有不同包覆含量的铁硅磁粉芯。
     en: Combined alumina coating with spark plasma sintering to prepare iron–silicon powder cores with different coating contents.
     paper: 10.1007/s11664-026-13088-2
