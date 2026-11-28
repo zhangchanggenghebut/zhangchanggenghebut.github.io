@@ -115,6 +115,30 @@ finland_graduation_2025:
   height: 720
   zh: 2025届毕业生与参加典礼的师生在拉彭兰塔会场合影。图片来自河北工业大学。
   en: Graduates and faculty gather for a group photograph in Lappeenranta. Photograph from Hebei University of Technology.
+shijiazhuang_2023_talk:
+- file: 2023/shijiazhuang-industrial-software/presentation.jpg
+  width: 1440
+  height: 1080
+  zh: 张长庚在石家庄讲解激光切割产生的应力如何影响电工钢边缘的磁畴。
+  en: Changgeng Zhang explains how stresses introduced by laser cutting affect magnetic domains near the edge of electrical steel.
+shijiazhuang_2023_punching:
+- file: 2023/shijiazhuang-industrial-software/slide-14-core-loss.webp
+  width: 1920
+  height: 1080
+  zh: 报告第 14 页。左图比较不同位置的铁损，右侧两图给出 50 Hz 下的磁滞、经典涡流和异常损耗分量。
+  en: Slide 14. The curves show core loss at different distances from the punched edge. The stacked bars separate hysteresis, classical eddy-current and excess losses at 50 Hz.
+shijiazhuang_2023_domains:
+- file: 2023/shijiazhuang-industrial-software/slide-25-magnetic-domains.webp
+  width: 1920
+  height: 1080
+  zh: 报告第 25 页。从左到右依次为试样中心、距激光切边 20–100 μm 和距切边 20 μm 以内的磁畴图像。
+  en: Slide 25. From left to right, the images show magnetic domains at the specimen centre, 20–100 μm from the laser-cut edge and within 20 μm of the edge.
+shijiazhuang_2023_motor:
+- file: 2023/shijiazhuang-industrial-software/slide-39-motor-model.webp
+  width: 1920
+  height: 1080
+  zh: 报告第 39 页。右下图放大了定子槽口附近的材料分区，A1、A2 和 A3 分别对应严重受损、较轻受损和未受损区域。
+  en: Slide 39. The detail at lower right shows the stator slot. A1 marks the most severely damaged material, A2 the less damaged material and A3 the unaffected interior.
 asemd_2023_presentation:
 - file: 2023/asemd-tianjin/changgeng-zhang-tutorial.jpg
   width: 1620
