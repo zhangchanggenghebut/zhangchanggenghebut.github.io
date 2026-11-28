@@ -1,5 +1,6 @@
 en:
   name: Changgeng Zhang
+  lead_label: Principal Investigator
   role: Professor and PhD Advisor, School of Electrical Engineering, Hebei University of Technology
   focus_label: Research interests
   focus: Engineering applications of electromagnetic fields · Magnetic property measurement · Modeling of magnetic materials · Manufacturing of soft magnetic composites
@@ -12,6 +13,7 @@ en:
     - Led NSFC Young Scientists Fund and General Program projects and participates in two ongoing NSFC Key Program projects.
 zh:
   name: 张长庚
+  lead_label: 中心负责人
   role: 河北工业大学电气工程学院教授、博士生导师
   focus_label: 研究方向
   focus: 工程电磁场应用、磁特性测量、磁性材料建模、软磁复合材料制备

@@ -1,7 +1,7 @@
 ---
 layout: research-direction
 area: soft-magnetic-composites
-order: 3
+order: 4
 lang: en
 title: Fabrication of Soft Magnetic Composites (SMCs)
 permalink: /research/soft-magnetic-composites/

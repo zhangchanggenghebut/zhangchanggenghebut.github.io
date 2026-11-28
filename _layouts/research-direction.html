@@ -17,7 +17,7 @@ css: ["student-portraits.css?v=2", "research-directions.css?v=2"]
   <section class="area-lead" aria-labelledby="area-pi-name">
     {% include pi-portrait.html variant="area-lead-portrait" %}
     <div>
-      <p class="area-lead-label">{% if lang == 'zh' %}团队负责人{% else %}Principal Investigator{% endif %}</p>
+      <p class="area-lead-label">{{ site.data.group_profile[lang].lead_label | escape }}</p>
       <h2 id="area-pi-name">{{ site.data.group_profile[lang].name | escape }}</h2>
       {{ content }}
     </div>

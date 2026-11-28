@@ -1,7 +1,7 @@
 ---
 layout: research-direction
 area: electromagnetic-applications
-order: 4
+order: 5
 lang: en
 title: Applications of Electromagnetic Fields
 permalink: /research/electromagnetic-applications/

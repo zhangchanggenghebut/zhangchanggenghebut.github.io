@@ -2,7 +2,7 @@
 <div class="group-intro" id="page-info">
   <h1 id="{% if lang == 'zh' %}cn{% else %}en{% endif %}-students-title">{{ page.title | escape }}</h1>
   <p>
-    {% if lang == 'zh' %}团队负责人{% else %}Principal Investigator{% endif %}
+    {{ site.data.group_profile[lang].lead_label | escape }}
     <span class="group-lead-divider" aria-hidden="true">·</span>
     <a id="group-profile-name" href="{{ site.data.page_editions.home[lang] | relative_url }}">{{ site.data.group_profile[lang].name | escape }}{% if lang == 'zh' %}教授{% endif %}</a>
   </p>

@@ -8,18 +8,6 @@ magnetic-materials:
     zh: 测量并比较取向与无取向电工钢片在磁化过程中的磁致伸缩。
     en: Measures and compares how grain-oriented and non-oriented electrical steel sheets change length during magnetisation.
     paper: cem2025-chen
-  - person: rawal-shahbaz
-    zh: 结合局部磁滞测量和磁畴观测，研究电工钢切边附近的磁性能如何随磁化方向和距切边的距离变化。
-    en: Used local hysteresis measurements and domain images to study how magnetic behaviour varies with field direction and distance from a laser-cut edge.
-    paper: 10.1063/9.0000978
-  - person: wenbin-meng
-    zh: 比较不同尺寸纳米晶叠片的磁特性，研究试样尺寸对测量结果的影响。
-    en: Compared nanocrystalline laminations of different dimensions to determine how specimen size affects measured magnetic properties.
-    paper: 10.1108/COMPEL-01-2026-0043
-  - person: hao-zhang
-    zh: 利用连续的克尔显微图像训练模型，预测电机铁芯材料中磁畴的演化。
-    en: Used sequences of Kerr microscopy images to train a model that predicts domain evolution in motor core materials.
-    paper: 10.1016/j.asoc.2026.116305
   - person: sujun-babu
     confirmed: true
     zh: 研究磁性材料的测量与建模，并参与了激光切割对电工钢磁性能影响的研究。
@@ -31,12 +19,6 @@ magnetic-materials:
   - person: xinyu-gao
     zh: 对磁电复合材料中的磁性组分进行模拟，研究其在外加磁场下的响应。
     en: Models the response of the magnetic constituents in magnetoelectric composites to an applied field.
-  - person: jiaji-chi
-    zh: 研究磁性材料在磁化过程中产生的巴克豪森磁音信号。
-    en: Studies Barkhausen signals that arise during magnetisation.
-  - person: tiantian-lu
-    zh: 开展磁畴测试，观察材料在磁化过程中磁畴形貌的变化。
-    en: Uses magnetic domain measurements to observe how domain patterns change during magnetisation.
   - person: yupeng-chen
     zh: 测量不同氧化铝含量的铁硅磁粉芯，比较其高频磁导率和损耗。
     en: Measured how alumina content affects the high-frequency permeability and loss of iron–silicon powder cores.
@@ -45,10 +27,6 @@ magnetic-materials:
     zh: 将局部退磁效应纳入磁滞模型，用于描述铁基软磁粉芯的磁化行为。
     en: Incorporated local demagnetising effects into a hysteresis model for iron-based soft magnetic powder cores.
     paper: 10.1016/j.jmmm.2025.173439
-  - person: guotao-sun
-    zh: 将二维磁特性测试与磁畴观测结合，分析取向电工钢在旋转磁化下的响应。
-    en: Combined two-dimensional magnetic measurements with domain observations to analyse grain-oriented electrical steel under rotating magnetisation.
-    paper: 10.1016/j.jmmm.2025.173415
   - person: guochen-niu
     zh: 在多个频率下测量非晶和纳米晶合金的磁特性，研究叠片法向应力的影响。
     en: Measured amorphous and nanocrystalline alloys across a range of frequencies to study how stress normal to the laminations changes their magnetic properties.
@@ -57,10 +35,6 @@ magnetic-materials:
     zh: 测量纳米晶合金叠片在中频激励下的磁致伸缩，并分析应变响应。
     en: Measured and analysed magnetostrictive strain in nanocrystalline alloy laminations under medium-frequency excitation.
     paper: 10.1063/9.0000878
-  - person: yan-zhang
-    zh: 从磁畴形貌和宏观磁特性两个尺度研究激光切割对无取向电工钢的影响。
-    en: Studied how laser cutting affects non-oriented electrical steel at the scale of both domain patterns and bulk magnetic properties.
-    paper: 10.1063/9.0000586
   - person: xizheng-li
     zh: 通过沿叠片方向施加应力，测量电工钢片磁特性的变化。
     en: Measured how the magnetic properties of electrical steel change under stress applied along the stacking direction.
@@ -90,6 +64,34 @@ weak-field-sensing:
   - person: xinyan-ye
     zh: 研究基于 ΔE 效应的磁场传感器，利用磁场引起的弹性模量变化进行检测。
     en: Investigates magnetic field sensors based on the ΔE effect, which use field-induced changes in elastic modulus to detect a magnetic field.
+
+magnetic-domains:
+  - person: rawal-shahbaz
+    zh: 结合局部磁滞测量和磁畴观测，研究电工钢切边附近的磁性能如何随磁化方向和距切边的距离变化。
+    en: Used local hysteresis measurements and domain images to study how magnetic behaviour varies with field direction and distance from a laser-cut edge.
+    paper: 10.1063/9.0000978
+  - person: wenbin-meng
+    zh: 将透射电镜测得的晶粒尺寸分布引入微磁模型，研究纳米晶合金的晶粒结构如何影响矫顽力和损耗。
+    en: Used grain sizes measured by transmission electron microscopy in a micromagnetic model to study how grain structure affects coercivity and loss in nanocrystalline alloys.
+    paper: 10.1016/j.jmmm.2025.173350
+  - person: hao-zhang
+    zh: 利用连续的克尔显微图像训练模型，预测电机铁芯材料中磁畴的演化。
+    en: Used sequences of Kerr microscopy images to train a model that predicts domain evolution in motor core materials.
+    paper: 10.1016/j.asoc.2026.116305
+  - person: jiaji-chi
+    zh: 研究磁化过程中的巴克豪森磁音，关注畴壁不连续运动在信号中的表现。
+    en: Studies how discontinuous domain-wall motion is reflected in Barkhausen signals during magnetisation.
+  - person: tiantian-lu
+    zh: 开展磁畴测试，观察材料在磁化过程中磁畴形貌的变化。
+    en: Uses magnetic domain measurements to observe how domain patterns change during magnetisation.
+  - person: guotao-sun
+    zh: 从连续的磁畴图像中提取形态特征，分析取向电工钢在旋转磁场中的磁化状态。
+    en: Extracted shape features from sequences of domain images to track the magnetisation state of grain-oriented electrical steel in a rotating field.
+    paper: 10.1016/j.jmmm.2025.173415
+  - person: yan-zhang
+    zh: 对照磁光图像与局部磁滞回线，研究无取向电工钢从激光切边到内部的磁畴形貌和磁性能变化。
+    en: Compared magneto-optical images with local hysteresis loops to study how domain patterns and magnetic properties vary with distance from a laser-cut edge in non-oriented electrical steel.
+    paper: 10.1063/9.0000586
 
 soft-magnetic-composites:
   - person: shizhe-kang

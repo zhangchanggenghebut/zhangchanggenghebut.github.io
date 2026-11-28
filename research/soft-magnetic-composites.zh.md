@@ -1,7 +1,7 @@
 ---
 layout: research-direction
 area: soft-magnetic-composites
-order: 3
+order: 4
 lang: zh-CN
 title: 软磁复合材料制备
 permalink: /zh/research/soft-magnetic-composites/

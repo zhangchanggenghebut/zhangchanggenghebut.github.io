@@ -10,9 +10,12 @@ import yaml
 DATA = Path(__file__).resolve().parents[1] / "_data"
 SUBJECTS = {
     "magnetic-materials": re.compile(
-        r"磁特性|磁性能|磁性材料|磁致伸缩|磁滞|磁畴|巴克豪森|磁性组分|微磁|局部退磁|纳米晶磁芯高频损耗"
+        r"磁特性|磁性能|磁性材料|磁致伸缩|磁滞|磁性组分|局部退磁|纳米晶磁芯高频损耗"
     ),
     "weak-field-sensing": re.compile(r"弱磁场|微小磁场|pT\s*级|ΔE\s*效应.{0,12}磁场传感", re.I),
+    "magnetic-domains": re.compile(
+        r"磁畴|畴壁|巴克豪森|磁光克尔|微磁(?:学|建模|仿真|模拟)|磁化(?:机理|机制)"
+    ),
     "soft-magnetic-composites": re.compile(r"软磁复合材料|粉芯|粉末包覆"),
     "electromagnetic-applications": re.compile(
         r"变压器|电抗器|电缆|电力电子|换流阀|能量采集|电磁高速运动|枢轨|导轨振动|接触电阻|法向接触"
@@ -52,17 +55,23 @@ def classify(directory, publications, contributions=None):
             for ref in person.get("publications", [])
             if names & author_names.get(ref, set())
         }
-        candidates = []
+        candidates = {}
         directions = confirmed.get(key, SUBJECTS)
         for direction in directions:
             terms = SUBJECTS[direction]
             topic = bool(terms.search(person.get("topic", {}).get("zh", "")))
             matches = [ref for ref, title in papers.items() if terms.search(title)]
             if key in confirmed or topic or matches:
-                candidates.append({"area": direction, "topic": topic, "papers": matches})
-        # A documented topic takes precedence over a link through co-authorship.
-        candidates.sort(key=lambda item: (item["topic"], len(item["papers"])), reverse=True)
-        assignments[key] = candidates[:2]
+                candidates[direction] = {"area": direction, "topic": topic, "papers": matches}
+        # A domain-focused project belongs in the specialist group after the materials split.
+        if key not in confirmed and "magnetic-domains" in candidates:
+            candidates.pop("magnetic-materials", None)
+        ranked = sorted(
+            candidates.values(),
+            key=lambda item: (item["topic"], len(item["papers"])),
+            reverse=True,
+        )
+        assignments[key] = ranked[:2]
     return assignments
 
 

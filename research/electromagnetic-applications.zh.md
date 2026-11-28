@@ -1,7 +1,7 @@
 ---
 layout: research-direction
 area: electromagnetic-applications
-order: 4
+order: 5
 lang: zh-CN
 title: 电磁场应用
 permalink: /zh/research/electromagnetic-applications/
