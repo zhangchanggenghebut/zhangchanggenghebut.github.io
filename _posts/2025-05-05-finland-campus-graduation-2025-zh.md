@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 张长庚出席河北工业大学芬兰校区2025届毕业典礼
+title: 河北工业大学芬兰校区轮值校长张长庚出席2025届毕业典礼
 date: 2025-05-05
 date_precision: day
 lang: zh-CN

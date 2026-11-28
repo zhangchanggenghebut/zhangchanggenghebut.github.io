@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changgeng Zhang attends the Finland Campus graduation for the Class of 2025
+title: Rector Changgeng Zhang attends the Finland Campus graduation for the Class of 2025
 date: 2025-05-05
 date_precision: day
 lang: en
