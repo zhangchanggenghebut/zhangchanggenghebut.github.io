@@ -9,13 +9,13 @@ tags: [Academic conferences, Teaching]
 excerpt: At the 15th national meeting on teaching circuits, signals and systems, and electromagnetics, Zhang discussed international course design and used seven equivalent forms of a transfer function to show how instructors and AI can grade circuit homework together.
 ---
 
-On 3 August 2026 in Dalian, Prof. Changgeng Zhang of Hebei University of Technology gave two invited talks at the 15th national meeting on university teaching and textbooks for circuits, signals and systems, and electromagnetics. Speaking on behalf of the university’s circuits teaching team, he delivered the presentation on international approaches to course design. In his other talk, he showed how instructors can use AI to grade handwritten circuit solutions. Zhang serves on the council of the national society for electromagnetics teaching and textbook research and has participated in the meeting for several years running.
+On 3 August 2026 in Dalian, Prof. Changgeng Zhang of Hebei University of Technology gave two invited talks at the 15th national meeting on university teaching and textbooks for circuits, signals and systems, and electromagnetics. In one talk, he discussed international approaches to designing circuits courses. In the other, he showed how instructors can use AI to grade handwritten circuit solutions. Zhang serves on the council of the national society for electromagnetics teaching and textbook research and has participated in the meeting for several years running.
 
 {% include news-photos.html group="dalian_2026_course_talk" %}
 
 ## What a circuits course can learn from international practice
 
-At the circuits forum, Zhang presented the team’s work on using digital tools and international benchmarks to develop its circuits course. The team uses international courses as a reference for what students should learn and how their work should be assessed. Digital assignments and feedback serve a different purpose. They show instructors where students run into difficulty and help them decide what to change the next time they teach the course.
+At the circuits forum, Zhang discussed how courses taught abroad can inform learning goals and assessment criteria for a circuits course. He also explained how digital assignments and feedback help instructors identify where students struggle and decide what to change the next time they teach the course.
 
 Zhang has returned to this question at successive meetings. In Hohhot in 2024, he drew on his experience teaching in Tianjin and Finland to compare the roles of textbooks, laboratory work and programming exercises in electromagnetics courses. [Read about the Hohhot talk](/2024/08/04/hohhot-china-finland-electromagnetics-teaching)
 

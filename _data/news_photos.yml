@@ -304,8 +304,8 @@ dalian_2026_course_talk:
 - file: 2026/dalian-circuits-teaching/international-course-talk.jpg
   width: 1706
   height: 1279
-  zh: 张长庚在大连年会电路课程论坛上代表河北工业大学电路课程建设团队主讲，屏幕上是报告的结语。
-  en: Changgeng Zhang presents on behalf of Hebei University of Technology’s circuits teaching team in Dalian. The closing slide summarises its approach to digital tools and international course benchmarks.
+  zh: 张长庚在大连年会电路分会场作邀请报告，介绍电路课程的数字化与国际化建设。
+  en: Changgeng Zhang gives an invited talk in Dalian on digital tools and international approaches to designing circuits courses.
 dalian_2026_equivalence:
 - file: 2026/dalian-circuits-teaching/equivalent-transfer-functions-zh.webp
   file_en: 2026/dalian-circuits-teaching/equivalent-transfer-functions-en.webp
