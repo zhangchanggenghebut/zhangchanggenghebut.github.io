@@ -4,7 +4,7 @@ title: Doctoral thesis defence of Changxing Sun
 date: 2022-12-15
 date_precision: day
 lang: en
-categories: Activity
+categories: Service
 tags: [defence, Sun]
 permalink: /2022/12/14/phd-defence-sunchangxing
 comments: 1

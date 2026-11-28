@@ -4,7 +4,7 @@ title: Changgeng Zhang organizes and speaks at a faculty forum on international 
 date: 2024-09-30 12:10:00 +0800
 date_precision: day
 lang: en
-categories: Activity
+categories: Service
 tags: [International education, Teaching]
 excerpt: Changgeng Zhang organized the forum as deputy director of the international office and was among its speakers. Faculty discussed teaching at the Finland Campus, joint courses at the Arizona College of Technology and international exchange opportunities.
 ---

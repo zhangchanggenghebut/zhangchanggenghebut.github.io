@@ -4,7 +4,7 @@ title: Changgeng Zhang attends the Finland Campus graduation for the Class of 20
 date: 2025-05-05
 date_precision: day
 lang: en
-categories: Activity
+categories: Service
 tags: [International education, Finland]
 excerpt: On May 5, Zhang joined Chinese and Finnish faculty and the graduating class at LUT University’s Lappeenranta campus.
 ---

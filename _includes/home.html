@@ -64,9 +64,8 @@
       {% endfor %}
     </div>
 
-    {% if language == 'zh' %}
-      <a class="home-archive" href="{{ site.data.page_editions.news.zh | relative_url }}">全部团队新闻</a>
-    {% elsif paginator.total_pages > 1 %}
+    <a class="home-archive" href="{{ site.data.page_editions.news[language] | relative_url }}">{{ labels.all_news | escape }}</a>
+    {% if language == 'en' and paginator.total_pages > 1 %}
       <div class="home-pagination" role="navigation" aria-label="News pages">
         <ul class="pagination browser-default">
           {% if paginator.previous_page %}

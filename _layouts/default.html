@@ -2,7 +2,7 @@
 {%- assign editions = nil -%}
 {%- for item in site.data.page_editions -%}
   {%- assign paths = item[1] -%}
-  {%- if current_path == paths.en or current_path == paths.zh -%}
+  {%- if current_path == paths.en or current_path == paths.zh or page.news_archive == item[0] -%}
     {%- assign editions = paths -%}
     {%- break -%}
   {%- endif -%}

@@ -1,27 +1,8 @@
-<div class="col s12 cat-div">
-  <div class="cat-list">
-    {% for cat in site.categories %}
-    {% capture test %}{{cat[0] | slice: 0}}{% endcapture %}
-    {% capture testup %}{{cat[0] | slice: 0 | upcase}}{% endcapture %}
-    <a class="cat-chip" href="#{{cat[0] | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip z-depth-1">{{cat[0]}}</div></a>
-    {% endfor %}
-  </div>
-  <div class="divider"></div>
-  <div class="cat-index">
-    {% for cat in site.categories %}
-    {% capture test %}{{cat[0] | slice: 0}}{% endcapture %}
-    {% capture testup %}{{cat[0] | slice: 0 | upcase}}{% endcapture %}
-    <h4 id="{{cat[0] | slugify}}{% if test == testup %}_cap{% endif %}">{{cat[0]}}</h4>
-    <ul class="cat-post">
-      {% for post in cat[1] %}
-      <li>
-        <a class="post-title" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-          <small class="post-date">{% include news-date.html entry=post format='short' %}</small>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-    {% endfor %}
-  </div>
+<div class="archive-filters" role="navigation" aria-label="{% if include.lang == 'zh' %}新闻分类{% else %}News categories{% endif %}">
+  {% for item in site.data.page_editions %}
+    {% assign tab = item[1] %}
+    {% if tab.filter %}
+    <a href="{{ tab[include.lang] | relative_url }}" data-filter="{{ tab.filter }}"{% if item[0] == page.news_archive %} aria-current="page"{% endif %}>{{ tab.label[include.lang] | escape }}</a>
+    {% endif %}
+  {% endfor %}
 </div>

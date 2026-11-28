@@ -4,7 +4,7 @@ title: Changgeng Zhang shares the Finland Campus experience with Shandong Univer
 date: 2024-09-15 22:05:00 +0800
 date_precision: day
 lang: en
-categories: Activity
+categories: Service
 tags: [International education, Finland]
 excerpt: A delegation from Shandong University heard how Hebei University of Technology established its Finland Campus and organizes teaching there.
 ---

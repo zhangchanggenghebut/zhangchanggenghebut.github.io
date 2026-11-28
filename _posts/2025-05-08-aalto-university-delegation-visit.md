@@ -4,7 +4,7 @@ title: President Limin Wang leads a Hebei University of Technology delegation to
 date: 2025-05-08 08:00:00 +0800
 date_precision: day
 lang: en
-categories: Activity
+categories: Service
 tags: [International education, Finland]
 excerpt: Changgeng Zhang, then rotating rector of the Finland Campus, joined talks on degree programs, industry placements and joint research.
 ---

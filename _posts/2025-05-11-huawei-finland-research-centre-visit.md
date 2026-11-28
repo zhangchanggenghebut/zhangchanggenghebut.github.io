@@ -4,7 +4,7 @@ title: Hebei University of Technology delegation visits Huawei’s Finland Resea
 date: 2025-05-11 08:00:00 +0800
 date_precision: day
 lang: en
-categories: Activity
+categories: Service
 tags: [Industry collaboration, Finland]
 excerpt: Changgeng Zhang joined President Limin Wang in Helsinki for talks with Huawei on research collaboration, industry ties and student training.
 ---

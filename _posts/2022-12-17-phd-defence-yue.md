@@ -4,7 +4,7 @@ title: Doctoral thesis defence of Shuaichao Yue
 date: 2022-12-17
 date_precision: day
 lang: en
-categories: Activity
+categories: Service
 tags: [defence, Yue]
 permalink: /2022/12/16/phd-defence-yue
 comments: 1

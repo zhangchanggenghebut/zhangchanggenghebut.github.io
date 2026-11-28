@@ -7,7 +7,8 @@ labels:
     portrait_link: GitHub profile of Changgeng Zhang
     interests: Research Areas
     experience: Working Experience
-    news: News of My Group
+    news: Center News
+    all_news: All center news
   zh:
     center_name: 磁测量与传感研究中心
     center_attribution: 张长庚
@@ -16,7 +17,8 @@ labels:
     portrait_link: 张长庚的 GitHub 个人主页
     interests: 研究方向
     experience: 工作经历
-    news: 团队新闻
+    news: 中心新闻
+    all_news: 全部中心新闻
 positions:
   - period: {en: February 2022 – Present, zh: 2022 年 2 月至今}
     role:

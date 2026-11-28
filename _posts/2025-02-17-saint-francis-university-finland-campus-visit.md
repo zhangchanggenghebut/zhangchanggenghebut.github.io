@@ -4,7 +4,7 @@ title: Changgeng Zhang welcomes Hong Kong’s Saint Francis University to Hebei 
 date: 2025-02-17
 date_precision: day
 lang: en
-categories: Activity
+categories: Service
 tags: [International education, Finland]
 excerpt: Zhang met the visiting delegation in Lappeenranta on February 10 and discussed how the Chinese and Finnish partners teach together.
 ---

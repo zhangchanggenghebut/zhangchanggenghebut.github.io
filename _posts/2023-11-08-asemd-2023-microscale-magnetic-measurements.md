@@ -4,7 +4,7 @@ title: Changgeng Zhang gives an invited talk on multiscale magnetic measurements
 date: 2023-11-08
 date_precision: day
 lang: en
-categories: Activity
+categories: Conferences
 tags: [Academic conferences, Magnetic measurements]
 excerpt: Zhang explained when a core model needs one-, two- or three-dimensional magnetic measurements and what domain images reveal about the steel itself.
 ---

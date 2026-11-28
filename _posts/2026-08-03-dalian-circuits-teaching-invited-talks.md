@@ -4,7 +4,7 @@ title: Prof. Changgeng Zhang gives two invited talks in Dalian on international 
 date: 2026-08-03
 date_precision: day
 lang: en
-categories: Activity
+categories: Conferences
 tags: [Academic conferences, Teaching]
 excerpt: At the 15th national meeting on teaching circuits, signals and systems, and electromagnetics, Zhang discussed international course design and used seven equivalent forms of a transfer function to show how instructors and AI can grade circuit homework together.
 ---

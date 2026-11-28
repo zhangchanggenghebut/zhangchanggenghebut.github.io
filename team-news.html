@@ -1,21 +1,7 @@
 ---
-layout: page
-title: 团队新闻
+layout: news-archive
+title: "中心新闻"
 lang: zh-CN
+news_archive: news
 permalink: /team-news/
 ---
-
-<div class="col s12">
-  {% assign news = site.posts | where: "lang", "zh-CN" | sort: "date" | reverse %}
-  <ul class="collection">
-    {% for post in news %}
-      <li class="collection-item">
-        <article>
-          <time datetime="{% include news-date.html entry=post format='%Y-%m-%d' %}">{% include news-date.html entry=post format='%Y年%m月%d日' %}</time>
-          <h5><a class="team-news-title" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h5>
-          <p>{{ post.excerpt | strip_html | strip | escape }}</p>
-        </article>
-      </li>
-    {% endfor %}
-  </ul>
-</div>

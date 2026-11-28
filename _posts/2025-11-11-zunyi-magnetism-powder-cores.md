@@ -4,7 +4,7 @@ title: Prof. Changgeng Zhang presents research on reducing high-frequency loss i
 date: 2025-11-11
 date_precision: day
 lang: en
-categories: Activity
+categories: Conferences
 tags: [Academic conferences, Soft magnetic composites]
 excerpt: In Zunyi, Zhang used electron micrographs and measurements on toroidal cores to show how alumina coatings affect insulation between iron–silicon particles, core loss and permeability.
 ---

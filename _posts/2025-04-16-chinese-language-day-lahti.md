@@ -4,7 +4,7 @@ title: Changgeng Zhang delivers the opening address at International Chinese Lan
 date: 2025-04-16
 date_precision: day
 lang: en
-categories: Activity
+categories: Service
 tags: [International education, Finland]
 excerpt: Zhang invited students to listen to the rhythms of Chinese and explore what traditional music and dance can mean to audiences in Finland today.
 ---

@@ -5,7 +5,26 @@ group:    {en: /about-en, zh: /about}
 teaching: {en: /teaching-en, zh: /teaching}
 testing:  {en: /instruments-en, zh: /instruments}
 activities: {en: /activities-en, zh: /activities}
-news:     {en: /categories, zh: /team-news/}
+news:
+  en: /categories
+  zh: /team-news/
+  filter: all
+  label: {en: All, zh: 全部}
+news_conferences:
+  en: /center-news/conferences/
+  zh: /team-news/conferences/
+  filter: conferences
+  label: {en: Conferences, zh: 会议}
+news_service:
+  en: /center-news/service/
+  zh: /team-news/service/
+  filter: service
+  label: {en: Service & Engagement, zh: 社会服务}
+news_papers:
+  en: /center-news/papers/
+  zh: /team-news/papers/
+  filter: papers
+  label: {en: Papers, zh: 论文}
 finland_moodle: {en: /2024/07/13/moodle-at-the-finland-campus, zh: /zh/news/moodle-at-the-finland-campus/}
 shandong_exchange: {en: /2024/09/15/shandong-university-finland-campus-exchange, zh: /zh/news/shandong-university-finland-campus-exchange/}
 faculty_exchange: {en: /2024/09/30/faculty-international-teaching-and-exchange, zh: /zh/news/faculty-international-teaching-and-exchange/}

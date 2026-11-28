@@ -4,7 +4,7 @@ title: Changgeng Zhang compares Moodle with three other learning platforms
 date: 2024-07-13 16:17:00 +0800
 date_precision: day
 lang: en
-categories: Activity
+categories: Service
 tags: [Moodle, Teaching]
 excerpt: Drawing on the Finland Campus’s experience with Moodle, Zhang discussed how four learning platforms support course administration and academic integrity.
 ---

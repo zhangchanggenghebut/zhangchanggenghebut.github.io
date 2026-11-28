@@ -1,0 +1,59 @@
+---
+layout: default
+css: ["categories.css?v=center-news"]
+---
+{% assign language = 'en' %}
+{% assign date_format = '%d %b %Y' %}
+{% if page.lang == 'zh-CN' %}
+  {% assign language = 'zh' %}
+  {% assign date_format = '%Y年%-m月%-d日' %}
+{% endif %}
+{% assign section = site.data.page_editions[page.news_archive] %}
+{% assign news = site.posts | where: 'lang', 'en' | sort: 'date' | reverse %}
+
+{% if language == 'zh' %}
+  {% comment %}Use the same article pairs as the masthead, including papers with older English URLs.{% endcomment %}
+  {% assign translations = '' | split: ',' %}
+  {% for item in site.data.page_editions %}
+    {% if item[1].zh contains '/zh/news/' %}
+      {% assign translations = translations | push: item[1] %}
+    {% endif %}
+  {% endfor %}
+  {% for item in site.data.group_students.news %}
+    {% assign translations = translations | push: item[1].path %}
+  {% endfor %}
+  {% assign chinese_news = site.posts | where: 'lang', 'zh-CN' %}
+{% endif %}
+
+<section class="news-archive" data-news-archive="{{ section.filter }}" aria-labelledby="archive-heading">
+  <h1 id="archive-heading">{{ site.data.home.labels[language].news | escape }}</h1>
+  {% include categories.html lang=language %}
+  {% if section.filter == 'all' %}
+  <p class="archive-legacy-heading" hidden>{% if language == 'zh' %}会议与社会服务{% else %}Conferences and service{% endif %}</p>
+  {% endif %}
+  <ol class="archive-stories">
+    {% for primary in news %}
+      {% assign category = primary.categories | first | downcase %}
+      {% if section.filter != 'all' and section.filter != category %}{% continue %}{% endif %}
+      {% assign story = primary %}
+      {% if language == 'zh' %}
+        {% assign english_url = primary.url | remove: '.html' %}
+        {% assign pair = translations | where: 'en', english_url | first %}
+        {% assign story = chinese_news | where: 'url', pair.zh | first %}
+      {% endif %}
+      {% if story %}
+      <li class="archive-story" data-news-category="{{ category | escape }}">
+        <time datetime="{% include news-date.html entry=story format='%Y-%m-%d' %}">{% include news-date.html entry=story format=date_format %}</time>
+        <div>
+          <h2><a href="{{ story.url | relative_url }}">{{ story.title | escape }}</a></h2>
+          {% assign summary = story.excerpt | strip_html | strip %}
+          {% if summary != empty %}<p>{{ summary | escape }}</p>{% endif %}
+        </div>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+</section>
+{% if section.filter == 'all' %}
+<script defer src="{{ '/assets/js/news-archive-legacy.js' | relative_url }}"></script>
+{% endif %}

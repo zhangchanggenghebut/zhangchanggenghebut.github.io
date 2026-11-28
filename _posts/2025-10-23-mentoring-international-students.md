@@ -4,7 +4,7 @@ title: Prof. Changgeng Zhang gives an invited talk on mentoring international st
 date: 2025-10-23
 date_precision: day
 lang: en
-categories: Activity
+categories: Service
 tags: [International education, Teaching]
 excerpt: At a faculty workshop on October 21, Zhang discussed communication across cultures and how to guide international students from their study plan through graduation.
 ---

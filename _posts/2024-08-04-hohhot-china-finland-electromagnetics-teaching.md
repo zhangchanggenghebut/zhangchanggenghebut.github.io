@@ -4,7 +4,7 @@ title: Prof. Changgeng Zhang gives an invited talk in Hohhot on teaching electro
 date: 2024-08-04
 date_precision: day
 lang: en
-categories: Activity
+categories: Conferences
 tags: [Academic conferences, Teaching, Finland]
 excerpt: At the electromagnetics forum, Zhang drew on his teaching in Tianjin and Finland to show how textbook reading, experiments and MATLAB exercises can help students understand fields and waves.
 ---

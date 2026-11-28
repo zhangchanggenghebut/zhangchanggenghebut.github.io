@@ -4,7 +4,7 @@ title: Changgeng Zhang gives an invited talk in Shijiazhuang on how cutting affe
 date: 2023-10-19
 date_precision: day
 lang: en
-categories: Activity
+categories: Conferences
 tags: [Academic conferences, Magnetic measurements]
 excerpt: Zhang used local core loss measurements, magnetic domain images and a permanent-magnet motor model to show how the effects of cutting can be represented in finite element simulations.
 ---

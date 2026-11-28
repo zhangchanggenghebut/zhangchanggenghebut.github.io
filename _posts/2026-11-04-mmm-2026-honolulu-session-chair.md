@@ -4,7 +4,7 @@ title: Prof. Changgeng Zhang serves as an invited session chair and presents two
 date: 2026-11-04
 date_precision: day
 lang: en
-categories: Activity
+categories: Conferences
 tags: [Academic conferences, Magnetic measurements]
 excerpt: In Honolulu, Zhang chaired the session on emerging magnetic sensors and presented the team’s work on hysteresis in grain-oriented electrical steel and nonlinear magnetic fields in practical coil geometries.
 ---

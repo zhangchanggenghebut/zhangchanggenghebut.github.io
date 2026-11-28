@@ -18,9 +18,11 @@ js: ["post.js"]
         <span>
           <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Categories">sort</i>
           {% for cat in page.categories %}
-          {% capture test %}{{cat | slice: 0}}{% endcapture %}
-          {% capture testup %}{{cat | slice: 0 | upcase}}{% endcapture %}
-          <a href="{{ '/categories' | relative_url }}#{{cat | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip">{{cat}}</div></a>
+          {% assign section_key = cat | downcase | prepend: 'news_' %}
+          {% assign section = site.data.page_editions[section_key] %}
+          {% if section %}
+          <a class="chip" href="{{ section.en | relative_url }}">{{ section.label.en | escape }}</a>
+          {% endif %}
           {% endfor %}
         </span>
         <span>
