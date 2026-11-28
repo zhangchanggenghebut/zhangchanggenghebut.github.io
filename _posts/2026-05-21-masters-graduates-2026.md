@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Four students in Prof. Changgeng Zhang’s group successfully defend their master’s theses
-date: 2026-11-28
-date_precision: year
-date_label: Class of 2026
+date: 2026-05-21
+date_precision: day
 lang: en
 permalink: /2026/masters-graduates
 categories: Graduations
@@ -11,7 +10,9 @@ tags: [Graduate education]
 excerpt: Ziran Guo, Guotao Sun, Kai Wang and Xiaoxiao Liu successfully defended their master’s theses. Their work spanned magnetic powder cores, domains in electrical steel, transformer diagnostics, and electrical contact and vibration.
 ---
 
-Ziran Guo, Guotao Sun, Kai Wang and Xiaoxiao Liu, all members of the class of 2026, successfully defended their master’s theses at the School of Electrical Engineering, Hebei University of Technology. Prof. Changgeng Zhang supervised all four students. Their experiments ranged in scale from the coating on a single powder particle to vibrations measured on a transformer.
+On 21 May 2026, Ziran Guo, Guotao Sun, Kai Wang and Xiaoxiao Liu successfully defended their master’s theses at the School of Electrical Engineering, Hebei University of Technology. Prof. Changgeng Zhang supervised all four students. Their experiments ranged in scale from the coating on a single powder particle to vibrations measured on a transformer.
+
+{% include news-photos.html group="masters_2026_defence" %}
 
 ## What powder surfaces and magnetic domains reveal
 
