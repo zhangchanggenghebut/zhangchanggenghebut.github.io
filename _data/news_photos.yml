@@ -326,6 +326,37 @@ dalian_2026_poster:
   height: 1703
   zh: 张长庚在年会墙报《电路作业人机协同评价的评分量规与等价校验研究》前。
   en: Changgeng Zhang with the conference poster on grading rubrics and equivalence checks for instructor- and AI-assisted assessment of circuit homework.
+masters_2022_participants:
+- file: 2022/masters-defences/online-defence.jpg
+  width: 1918
+  height: 1080
+  zh: 线上答辩现场。田亚坤在第二排最右侧，杨兰在第三排左起第三格，导师张长庚在左上角。
+  en: Yakun Tian (second row, far right) and Lan Yang (third row, third from the left) at the online defence. Their supervisor, Changgeng Zhang, is at the top left.
+masters_2022_tian:
+- file: 2022/masters-defences/yakun-tian-slide-23-zh.webp
+  file_en: 2022/masters-defences/yakun-tian-slide-23-en.webp
+  width: 1800
+  height: 1275
+  zh: 田亚坤答辩报告第 23 页节选。上表对照铜板在五种工况下的计算损耗与实测损耗，下表比较经验公式和磁滞模型对硅钢叠片损耗的预测。
+  en: Translated extract from slide 23 of Yakun Tian’s defence. The upper table compares calculated and measured copper-plate losses across five test conditions. The lower table compares two models with measurements on the laminated steel shield.
+masters_2022_yang:
+- file: 2022/masters-defences/lan-yang-slide-16-zh.webp
+  file_en: 2022/masters-defences/lan-yang-slide-16-en.webp
+  width: 1800
+  height: 900
+  zh: 杨兰答辩报告第 16 页节选。左图是不同磁场强度下局部磁通密度随距冲压边缘距离的变化，右表列出距边缘 1、3、5 mm 处的降幅。
+  en: Translated extract from slide 16 of Lan Yang’s defence. The curves show how local flux density changes with distance from the punched edge. The table gives the percentage reduction at 1, 3 and 5 mm for each applied field.
+masters_2022_session:
+- file: 2022/masters-defences/defence-session.jpg
+  width: 1873
+  height: 991
+  zh: 2022 年 5 月 19 日河北工业大学电气工程学院硕士答辩会的开场画面。师生通过腾讯会议参加答辩。
+  en: The opening screen on Tencent Meeting identifies the School of Electrical Engineering and the date of the master’s thesis defences, 19 May 2022.
+- file: 2022/masters-defences/virtual-group.jpg
+  width: 1829
+  height: 650
+  zh: 参加本场硕士答辩的师生在腾讯会议虚拟教室合影。
+  en: Faculty and students gather for a group photograph in the virtual lecture hall.
 masters_2024_adviser:
 - file: 2024/masters-defences/adviser-and-four-students.jpg
   width: 1440
