@@ -439,3 +439,64 @@ international_reviews_2026_raja:
   height: 1280
   zh: Raja Saqib Arshad 在博士文献报告中讲解降低高频磁芯损耗的方法。
   en: Raja Saqib Arshad discusses strategies for reducing high-frequency core loss during his doctoral literature review.
+icef_2021_programme:
+- file: 2021/icef/programme-cover.webp
+  width: 1265
+  height: 1733
+  zh: ICEF 2021 会议手册封面列出天津会期（10 月 29—31 日）、承办单位及支持学会。
+  en: The programme cover lists Tianjin, the dates of 29–31 October 2021, the organiser and the supporting societies.
+- file: 2021/icef/conference-organisation.webp
+  width: 1270
+  height: 1628
+  zh: 会议手册组织机构页列出名誉主席颜威利、大会主席杨庆新、两位联合主席和各委员会成员。张长庚列名编辑委员会。
+  en: The programme names Weili Yan as honorary chair and Qingxin Yang as general chair, lists the co-chairs and committees, and names Changgeng Zhang on the editorial board.
+icef_2021_edges:
+- file: 2021/icef/slide-12-punched-edges-en.webp
+  width: 1500
+  height: 800
+  zh: 邀请报告第 12 页。图中各条曲线来自距冲压边缘不同距离的测点，比较了两种冲压压力下的局部磁化特性。
+  en: Slide 12 of the invited talk. Each curve comes from a different distance from the cut edge. The two panels compare local magnetisation at the two punching pressures.
+icef_2021_energy:
+- file: 2021/icef/slide-26-magnetic-anisotropy-zh.webp
+  file_en: 2021/icef/slide-26-magnetic-anisotropy-en.webp
+  width: 1500
+  height: 800
+  zh: 邀请报告第 26 页。左图给出随磁通密度大小和方向变化的磁能曲面，右图是圆形磁化条件下磁场强度矢量的轨迹。
+  en: Slide 26 of the invited talk. The energy surface depends on the magnitude and direction of flux density. The plot on the right shows field-strength trajectories under circular magnetisation.
+icef_2021_hotspot:
+- file: 2021/icef/slide-46-reactor-hotspot-en.webp
+  width: 1500
+  height: 800
+  zh: 邀请报告第 46 页。两组电抗器温度场计算分别采用均匀热源和按区域映射的热源，给出的铁轭热点位置和峰值温度均有差异。
+  en: Slide 46 of the invited talk. The two reactor temperature fields show how uniform and regional loss mapping change the predicted position and temperature of the hot spot in the yoke.
+intermag_2018_delegates:
+- file: 2018/intermag-singapore/singapore-delegates.jpg
+  width: 1600
+  height: 1200
+  zh: 与会代表在新加坡滨海湾金沙会展中心的 INTERMAG 2018 会议入口合影。入口横幅标有 4 月 23—27 日的会期。
+  en: Delegates at the entrance to INTERMAG 2018 at the Marina Bay Sands Expo and Convention Centre in Singapore. The banner gives the conference dates, 23–27 April.
+intermag_2018_setup:
+- file: 2018/intermag-singapore/slide-07-test-system-zh.webp
+  file_en: 2018/intermag-singapore/slide-07-test-system-en.webp
+  width: 1520
+  height: 820
+  zh: 口头报告第 7 页节选。左图为取向硅钢叠片试样和磁感应强度、磁场强度（B–H）检测线圈。直流偏磁沿叠片厚度方向施加。
+  en: Extract from slide 7 of the oral presentation. The photograph shows the laminated steel specimen and the coils used to sense flux density and field strength (B and H). The DC bias was applied through the stack.
+intermag_2018_results:
+- file: 2018/intermag-singapore/slide-10-magnetisation-and-loss-zh.webp
+  file_en: 2018/intermag-singapore/slide-10-magnetisation-and-loss-en.webp
+  width: 1620
+  height: 1270
+  zh: 口头报告第 10 页实测曲线。左列为轧制方向，右列为横向。上排为磁化曲线，下排为比铁损曲线。红、青、蓝、黑四色分别对应 0、1、2、3 A 的偏磁电流。
+  en: Measured curves from slide 10. The left column shows the rolling direction and the right column the transverse direction. Magnetisation curves are above and specific core loss curves below. Red, cyan, blue and black correspond to bias currents of 0, 1, 2 and 3 A, respectively.
+intermag_2018_posters:
+- file: 2018/intermag-singapore/poster-aq14-core-loss.jpg
+  width: 1009
+  height: 1350
+  zh: 张长庚（右）与参会者在 AQ-14 号墙报前交流。展板比较了非正弦激励下磁性材料铁损的不同计算方法。
+  en: Zhang (right) speaks with a delegate at poster AQ-14, which compared methods for calculating core loss in magnetic materials under nonsinusoidal excitation.
+- file: 2018/intermag-singapore/poster-aq15-magnetisation-tester.jpg
+  width: 1012
+  height: 1350
+  zh: 张长庚在 AQ-15 号墙报前介绍高频二维磁化装置。展板展示了超薄硅钢片磁化结构与检测线圈的布置。
+  en: At poster AQ-15, Zhang points out features of a high-frequency two-dimensional magnetisation fixture. The diagrams show the magnetic structure using ultra-thin electrical steel and the arrangement of its sensing coils.
