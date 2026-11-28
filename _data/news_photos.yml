@@ -267,3 +267,36 @@ mmm_2026_hysteresis_and_discussion:
   height: 1033
   zh: 张长庚与参会学者在团队的两张研究海报前合影。
   en: Zhang and a fellow researcher in front of the team’s two posters in Honolulu.
+zunyi_2025_talk:
+- file: 2025/zunyi-magnetic-powder-cores/presentation.jpg
+  width: 1249
+  height: 875
+  zh: 2025 年 11 月 11 日，张长庚在遵义介绍氧化物包覆铁硅磁粉芯的制备方法与磁特性。
+  en: Changgeng Zhang presents the preparation and magnetic properties of oxide-coated iron–silicon powder cores in Zunyi on 11 November 2025.
+zunyi_2025_powders:
+- file: 2025/zunyi-magnetic-powder-cores/slide-11-powders-zh.webp
+  file_en: 2025/zunyi-magnetic-powder-cores/slide-11-powders-en.webp
+  width: 1920
+  height: 1080
+  zh: 报告第 11 页。右侧四幅扫描电镜图中，(a) 为未包覆铁硅粉末，(b)、(c)、(d) 的氧化铝质量分数依次为 2.5%、5% 和 7.5%。
+  en: Slide 11. In the four scanning electron micrographs on the right, (a) shows uncoated powder. The samples in (b), (c) and (d) contain 2.5, 5 and 7.5 wt% alumina, respectively.
+zunyi_2025_resistivity:
+- file: 2025/zunyi-magnetic-powder-cores/slide-13-resistivity-zh.webp
+  file_en: 2025/zunyi-magnetic-powder-cores/slide-13-resistivity-en.webp
+  width: 1920
+  height: 1080
+  zh: 报告第 13 页。右侧曲线和四探针仪器对应电阻率测试，四种配方的测量值随氧化铝含量增加而升高。
+  en: Slide 13. The curve and four-probe instrument on the right show how the team measured the rise in resistivity across the four compositions.
+zunyi_2025_losses:
+- file: 2025/zunyi-magnetic-powder-cores/slide-15-losses-zh.webp
+  file_en: 2025/zunyi-magnetic-powder-cores/slide-15-losses-en.webp
+  width: 1920
+  height: 1080
+  zh: 报告第 15 页。左侧曲线为有效磁导率，右侧为单位质量磁芯损耗。每组的两张图分别对应 0.01 T 和 0.02 T。
+  en: Slide 15. The plots on the left show effective permeability and those on the right show specific core loss. Each pair gives results at 0.01 T and 0.02 T.
+zunyi_2025_registration:
+- file: 2025/zunyi-magnetic-powder-cores/registration.jpg
+  width: 1440
+  height: 1080
+  zh: 张长庚在贵州遵义第二十届磁学和磁性材料会议签到处。
+  en: Changgeng Zhang at the registration desk of the 20th Conference on Magnetism and Magnetic Materials in Zunyi.
