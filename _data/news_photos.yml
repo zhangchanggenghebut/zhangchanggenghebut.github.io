@@ -250,3 +250,20 @@ international_student_supervision_workshop:
   height: 1200
   zh: 来自多个学院的教师参加留学生招生培养经验交流会。图片来自河北工业大学国际教育学院。
   en: Faculty from across the university meet to discuss international student admissions and supervision. Photo from the School of International Education.
+mmm_2026_coil:
+- file: 2026/mmm-honolulu/ds-05-coil-field.png
+  width: 1170
+  height: 880
+  zh: 11 月 4 日，张长庚在 DS-05 海报前讲解如何用物理信息神经网络计算线圈磁场。
+  en: On 4 November, Zhang explains the physics-informed neural network for coil field calculations at poster DS-05.
+mmm_2026_hysteresis_and_discussion:
+- file: 2026/mmm-honolulu/ds-06-silicon-steel.jpg
+  width: 598
+  height: 450
+  zh: 张长庚在 DS-06 海报前展示取向硅钢磁滞回线的实测与预测结果。
+  en: Zhang with poster DS-06, which compares measured and predicted hysteresis loops for grain-oriented electrical steel.
+- file: 2026/mmm-honolulu/poster-session.jpg
+  width: 1368
+  height: 1033
+  zh: 张长庚与参会学者在团队的两张研究海报前合影。
+  en: Zhang and a fellow researcher in front of the team’s two posters in Honolulu.
