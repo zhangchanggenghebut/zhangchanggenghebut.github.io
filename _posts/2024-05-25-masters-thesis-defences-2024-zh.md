@@ -29,4 +29,4 @@ excerpt: 李锡正和张妍研究叠压与切割如何影响电工钢片的磁�
 
 {% include news-photos.html group="masters_2024_group" %}
 
-{% include news-photos.html group="masters_2024_album" collapsed=true %}
+{% include news-photos.html group="masters_2024_album" %}

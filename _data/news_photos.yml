@@ -342,29 +342,29 @@ masters_2024_album:
 - file: 2024/masters-defences/defence-photo-1.jpg
   width: 1440
   height: 1080
-  zh: 答辩结束后，一位硕士研究生与在场教师合影。
-  en: A master’s candidate with faculty after the defence.
+  zh: 李锡正（中）与导师张长庚教授及在场教师合影。他的硕士论文研究叠片方向的压力如何影响电工钢片的磁特性。
+  en: Xizheng Li (centre) with his supervisor, Prof. Changgeng Zhang, and faculty after his defence. His thesis examined how pressure perpendicular to electrical steel sheets affects their magnetic properties.
 - file: 2024/masters-defences/defence-photo-2.jpg
   width: 1440
   height: 1080
-  zh: 学生与教师在答辩会场留影。
-  en: A student and faculty members in the defence room.
+  zh: 张妍（中）答辩后与教师合影。她从激光切边向钢片内部逐点测量，研究切割对无取向电工钢磁性能的影响范围。
+  en: Yan Zhang (centre) with faculty after her defence. She measured how far magnetic degradation extends inward from a laser-cut edge in non-oriented electrical steel.
 - file: 2024/masters-defences/defence-photo-3.jpg
   width: 1440
   height: 1080
-  zh: 一位硕士研究生手持答辩材料，与教师合影。
-  en: A master’s candidate holds her defence papers for a photograph with faculty.
+  zh: 关舒月（中）手持答辩材料与教师合影。她的硕士论文将高速滑动电接触的实测磁场与仿真结果作了对照。
+  en: Shuyue Guan (centre) holds her defence papers in a photograph with faculty. Her thesis compared measured and simulated magnetic fields around a high-speed sliding electrical contact.
 masters_2025_defence:
 - file: 2025/masters-defences/defence-photo-1.jpg
   width: 2048
   height: 1536
-  zh: 2025 年 5 月 21 日，学生与教师在河北工业大学电气工程学院硕士学位论文答辩后合影。
-  en: A student and faculty members after the master’s thesis defences at Hebei University of Technology on 21 May 2025.
+  zh: 牛国辰（中，手持鲜花）在硕士论文答辩后与导师张长庚教授及在场教师合影。他测量了垂直于叠片的压力对纳米晶、非晶合金磁滞回线和铁损的影响。
+  en: Guochen Niu (centre, holding a flower) with his supervisor, Prof. Changgeng Zhang, and faculty after his master’s defence. He measured how pressure perpendicular to nanocrystalline and amorphous laminations changes their hysteresis loops and core losses.
 - file: 2025/masters-defences/defence-photo-2.jpg
   width: 2048
   height: 1536
-  zh: 同场答辩的另一位硕士研究生与教师合影。
-  en: The other master’s candidate with faculty at the same session.
+  zh: 张海涛（中，手持鲜花）在硕士论文答辩后与导师张长庚教授及在场教师合影。他用激光测振记录纳米晶叠片在一个磁化周期内的伸缩，并对不同激励波形下的应变进行了建模。
+  en: Haitao Zhang (centre, holding a flower) with his supervisor, Prof. Changgeng Zhang, and faculty after his master’s defence. He used laser vibrometry to track how nanocrystalline laminations change length during a magnetisation cycle and modelled the strain under different excitation waveforms.
 masters_2025_haitao:
 - file: 2025/masters-defences/haitao-slide-16-zh.webp
   file_en: 2025/masters-defences/haitao-slide-16-en.webp
@@ -390,3 +390,15 @@ masters_2025_graduation:
   height: 1440
   zh: 张长庚教授（左）与张海涛（右）在电气工程学院楼前的毕业合影。
   en: Prof. Changgeng Zhang (left) and Haitao Zhang (right) at graduation outside the School of Electrical Engineering.
+international_reviews_2026_rawal:
+- file: 2026/international-student-research-reviews/rawal-shahbaz-doctoral-progress-review.jpg
+  width: 1700
+  height: 1280
+  zh: Rawal Shahbaz 的博士中期报告现场。屏幕上的题目页介绍了无取向电工钢激光切割损伤的研究。
+  en: Rawal Shahbaz at his doctoral progress review. The title slide introduces his study of laser-cutting damage in non-oriented electrical steel.
+international_reviews_2026_raja:
+- file: 2026/international-student-research-reviews/raja-saqib-arshad-literature-review.jpg
+  width: 1700
+  height: 1280
+  zh: Raja Saqib Arshad 在博士文献报告中讲解降低高频磁芯损耗的方法。
+  en: Raja Saqib Arshad discusses strategies for reducing high-frequency core loss during his doctoral literature review.

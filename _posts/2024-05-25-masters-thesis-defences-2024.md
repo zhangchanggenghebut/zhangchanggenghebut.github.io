@@ -30,4 +30,4 @@ The committee recommended academic master’s degrees in electrical engineering 
 
 {% include news-photos.html group="masters_2024_group" %}
 
-{% include news-photos.html group="masters_2024_album" collapsed=true %}
+{% include news-photos.html group="masters_2024_album" %}

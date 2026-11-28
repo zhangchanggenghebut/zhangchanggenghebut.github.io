@@ -10,7 +10,7 @@ tags: [defence]
 excerpt: Haitao Zhang used a laser to measure how nanocrystalline laminations change length during magnetisation. Guochen Niu measured how compressing a stack changes its hysteresis and core loss.
 ---
 
-On 21 May 2025, Haitao Zhang and Guochen Niu successfully defended their master’s theses at the School of Electrical Engineering, Hebei University of Technology. Both worked with Prof. Changgeng Zhang on soft magnetic cores for electrical equipment. Haitao measured how a lamination changes length during a magnetisation cycle. Guochen measured how much more power a core dissipates when its laminations are pressed together.
+On 21 May 2025, Haitao Zhang and Guochen Niu, both supervised by Prof. Changgeng Zhang, successfully defended their master’s theses at the School of Electrical Engineering, Hebei University of Technology. Haitao used laser vibrometry to record minute changes in the length of nanocrystalline laminations as the magnetic field cycled. Guochen applied pressure perpendicular to nanocrystalline and amorphous laminations and measured how their hysteresis loops and core losses changed under compression.
 
 {% include news-photos.html group="masters_2025_graduation" %}
 
@@ -22,7 +22,7 @@ In tests at 5 and 15 kHz, Haitao progressively shortened the voltage pulse withi
 
 {% include news-photos.html group="masters_2025_haitao" %}
 
-## Guochen Niu measures the cost of compressing the core
+## Guochen Niu measures how pressure changes core loss
 
 For his thesis on how stress affects nanocrystalline and amorphous alloys, Guochen modified a magnetic tester to apply pressure perpendicular to the laminations. He compared a nanocrystalline alloy (1K107B) with an amorphous alloy (1K101) over a range of frequencies and pressures. He incorporated this stress into a dynamic Jiles–Atherton hysteresis model and checked its predictions against measured hysteresis loops and core losses.
 
