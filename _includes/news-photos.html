@@ -11,8 +11,10 @@
   <summary>{% if language == "zh" %}更多会场照片（{{ photos.size }} 张）{% else %}More photographs from the session ({{ photos.size }}){% endif %}</summary>
 {% endif %}
 <div class="report-photo-grid{% if photos.size == 1 %} report-photo-single{% endif %}">
+  {% assign localized_file_key = "file_" | append: language %}
   {% for photo in photos %}
-    {% assign url = "/assets/news/" | append: photo.file | relative_url %}
+    {% assign file = photo[localized_file_key] | default: photo.file %}
+    {% assign url = "/assets/news/" | append: file | relative_url %}
     {% assign caption = photo[language] %}
     <figure>
       <a href="{{ url | escape }}" aria-label="{{ enlarge }} · {{ caption | escape }}">

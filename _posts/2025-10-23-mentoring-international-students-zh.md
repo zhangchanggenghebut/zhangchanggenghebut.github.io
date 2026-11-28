@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 张长庚在河北工业大学分享来华留学生培养与指导经验
+title: 张长庚教授受邀作来华留学生培养与指导专题报告
 date: 2025-10-23
 date_precision: day
 lang: zh-CN

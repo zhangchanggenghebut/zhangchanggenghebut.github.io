@@ -19,4 +19,10 @@ Students and staff performed on the guzheng, a Chinese zither, and the hulusi, a
 
 {% include news-photos.html group="lahti_chinese_day_workshop" %}
 
+## The origins of International Chinese Language Day
+
+In 2010, the United Nations introduced language days to encourage equal use of its six official languages, including Chinese. It observes Chinese Language Day on April 20, around the traditional Chinese solar term *Guyu*, or Grain Rain. The date honours Cangjie, the legendary inventor of Chinese characters.
+
+In 2020, the Center for Language Education and Cooperation and the online platform ChinesePlus launched International Chinese Language Day for learners, teachers and anyone interested in Chinese culture. Schools and cultural institutions mark the occasion in their own ways, with activities ranging from poetry readings to calligraphy workshops. In Lahti, music, brushwork and printmaking gave even first-time visitors a way to take part. [UN Chinese Language Day](https://www.ungeneva.org/en/about/director-general/multilingualism/chinese-language-day) · [How the international initiative began (in Chinese)](https://news.jlu.edu.cn/info/1021/58163.htm)
+
 Adapted from the Finland Campus report published on April 16, 2025. Photographs courtesy of Hebei University of Technology’s Finland Campus. [Read the original report in Chinese](https://finland.hebut.edu.cn/News/5a3e4b32c4ef4b709f43fa1735960b97.htm)

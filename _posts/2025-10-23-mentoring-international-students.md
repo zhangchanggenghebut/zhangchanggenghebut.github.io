@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changgeng Zhang shares lessons from supervising international students at Hebei University of Technology
+title: Prof. Changgeng Zhang gives an invited talk on mentoring international students in China
 date: 2025-10-23
 date_precision: day
 lang: en

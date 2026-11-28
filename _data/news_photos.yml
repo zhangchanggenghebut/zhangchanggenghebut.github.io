@@ -155,6 +155,42 @@ cem_2025_colleagues_and_programme:
   height: 920
   zh: P7 分会场报告日程，2025 年 4 月 10 日 15:55–16:15。
   en: The Session P7 schedule lists Zhang’s presentation at 15:55–16:15 on 10 April 2025.
+hohhot_2024_talk:
+- file: 2024/hohhot-electromagnetics-teaching/presentation.jpg
+  width: 1440
+  height: 1080
+  zh: 张长庚在呼和浩特电磁场课程论坛上介绍河北工业大学芬兰校区的教学情况。
+  en: At the electromagnetics forum in Hohhot, Changgeng Zhang introduces teaching at Hebei University of Technology’s Finland Campus.
+hohhot_2024_reading:
+- file: 2024/hohhot-electromagnetics-teaching/slide-19-reading-zh.webp
+  file_en: 2024/hohhot-electromagnetics-teaching/slide-19-reading-en.webp
+  width: 1600
+  height: 900
+  zh: 报告第 19 页。张长庚以点源、线源和面源为例，说明课堂讲解、教材阅读与实验验证如何配合。
+  en: Slide 19. Zhang uses point, line and surface sources to connect lectures and textbook reading with experiments on how fields decay with distance.
+hohhot_2024_labs:
+- file: 2024/hohhot-electromagnetics-teaching/slide-43-labs-zh.webp
+  file_en: 2024/hohhot-electromagnetics-teaching/slide-43-labs-en.webp
+  width: 1600
+  height: 900
+  zh: 报告第 43 页。左图是均匀平面波的电场和磁场，右图是时域有限差分法计算的波传播。两图均取自课件动画。
+  en: Slide 43. Animation stills show the electric and magnetic fields of a uniform plane wave (left) and wave propagation calculated by the finite-difference time-domain method (right).
+hohhot_2024_gallery:
+- file: 2024/hohhot-electromagnetics-teaching/speaker.jpg
+  width: 1620
+  height: 1080
+  zh: 张长庚在电磁场课程论坛现场。
+  en: Changgeng Zhang at the electromagnetics course forum.
+- file: 2024/hohhot-electromagnetics-teaching/annual-meeting.jpg
+  width: 1620
+  height: 1080
+  zh: 参会教师在第十四届年会会场合影。
+  en: Faculty members gather for a photograph at the 14th annual meeting.
+- file: 2024/hohhot-electromagnetics-teaching/teaching-competition.jpg
+  width: 1620
+  height: 1080
+  zh: 与会代表在年会与全国青年教师课程教学竞赛决赛展板前合影。
+  en: Delegates in front of the banner for the annual meeting and the national teaching competition finals for early-career faculty.
 shijiazhuang_2023_talk:
 - file: 2023/shijiazhuang-industrial-software/presentation.jpg
   width: 1440
