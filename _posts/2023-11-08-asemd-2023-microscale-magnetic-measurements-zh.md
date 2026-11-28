@@ -11,6 +11,8 @@ excerpt: 张长庚代表河北工业大学，在天津大学举行的应用超�
 
 2023年10月27日至29日，应用超导与电磁装置国际会议（ASEMD 2023）在天津大学举行。张长庚代表河北工业大学应邀作报告，在大会的会前讲座中向与会同行介绍了微观尺度下的磁测量方法。
 
+{% include news-photos.html group="asemd_2023_presentation" %}
+
 本届会议由天津大学和 IEEE 北京分会联合主办，共有250余位代表参加。与张长庚的报告同列会前讲座的，还有超导储能、旋转磁化特性等专题。
 
 {% include news-photos.html group="asemd_2023_delegates" %}
