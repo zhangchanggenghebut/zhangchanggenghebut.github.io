@@ -500,3 +500,61 @@ intermag_2018_posters:
   height: 1350
   zh: 张长庚在 AQ-15 号墙报前介绍高频二维磁化装置。展板展示了超薄硅钢片磁化结构与检测线圈的布置。
   en: At poster AQ-15, Zhang points out features of a high-frequency two-dimensional magnetisation fixture. The diagrams show the magnetic structure using ultra-thin electrical steel and the arrangement of its sensing coils.
+grenoble_2018_exchange:
+- file: 2018/2dm-2018-grenoble/zhang-helmut-pfuetzner.jpg
+  width: 1050
+  height: 1400
+  zh: 张长庚（左）与奥地利维也纳工业大学 Helmut Pfützner 教授在墙报交流区合影。
+  en: Changgeng Zhang (left) and Professor Helmut Pfützner of TU Wien in the workshop’s poster area.
+- file: 2018/2dm-2018-grenoble/zhang-at-poster-ps2-2.jpg
+  width: 1050
+  height: 1400
+  zh: 张长庚在 PS2-2 号海报前。Weijie Xu 等人的展板比较了温度和应力影响下的磁滞模型与实测回线。
+  en: Zhang at poster PS2-2 by Weijie Xu and colleagues, who compared predictions of hysteresis under temperature and stress with measured loops.
+grenoble_2018_magnetiser:
+- file: 2018/2dm-2018-grenoble/slide-06-magnetisation-fixture.webp
+  width: 1640
+  height: 922
+  zh: 第 6 页。两路正交磁路围绕中央试样布置。0.05 mm 指制成磁轭的取向硅钢片厚度。
+  en: Slide 6. The two orthogonal magnetic circuits surround the specimen. The 0.05 mm dimension refers to the grain-oriented steel laminations in the yoke.
+grenoble_2018_loops:
+- file: 2018/2dm-2018-grenoble/slide-14-alternating-loss.webp
+  width: 1640
+  height: 922
+  zh: 第 14 页。1 kHz 下 B35A210 的实测磁滞回线。右图比较沿轧制方向和横向磁化时，单位质量铁损随峰值磁通密度的变化。
+  en: Slide 14. Measured hysteresis loops of B35A210 at 1 kHz. The right-hand graph plots loss per unit mass against peak flux density in the rolling and transverse directions.
+grenoble_2018_rotating_loss:
+- file: 2018/2dm-2018-grenoble/slide-23-rotational-loss.webp
+  width: 1640
+  height: 922
+  zh: 第 23 页。50 Hz 和 100 Hz 下的旋转与交变铁损对比。低磁通密度下，旋转铁损约为轧制方向交变铁损的两倍。
+  en: Slide 23. Rotational and alternating losses at 50 and 100 Hz. At low flux density, rotational loss was about twice the alternating loss in the rolling direction.
+grenoble_2018_dinner:
+- file: 2018/2dm-2018-grenoble/workshop-dinner.jpg
+  width: 1400
+  height: 1050
+  zh: 9月25日，张长庚（右二）与参会代表在格勒诺布尔巴士底山的会议晚宴上合影。
+  en: Zhang (second from right) with delegates at the workshop dinner on Grenoble’s Bastille hill, 25 September.
+hangzhou_2018_posters:
+- file: 2018/cefc-2018-hangzhou/changgeng-zhang-flux-weakening.jpg
+  width: 1050
+  height: 1400
+  zh: 张长庚在 WAP5-28 号海报前。展板比较了电动助力转向电机的两种弱磁控制方法。
+  en: Changgeng Zhang at poster WAP5-28, which compares two flux-weakening methods for an electric power-steering motor.
+- file: 2018/cefc-2018-hangzhou/xinxiao-yan-core-loss.jpg
+  width: 1050
+  height: 1400
+  zh: 闫鑫笑在感应电机铁心损耗海报前。展板结合电工钢实测数据和定子磁通轨迹解释局部铁损。
+  en: Xinxiao Yan with the induction motor poster. It relates measured steel properties to local flux paths and losses in the stator.
+hangzhou_2018_flux_paths:
+- file: 2018/cefc-2018-hangzhou/yan-poster-flux-paths.webp
+  width: 1400
+  height: 870
+  zh: 闫鑫笑所展示海报的图 5 和图 6。上图用磁通轨迹短、长轴之比标出定子铁心各处的磁化状态，下图给出 A 至 D 四个位置的磁通轨迹。
+  en: Figures 5 and 6 from Yan’s poster. The map shows the local ratio of the minor to major axes of the flux path. The four plots below trace the corresponding paths at points A to D.
+hangzhou_2018_conference:
+- file: 2018/cefc-2018-hangzhou/yongjian-li-changgeng-zhang.jpg
+  width: 1400
+  height: 1050
+  zh: 李永建教授（左）与张长庚（右）在杭州会场合影。身后是第十八届 IEEE 国际电磁场计算会议的会标。
+  en: Professor Yongjian Li (left) and Changgeng Zhang beneath the conference banner in Hangzhou.
