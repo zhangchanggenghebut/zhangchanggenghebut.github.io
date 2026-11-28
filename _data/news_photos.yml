@@ -300,3 +300,29 @@ zunyi_2025_registration:
   height: 1080
   zh: 张长庚在贵州遵义第二十届磁学和磁性材料会议签到处。
   en: Changgeng Zhang at the registration desk of the 20th Conference on Magnetism and Magnetic Materials in Zunyi.
+dalian_2026_course_talk:
+- file: 2026/dalian-circuits-teaching/international-course-talk.jpg
+  width: 1706
+  height: 1279
+  zh: 张长庚在大连年会电路课程论坛上代表河北工业大学电路课程建设团队主讲，屏幕上是报告的结语。
+  en: Changgeng Zhang presents on behalf of Hebei University of Technology’s circuits teaching team in Dalian. The closing slide summarises its approach to digital tools and international course benchmarks.
+dalian_2026_equivalence:
+- file: 2026/dalian-circuits-teaching/equivalent-transfer-functions-zh.webp
+  file_en: 2026/dalian-circuits-teaching/equivalent-transfer-functions-en.webp
+  width: 1920
+  height: 1080
+  zh: 报告课件节选。同一个网络函数可以写成多项式之比、因式分解式或部分分式。下方的反例展示了输出极性写反时应怎样给分。
+  en: From the talk. A ratio of polynomials, a factored denominator and a partial-fraction expansion can describe the same transfer function. The example below the table shows how to assess a reversed output polarity.
+dalian_2026_time:
+- file: 2026/dalian-circuits-teaching/marking-time-zh.webp
+  file_en: 2026/dalian-circuits-teaching/marking-time-en.webp
+  width: 1920
+  height: 1080
+  zh: 报告课件节选。左表给出网络函数作业各评分点的平均得分，右表按环节列出 132 份作业的教师用时回溯记录。
+  en: From the talk. The left table shows mean scores by criterion on the transfer-function assignment. The right table breaks down the instructor’s recorded time for 132 submissions.
+dalian_2026_poster:
+- file: 2026/dalian-circuits-teaching/ai-grading-poster.jpg
+  width: 1280
+  height: 1703
+  zh: 张长庚在年会墙报《电路作业人机协同评价的评分量规与等价校验研究》前。
+  en: Changgeng Zhang with the conference poster on grading rubrics and equivalence checks for instructor- and AI-assisted assessment of circuit homework.
