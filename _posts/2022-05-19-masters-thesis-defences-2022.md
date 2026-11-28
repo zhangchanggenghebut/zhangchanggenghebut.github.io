@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Yakun Tian and Lan Yang defend their master’s theses in electrical engineering
+title: Changgeng Zhang’s students Yakun Tian and Lan Yang defend their master’s theses in electrical engineering
 date: 2022-05-19
 date_precision: day
 lang: en

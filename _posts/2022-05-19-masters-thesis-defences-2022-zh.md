@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 田亚坤、杨兰完成电气工程硕士学位论文答辩
+title: 张长庚指导的田亚坤、杨兰完成电气工程硕士学位论文答辩
 date: 2022-05-19
 date_precision: day
 lang: zh-CN
