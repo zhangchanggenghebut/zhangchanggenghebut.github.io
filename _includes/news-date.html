@@ -1,4 +1,11 @@
-{%- if include.entry.date_precision == 'month' -%}
+{%- if include.entry.date_precision == 'year' -%}
+  {%- assign year = include.entry.date | date: '%Y' -%}
+  {%- if include.format == '%Y-%m-%d' -%}
+    {{- year -}}
+  {%- else -%}
+    {{- include.entry.date_label | default: year | escape -}}
+  {%- endif -%}
+{%- elsif include.entry.date_precision == 'month' -%}
   {%- if include.format == '%Y-%m-%d' -%}
     {{- include.entry.date | date: '%Y-%m' -}}
   {%- elsif include.entry.lang == 'zh-CN' -%}

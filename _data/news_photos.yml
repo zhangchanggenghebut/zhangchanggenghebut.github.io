@@ -326,3 +326,67 @@ dalian_2026_poster:
   height: 1703
   zh: 张长庚在年会墙报《电路作业人机协同评价的评分量规与等价校验研究》前。
   en: Changgeng Zhang with the conference poster on grading rubrics and equivalence checks for instructor- and AI-assisted assessment of circuit homework.
+masters_2024_adviser:
+- file: 2024/masters-defences/adviser-and-four-students.jpg
+  width: 1440
+  height: 1292
+  zh: 张长庚教授与四位硕士研究生在 2024 年 5 月 25 日答辩后合影。
+  en: Prof. Changgeng Zhang with his four master’s students after their defences on 25 May 2024.
+masters_2024_group:
+- file: 2024/masters-defences/group-photo.jpg
+  width: 1440
+  height: 740
+  zh: 参加本场硕士学位论文答辩的师生合影。
+  en: Faculty and students at the master’s thesis defences.
+masters_2024_album:
+- file: 2024/masters-defences/defence-photo-1.jpg
+  width: 1440
+  height: 1080
+  zh: 答辩结束后，一位硕士研究生与在场教师合影。
+  en: A master’s candidate with faculty after the defence.
+- file: 2024/masters-defences/defence-photo-2.jpg
+  width: 1440
+  height: 1080
+  zh: 学生与教师在答辩会场留影。
+  en: A student and faculty members in the defence room.
+- file: 2024/masters-defences/defence-photo-3.jpg
+  width: 1440
+  height: 1080
+  zh: 一位硕士研究生手持答辩材料，与教师合影。
+  en: A master’s candidate holds her defence papers for a photograph with faculty.
+masters_2025_defence:
+- file: 2025/masters-defences/defence-photo-1.jpg
+  width: 2048
+  height: 1536
+  zh: 2025 年 5 月 21 日，学生与教师在河北工业大学电气工程学院硕士学位论文答辩后合影。
+  en: A student and faculty members after the master’s thesis defences at Hebei University of Technology on 21 May 2025.
+- file: 2025/masters-defences/defence-photo-2.jpg
+  width: 2048
+  height: 1536
+  zh: 同场答辩的另一位硕士研究生与教师合影。
+  en: The other master’s candidate with faculty at the same session.
+masters_2025_haitao:
+- file: 2025/masters-defences/haitao-slide-16-zh.webp
+  file_en: 2025/masters-defences/haitao-slide-16-en.webp
+  width: 1920
+  height: 1080
+  zh: 张海涛答辩报告第 16 页。左、右两组分别为 5 kHz 和 15 kHz 下的实测磁致伸缩回线。每组四图依次显示占空比从 1.0 降至 0.2 的变化。
+  en: Slide 16 of Haitao Zhang’s defence. The measured strain loops are grouped by frequency, 5 kHz on the left and 15 kHz on the right. In each group the duty cycle falls from 1.0 to 0.2.
+masters_2025_guochen:
+- file: 2025/masters-defences/guochen-slide-20-zh.webp
+  file_en: 2025/masters-defences/guochen-slide-20-en.webp
+  width: 1920
+  height: 1080
+  zh: 牛国辰答辩报告第 20 页。左图比较三种法向压力下 1K107B 纳米晶合金的实测与模拟磁滞回线，右表列出 5 kHz 和 15 kHz 下的铁损。
+  en: Slide 20 of Guochen Niu’s defence. The graphs compare measured and modelled hysteresis loops for 1K107B at three pressures. The table gives the core losses at 5 and 15 kHz.
+masters_2025_graduation:
+- file: 2025/masters-defences/guochen-niu-and-changgeng-zhang.jpg
+  width: 961
+  height: 1440
+  zh: 张长庚教授（左）与牛国辰（右）身着学位服，在电气工程学院楼前合影。
+  en: Prof. Changgeng Zhang (left) and Guochen Niu (right) in academic dress outside the School of Electrical Engineering.
+- file: 2025/masters-defences/haitao-zhang-and-changgeng-zhang.jpg
+  width: 962
+  height: 1440
+  zh: 张长庚教授（左）与张海涛（右）在电气工程学院楼前的毕业合影。
+  en: Prof. Changgeng Zhang (left) and Haitao Zhang (right) at graduation outside the School of Electrical Engineering.
