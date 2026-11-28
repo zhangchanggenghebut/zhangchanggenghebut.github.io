@@ -115,6 +115,46 @@ finland_graduation_2025:
   height: 720
   zh: 2025届毕业生与参加典礼的师生在拉彭兰塔会场合影。图片来自河北工业大学。
   en: Graduates and faculty gather for a group photograph in Lappeenranta. Photograph from Hebei University of Technology.
+cem_2023_transformer:
+- file: 2023/cem-cannes/transformer-field-presentation.webp
+  width: 737
+  height: 553
+  zh: 张长庚汇报基于改进 U-net 神经网络的电磁场预测研究
+  en: Presenting electromagnetic field estimation using an improved U-net neural network
+cem_2023_ferrite_and_poster:
+- file: 2023/cem-cannes/ferrite-presentation.webp
+  width: 761
+  height: 560
+  zh: 铁氧体变温磁特性模拟研究报告现场
+  en: Presenting the study of ferrite magnetic behaviour at different temperatures
+- file: 2023/cem-cannes/poster-session.webp
+  width: 446
+  height: 596
+  zh: 研究海报展示
+  en: Research poster presentation
+cem_2025_talk:
+- file: 2025/cem-bruges/presentation.jpg
+  width: 1440
+  height: 1080
+  zh: 张长庚教授作学术报告
+  en: Professor Zhang delivering his presentation
+cem_2025_discussion:
+- file: 2025/cem-bruges/discussion.jpg
+  width: 819
+  height: 524
+  zh: 报告后的现场问答与讨论
+  en: Questions and discussion following the presentation
+cem_2025_colleagues_and_programme:
+- file: 2025/cem-bruges/colleagues.jpg
+  width: 1440
+  height: 1080
+  zh: 张长庚在会议期间与同行合影。
+  en: Zhang with fellow researchers during CEM 2025.
+- file: 2025/cem-bruges/session-p7.jpg
+  width: 1079
+  height: 920
+  zh: P7 分会场报告日程，2025 年 4 月 10 日 15:55–16:15。
+  en: The Session P7 schedule lists Zhang’s presentation at 15:55–16:15 on 10 April 2025.
 shijiazhuang_2023_talk:
 - file: 2023/shijiazhuang-industrial-software/presentation.jpg
   width: 1440

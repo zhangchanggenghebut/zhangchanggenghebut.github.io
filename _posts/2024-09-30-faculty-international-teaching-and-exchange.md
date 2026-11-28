@@ -1,22 +1,20 @@
 ---
 layout: post
-title: Faculty discuss teaching at the Finland Campus and the Arizona College of Technology
+title: Changgeng Zhang organizes and speaks at a faculty forum on international teaching and exchange
 date: 2024-09-30 12:10:00 +0800
 date_precision: day
 lang: en
 categories: Activity
 tags: [International education, Teaching]
-excerpt: Changgeng Zhang attended a faculty forum on teaching in international programs, opportunities for overseas study visits and joint research.
+excerpt: Changgeng Zhang organized the forum as deputy director of the international office and was among its speakers. Faculty discussed teaching at the Finland Campus, joint courses at the Arizona College of Technology and international exchange opportunities.
 ---
 
-On September 29, 2024, faculty at Hebei University of Technology met to discuss teaching in the university’s international programs. The Office of International Cooperation and Exchange organized the forum with the College of International Education and the Arizona College of Technology.
+On the morning of September 29, 2024, Changgeng Zhang, then deputy director of the Office of International Cooperation and Exchange at Hebei University of Technology, organized a faculty forum on international teaching and exchange and spoke at the meeting. His office hosted the forum with the College of International Education and the Arizona College of Technology. Yingying Zhao, the office’s director, chaired the meeting.
 
-Yingying Zhao, the office’s director, chaired the meeting. Changgeng Zhang and Yong Feng attended as deputy directors of the office. Vice President Hongyan Chen, Dean Gengshan Shi, associate deans Zhengyan Zhang and Zhijun Ren, and faculty representatives also took part.
+Zhang brought together faculty who had helped develop courses for the two programs. They shared their teaching experiences, described difficulties they had encountered and suggested ways the university could support their work.
 
 {% include news-photos.html group="faculty_forum" %}
 
-Speakers explained how faculty are selected to teach courses at the Finland Campus and how they can contribute to joint courses and supervise final-year projects at the Arizona College of Technology. The forum also covered applications for government-funded academic visits abroad and international research grants from the National Natural Science Foundation of China.
+The College of International Education outlined the Finland Campus curriculum and explained how faculty are selected to teach there. The Arizona College of Technology described opportunities to teach joint Chinese–American courses and supervise final-year projects. Participants also discussed applications for government-funded academic visits abroad and international research grants from the National Natural Science Foundation of China.
 
-Faculty who had taught in the two programs shared what they had learned, described practical difficulties and suggested ways the university could support their work.
-
-The university’s international office published the report on WeChat on September 30, 2024. [University report and photographs (in Chinese)](https://io.hebut.edu.cn/xwdt/c748af1fcadc4b9aaef99e6a3d034d4c.htm)
+This account draws on Zhang’s recollection and the report and photograph published by the university’s international office on September 30, 2024. [Read the university report (in Chinese)](https://io.hebut.edu.cn/xwdt/c748af1fcadc4b9aaef99e6a3d034d4c.htm)
