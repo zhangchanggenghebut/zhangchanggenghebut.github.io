@@ -6,4 +6,4 @@ lang: en
 title: Fabrication of Soft Magnetic Composites (SMCs)
 permalink: /research/soft-magnetic-composites/
 ---
-My students and I study how powder coatings and sintering conditions affect the permeability and loss of soft magnetic cores at high frequencies.
+We study how particle coatings and sintering conditions affect the permeability and core loss of soft magnetic composites at high frequencies.

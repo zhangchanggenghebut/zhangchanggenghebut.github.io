@@ -6,4 +6,4 @@ lang: en
 title: Ultra-Weak Magnetic Field Sensing
 permalink: /research/weak-field-sensing/
 ---
-I lead our work on converting weak magnetic fields into measurable signals and use sensitivity and noise measurements to evaluate our sensors.
+We study how to convert weak magnetic fields into measurable signals and evaluate our sensors by measuring their sensitivity and noise.
