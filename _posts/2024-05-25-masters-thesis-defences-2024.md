@@ -5,7 +5,7 @@ date: 2024-05-25
 date_precision: day
 lang: en
 permalink: /2024/05/25/masters-thesis-defences-2024
-categories: Service
+categories: Graduations
 tags: [defence]
 excerpt: Xizheng Li and Yan Zhang studied how compression and cutting affect electrical steel. Baichuan Yu and Shuyue Guan investigated how rough surfaces and sliding contacts carry current.
 ---

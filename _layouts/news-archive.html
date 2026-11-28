@@ -29,7 +29,7 @@ css: ["categories.css?v=center-news"]
   <h1 id="archive-heading">{{ site.data.home.labels[language].news | escape }}</h1>
   {% include categories.html lang=language %}
   {% if section.filter == 'all' %}
-  <p class="archive-legacy-heading" hidden>{% if language == 'zh' %}会议与社会服务{% else %}Conferences and service{% endif %}</p>
+  <p class="archive-legacy-heading" hidden>{% if language == 'zh' %}会议、社会服务与学生毕业{% else %}Conferences, service and graduations{% endif %}</p>
   {% endif %}
   <ol class="archive-stories">
     {% for primary in news %}

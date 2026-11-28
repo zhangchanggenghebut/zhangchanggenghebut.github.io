@@ -6,7 +6,7 @@ date_precision: year
 date_label: Class of 2026
 lang: en
 permalink: /2026/masters-graduates
-categories: Service
+categories: Graduations
 tags: [Graduate education]
 excerpt: Ziran Guo, Guotao Sun, Kai Wang and Xiaoxiao Liu successfully defended their master’s theses. Their work spanned magnetic powder cores, domains in electrical steel, transformer diagnostics, and electrical contact and vibration.
 ---

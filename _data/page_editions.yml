@@ -20,6 +20,11 @@ news_service:
   zh: /team-news/service/
   filter: service
   label: {en: Service & Engagement, zh: 社会服务}
+news_graduations:
+  en: /center-news/graduations/
+  zh: /team-news/graduations/
+  filter: graduations
+  label: {en: Graduations, zh: 学生毕业}
 news_papers:
   en: /center-news/papers/
   zh: /team-news/papers/

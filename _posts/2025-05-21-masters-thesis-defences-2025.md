@@ -5,7 +5,7 @@ date: 2025-05-21
 date_precision: day
 lang: en
 permalink: /2025/05/21/masters-thesis-defences-2025
-categories: Service
+categories: Graduations
 tags: [defence]
 excerpt: Haitao Zhang used a laser to measure how nanocrystalline laminations change length during magnetisation. Guochen Niu measured how compressing a stack changes its hysteresis and core loss.
 ---
